@@ -1,6 +1,7 @@
 import React from "react"
-import { Global, css } from "@emotion/react";
-import 'normalize.css';
+import { Global, css } from "@emotion/react"
+import 'normalize.css'
+import { COLORS } from "../theme/constants"
 
 const GlobalStyles = css`
     /* CSS Reset */
@@ -27,8 +28,8 @@ const GlobalStyles = css`
 
     /* CSS Variables */
     :root { 
-        --color-text: #fff;
-        --color-background: #000;
+        --color-text: ${COLORS.white};
+        --color-background: ${COLORS.black};
     }
 `;
 

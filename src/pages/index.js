@@ -1,5 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
+import Button from "../components/button"
 
 // styles
 const pageStyles = {
@@ -138,6 +139,7 @@ const IndexPage = () => {
           🎉🎉🎉
         </span>
       </h1>
+      <Button variant="fill" size="medium">About</Button>
       <p style={paragraphStyles}>
         Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
         update in real-time.{" "}
