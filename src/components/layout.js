@@ -1,11 +1,11 @@
 import React from "react"
-import { Global, css } from "@emotion/react"
+import { createGlobalStyle } from "styled-components"
 import 'normalize.css'
 import { COLORS } from "../theme/constants"
 
-const GlobalStyles = css`
+const GlobalStyle = createGlobalStyle`
     /* CSS Reset */
-
+    /* using normalize.css instead */
 
     /* Global Styles */
     *, 
@@ -36,7 +36,7 @@ const GlobalStyles = css`
 export default function Layout({ children }) {
     return (
       <>
-        <Global styles={GlobalStyles}/>
+        <GlobalStyle/>
         {children}
       </>
     )
