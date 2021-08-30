@@ -17,6 +17,7 @@ module.exports = {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/theme/typography`,
+        omitGoogleFont: true,
       },
     },
     "gatsby-plugin-mdx",

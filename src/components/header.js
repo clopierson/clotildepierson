@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
 import Navigation from "./navigation";
+import { COLORS, QUERIES } from '../theme/constants';
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -10,7 +11,7 @@ const HeaderContainer = styled.header`
 `;
 
 const SiteTitle = styled.h1`
-  padding: 0px 20px;
+  //padding: 0px 20px;
   flex-shrink: 0;
 `;
 
@@ -34,7 +35,7 @@ export default function Header() {
   return (
     <HeaderContainer>
       <SiteTitle>
-        <StyledLink to="/">pierson's lab</StyledLink>
+        <StyledLink to="/">clotilde pierson</StyledLink>
       </SiteTitle>
       <NavContainer>
         <Navigation />

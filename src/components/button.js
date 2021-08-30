@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { COLORS } from "../theme/constants"
+import { COLORS, QUERIES } from "../theme/constants"
 
 const SIZES = {
     small: {

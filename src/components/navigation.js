@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
+import { COLORS, QUERIES } from '../theme/constants';
 
 export const MenuItems = [
   {
     link: "/",
-    name: "home",
+    name: "about",
   },
   {
     link: "/research",
@@ -14,10 +15,6 @@ export const MenuItems = [
   {
     link: "/teaching",
     name: "teaching",
-  },
-  {
-    link: "/people",
-    name: "people",
   },
   {
     link: "/contact",
@@ -29,11 +26,11 @@ const NavContainer = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  gap: 16px;
 `;
 
 const MenuItem = styled.li`
   display: inline;
-  padding: 0px 8px;
   margin-top: 16px;
 `;
 
