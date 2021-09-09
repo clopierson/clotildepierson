@@ -11,13 +11,7 @@ const IndexPage = () => {
       <main>
         <title>About Clotilde Pierson</title>
         <h1>Hi! I'm Clotilde.</h1>
-        <p><a href="https://github.com/clopierson">GitHub</a> · <a href="https://www.linkedin.com/in/clotilde-pierson/">LinkedIn</a> · <a href="https://www.instagram.com/clopierson/">Instagram</a></p>
-
-
-        <Button variant="fill" size="medium">
-          About
-        </Button>
-        
+        <p><a href="https://github.com/clopierson">GitHub</a> · <a href="https://www.linkedin.com/in/clotilde-pierson/">LinkedIn</a> · <a href="https://www.instagram.com/clopierson/">Instagram</a></p>       
       </main>
     </Layout>
   );

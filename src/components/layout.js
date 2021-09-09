@@ -61,24 +61,13 @@ const GlobalStyle = createGlobalStyle`
         */
 
         /* Colors */
-        --gray: ${COLORS.gray};
-        --color-gray-100: hsl(var(--gray) 20% 95%);
-        --color-gray-300: hsl(var(--gray) 10% 75%);
-        --color-gray-500: hsl(var(--gray) 5% 50%);
-        --color-gray-700: hsl(var(--gray) 10% 30%);
-        --color-gray-900: hsl(var(--gray) 15% 15%);
 
-        --color-white: hsl(0deg 0% 100%);
-        --color-black: hsl(0deg 0% 0%);
-
+        /* Default Dark  */
         --primary: ${COLORS.primary};
-        --color-link: hsl(var(--primary) 100% 67%);
-        --color-link-hover: hsl(var(--primary) 100% 72%);
-        --color-text: var(--color-white);
-        --color-background: var(--color-black);
-        //--color-link: ${COLORS.primary};
-        //--color-link-hover: ${COLORS.primaryLight};
-
+        --color-link: hsl(var(--primary) 100% 70%);
+        --color-link-hover: hsl(var(--primary) 100% 85%);
+        --color-text: hsl(var(--primary) 100% 99%);
+        --color-background: hsl(var(--primary) 33% 15%);
     }
 
     /* Media Queries */
@@ -91,10 +80,12 @@ const GlobalStyle = createGlobalStyle`
         }
     }
     @media (prefers-color-scheme: light) {
-        
-    };
-    @media (prefers-color-scheme: dark) {
-        
+        :root {
+            --color-link: hsl(var(--primary) 50% 50%);
+            --color-link-hover: hsl(var(--primary) 100% 70%);
+            --color-text: hsl(var(--primary) 33% 15%);
+            --color-background: hsl(var(--primary) 100% 99%);
+        }
     };
 `;
 
