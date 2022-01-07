@@ -7,8 +7,8 @@ export default function Footer() {
       <div class="grid grid-cols-5 grid-rows-1 place-content-center">
         <div class="col-start-1 col-span-5 sm:col-start-2 sm:col-span-3 text-center">
         <Socials />
-        <div>Carbon-neutral website.</div>
-        <div>Please consider dark-mode to save energy.</div>
+        <div class="text-sm">Carbon-neutral website.</div>
+        <div class="text-sm">Please consider dark-mode to save energy.</div>
         </div>
       </div>
     </div>
