@@ -5,7 +5,7 @@ export default function Socials() {
         href="https://www.researchgate.net/profile/Clotilde-Pierson"
         target="_blank"
         rel="noreferrer noopener"
-        class="text-sm text-blue-400"
+        class="text-sm"
       >
         Research Gate
       </a>{" "}
@@ -14,7 +14,7 @@ export default function Socials() {
         href="https://github.com/clopierson"
         target="_blank"
         rel="noreferrer noopener"
-        class="text-sm text-blue-400"
+        class="text-sm"
       >
         GitHub
       </a>{" "}
@@ -23,7 +23,7 @@ export default function Socials() {
         href="https://www.linkedin.com/in/clotilde-pierson/"
         target="_blank"
         rel="noreferrer noopener"
-        class="text-sm text-blue-400"
+        class="text-sm"
       >
         LinkedIn
       </a>{" "}
@@ -32,7 +32,7 @@ export default function Socials() {
         href="https://www.instagram.com/clopierson/"
         target="_blank"
         rel="noreferrer noopener"
-        class="text-sm text-blue-400"
+        class="text-sm"
       >
         Instagram
       </a>
