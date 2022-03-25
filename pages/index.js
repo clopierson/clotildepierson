@@ -1,14 +1,13 @@
-import Socials from "../components/socials";
 import Layout from "../components/layout";
 import Image from "next/image";
-import heroImage from "../public/hero-image.jpg";
 import backgroundImage from "../public/background-image.jpg";
+import FactCard from "../components/factCard";
 
 export default function Home() {
   return (
     <Layout
-      pageTitle="Pierson Light Research Center"
-      pageDescription="The Pierson Light Research Center (PLRC) is a cutting-edge lighting research center based in Oregon State University."
+      pageTitle="Integrated Research on Daylighting Lab"
+      pageDescription="The Integrated Research on Daylighting Laboratory (IRRADIANT LAB) is a cutting-edge lighting research center currently based in Oregon State University and headed by Dr. Clotilde Pierson."
     >
       <div class="overflow-hidden absolute top-18 left-0 w-screen h-[70vh] -z-1 ">
         <Image
@@ -20,76 +19,89 @@ export default function Home() {
           quality={100}
         ></Image>
       </div>
-      <div class="absolute top-18 left-0 right-0 w-max mx-auto text-center top-1/3 bg-white/40 dark:bg-black/30 p-4 ">
-        <h1 class="text-2xl font-semibold">Lighting Research Center</h1>
-        <p>LIREC</p>
+      <div class="absolute top-18 left-0 right-0 w-max mx-auto text-center top-1/3 bg-white/50 dark:bg-black/50 p-4 rounded">
+        <p class="text-xl sm:text-2xl uppercase tracking-widest">
+          irradiant lab
+        </p>
+        <p>Integrated Research on Daylighting</p>
       </div>
       <div class="h-[70vh]"></div>
       <div class="my-8 prose dark:prose-invert mx-auto">
-        <h2>Holistic Urban Design (HUD) Laboratory</h2>
-        <p></p>
+        <h1>Integrated Research on Daylighting</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sit
-          amet consectetur adipiscing elit. Integer vitae justo eget magna
-          fermentum iaculis eu non. Nisl condimentum id venenatis a condimentum
-          vitae sapien pellentesque. Dolor sit amet consectetur adipiscing elit
-          pellentesque habitant morbi tristique. Justo eget magna fermentum
-          iaculis eu non diam phasellus. Adipiscing tristique risus nec feugiat
-          in fermentum posuere urna. Amet nisl suscipit adipiscing bibendum est
-          ultricies integer quis. Felis imperdiet proin fermentum leo vel orci
-          porta non pulvinar. Vulputate eu scelerisque felis imperdiet. Pharetra
-          magna ac placerat vestibulum. Leo integer malesuada nunc vel risus. Eu
-          lobortis elementum nibh tellus molestie nunc. Vitae purus faucibus
-          ornare suspendisse sed nisi lacus sed viverra. At quis risus sed
-          vulputate odio. Sed tempus urna et pharetra pharetra massa. Accumsan
-          lacus vel facilisis volutpat est. Non curabitur gravida arcu ac tortor
-          dignissim convallis aenean et. Bibendum enim facilisis gravida neque
-          convallis. Egestas diam in arcu cursus euismod quis viverra. Dui nunc
-          mattis enim ut tellus elementum. Cursus turpis massa tincidunt dui.
-          Aliquam purus sit amet luctus. Elementum sagittis vitae et leo duis
-          ut. Mattis ullamcorper velit sed ullamcorper. Vel fringilla est
-          ullamcorper eget nulla facilisi etiam. Risus nec feugiat in fermentum
-          posuere urna. Elit pellentesque habitant morbi tristique senectus et
-          netus et malesuada. Ullamcorper morbi tincidunt ornare massa eget
-          egestas. Quisque id diam vel quam elementum pulvinar etiam non. Vitae
-          aliquet nec ullamcorper sit amet risus nullam eget. Egestas quis ipsum
-          suspendisse ultrices gravida dictum fusce. Auctor urna nunc id cursus
-          metus aliquam eleifend mi in. Diam sit amet nisl suscipit adipiscing
-          bibendum. Aliquam sem fringilla ut morbi tincidunt augue interdum.
-          Dignissim sodales ut eu sem. Velit euismod in pellentesque massa
-          placerat. Imperdiet massa tincidunt nunc pulvinar. Non sodales neque
-          sodales ut etiam sit. Lacus laoreet non curabitur gravida arcu. Nunc
-          non blandit massa enim nec. A pellentesque sit amet porttitor eget
-          dolor morbi. Ac odio tempor orci dapibus ultrices in iaculis nunc.
-          Morbi enim nunc faucibus a pellentesque sit. Sapien et ligula
-          ullamcorper malesuada proin libero nunc consequat. Vulputate ut
-          pharetra sit amet. Dolor sit amet consectetur adipiscing elit
-          pellentesque habitant morbi tristique. Adipiscing diam donec
-          adipiscing tristique risus. Sed adipiscing diam donec adipiscing
-          tristique risus nec feugiat in. Montes nascetur ridiculus mus mauris
-          vitae ultricies leo integer. Nulla pellentesque dignissim enim sit
-          amet venenatis urna cursus. Cras semper auctor neque vitae tempus quam
-          pellentesque nec nam. Sed vulputate mi sit amet mauris commodo quis
-          imperdiet. Dignissim diam quis enim lobortis scelerisque fermentum dui
-          faucibus. Egestas maecenas pharetra convallis posuere. Integer enim
-          neque volutpat ac tincidunt vitae semper quis lectus. Libero id
-          faucibus nisl tincidunt eget nullam non nisi est. Dictumst vestibulum
-          rhoncus est pellentesque elit. Malesuada proin libero nunc consequat
-          interdum varius. Amet est placerat in egestas erat imperdiet sed.
-          Ullamcorper sit amet risus nullam eget felis eget. Ipsum faucibus
-          vitae aliquet nec ullamcorper sit amet. Posuere morbi leo urna
-          molestie at elementum eu facilisis sed. Mattis vulputate enim nulla
-          aliquet porttitor lacus luctus accumsan. Tortor vitae purus faucibus
-          ornare suspendisse sed nisi. Id diam vel quam elementum pulvinar. Eget
-          aliquet nibh praesent tristique magna sit amet purus gravida. Leo urna
-          molestie at elementum eu facilisis sed. Ullamcorper dignissim cras
-          tincidunt lobortis feugiat vivamus at augue. At risus viverra
-          adipiscing at in tellus integer feugiat scelerisque. Donec adipiscing
-          tristique risus nec feugiat in fermentum posuere urna. Nibh ipsum
-          consequat nisl vel. Id velit ut tortor pretium. Massa tincidunt nunc
-          pulvinar sapien et ligula ullamcorper malesuada. Ac feugiat sed lectus
-          vestibulum mattis ullamcorper velit sed ullamcorper.
+          Our mission is to advance knowledge of daylighting in buildings to
+          enhance people's health, well-being, and performance, while minimizing
+          energy consumption.
+        </p>
+        <p>
+          Today, we spend on average 90% of our time indoors. This completely
+          flips our relationship to light, compared to an outdoor lifestyle. We
+          get much less light during the daytime, and much more in the evening.
+          The spectral content and distribution of light also change, as we are
+          exposed to mostly electric sources.
+        </p>
+        <p>
+          By 2050, 68% of the global population is expected to live in cities. A
+          strong urban densification is taking place. Buildings become
+          increasingly taller. Homes are more compact and sit closer together.
+          This densification reduces our access to daylight, and impacts our
+          window views.
+        </p>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="col-start-1 ">
+            <FactCard
+              illustration="/undraw_handcrafts_house.svg"
+              size="60"
+              fact="90%"
+              description="time spent indoors"
+            />
+          </div>
+          <div class="col-start-2">
+            <FactCard
+              illustration="/undraw_handcrafts_city.svg"
+              size="112"
+              fact="68%"
+              description="living in cities by 2050"
+            />
+          </div>
+        </div>
+        <p>
+          Light causes visual and non-visual responses in humans through
+          photoreceptors in the eye. It lets us see. It regulates our body
+          internal clock (circadian rhythm). It affects our alertness level.
+        </p>
+        <p>
+          A window view helps us create cognitive maps to avoid disorientation
+          and improve memory formation and retrieval. It provides a mental
+          portal that can help relive stress and prevent the onset of mental
+          illnesses. It reduces the lifetime risk of developing myopia in
+          children.
+        </p>
+        <p>
+          The IRRADIANT lab brings together different disciplines to further
+          understand how:
+          <ul>
+            <li>
+              buildings, cities, and climate affect our visual environment, and
+            </li>
+            <li>our visual environment affects us.</li>
+          </ul>
+          To that end, we use both field and laboratory experiments, and
+          numerical modeling.
+        </p>
+        <blockquote>
+          Engineering, architecture, chronobiology, computer science, urban
+          planning, neuroscience, psychophysics, and public health are all
+          contributing disciplines to the field of daylight.
+        </blockquote>
+        <p>
+          Our long-term goal is to translate fundamental knowledge about human
+          responses to light and the need to reduce energy consumption into{" "}
+          <strong>
+            strategies for the development of a more sustainable built
+            environment through innovative daylighting solutions
+          </strong>
+          .
         </p>
       </div>
     </Layout>

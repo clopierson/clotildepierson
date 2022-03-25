@@ -6,7 +6,7 @@ import profilePic from "../public/clopierson2022.jpg";
 export default function About() {
   return (
     <Layout
-      pageTitle="Clotilde Pierson"
+      pageTitle="Clotilde Pierson | Integrated Research on Daylighting Lab"
       pageDescription="Short summary of Clotilde Pierson and her work"
     >
       <div class="grid auto-rows-min grid-flow-row sm:grid-cols-10 sm:grid-rows-1 items-center mt-6">
@@ -61,11 +61,13 @@ export default function About() {
               <li>Based in the Pacific Northwest (US)</li>
               <li>Yogi, Runner, Hiker, Skier</li>
             </ul>
+            <h2>Teaching</h2>
+            <p>Todo..</p>
             <h2>Education and Work History</h2>
             <p>Todo..</p>
             <h2>Affiliations</h2>
             <p>Todo..</p>
-            <h2>Honors and Awards</h2>
+            <h2>Service and Awards</h2>
             <p>Todo..</p>
           </div>
         </div>
