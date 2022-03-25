@@ -29,7 +29,7 @@ export default function Home() {
       <div class="my-8 prose dark:prose-invert mx-auto">
         <h1>Integrated Research on Daylighting</h1>
         <p>
-          Our mission is to advance knowledge of daylighting in buildings to
+          Our mission is to advance knowledge of daylight in buildings to
           enhance people's health, well-being, and performance, while minimizing
           energy consumption.
         </p>
@@ -37,8 +37,8 @@ export default function Home() {
           Today, we spend on average 90% of our time indoors. This completely
           flips our relationship to light, compared to an outdoor lifestyle. We
           get much less light during the daytime, and much more in the evening.
-          The spectral content and distribution of light also change, as we are
-          exposed to mostly electric sources.
+          Other aspects of our visual environments also changes, such as the
+          spectral content and distribution of light.
         </p>
         <p>
           By 2050, 68% of the global population is expected to live in cities. A
@@ -66,40 +66,46 @@ export default function Home() {
           </div>
         </div>
         <p>
+          Mounting evidence shows that these changes in our visual environment
+          affect our health, well-being, and performance.
+        </p>
+        <p>
           Light causes visual and non-visual responses in humans through
-          photoreceptors in the eye. It lets us see. It regulates our body
-          internal clock (circadian rhythm). It affects our alertness level.
+          photoreceptors in the eye. It enables us to see, it regulates our body
+          internal clock (circadian rhythm), and it affects our alertness level,
+          among other things.
         </p>
         <p>
-          A window view helps us create cognitive maps to avoid disorientation
-          and improve memory formation and retrieval. It provides a mental
-          portal that can help relive stress and prevent the onset of mental
-          illnesses. It reduces the lifetime risk of developing myopia in
-          children.
+          A window view also offers many benefits. For example, it helps us
+          create cognitive maps to avoid disorientation and improve memory
+          formation and retrieval. It provides a mental portal that can help
+          relive stress and prevent the onset of mental illnesses. It reduces
+          the lifetime risk of developing myopia in children.
         </p>
         <p>
-          The IRRADIANT lab brings together different disciplines to further
-          understand how:
+          The IRRADIANT lab brings together insights from different disciplines
+          to further understand how:
           <ul>
             <li>
               buildings, cities, and climate affect our visual environment, and
             </li>
             <li>our visual environment affects us.</li>
           </ul>
-          To that end, we use both field and laboratory experiments, and
+          To that end, we use both field and laboratory experiments, as well as
           numerical modeling.
         </p>
         <blockquote>
           Engineering, architecture, chronobiology, computer science, urban
-          planning, neuroscience, psychophysics, and public health are all
-          contributing disciplines to the field of daylight.
+          planning, neuroscience, psychophysics, and public health all
+          contribute insights to the field of daylight.
         </blockquote>
+        {/* Don't be pushy on the blockquote */}
         <p>
           Our long-term goal is to translate fundamental knowledge about human
           responses to light and the need to reduce energy consumption into{" "}
           <strong>
             strategies for the development of a more sustainable built
-            environment through innovative daylighting solutions
+            environment and innovative daylighting solutions
           </strong>
           .
         </p>

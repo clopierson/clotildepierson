@@ -47,7 +47,15 @@ To learn more about Next.js, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### Installing styled-components
+### Next.js + TailwindCSS
 
 - [Next.js with Tailwind CSS](https://tailwindcss.com/docs/guides/nextjs)
 - [Custom _document.js](https://nextjs.org/docs/advanced-features/custom-document)
+
+### Illustrations, Images, Icons
+
+- [Undraw](https://undraw.co/)
+- [DrawKit](https://drawkit.com)
+- [Unsplash](https://unsplash.com)
+- [React Feather](https://github.com/feathericons/react-feather)
+- [Emojipedia](https://emojipedia.org/)

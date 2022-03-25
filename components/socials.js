@@ -29,12 +29,12 @@ export default function Socials() {
       </a>{" "}
       ·{" "}
       <a
-        href="https://www.instagram.com/clopierson/"
+        href="https://twitter.com/PiersonClotilde"
         target="_blank"
         rel="noreferrer noopener"
         class="text-sm"
       >
-        Instagram
+        Twitter
       </a>
     </div>
   );
