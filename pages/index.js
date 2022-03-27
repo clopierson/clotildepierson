@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import backgroundImage from "../public/background-image.jpg";
+import backgroundImage from "../public/background-image-4.jpg";
 import FactCard from "../components/factCard";
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
       pageDescription="The Integrated Research on Daylighting Laboratory (IRRADIANT LAB) is a cutting-edge lighting research center currently based in Oregon State University and headed by Dr. Clotilde Pierson."
       pageUrl="https://clotildepierson.com"
     >
-      <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh] -z-1 ">
+      <div className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh] -z-1 ">
         <Image
           src={backgroundImage}
           alt="Urban Daylight"
@@ -21,8 +21,8 @@ export default function Home() {
           quality={100}
         ></Image>
       </div>
-      <div className="absolute top-18 left-0 right-0 w-max mx-auto text-center top-1/3 bg-white/50 dark:bg-black/50 p-4 rounded">
-        <p className="text-xl sm:text-2xl uppercase tracking-widest">
+      <div className="absolute left-0 right-0 w-max mx-auto text-center text-gray-900 top-[36%] p-4 bg-gray-300/50 rounded">
+        <p className="font-bold text-xl sm:text-3xl lg:text-5xl uppercase tracking-widest">
           irradiant lab
         </p>
         <p>Integrated Research on Daylighting</p>
@@ -89,12 +89,14 @@ export default function Home() {
           including engineering, to architecture, chronobiology, computer
           science, urban planning, neuroscience, psychophysics, and public
           health, to further understand how:
-          <ul>
-            <li>
-              buildings, cities, and climate affect our visual environment, and
-            </li>
-            <li>our visual environment affects us.</li>
-          </ul>
+        </p>
+        <ul>
+          <li>
+            buildings, cities, and climate affect our visual environment, and
+          </li>
+          <li>our visual environment affects us.</li>
+        </ul>
+        <p>
           To that end, we use both field and laboratory experiments, as well as
           numerical modeling.
         </p>
@@ -106,6 +108,10 @@ export default function Home() {
             environment and innovative daylighting solutions
           </strong>
           .
+        </p>
+        <p className="text-xs italic text-gray-500 -mb-14">
+          Photo by <a href="https://unsplash.com/@issrur">rur</a> on{" "}
+          <a href="https://unsplash.com/photos/b3TVjgXWSkI">Unsplash</a>
         </p>
       </div>
     </Layout>

@@ -1,7 +1,5 @@
 import TeachCard from "../components/teachCard";
 
-// TODO: add correct course IDs and names
-
 export default function Teaching() {
   return (
     <section>

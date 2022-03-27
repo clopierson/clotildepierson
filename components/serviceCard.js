@@ -17,29 +17,23 @@ export default function ServiceCard({
         )}
       </p>
       {typeof committee === "object" && (
-        <p className="text-sm mt-1">
-          {/* <span className="font-bold">Committees</span> */}
-          <ul className="marker:text-neutral-300 dark:marker:text-slate-600">
-            {committee.map((item) => (
-              <li className="list-disc list-inside" key={item.id}>
-                {item.id} · {item.name}
-              </li>
-            ))}
-          </ul>
-        </p>
+        <ul className="text-sm mt-1 marker:text-neutral-300 dark:marker:text-slate-600">
+          {committee.map((item) => (
+            <li className="list-disc list-inside" key={item.id}>
+              {item.id} · {item.name}
+            </li>
+          ))}
+        </ul>
       )}
       {typeof journals === "object" && (
-        <p className="text-sm mt-1">
-          {/* <span className="font-bold">Journals</span> */}
-          <ul className="marker:text-neutral-300 dark:marker:text-slate-600">
-            {journals.map((journal) => (
-              <li className="list-disc list-inside" key={journal.name}>
-                {/* <a href={journal.url}>{journal.name}</a> */}
-                {journal.name}
-              </li>
-            ))}
-          </ul>
-        </p>
+        <ul className="text-sm mt-1 marker:text-neutral-300 dark:marker:text-slate-600">
+          {journals.map((journal) => (
+            <li className="list-disc list-inside" key={journal.name}>
+              {/* <a href={journal.url}>{journal.name}</a> */}
+              {journal.name}
+            </li>
+          ))}
+        </ul>
       )}
     </div>
   );

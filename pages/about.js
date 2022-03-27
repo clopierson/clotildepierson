@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import profilePic from "../public/clopierson2022.jpg";
+import profilePic from "../public/profile-picture-pierson.jpg";
 import Teaching from "../components/teaching";
 import Experience from "../components/experience";
 import Services from "../components/service";
@@ -32,9 +32,9 @@ export default function About() {
                 Owen 305
               </a>
             </p>
-            <p className="text-sm">
+            <div className="text-sm">
               <Socials />
-            </p>
+            </div>
           </div>
         </div>
         <div className="mt-6 row-start-2 sm:row-start-1 sm:col-start-7 sm:col-span-4 md:col-start-6 place-self-center">

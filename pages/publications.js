@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import backgroundImage from "../public/background-image-publications-2.jpg";
+import backgroundImage from "../public/background-image-publications-5.jpg";
 
 // export const articles = [
 //   {
@@ -272,6 +272,10 @@ export default function Publications() {
           <span className="font-bold">Pierson C.</span>, Evrard A. (2015).
           Optimization of Facade Wall Building Systems in Walloon Region.
           International PLEA Conference, Bologna, Italy, Sept. 9-11, 2015.
+        </p>
+        <p className="text-xs italic text-gray-500 -mb-14">
+          Photo by <a href="https://unsplash.com/@sylviasyang">Sylvia Yang</a>{" "}
+          on <a href="https://unsplash.com/photos/_ar2ENzmqb0">Unsplash</a>
         </p>
       </div>
     </Layout>

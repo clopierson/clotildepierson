@@ -49,16 +49,16 @@ export default function ExperienceCard({
         </p>
       )}
       {typeof mobility === "object" && (
-        <p className="text-sm mt-1">
-          <span className="font-bold">Mobility</span>
-          <ul className="marker:text-neutral-300 dark:marker:text-slate-600">
+        <div>
+          <p className="text-sm mt-1 font-bold">Mobility</p>
+          <ul className="text-sm marker:text-neutral-300 dark:marker:text-slate-600">
             {mobility.map((item) => (
               <li className="list-disc list-inside" key={item.name}>
                 {item.name} ({item.location}, {item.length})
               </li>
             ))}
           </ul>
-        </p>
+        </div>
       )}
     </div>
   );
