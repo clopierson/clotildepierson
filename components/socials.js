@@ -1,3 +1,5 @@
+// import { Twitter, Linkedin } from "react-feather";
+
 export default function Socials() {
   return (
     <div>
@@ -27,6 +29,7 @@ export default function Socials() {
         rel="noreferrer noopener"
       >
         LinkedIn
+        {/* <Linkedin className="inline" /> */}
       </a>{" "}
       /{" "}
       <a
@@ -35,6 +38,7 @@ export default function Socials() {
         rel="noreferrer noopener"
       >
         Twitter
+        {/* <Twitter className="inline" /> */}
       </a>
     </div>
   );

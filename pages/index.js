@@ -31,7 +31,7 @@ export default function Home() {
       <div className="my-8 prose dark:prose-invert mx-auto">
         <h1>Integrated Research on Daylighting</h1>
         <p>
-          Our mission is to advance knowledge of daylight in buildings to
+          Our mission is to advance knowledge of daylighting in buildings to
           enhance people&#39;s health, well-being, and performance, while
           minimizing energy consumption.
         </p>
@@ -85,8 +85,10 @@ export default function Home() {
           the lifetime risk of developing myopia in children.
         </p>
         <p>
-          The IRRADIANT lab brings together insights from different disciplines
-          to further understand how:
+          The IRRADIANT lab brings together insights from different disciplines,
+          including engineering, to architecture, chronobiology, computer
+          science, urban planning, neuroscience, psychophysics, and public
+          health, to further understand how:
           <ul>
             <li>
               buildings, cities, and climate affect our visual environment, and
@@ -96,12 +98,6 @@ export default function Home() {
           To that end, we use both field and laboratory experiments, as well as
           numerical modeling.
         </p>
-        <blockquote>
-          Engineering, architecture, chronobiology, computer science, urban
-          planning, neuroscience, psychophysics, and public health all
-          contribute insights to the field of daylight.
-        </blockquote>
-        {/* Don't be pushy on the blockquote */}
         <p>
           Our long-term goal is to translate fundamental knowledge about human
           responses to light and the need to reduce energy consumption into{" "}

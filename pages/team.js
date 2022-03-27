@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import Image from "next/image";
 import backgroundImage from "../public/background-image-team.jpg";
-import Recruiting from "../components/recruiting";
+// import Recruiting from "../components/recruiting";
 
 export default function ReseTeamarch() {
   return (
@@ -24,7 +24,7 @@ export default function ReseTeamarch() {
       <div className="h-[70vh]"></div>
       <div className="my-8 prose dark:prose-invert mx-auto">
         <h1>Team</h1>
-        <Recruiting />
+        <p>Coming soon!</p>
       </div>
     </Layout>
   );

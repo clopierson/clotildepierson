@@ -35,9 +35,11 @@ export default function ExperienceCard({
         )}
       </p>
       {typeof location === "string" && (
-        <p className="text-sm text-slate-400">{location}</p>
+        <p className="text-sm text-neutral-400 dark:text-slate-500">
+          {location}
+        </p>
       )}
-      <p className="text-sm text-slate-400">
+      <p className="text-sm text-neutral-400 dark:text-slate-500">
         {startDate} &mdash; {endDate}
       </p>
       {typeof mobility === "string" && (
@@ -49,7 +51,7 @@ export default function ExperienceCard({
       {typeof mobility === "object" && (
         <p className="text-sm mt-1">
           <span className="font-bold">Mobility</span>
-          <ul>
+          <ul className="marker:text-neutral-300 dark:marker:text-slate-600">
             {mobility.map((item) => (
               <li className="list-disc list-inside" key={item.name}>
                 {item.name} ({item.location}, {item.length})

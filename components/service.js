@@ -2,12 +2,12 @@ import ServiceCard from "../components/serviceCard";
 
 export const CIECommittees = [
   {
-    id: "TC 2-86",
+    id: "Technical Committee 2-86",
     name: "Glare Measurement by Imaging Luminance Measurement Device (ILMD)",
     role: "Member",
   },
   {
-    id: "TC 3-56",
+    id: "Technical Committee 3-56",
     name: "Assessment of Discomfort Glare from Daylight in Buildings",
     role: "Member",
   },

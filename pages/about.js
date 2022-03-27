@@ -83,7 +83,7 @@ export default function About() {
                 </span>
               </li>
               <li>
-                Yogi, Hiker, Skier{" "}
+                Yogi, hiker, skier{" "}
                 <span role="img" aria-label="om symbol">
                   🕉️
                 </span>

@@ -16,16 +16,10 @@ export default function ServiceCard({
           <span> ({institutionShort})</span>
         )}
       </p>
-
-      {typeof committee === "string" && (
-        <p className="text-sm">
-          <span className="font-bold">Committee</span> · {committee}
-        </p>
-      )}
       {typeof committee === "object" && (
         <p className="text-sm mt-1">
-          <span className="font-bold">Committees</span>
-          <ul>
+          {/* <span className="font-bold">Committees</span> */}
+          <ul className="marker:text-neutral-300 dark:marker:text-slate-600">
             {committee.map((item) => (
               <li className="list-disc list-inside" key={item.id}>
                 {item.id} · {item.name}
@@ -36,11 +30,12 @@ export default function ServiceCard({
       )}
       {typeof journals === "object" && (
         <p className="text-sm mt-1">
-          <span className="font-bold">Journals</span>
-          <ul>
+          {/* <span className="font-bold">Journals</span> */}
+          <ul className="marker:text-neutral-300 dark:marker:text-slate-600">
             {journals.map((journal) => (
               <li className="list-disc list-inside" key={journal.name}>
-                <a href={journal.url}>{journal.name}</a>
+                {/* <a href={journal.url}>{journal.name}</a> */}
+                {journal.name}
               </li>
             ))}
           </ul>
