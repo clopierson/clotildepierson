@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+  font-family: "Major Mono Display";
+  src: url("../public/fonts/MajorMonoDisplay-Regular.ttf");
+}
+@font-face {
+  font-family: "Fira Code";
+  src: url("../public/fonts/FiraCode-VariableFont_wght.ttf");
+} */
