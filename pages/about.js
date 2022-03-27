@@ -2,54 +2,44 @@ import Layout from "../components/layout";
 import Image from "next/image";
 import profilePic from "../public/clopierson2022.jpg";
 import Teaching from "../components/teaching";
+import Experience from "../components/experience";
+import Services from "../components/service";
+import Socials from "../components/socials";
 
 export default function About() {
   return (
     <Layout
       pageTitle="Clotilde Pierson | Integrated Research on Daylighting Lab"
-      pageDescription="Short summary of Clotilde Pierson and her work"
+      pageDescription="Summary of Dr. Clotilde Pierson: education, work history, teaching, and services."
+      pageUrl="https://clotildepierson.com/about"
     >
-      <div class="grid auto-rows-min grid-flow-row sm:grid-cols-10 sm:grid-rows-1 items-center mt-6">
-        <div class="row-start-1 sm:col-start-1 sm:col-span-5 md:col-start-2 md:col-span-4">
-          <div class="prose dark:prose-invert">
+      <div className="grid auto-rows-min grid-flow-row sm:grid-cols-10 sm:grid-rows-1 items-center mt-6">
+        <div className="row-start-1 sm:col-start-1 sm:col-span-5 md:col-start-2 md:col-span-4">
+          <div className="prose dark:prose-invert">
             <h1>Clotilde Pierson</h1>
             <p>
               Dr. Pierson is the Principal Investigator of the Irradiant Lab and
               an Assistant Professor of Architectural Engineering in the School
               of Civil and Construction Engineering at Oregon State University.
             </p>
-            <p>
+            <p className="text-sm">
+              Office{" "}
               <a
                 href="https://goo.gl/maps/5w7bn4iLvLNsjUjM6"
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                Office Owen 305
+                Owen 305
               </a>
             </p>
-            <p>
-              <a href="mailto:clotilde.pierson@oregonstate.edu">Email</a> ·{" "}
-              <a
-                href="https://www.linkedin.com/in/clotilde-pierson/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                LinkedIn
-              </a>{" "}
-              ·{" "}
-              <a
-                href="https://twitter.com/PiersonClotilde"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Twitter
-              </a>
+            <p className="text-sm">
+              <Socials />
             </p>
           </div>
         </div>
-        <div class="mt-6 row-start-2 sm:row-start-1 sm:col-start-7 sm:col-span-4 md:col-start-6 place-self-center">
+        <div className="mt-6 row-start-2 sm:row-start-1 sm:col-start-7 sm:col-span-4 md:col-start-6 place-self-center">
           <Image
-            class="rounded-full"
+            className="rounded-full"
             src={profilePic}
             alt="Picture of Clotilde Pierson"
             placeholder="blur"
@@ -57,8 +47,8 @@ export default function About() {
             height={200}
           />
         </div>
-        <div class="row-start-3 sm:row-start-2 sm:col-start-1 sm:col-span-10 md:col-start-2 md:col-span-8mt-2 self-start mt-6">
-          <div class="prose dark:prose-invert">
+        <div className="row-start-3 sm:row-start-2 sm:col-start-1 sm:col-span-10 md:col-start-2 md:col-span-8mt-2 self-start mt-6">
+          <div className="prose dark:prose-invert">
             <h2>In a Nutshell</h2>
             <ul>
               <li>
@@ -68,12 +58,17 @@ export default function About() {
                 </span>
               </li>
               <li>
-                Passionate about learning new skills and using innovative
-                technologies (especially in teaching){" "}
+                Committed to lifelong learning{" "}
+                <span role="img" aria-label="female teacher and student emoji">
+                  👩‍🏫
+                </span>
+              </li>
+              <li>
+                Passionate about using innovative technologies in teaching and
+                research{" "}
                 <span role="img" aria-label="female coder emoji">
                   👩‍💻
                 </span>
-                {/* TODO: rework teaching bit */}
               </li>
               <li>
                 Excited about data analysis and statistics{" "}
@@ -82,27 +77,27 @@ export default function About() {
                 </span>
               </li>
               <li>
-                Belgian roots, with European research collaborations{" "}
-                {/* TODO: rework */}
+                Belgian roots, strong research collaborations with EU network{" "}
                 <span role="img" aria-label="belgian and european flags">
                   🇧🇪 🇪🇺
                 </span>
               </li>
-              {/* <li>
-                <a href="https://www.epfl.ch/labs/lipid/">EPFL</a> and{" "}
-                <a href="https://uclouvain.be/en/research-institutes/lab/archi-cli">
-                  UCLouvain
-                </a>{" "}
-                Alumni
+              <li>
+                Yogi, Hiker, Skier{" "}
+                <span role="img" aria-label="om symbol">
+                  🕉️
+                </span>
               </li>
-              <li>Based in the Pacific Northwest (US)</li> */}
-              <li>Yogi, Hiker, Skier</li> {/* TODO: rework + add movies books*/}
+              <li>
+                Historical and realist literature/movies geek{" "}
+                <span role="img" aria-label="movies and books emojis">
+                  🎬 📚
+                </span>
+              </li>
             </ul>
-            <h2>Education and Work History</h2>
-            <p>Todo..</p>
+            <Experience />
             <Teaching />
-            <h2>Service</h2>
-            <p>Todo..</p>
+            <Services />
           </div>
         </div>
       </div>

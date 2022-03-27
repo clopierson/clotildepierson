@@ -8,30 +8,32 @@ export default function Home() {
     <Layout
       pageTitle="Integrated Research on Daylighting Lab"
       pageDescription="The Integrated Research on Daylighting Laboratory (IRRADIANT LAB) is a cutting-edge lighting research center currently based in Oregon State University and headed by Dr. Clotilde Pierson."
+      pageUrl="https://clotildepierson.com"
     >
-      <div class="overflow-hidden absolute top-18 left-0 w-screen h-[70vh] -z-1 ">
+      <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh] -z-1 ">
         <Image
           src={backgroundImage}
           alt="Urban Daylight"
           placeholder="blur"
           layout="fill"
+          priority="true"
           objectFit="cover"
           quality={100}
         ></Image>
       </div>
-      <div class="absolute top-18 left-0 right-0 w-max mx-auto text-center top-1/3 bg-white/50 dark:bg-black/50 p-4 rounded">
-        <p class="text-xl sm:text-2xl uppercase tracking-widest">
+      <div className="absolute top-18 left-0 right-0 w-max mx-auto text-center top-1/3 bg-white/50 dark:bg-black/50 p-4 rounded">
+        <p className="text-xl sm:text-2xl uppercase tracking-widest">
           irradiant lab
         </p>
         <p>Integrated Research on Daylighting</p>
       </div>
-      <div class="h-[70vh]"></div>
-      <div class="my-8 prose dark:prose-invert mx-auto">
+      <div className="h-[70vh]"></div>
+      <div className="my-8 prose dark:prose-invert mx-auto">
         <h1>Integrated Research on Daylighting</h1>
         <p>
           Our mission is to advance knowledge of daylight in buildings to
-          enhance people's health, well-being, and performance, while minimizing
-          energy consumption.
+          enhance people&#39;s health, well-being, and performance, while
+          minimizing energy consumption.
         </p>
         <p>
           Today, we spend on average 90% of our time indoors. This completely
@@ -47,8 +49,8 @@ export default function Home() {
           This densification reduces our access to daylight, and impacts our
           window views.
         </p>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="col-start-1 ">
+        <div className="grid grid-cols-2 gap-4">
+          <div className="col-start-1 ">
             <FactCard
               illustration="/undraw_handcrafts_house.svg"
               size="60"
@@ -56,7 +58,7 @@ export default function Home() {
               description="time spent indoors"
             />
           </div>
-          <div class="col-start-2">
+          <div className="col-start-2">
             <FactCard
               illustration="/undraw_handcrafts_city.svg"
               size="112"

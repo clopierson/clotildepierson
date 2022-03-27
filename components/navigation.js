@@ -34,14 +34,14 @@ export const MenuItems = [
 export default function Navigation() {
   return (
     <nav>
-      {/* <div class="grid grid-cols-4 grid-rows-1 justify-items-center"> */}
-      <div class="flex gap-4 justify-center sm:justify-end">
-        <div class="capitalize text-sm no-underline sm:text-base sm:hidden hover:text-blue-300">
+      {/* <div className="grid grid-cols-4 grid-rows-1 justify-items-center"> */}
+      <div className="flex gap-4 justify-center sm:justify-end">
+        <div className="capitalize text-sm no-underline sm:text-base sm:hidden hover:text-blue-300">
           <Link href="/">home</Link>
         </div>
         {MenuItems.map((link) => (
           <div
-            class="capitalize text-sm no-underline sm:text-base inline hover:text-blue-300"
+            className="capitalize text-sm no-underline sm:text-base inline hover:text-blue-300"
             key={link.name}
           >
             <Link href={link.link}>{link.name}</Link>

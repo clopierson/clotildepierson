@@ -1,38 +1,38 @@
 export default function Socials() {
   return (
     <div>
+      <a href="mailto:clotilde.pierson@oregonstate.edu">
+        clotilde.pierson@oregonstate.edu
+      </a>
+      <br></br>
       <a
         href="https://www.researchgate.net/profile/Clotilde-Pierson"
         target="_blank"
         rel="noreferrer noopener"
-        class="text-sm"
       >
         Research Gate
       </a>{" "}
-      ·{" "}
+      /{" "}
       <a
-        href="https://github.com/clopierson"
+        href="https://scholar.google.com/citations?user=X8aroEgAAAAJ&hl=fr&oi=ao"
         target="_blank"
         rel="noreferrer noopener"
-        class="text-sm"
       >
-        GitHub
+        Google Scholar
       </a>{" "}
-      ·{" "}
+      <br></br>
       <a
         href="https://www.linkedin.com/in/clotilde-pierson/"
         target="_blank"
         rel="noreferrer noopener"
-        class="text-sm"
       >
         LinkedIn
       </a>{" "}
-      ·{" "}
+      /{" "}
       <a
         href="https://twitter.com/PiersonClotilde"
         target="_blank"
         rel="noreferrer noopener"
-        class="text-sm"
       >
         Twitter
       </a>

@@ -1,14 +1,16 @@
 import TeachCard from "../components/teachCard";
 
+// TODO: add correct course IDs and names
+
 export default function Teaching() {
   return (
-    <div>
+    <section>
       <h2>Teaching</h2>
-      {/* <div class="flex gap-4 flex-wrap"> */}
       <h3>2022</h3>
       <TeachCard
         position="Co-Instructor"
-        location="Oregon State University (USA)"
+        institution="Oregon State University"
+        institutionShort="OSU"
         courseId="CE419"
         courseName="Civil Engineering Professional Practice"
         degree="Undergraduate"
@@ -16,7 +18,8 @@ export default function Teaching() {
       />
       <TeachCard
         position="Co-Instructor"
-        location="Oregon State University (USA)"
+        institution="Oregon State University"
+        institutionShort="OSU"
         courseId="CE418"
         courseName="Civil Engineering Professional Practice"
         degree="Undergraduate"
@@ -25,7 +28,8 @@ export default function Teaching() {
       <h3>2021</h3>
       <TeachCard
         position="Guest Professor"
-        location="Vrije Universiteit Brussel (Belgium)"
+        institution="Vrije Universiteit Brussel"
+        institutionShort="VUB"
         courseId="000"
         courseName="Daylighting in Buildings"
         degree="Graduate"
@@ -33,7 +37,8 @@ export default function Teaching() {
       />
       <TeachCard
         position="Teaching Assistant"
-        location="École polytechnique fédérale de Lausanne (Switzerland)"
+        institution="École polytechnique fédérale de Lausanne"
+        institutionShort="EPFL"
         courseId="000"
         courseName="Comfort and Architecture: Sustainable Strategies"
         degree="Graduate"
@@ -41,8 +46,8 @@ export default function Teaching() {
       />
       <TeachCard
         position="Guest Lecturer"
-        location="Technische Universiteit Eindhoven (Netherlands)"
-        courseId="000"
+        institution="Technische Universiteit Eindhoven"
+        institutionShort="TU/e"
         courseName="Capita Selecta Lighting Technology"
         degree="Graduate"
         nStudents="40"
@@ -50,7 +55,8 @@ export default function Teaching() {
       <h3>2020</h3>
       <TeachCard
         position="Teaching Assistant"
-        location="École polytechnique fédérale de Lausanne (Switzerland)"
+        institution="École polytechnique fédérale de Lausanne"
+        institutionShort="EPFL"
         courseId="000"
         courseName="Comfort and Architecture: Sustainable Strategies"
         degree="Graduate"
@@ -58,7 +64,8 @@ export default function Teaching() {
       />
       <TeachCard
         position="Guest Lecturer"
-        location="Technische Universiteit Eindhoven (Netherlands)"
+        institution="Technische Universiteit Eindhoven"
+        institutionShort="TU/e"
         courseId="000"
         courseName="Physics of light and lighting design"
         degree="Undergraduate"
@@ -66,7 +73,8 @@ export default function Teaching() {
       />
       <TeachCard
         position="Guest Lecturer"
-        location="CEPT University (India)"
+        institution="Centre for Environmental Planning and Technology"
+        institutionShort="CEPT University"
         courseId="000"
         courseName="Lighting, Daylighting and Integrated Design Lab"
         degree="Graduate"
@@ -74,7 +82,8 @@ export default function Teaching() {
       />
       <TeachCard
         position="Guest Lecturer"
-        location="Technische Universiteit Eindhoven (Netherlands)"
+        institution="Technische Universiteit Eindhoven"
+        institutionShort="TU/e"
         courseId="000"
         courseName="Capita Selecta Lighting Technology"
         degree="Graduate"
@@ -83,13 +92,13 @@ export default function Teaching() {
       <h3>2019, 2017</h3>
       <TeachCard
         position="Guest Lecturer"
-        location="Université catholique de Louvain (Belgium)"
+        institution="Université catholique de Louvain"
+        institutionShort="UCLouvain"
         courseId="000"
         courseName="Architectural Research Seminar: Applied Physics"
         degree="Graduate"
         nStudents="40"
       />
-      {/* </div> */}
-    </div>
+    </section>
   );
 }

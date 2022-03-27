@@ -1,20 +1,27 @@
 export default function TeachCard({
   position,
-  location,
+  institution,
+  institutionShort,
   courseId,
   courseName,
   degree,
   nStudents,
 }) {
   return (
-    <div class="not-prose my-4">
-      <p class="font-bold">{position}</p>
-      {/* <p class="text-sm">{location}</p> */}
-      <p class="text-sm">
-        {courseId} · {courseName}
+    <div className="not-prose my-4">
+      <p className="font-bold">{position}</p>
+      <p className="text-sm">
+        {institution}
+        {typeof institutionShort === "string" && (
+          <span> ({institutionShort})</span>
+        )}
       </p>
-      <p class="text-sm">
-        {degree} (±{nStudents} students) · {location}
+      <p className="text-sm">
+        {typeof courseId === "string" && <span> {courseId} · </span>}
+        {courseName}
+      </p>
+      <p className="text-sm">
+        {degree} (±{nStudents} students)
       </p>
     </div>
   );
