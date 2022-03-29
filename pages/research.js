@@ -18,7 +18,6 @@ export default function Research() {
           layout="fill"
           priority="true"
           objectFit="cover"
-          quality={100}
         ></Image>
       </div>
       <div className="h-[70vh]"></div>

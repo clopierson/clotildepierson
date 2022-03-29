@@ -20,7 +20,6 @@ export default function Home() {
           layout="fill"
           priority="true"
           objectFit="cover"
-          quality={100}
         ></Image>
       </div>
       <div className="absolute left-0 right-0 w-max mx-auto text-center top-[36%] py-2 px-4 sm:py-3 sm:px-7 lg:py-5 lg:px-12 bg-gray-200/80 dark:bg-gray-700/80">

@@ -32,7 +32,6 @@ export default function Publications() {
           priority="true"
           layout="fill"
           objectFit="cover"
-          quality={100}
         ></Image>
       </div>
       <div className="h-[70vh]"></div>
