@@ -1,13 +1,15 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import backgroundImage from "../public/background-image-4.jpg";
+import backgroundImage from "../public/background-image.jpg";
 import FactCard from "../components/factCard";
+import IrradiantLab from "../components/irradiantLab";
+import PictureCopyright from "../components/pictureCopyright";
 
 export default function Home() {
   return (
     <Layout
       pageTitle="Integrated Research on Daylighting Lab"
-      pageDescription="The Integrated Research on Daylighting Laboratory (IRRADIANT LAB) is a cutting-edge lighting research center currently based in Oregon State University and headed by Dr. Clotilde Pierson."
+      pageDescription="The Integrated Research on Daylighting Laboratory (irradiant lab) is a cutting-edge lighting research center currently based in Oregon State University and headed by Dr. Clotilde Pierson."
       pageUrl="https://clotildepierson.com"
     >
       <div className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh] -z-1 ">
@@ -21,9 +23,9 @@ export default function Home() {
           quality={100}
         ></Image>
       </div>
-      <div className="absolute left-0 right-0 w-max mx-auto text-center text-gray-900 top-[36%] p-4 bg-gray-300/50 rounded">
-        <p className="font-bold text-xl sm:text-3xl lg:text-5xl uppercase tracking-widest">
-          irradiant lab
+      <div className="absolute left-0 right-0 w-max mx-auto text-center top-[36%] py-2 px-4 sm:py-3 sm:px-7 lg:py-5 lg:px-12 bg-gray-200/80 dark:bg-gray-700/80">
+        <p className="font-bold text-xl sm:text-3xl lg:text-5xl">
+          <IrradiantLab />
         </p>
         <p>Integrated Research on Daylighting</p>
       </div>
@@ -85,10 +87,10 @@ export default function Home() {
           the lifetime risk of developing myopia in children.
         </p>
         <p>
-          The IRRADIANT lab brings together insights from different disciplines,
-          including engineering, to architecture, chronobiology, computer
-          science, urban planning, neuroscience, psychophysics, and public
-          health, to further understand how:
+          The <IrradiantLab /> brings together insights from different
+          disciplines, including engineering, to architecture, chronobiology,
+          computer science, urban planning, neuroscience, psychophysics, and
+          public health, to further understand how:
         </p>
         <ul>
           <li>
@@ -109,9 +111,12 @@ export default function Home() {
           </strong>
           .
         </p>
-        <p className="text-xs italic text-gray-500 -mb-14">
-          Photo by <a href="https://unsplash.com/@issrur">rur</a> on{" "}
-          <a href="https://unsplash.com/photos/b3TVjgXWSkI">Unsplash</a>
+        <p className=" -mb-14">
+          <PictureCopyright
+            authorName="rur"
+            authorUrl="https://unsplash.com/@issrur"
+            pictureUrl="https://unsplash.com/photos/b3TVjgXWSkI"
+          />
         </p>
       </div>
     </Layout>

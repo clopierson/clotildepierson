@@ -1,12 +1,13 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import backgroundImage from "../public/background-image-research-9.jpg";
+import backgroundImage from "../public/background-image-research.jpg";
+import PictureCopyright from "../components/pictureCopyright";
 
 export default function Research() {
   return (
     <Layout
       pageTitle="Research | Integrated Research on Daylighting Lab"
-      pageDescription="Research focus and topics of the Integrated Research on Daylighting Lab."
+      pageDescription="Research focus and topics of the Integrated Research on Daylighting Lab (irradiant lab)."
       pageUrl="https://clotildepierson.com/research"
     >
       <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh] -z-1 ">
@@ -24,9 +25,12 @@ export default function Research() {
       <div className="my-8 prose dark:prose-invert mx-auto">
         <h1>Research Focus</h1>
         <p>Coming soon!</p>
-        <p className="text-xs italic text-gray-500 -mb-14">
-          Photo by <a href="https://unsplash.com/@alexblock">Alex Block</a> on{" "}
-          <a href="https://unsplash.com/photos/hp74PknYyXE">Unsplash</a>
+        <p className=" -mb-14">
+          <PictureCopyright
+            authorName="Alex Block"
+            authorUrl="https://unsplash.com/@alexblock"
+            pictureUrl="https://unsplash.com/photos/hp74PknYyXE"
+          />
         </p>
       </div>
     </Layout>

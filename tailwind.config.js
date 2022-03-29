@@ -9,10 +9,10 @@ module.exports = {
         DEFAULT: {
           css: {
             a: {
-              color: theme("colors.blue.600"),
+              color: theme("colors.blue.400"),
               fontWeight: "400",
               "&:hover": {
-                color: theme("colors.blue.500"),
+                color: theme("colors.blue.300"),
                 fontWeight: "400",
                 textDecoration: "none",
               },

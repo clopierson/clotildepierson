@@ -5,6 +5,7 @@ import Teaching from "../components/teaching";
 import Experience from "../components/experience";
 import Services from "../components/service";
 import Socials from "../components/socials";
+import IrradiantLab from "../components/irradiantLab";
 
 export default function About() {
   return (
@@ -18,9 +19,10 @@ export default function About() {
           <div className="prose dark:prose-invert">
             <h1>Clotilde Pierson</h1>
             <p>
-              Dr. Pierson is the Principal Investigator of the Irradiant Lab and
-              an Assistant Professor of Architectural Engineering in the School
-              of Civil and Construction Engineering at Oregon State University.
+              Dr. Pierson is the Principal Investigator of the <IrradiantLab />{" "}
+              and an Assistant Professor of Architectural Engineering in the
+              School of Civil and Construction Engineering at Oregon State
+              University.
             </p>
             <p className="text-sm">
               Office{" "}

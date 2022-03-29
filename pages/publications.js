@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import backgroundImage from "../public/background-image-publications-5.jpg";
+import backgroundImage from "../public/background-image-publications.jpg";
+import PictureCopyright from "../components/pictureCopyright";
 
 // export const articles = [
 //   {
@@ -20,7 +21,7 @@ export default function Publications() {
   return (
     <Layout
       pageTitle="Publications | Integrated Research on Daylighting Lab"
-      pageDescription="All peer-reviewed publications by the Integrated Research on Daylighting Lab. Includes journal ans conference papers, contributions to conferences and workshops, and datasets."
+      pageDescription="All peer-reviewed publications by the Integrated Research on Daylighting Lab (irradiant lab). Includes journal ans conference papers, contributions to conferences and workshops, and datasets."
       pageUrl="https://clotildepierson.com/publications"
     >
       <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh] -z-1 ">
@@ -273,9 +274,12 @@ export default function Publications() {
           Optimization of Facade Wall Building Systems in Walloon Region.
           International PLEA Conference, Bologna, Italy, Sept. 9-11, 2015.
         </p>
-        <p className="text-xs italic text-gray-500 -mb-14">
-          Photo by <a href="https://unsplash.com/@sylviasyang">Sylvia Yang</a>{" "}
-          on <a href="https://unsplash.com/photos/_ar2ENzmqb0">Unsplash</a>
+        <p className=" -mb-14">
+          <PictureCopyright
+            authorName="Sylvia Yang"
+            authorUrl="https://unsplash.com/@sylviasyang"
+            pictureUrl="https://unsplash.com/photos/_ar2ENzmqb0"
+          />
         </p>
       </div>
     </Layout>
