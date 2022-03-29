@@ -1,7 +1,10 @@
 // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
 const ContentSecurityPolicy = `
   default-src 'self';
+  style-src 'self' vercel.app;
+  img-src 'self' vercel.app;
   script-src 'self' plausible.io;
+  connect-src 'self' plausible.io vitals.vercel-insights.com;
 `;
 
 const securityHeaders = [
