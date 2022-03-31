@@ -2,17 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
-  font-family: "Major Mono Display";
-  src: url("../public/fonts/MajorMonoDisplay-Regular.ttf");
-}
-@font-face {
-  font-family: "Fira Code";
-  src: url("../public/fonts/FiraCode-VariableFont_wght.ttf");
-} */
 @font-face {
   font-family: "Spartan";
-  src: url("../public/fonts/Spartan/Spartan-Bold.ttf");
+  /* src: url("../public/fonts/Spartan/Spartan-Bold.ttf"); */
+  src: url("../public/fonts/Spartan/Spartan-Bold-Optimized.woff");
   font-style: bold;
   font-weight: 700;
   font-display: swap;

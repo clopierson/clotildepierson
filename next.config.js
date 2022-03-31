@@ -1,12 +1,11 @@
 // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
 const ContentSecurityPolicy = `
-  default-src 'self';
+  default-src 'self' ;
   style-src 'self' 'unsafe-inline';
   img-src 'self' data:;
-  script-src 'self' plausible.io ;
+  script-src 'self' plausible.io;
   connect-src 'self' plausible.io vitals.vercel-insights.com;
 `;
-
 // vercel.app *.vercel.app
 // 'unsafe-eval'
 
@@ -35,6 +34,7 @@ const securityHeaders = [
     key: "Permissions-Policy",
     value: "camera=(), microphone=()",
   },
+  // COMMENT IN DEV
   {
     key: "Content-Security-Policy",
     value: ContentSecurityPolicy.replace(/\s{2,}/g, " ").trim(),

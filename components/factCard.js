@@ -4,6 +4,7 @@ export default function FactCard({ illustration, size, fact, description }) {
   // if (size > 111) {
   //     throw new Error(`Size cannot exceed 112px.`);
   //   }
+  // TODO: Try NOT using next/image for SVGs.
   return (
     <div className="text-center rounded bg-gray-100 p-4 pb-8 max-w-xs h-full dark:prose hover:shadow-md dark:hover:shadow-gray-500">
       <div className="flex h-28 w-28 justify-center mx-auto">

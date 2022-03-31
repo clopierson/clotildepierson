@@ -42,8 +42,11 @@ export default function Layout({
           content="@PiersonClotilde"
           key="twhandle"
         />
+        {/* <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+        </style> */}
       </Head>
-      {/* TODO: remove plausible when not in prod? */}
       <Script
         defer
         data-domain="clotildepierson.com"
