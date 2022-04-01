@@ -24,12 +24,12 @@ export const undergradStudents = [
   // {
   //   name: "Spencer Kime",
   //   description: "Coming soon!",
-  //   email:"",
+  //   email: "",
   //   picture: "/undraw_handcrafts_man.svg",
   // },
   // {
   //   name: "Paul Matipwiri",
-  //   email:"",
+  //   email: "",
   //   description: "Coming soon!",
   //   picture: "/undraw_handcrafts_man.svg",
   // },

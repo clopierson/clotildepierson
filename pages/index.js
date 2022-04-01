@@ -4,6 +4,8 @@ import backgroundImage from "../public/background-image.jpg";
 import FactCard from "../components/factCard";
 import IrradiantLab from "../components/irradiantLab";
 import PictureCopyright from "../components/pictureCopyright";
+import House from "../public/undraw_handcrafts_house.svg";
+import City from "../public/undraw_handcrafts_city.svg";
 
 // TODO: fix overflow on really narrow screen (e.g. galaxy fold), e.g. publications
 
@@ -56,20 +58,14 @@ export default function Home() {
         </p>
         <div className="grid grid-cols-2 gap-4">
           <div className="col-start-1 ">
-            <FactCard
-              illustration="/undraw_handcrafts_house.svg"
-              size="60"
-              fact="90%"
-              description="time spent indoors"
-            />
+            <FactCard fact="90%" description="time spent indoors">
+              <House />
+            </FactCard>
           </div>
           <div className="col-start-2">
-            <FactCard
-              illustration="/undraw_handcrafts_city.svg"
-              size="112"
-              fact="68%"
-              description="living in cities by 2050"
-            />
+            <FactCard fact="68%" description="living in cities by 2050">
+              <City />
+            </FactCard>
           </div>
         </div>
         <p>
