@@ -36,7 +36,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="mt-6 row-start-2 sm:row-start-1 sm:col-start-7 sm:col-span-4 md:col-start-6 place-self-center -z-10">
+        <div className="mt-6 row-start-2 sm:row-start-1 sm:col-start-7 sm:col-span-4 md:col-start-6 place-self-center">
           <Image
             className="rounded-full"
             src={profilePic}
