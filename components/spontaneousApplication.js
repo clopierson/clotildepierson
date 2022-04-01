@@ -2,7 +2,7 @@ import IrradiantLab from "./irradiantLab";
 
 export default function SpontaneousApplication() {
   return (
-    <article className="rounded bg-blue-100 prose p-3 sm:p-6 dark:prose hover:shadow-md dark:hover:shadow-gray-500">
+    <article className="rounded bg-slate-100 dark:bg-slate-700 p-3 sm:p-6 shadow-md dark:shadow-black/50">
       <h1 className="m-0 text-lg">Spontaneous Applications</h1>
       <p>
         If you are interested in doing research with me or the <IrradiantLab />{" "}
