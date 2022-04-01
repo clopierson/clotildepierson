@@ -4,8 +4,8 @@ export default function Recruiting() {
   // TODO: add form to Microsoft forms and files.
   // TODO: make the card collapsible (accordion style)
   return (
-    <div className="rounded bg-blue-100 prose p-6 pb-1 dark:prose hover:shadow-md dark:hover:shadow-gray-500">
-      <h2 className="text-center">Open Ph.D. Positions! Apply Now!</h2>
+    <div className="rounded bg-slate-100 dark:bg-slate-700 p-3 sm:p-6 shadow-md dark:shadow-black/50">
+      <h2 className="text-center mt-0">Open Ph.D. Positions! Apply Now!</h2>
       <p>
         We have two open Ph.D. positions in the lab for Fall 2022. The research
         topics revolve around:
@@ -36,13 +36,14 @@ export default function Recruiting() {
             (link to form).
           </p>
         </div>
-        <div>
+        <div className="aspect-square max-h-28">
           <Image
+            className="invert-0 dark:invert dark:grayscale dark:brightness-50"
             src="/undraw_handcrafts_pinned_file.svg"
             alt=""
-            layout="fixed"
-            height={112}
-            width={112}
+            layout="intrinsic"
+            height={200}
+            width={200}
           />
         </div>
       </div>

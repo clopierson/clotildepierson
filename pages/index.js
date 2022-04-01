@@ -5,6 +5,8 @@ import FactCard from "../components/factCard";
 import IrradiantLab from "../components/irradiantLab";
 import PictureCopyright from "../components/pictureCopyright";
 
+// TODO: fix overflow on really narrow screen (e.g. galaxy fold), e.g. publications
+
 export default function Home() {
   return (
     <Layout
@@ -12,7 +14,7 @@ export default function Home() {
       pageDescription="The Integrated Research on Daylighting Laboratory (irradiant lab) is a cutting-edge lighting research center currently based in Oregon State University and headed by Dr. Clotilde Pierson."
       pageUrl="https://clotildepierson.com"
     >
-      <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh] -z-1 ">
+      <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
           alt="Urban Daylight"
@@ -56,7 +58,6 @@ export default function Home() {
           <div className="col-start-1 ">
             <FactCard
               illustration="/undraw_handcrafts_house.svg"
-              size="60"
               fact="90%"
               description="time spent indoors"
             />
@@ -64,7 +65,6 @@ export default function Home() {
           <div className="col-start-2">
             <FactCard
               illustration="/undraw_handcrafts_city.svg"
-              size="112"
               fact="68%"
               description="living in cities by 2050"
             />

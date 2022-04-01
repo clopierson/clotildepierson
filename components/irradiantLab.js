@@ -8,14 +8,14 @@ export default function IrradiantLab({ link }) {
       {typeof link === "string" && (
         <Link href={link}>
           <a>
-            <span className="dark:text-white text-gray-900">{irradiant}</span>
+            <span className="text-inherit">{irradiant}</span>
             <span className="text-blue-400">{lab}</span>{" "}
           </a>
         </Link>
       )}
       {typeof link === "undefined" && (
         <span>
-          <span className="dark:text-white text-gray-900">{irradiant}</span>
+          <span className="text-inherit">{irradiant}</span>
           <span className="text-blue-400">{lab}</span>
         </span>
       )}

@@ -24,7 +24,7 @@ export default function Publications() {
       pageDescription="All peer-reviewed publications by the Integrated Research on Daylighting Lab (irradiant lab). Includes journal ans conference papers, contributions to conferences and workshops, and datasets."
       pageUrl="https://clotildepierson.com/publications"
     >
-      <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh] -z-1 ">
+      <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
           alt="Urban Daylight"
