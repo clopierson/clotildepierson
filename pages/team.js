@@ -42,7 +42,7 @@ export default function ReseTeamarch() {
       pageDescription="Lists current and former staff of the Integrated Research on Daylighting Lab (irradiant lab)."
       pageUrl="https://clotildepierson.com/team"
     >
-      <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh] -z-1 ">
+      <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh] -z-10">
         <Image
           src={backgroundImage}
           alt="Urban Daylight"

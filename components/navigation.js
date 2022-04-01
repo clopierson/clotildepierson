@@ -5,9 +5,6 @@ import "@reach/dialog/styles.css";
 import { ChevronUp, X, Menu } from "react-feather";
 import VisuallyHidden from "@reach/visually-hidden";
 import IrradiantLab from "./irradiantLab.js";
-// import Portal from "@reach/portal";
-
-// TODO: make the fixed buttons appear on top of the background image
 
 export const MenuItems = [
   {
@@ -42,19 +39,18 @@ export default function Navigation() {
       <div className="hidden sm:flex sm:justify-end sm:gap-4">
         {MenuItems.map((link) => (
           <div
-            className="capitalize text-sm no-underline sm:text-base inline hover:text-blue-500"
+            className="capitalize text-sm no-underline sm:text-base inline hover:text-blue-300"
             key={link.name}
           >
             <Link href={link.link}>{link.name}</Link>
           </div>
         ))}
       </div>
-      {/* <Portal> */}
       {/* Back to top Non-Mobile */}
       <a
         href="#top"
         aria-label="back to the top of the page"
-        className="hidden sm:block fixed px-2 py-2 text-sm bottom-6 right-6 text-center rounded shadow-md opacity-100 text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-500  dark:shadow-gray-500"
+        className="hidden sm:block fixed px-2 py-2 text-sm bottom-6 right-6 text-center rounded shadow-md text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300  dark:shadow-black/50"
       >
         Back to Top
       </a>
@@ -62,33 +58,32 @@ export default function Navigation() {
       <a
         href="#top"
         aria-label="back to the top of the page"
-        className="px-2 py-2 text-sm fixed bottom-6 right-20 block text-center rounded opacity-100 text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-500 sm:hidden shadow-md dark:shadow-gray-500"
+        className="px-2 py-2 text-sm fixed bottom-6 right-20 block text-center rounded text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300 sm:hidden shadow-md dark:shadow-black/50"
       >
         <VisuallyHidden>Back to Top</VisuallyHidden>
         <ChevronUp />
       </a>
       {/* Open menu on Mobile */}
       <button
-        className="px-2 py-2 text-sm fixed bottom-6 right-6 block text-center rounded opacity-100 text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-500 sm:hidden shadow-md dark:shadow-gray-500"
+        className="px-2 py-2 text-sm fixed bottom-6 right-6 block text-center rounded text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300 sm:hidden shadow-md dark:shadow-black/50"
         onClick={open}
       >
         <VisuallyHidden>Open Navigation Menu</VisuallyHidden>
         <Menu />
       </button>
-      {/* </Portal> */}
       {/* Mobile menu overlay */}
       <DialogOverlay isOpen={showDialog} onDismiss={close}>
         <DialogContent
           aria-label="mobile navigation menu"
-          className="fixed top-0 right-0 !m-0 h-full !w-[75%] p-6 shadow-black"
+          className="fixed top-0 right-0 !m-0 h-full !w-[75%] dark:!bg-slate-800"
         >
           <div className="grid gap-4 h-full content-end">
-            <div className="no-underline sm:text-base sm:hidden hover:text-blue-500">
+            <div className="no-underline sm:text-base sm:hidden hover:text-blue-300">
               <IrradiantLab link="/" />
             </div>
             {MenuItems.map((link) => (
               <div
-                className="capitalize no-underline sm:text-base inline hover:text-blue-500"
+                className="capitalize no-underline sm:text-base inline hover:text-blue-300"
                 key={link.name}
               >
                 <Link href={link.link}>{link.name}</Link>
@@ -96,7 +91,7 @@ export default function Navigation() {
             ))}
           </div>
           <button
-            className="px-2 py-2 text-sm fixed bottom-6 right-6 block text-center rounded opacity-100 text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-500 sm:hidden shadow-md dark:shadow-gray-500"
+            className="px-2 py-2 text-sm fixed bottom-6 right-6 block text-center rounded text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300 sm:hidden shadow-md dark:shadow-black/50"
             onClick={close}
           >
             <VisuallyHidden>Close Navigation Menu</VisuallyHidden>
