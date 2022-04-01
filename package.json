@@ -8,6 +8,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reach/dialog": "^0.16.2",
+    "@reach/portal": "^0.16.2",
+    "@reach/skip-nav": "^0.16.0",
     "@reach/tooltip": "^0.16.2",
     "@reach/visually-hidden": "^0.16.0",
     "next": "12.1.0",

@@ -7,7 +7,7 @@ export default function FactCard({ illustration, size, fact, description }) {
   // TODO: Try NOT using next/image for SVGs.
   return (
     <div className="text-center rounded bg-gray-100 p-4 pb-8 max-w-xs h-full dark:prose hover:shadow-md dark:hover:shadow-gray-500">
-      <div className="flex h-28 w-28 justify-center mx-auto">
+      <div className="flex justify-center mx-auto">
         <Image
           src={illustration}
           alt=""
