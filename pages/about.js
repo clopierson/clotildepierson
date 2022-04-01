@@ -19,20 +19,17 @@ export default function About() {
           <div className="prose dark:prose-invert">
             <h1>Clotilde Pierson</h1>
             <p>
-              Dr. Pierson is the Principal Investigator of the <IrradiantLab />{" "}
-              and an Assistant Professor of Architectural Engineering in the
-              School of Civil and Construction Engineering at Oregon State
-              University.
-            </p>
-            <p className="text-sm">
-              Office{" "}
+              Dr. Pierson is the Principal Investigator of the&nbsp;
+              <IrradiantLab /> and an Assistant Professor of Architectural
+              Engineering in the School of Civil and Construction Engineering at{" "}
               <a
-                href="https://goo.gl/maps/5w7bn4iLvLNsjUjM6"
                 target="_blank"
                 rel="noreferrer noopener"
+                href="https://cce.oregonstate.edu/people/clotilde-pierson"
               >
-                Owen 305
+                Oregon State University
               </a>
+              .
             </p>
             <div className="text-sm">
               <Socials />
@@ -91,7 +88,7 @@ export default function About() {
                 </span>
               </li>
               <li>
-                Historical and realist literature/movies geek{" "}
+                Historical and realist literature/movie geek{" "}
                 <span role="img" aria-label="movies and books emojis">
                   🎬 📚
                 </span>

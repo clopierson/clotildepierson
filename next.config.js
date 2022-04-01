@@ -1,13 +1,10 @@
 // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
-const ContentSecurityPolicy = `
-  default-src 'self' ;
-  style-src 'self' 'unsafe-inline';
-  img-src 'self' data:;
-  script-src 'self' plausible.io;
-  connect-src 'self' plausible.io vitals.vercel-insights.com;
-`;
-// vercel.app *.vercel.app
-// 'unsafe-eval'
+
+// disables the security policy when running npm run dev
+const ContentSecurityPolicy =
+  process.env.NODE_ENV === "development"
+    ? ``
+    : `default-src 'self' ; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src 'self' plausible.io; connect-src 'self' plausible.io vitals.vercel-insights.com;`;
 
 const securityHeaders = [
   {
@@ -34,7 +31,6 @@ const securityHeaders = [
     key: "Permissions-Policy",
     value: "camera=(), microphone=()",
   },
-  // COMMENT IN DEV
   {
     key: "Content-Security-Policy",
     value: ContentSecurityPolicy.replace(/\s{2,}/g, " ").trim(),

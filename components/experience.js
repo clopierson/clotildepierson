@@ -2,17 +2,17 @@ import ExperienceCard from "./experienceCard";
 
 export const phdMobility = [
   {
-    name: "École polytechnique fédérale de Lausanne",
+    name: "École polytechnique fédérale de Lausanne (EPFL)",
     location: "Switzerland",
     length: "one year",
   },
   {
-    name: "Universidad del Bío-Bío",
+    name: "Universidad del Bío-Bío (UBioBio)",
     location: "Chile",
     length: "one month",
   },
   {
-    name: "Tokai University",
+    name: "Tokai University (UTokai)",
     location: "Japan",
     length: "one month",
   },
@@ -20,7 +20,7 @@ export const phdMobility = [
 
 export const postdocMobility = [
   {
-    name: "Technische Universiteit Eindhoven",
+    name: "Technische Universiteit Eindhoven (TU/e)",
     location: "Netherlands",
     length: "four months",
   },
@@ -53,7 +53,8 @@ export default function Experience() {
         experience="Postdoc Researcher"
         institution="École polytechnique fédérale de Lausanne"
         institutionShort="EPFL"
-        department="Faculté de l'environnement naturel, architectural et construit (ENAC)"
+        //department="Faculté de l'environnement naturel, architectural et construit (ENAC)"
+        department="Laboratory of Integrated Performance in Design (LIPID)"
         location="Lausanne, Switzerland"
         startDate="Dec 2019"
         endDate="Dec 2021"
@@ -63,14 +64,15 @@ export default function Experience() {
         experience="PhD Engineering Sciences and Technology"
         institution="Université catholique de Louvain"
         institutionShort="UCLouvain"
-        department="Faculté d'architecture, d'ingénierie architecturale, d'urbanisme (LOCI)"
+        // department="Faculté d'architecture, d'ingénierie architecturale, d'urbanisme (LOCI)"
+        department="Architecture et Climat (ARCH-CLI)"
         location="Louvain-la-Neuve, Belgium"
         startDate="Oct 2015"
         endDate="Nov 2019"
         mobility={phdMobility}
       />
       <ExperienceCard
-        experience="Architect"
+        experience="Junior Architect"
         institution="La Verte Voie - Collectif d'Architectes"
         location="Ottignies, Belgium"
         startDate="Jan 2015"
@@ -80,7 +82,8 @@ export default function Experience() {
         experience="Research Assistant"
         institution="Université catholique de Louvain"
         institutionShort="UCLouvain"
-        department="Faculté d'architecture, d'ingénierie architecturale, d'urbanisme (LOCI)"
+        // department="Faculté d'architecture, d'ingénierie architecturale, d'urbanisme (LOCI)"
+        department="Architecture et Climat (ARCH-CLI)"
         location="Louvain-la-Neuve, Belgium"
         startDate="Oct 2014"
         endDate="Sept 2015"

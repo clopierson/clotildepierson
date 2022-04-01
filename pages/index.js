@@ -12,7 +12,7 @@ export default function Home() {
       pageDescription="The Integrated Research on Daylighting Laboratory (irradiant lab) is a cutting-edge lighting research center currently based in Oregon State University and headed by Dr. Clotilde Pierson."
       pageUrl="https://clotildepierson.com"
     >
-      <div className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh] -z-1 ">
+      <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh] -z-1 ">
         <Image
           src={backgroundImage}
           alt="Urban Daylight"
@@ -21,16 +21,18 @@ export default function Home() {
           priority="true"
           objectFit="cover"
         ></Image>
-      </div>
-      <div className="absolute left-0 right-0 w-max mx-auto text-center top-[36%] py-2 px-4 sm:py-3 sm:px-7 lg:py-5 lg:px-12 bg-gray-200/80 dark:bg-gray-700/80">
+      </picture>
+      <div className="absolute left-0 right-0 w-fit mx-auto text-center top-[36%] py-2 px-4 sm:py-3 sm:px-7 lg:py-5 lg:px-12 bg-gray-200/80 dark:bg-gray-700/80">
         <p className="font-bold text-xl sm:text-3xl lg:text-5xl">
           <IrradiantLab />
         </p>
-        <p>Integrated Research on Daylighting</p>
+        <p>
+          Laboratory&nbsp;of&nbsp;Integrated Research&nbsp;on&nbsp;Daylighting
+        </p>
       </div>
       <div className="h-[70vh]"></div>
       <div className="my-8 prose dark:prose-invert mx-auto">
-        <h1>Integrated Research on Daylighting</h1>
+        <h1>Laboratory of Integrated Research on Daylighting</h1>
         <p>
           Our mission is to advance knowledge of daylighting in buildings to
           enhance people&#39;s health, well-being, and performance, while
@@ -104,11 +106,8 @@ export default function Home() {
         <p>
           Our long-term goal is to translate fundamental knowledge about human
           responses to light and the need to reduce energy consumption into{" "}
-          <strong>
-            strategies for the development of a more sustainable built
-            environment and innovative daylighting solutions
-          </strong>
-          .
+          strategies for the development of a more sustainable built environment
+          and innovative daylighting solutions.
         </p>
         <p className=" -mb-14">
           <PictureCopyright

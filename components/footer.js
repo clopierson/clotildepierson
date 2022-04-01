@@ -12,12 +12,9 @@ export default function Footer() {
           <div>
             Developed by <a href="https://alexulbrich.com">Alex Ulbrich</a>{" "}
             using <a href="https://nextjs.org">Next.js</a> and{" "}
-            <a href="https://tailwindcss.com">tailwindcss</a>.
+            <a href="https://tailwindcss.com">tailwindcss</a>. Deployed on{" "}
+            <a href="https://vercel.com/">Vercel</a>.
           </div>
-          <div>
-            Deployed on <a href="https://vercel.com/">Vercel</a>.
-          </div>
-          {/* <div>Carbon-neutral website.</div> */}
           <div>Please consider dark-mode to save energy.</div>
         </div>
       </div>

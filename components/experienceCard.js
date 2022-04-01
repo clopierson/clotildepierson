@@ -1,6 +1,9 @@
 import Tooltip from "@reach/tooltip";
 import "@reach/tooltip/styles.css";
 
+// TODO: tooltip mobile not supported, to be removed
+// e.g. add hidden lg:inline to button? or tooltip?
+
 export default function ExperienceCard({
   experience,
   altExpertience,
@@ -18,7 +21,7 @@ export default function ExperienceCard({
         {experience}
         {typeof altExpertience === "string" && (
           <Tooltip label={altExpertience}>
-            <button className="font-bold text-blue-400 hover:text-blue-300">
+            <button className="hidden lg:inline font-bold text-blue-400 hover:text-blue-300">
               *
             </button>
           </Tooltip>
@@ -54,7 +57,8 @@ export default function ExperienceCard({
           <ul className="text-sm marker:text-neutral-300 dark:marker:text-slate-600">
             {mobility.map((item) => (
               <li className="list-disc list-inside" key={item.name}>
-                {item.name} ({item.location}, {item.length})
+                {item.name}
+                {/* {item.name} ({item.location}, {item.length}) */}
               </li>
             ))}
           </ul>

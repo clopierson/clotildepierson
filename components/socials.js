@@ -22,7 +22,8 @@ export default function Socials() {
       >
         Google Scholar
       </a>{" "}
-      <br></br>
+      <span className="hidden sm:inline md:hidden lg:inline"> / </span>{" "}
+      <br className="sm:hidden md:inline lg:hidden"></br>
       <a
         href="https://www.linkedin.com/in/clotilde-pierson/"
         target="_blank"
