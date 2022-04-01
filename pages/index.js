@@ -35,21 +35,21 @@ export default function Home() {
         <h1>Laboratory of Integrated Research on Daylighting</h1>
         <p>
           Our mission is to advance knowledge of daylighting in buildings to
-          enhance people&#39;s health, well-being, and performance, while
-          minimizing energy consumption.
+          enhance people's health, well-being, and performance, while minimizing
+          energy consumption.
         </p>
         <p>
           Today, we spend on average 90% of our time indoors. This completely
           flips our relationship to light, compared to an outdoor lifestyle. We
           get much less light during the daytime, and much more in the evening.
-          Other aspects of our visual environments also changes, such as the
-          spectral content and distribution of light.
+          Other aspects of our visual environments have also changed, such as
+          the spectral content and distribution of light.
         </p>
         <p>
           By 2050, 68% of the global population is expected to live in cities. A
           strong urban densification is taking place. Buildings become
           increasingly taller. Homes are more compact and sit closer together.
-          This densification reduces our access to daylight, and impacts our
+          This densification reduces our access to daylight and impacts our
           window views.
         </p>
         <div className="grid grid-cols-2 gap-4">
@@ -75,39 +75,38 @@ export default function Home() {
           affect our health, well-being, and performance.
         </p>
         <p>
-          Light causes visual and non-visual responses in humans through
-          photoreceptors in the eye. It enables us to see, it regulates our body
-          internal clock (circadian rhythm), and it affects our alertness level,
-          among other things.
+          Light induces visual and non-visual responses in humans through
+          different photoreceptors in the eye. It enables us to see, it
+          regulates our body internal clock (circadian rhythm), and it affects
+          our alertness level, among other things.
         </p>
         <p>
-          A window view also offers many benefits. For example, it helps us
+          A window view also offers many benefits. For instance, it helps us
           create cognitive maps to avoid disorientation and improve memory
           formation and retrieval. It provides a mental portal that can help
-          relive stress and prevent the onset of mental illnesses. It reduces
+          relieve stress and prevent the onset of mental illnesses. It reduces
           the lifetime risk of developing myopia in children.
         </p>
         <p>
           The <IrradiantLab /> brings together insights from different
-          disciplines, including engineering, to architecture, chronobiology,
-          computer science, urban planning, neuroscience, psychophysics, and
-          public health, to further understand how:
+          disciplines, including engineering, architecture, chronobiology,
+          computer science, urban planning, neuroscience, psychophysics, or
+          again public health, to further understand and optimize how:
         </p>
         <ul>
           <li>
-            buildings, cities, and climate affect our visual environment, and
+            windows, buildings, cities, and climate affect our visual
+            environment, and
           </li>
           <li>our visual environment affects us.</li>
         </ul>
+        {/* TODO: add illustrations */}
         <p>
           To that end, we use both field and laboratory experiments, as well as
-          numerical modeling.
-        </p>
-        <p>
-          Our long-term goal is to translate fundamental knowledge about human
-          responses to light and the need to reduce energy consumption into{" "}
-          strategies for the development of a more sustainable built environment
-          and innovative daylighting solutions.
+          numerical modeling. Our goal is to translate fundamental knowledge
+          about human responses to light and the need to reduce energy
+          consumption into strategies for the development of a more sustainable
+          built environment and innovative daylighting solutions.
         </p>
         <p className=" -mb-14">
           <PictureCopyright

@@ -2,8 +2,39 @@ import Layout from "../components/layout";
 import Image from "next/image";
 import backgroundImage from "../public/background-image-team.jpg";
 import PictureCopyright from "../components/pictureCopyright";
+import Recruiting from "../components/recruiting";
+import SpontaneousApplication from "../components/spontaneousApplication";
+import TeamCard from "../components/teamCard";
 
-// import Recruiting from "../components/recruiting";
+// default pictures if none:
+// "/undraw_handcrafts_man.svg"
+// "/undraw_handcrafts_woman.svg"
+
+export const principalInvestigator = [
+  {
+    name: "Clotilde Pierson",
+    description: "/about",
+    // email: "clotilde.pierson@oregonstate.edu",
+    picture: "/profile-picture-pierson.jpg",
+  },
+];
+export const postdocs = [];
+export const phdStudents = [];
+export const masterStudents = [];
+export const undergradStudents = [
+  {
+    //name: "Spencer Kime",
+    name: "#1",
+    description: "Coming soon!",
+    picture: "/undraw_handcrafts_man.svg",
+  },
+  {
+    // name: "Paul Matipwiri",
+    name: "#2",
+    description: "Coming soon!",
+    picture: "/undraw_handcrafts_man.svg",
+  },
+];
 
 export default function ReseTeamarch() {
   return (
@@ -25,8 +56,75 @@ export default function ReseTeamarch() {
       <div className="h-[70vh]"></div>
       <div className="my-8 prose dark:prose-invert mx-auto">
         <h1>Team</h1>
-        <p>Coming soon!</p>
-        <p className=" -mb-14">
+        <Recruiting />
+        {principalInvestigator.length !== 0 && (
+          <div>
+            <h2>Principal Investigator</h2>
+            {principalInvestigator.map((pi) => (
+              <TeamCard
+                name={pi.name}
+                description={pi.description}
+                email={pi.email}
+                picture={pi.picture}
+              />
+            ))}
+          </div>
+        )}
+        {postdocs.length !== 0 && (
+          <div>
+            <h2>Postdocs</h2>
+            {postdocs.map((postdoc) => (
+              <TeamCard
+                name={postdoc.name}
+                description={postdoc.description}
+                email={postdoc.email}
+                picture={postdoc.picture}
+              />
+            ))}
+          </div>
+        )}
+        {phdStudents.length !== 0 && (
+          <div>
+            <h2>PhD Candidates</h2>
+            {phdStudents.map((phd) => (
+              <TeamCard
+                name={phd.name}
+                description={phd.description}
+                email={phd.email}
+                picture={phd.picture}
+              />
+            ))}
+          </div>
+        )}
+        {masterStudents.length !== 0 && (
+          <div>
+            <h2>Master Students</h2>
+            {masterStudents.map((master) => (
+              <TeamCard
+                name={master.name}
+                description={master.description}
+                email={master.email}
+                picture={master.picture}
+              />
+            ))}
+          </div>
+        )}
+        {undergradStudents.length !== 0 && (
+          <div>
+            <h2>Undergraduate Students</h2>
+            {undergradStudents.map((undergrad) => (
+              <TeamCard
+                name={undergrad.name}
+                description={undergrad.description}
+                email={undergrad.email}
+                picture={undergrad.picture}
+              />
+            ))}
+          </div>
+        )}
+        <div className="my-12"></div>
+        <SpontaneousApplication />
+        <p className="-mb-14">
           <PictureCopyright
             authorName="Chang Duong"
             authorUrl="https://unsplash.com/@iamchang"

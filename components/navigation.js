@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { ChevronUp } from "react-feather";
+import VisuallyHidden from "@reach/visually-hidden";
 
 // https://courses.joshwcomeau.com/css-for-js/video-archive/005-youtube-sidebar
 // https://codesandbox.io/s/youtube-sidebar-dwvdf
@@ -57,6 +58,7 @@ export default function Navigation() {
         aria-label="back to the top of the page"
         className="px-2 py-2 text-sm fixed bottom-6 right-6 block text-center rounded opacity-100 text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-500 sm:hidden shadow-md dark:shadow-gray-500"
       >
+        <VisuallyHidden>Back to Top</VisuallyHidden>
         <ChevronUp />
       </a>
     </nav>
