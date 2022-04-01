@@ -80,7 +80,7 @@ export default function Navigation() {
       <DialogOverlay isOpen={showDialog} onDismiss={close}>
         <DialogContent
           aria-label="mobile navigation menu"
-          className="fixed top-0 right-0 !m-0 h-screen !w-[75%] p-6 shadow-black"
+          className="fixed top-0 right-0 !m-0 h-full !w-[75%] p-6 shadow-black"
         >
           <div className="grid gap-4 h-full content-end">
             <div className="no-underline sm:text-base sm:hidden hover:text-blue-500">
