@@ -35,8 +35,8 @@ export default function Home() {
         <h1>Laboratory of Integrated Research on Daylighting</h1>
         <p>
           Our mission is to advance knowledge of daylighting in buildings to
-          enhance people's health, well-being, and performance, while minimizing
-          energy consumption.
+          enhance people&#39;s health, well-being, and performance, while
+          minimizing energy consumption.
         </p>
         <p>
           Today, we spend on average 90% of our time indoors. This completely

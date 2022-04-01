@@ -33,7 +33,7 @@ export default function Experience() {
       <ExperienceCard
         experience="Assistant Professor in Architectural Engineering"
         altExpertience="Culbertson Faculty Scholar"
-        department="School of Civil and Construction Engineering"
+        department="School of Civil and Construction Engineering (CCE)"
         institution="Oregon State University"
         institutionShort="OSU"
         location="Corvallis, Oregon, USA"
@@ -42,6 +42,7 @@ export default function Experience() {
       />
       <ExperienceCard
         experience="Guest Professor"
+        department="Electrical Engineering and Energy Technology Department (ETEC)"
         institution="Vrije Universiteit Brussel"
         institutionShort="VUB"
         location="Brussels, Belgium"
@@ -53,7 +54,7 @@ export default function Experience() {
         experience="Postdoc Researcher"
         institution="École polytechnique fédérale de Lausanne"
         institutionShort="EPFL"
-        //department="Faculté de l'environnement naturel, architectural et construit (ENAC)"
+        //department="Faculté de l&#39;environnement naturel, architectural et construit (ENAC)"
         department="Laboratory of Integrated Performance in Design (LIPID)"
         location="Lausanne, Switzerland"
         startDate="Dec 2019"
@@ -64,8 +65,8 @@ export default function Experience() {
         experience="PhD Engineering Sciences and Technology"
         institution="Université catholique de Louvain"
         institutionShort="UCLouvain"
-        // department="Faculté d'architecture, d'ingénierie architecturale, d'urbanisme (LOCI)"
-        department="Architecture et Climat (ARCH-CLI)"
+        // department="Faculté d&#39;architecture, d&#39;ingénierie architecturale, d&#39;urbanisme (LOCI)"
+        department="Architecture et Climat"
         location="Louvain-la-Neuve, Belgium"
         startDate="Oct 2015"
         endDate="Nov 2019"
@@ -73,7 +74,7 @@ export default function Experience() {
       />
       <ExperienceCard
         experience="Junior Architect"
-        institution="La Verte Voie - Collectif d'Architectes"
+        institution="La Verte Voie - Collectif d&#39;Architectes"
         location="Ottignies, Belgium"
         startDate="Jan 2015"
         endDate="Sep 2015"
@@ -82,8 +83,8 @@ export default function Experience() {
         experience="Research Assistant"
         institution="Université catholique de Louvain"
         institutionShort="UCLouvain"
-        // department="Faculté d'architecture, d'ingénierie architecturale, d'urbanisme (LOCI)"
-        department="Architecture et Climat (ARCH-CLI)"
+        // department="Faculté d&#39;architecture, d&#39;ingénierie architecturale, d&#39;urbanisme (LOCI)"
+        department="Architecture et Climat"
         location="Louvain-la-Neuve, Belgium"
         startDate="Oct 2014"
         endDate="Sept 2015"

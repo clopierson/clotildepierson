@@ -14,7 +14,6 @@ export const principalInvestigator = [
   {
     name: "Clotilde Pierson",
     description: "/about",
-    // email: "clotilde.pierson@oregonstate.edu",
     picture: "/profile-picture-pierson.jpg",
   },
 ];
@@ -22,18 +21,18 @@ export const postdocs = [];
 export const phdStudents = [];
 export const masterStudents = [];
 export const undergradStudents = [
-  {
-    //name: "Spencer Kime",
-    name: "#1",
-    description: "Coming soon!",
-    picture: "/undraw_handcrafts_man.svg",
-  },
-  {
-    // name: "Paul Matipwiri",
-    name: "#2",
-    description: "Coming soon!",
-    picture: "/undraw_handcrafts_man.svg",
-  },
+  // {
+  //   name: "Spencer Kime",
+  //   description: "Coming soon!",
+  //   email:"",
+  //   picture: "/undraw_handcrafts_man.svg",
+  // },
+  // {
+  //   name: "Paul Matipwiri",
+  //   email:"",
+  //   description: "Coming soon!",
+  //   picture: "/undraw_handcrafts_man.svg",
+  // },
 ];
 
 export default function ReseTeamarch() {
@@ -56,12 +55,13 @@ export default function ReseTeamarch() {
       <div className="h-[70vh]"></div>
       <div className="my-8 prose dark:prose-invert mx-auto">
         <h1>Team</h1>
-        <Recruiting />
+        {/* <Recruiting /> */}
         {principalInvestigator.length !== 0 && (
           <div>
             <h2>Principal Investigator</h2>
             {principalInvestigator.map((pi) => (
               <TeamCard
+                key={pi.name}
                 name={pi.name}
                 description={pi.description}
                 email={pi.email}
@@ -75,6 +75,7 @@ export default function ReseTeamarch() {
             <h2>Postdocs</h2>
             {postdocs.map((postdoc) => (
               <TeamCard
+                key={postdoc.name}
                 name={postdoc.name}
                 description={postdoc.description}
                 email={postdoc.email}
@@ -88,6 +89,7 @@ export default function ReseTeamarch() {
             <h2>PhD Candidates</h2>
             {phdStudents.map((phd) => (
               <TeamCard
+                key={phd.name}
                 name={phd.name}
                 description={phd.description}
                 email={phd.email}
@@ -101,6 +103,7 @@ export default function ReseTeamarch() {
             <h2>Master Students</h2>
             {masterStudents.map((master) => (
               <TeamCard
+                key={master.name}
                 name={master.name}
                 description={master.description}
                 email={master.email}
@@ -114,6 +117,7 @@ export default function ReseTeamarch() {
             <h2>Undergraduate Students</h2>
             {undergradStudents.map((undergrad) => (
               <TeamCard
+                key={undergrad.name}
                 name={undergrad.name}
                 description={undergrad.description}
                 email={undergrad.email}
