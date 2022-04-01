@@ -40,14 +40,15 @@ const securityHeaders = [
 
 module.exports = {
   reactStrictMode: true,
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/i,
-      issuer: /\.[jt]sx?$/,
-      use: ["@svgr/webpack"],
-    });
-    return config;
-  },
+  // SVGR does not work on mobile (tried on safari and brave ios)
+  // webpack(config) {
+  //   config.module.rules.push({
+  //     test: /\.svg$/i,
+  //     issuer: /\.[jt]sx?$/,
+  //     use: ["@svgr/webpack"],
+  //   });
+  //   return config;
+  // },
   async headers() {
     return [
       {
