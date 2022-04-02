@@ -50,7 +50,7 @@ export default function Navigation() {
       <a
         href="#top"
         aria-label="back to the top of the page"
-        className="hidden z-10 sm:block fixed px-2 py-2 text-sm bottom-6 right-6 text-center rounded shadow-md text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300  dark:shadow-black/50"
+        className="hidden sm:block fixed px-2 py-2 text-sm bottom-6 right-6 text-center rounded shadow-md text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300  dark:shadow-black/50"
       >
         Back to Top
       </a>
@@ -58,14 +58,14 @@ export default function Navigation() {
       <a
         href="#top"
         aria-label="back to the top of the page"
-        className="z-10 px-2 py-2 text-sm fixed bottom-6 right-20 block text-center rounded text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300 sm:hidden shadow-md dark:shadow-black/50"
+        className="px-2 py-2 text-sm fixed bottom-6 right-20 block text-center rounded text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300 sm:hidden shadow-md dark:shadow-black/50"
       >
         <VisuallyHidden>Back to Top</VisuallyHidden>
         <ChevronUp />
       </a>
       {/* Open menu on Mobile */}
       <button
-        className="z-10 px-2 py-2 text-sm fixed bottom-6 right-6 block text-center rounded text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300 sm:hidden shadow-md dark:shadow-black/50"
+        className="px-2 py-2 text-sm fixed bottom-6 right-6 block text-center rounded text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300 sm:hidden shadow-md dark:shadow-black/50"
         onClick={open}
       >
         <VisuallyHidden>Open Navigation Menu</VisuallyHidden>
@@ -75,7 +75,7 @@ export default function Navigation() {
       <DialogOverlay isOpen={showDialog} onDismiss={close}>
         <DialogContent
           aria-label="mobile navigation menu"
-          className="z-10 fixed top-0 right-0 !m-0 h-full !w-[75%] dark:!bg-slate-800"
+          className="fixed top-0 right-0 !m-0 h-full !w-[75%] dark:!bg-slate-800"
         >
           <div className="grid gap-4 h-full content-end">
             <div className="no-underline sm:text-base sm:hidden hover:text-blue-300">
@@ -91,7 +91,7 @@ export default function Navigation() {
             ))}
           </div>
           <button
-            className="z-10 px-2 py-2 text-sm fixed bottom-6 right-6 block text-center rounded text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300 sm:hidden shadow-md dark:shadow-black/50"
+            className="px-2 py-2 text-sm fixed bottom-6 right-6 block text-center rounded text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300 sm:hidden shadow-md dark:shadow-black/50"
             onClick={close}
           >
             <VisuallyHidden>Close Navigation Menu</VisuallyHidden>

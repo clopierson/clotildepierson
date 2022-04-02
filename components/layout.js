@@ -55,7 +55,7 @@ export default function Layout({
       />
       <div className="grid grid-cols-12 grid-rows-[auto_1fr_auto] h-screen">
         <Header />
-        <main className="row-start-2 row-span-1 col-start-2 col-span-10">
+        <main className="-z-10 row-start-2 row-span-1 col-start-2 col-span-10">
           {children}
         </main>
         <Footer />
