@@ -72,12 +72,16 @@ export default function Navigation() {
         <Menu />
       </button>
       {/* Mobile menu overlay */}
-      <DialogOverlay isOpen={showDialog} onDismiss={close}>
+      <DialogOverlay
+        isOpen={showDialog}
+        onDismiss={close}
+        className="animate-fade-in"
+      >
         <DialogContent
           aria-label="mobile navigation menu"
-          className="fixed top-0 right-0 !m-0 h-full !w-[75%] dark:!bg-slate-800"
+          className="fixed top-0 right-0 !m-0 h-full !w-[75%] dark:!bg-slate-800 motion-safe:animate-slide-in"
         >
-          <div className="grid gap-4 h-full content-end">
+          <div className="grid gap-4 h-full content-end motion-safe:animate-fade-in-slow">
             <div className="no-underline sm:text-base sm:hidden hover:text-blue-300">
               <IrradiantLab link="/" />
             </div>
