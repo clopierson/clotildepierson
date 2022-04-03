@@ -2,7 +2,7 @@ import Layout from "../components/layout";
 import Image from "next/image";
 import backgroundImage from "../public/background-image-team.jpg";
 import PictureCopyright from "../components/pictureCopyright";
-import Recruiting from "../components/recruiting";
+import Recruiting from "../components/phdPositions2022";
 import SpontaneousApplication from "../components/spontaneousApplication";
 import TeamCard from "../components/teamCard";
 
@@ -39,7 +39,7 @@ export default function ReseTeamarch() {
   return (
     <Layout
       pageTitle="Team | Integrated Research on Daylighting Lab"
-      pageDescription="Lists current and former staff of the Integrated Research on Daylighting Lab (irradiant lab)."
+      pageDescription="Open positions (jobs), and current and former staff of the Integrated Research on Daylighting Lab (irradiant lab)."
       pageUrl="https://clotildepierson.com/team"
     >
       <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
@@ -55,7 +55,7 @@ export default function ReseTeamarch() {
       <div className="h-[70vh]"></div>
       <div className="my-8 prose dark:prose-invert mx-auto">
         <h1>Team</h1>
-        {/* <Recruiting /> */}
+        <Recruiting />
         {principalInvestigator.length !== 0 && (
           <div>
             <h2>Principal Investigator</h2>
