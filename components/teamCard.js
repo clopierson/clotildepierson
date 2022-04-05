@@ -11,6 +11,7 @@ export default function TeamCard({ name, description, email, picture }) {
           className="rounded-full"
           src={picture}
           alt={alt}
+          // placeholder="blur"
           width={150}
           height={150}
         />{" "}

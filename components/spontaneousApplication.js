@@ -5,11 +5,19 @@ export default function SpontaneousApplication() {
       <p>
         If you are interested in doing research with me at Oregon State
         University, please visit{" "}
-        <a href="https://cce.oregonstate.edu/future-students">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://cce.oregonstate.edu/future-students"
+        >
           the future students page for URA, MS, and PhD
         </a>
         ,{" "}
-        <a href="https://gradschool.oregonstate.edu/postdocs/">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://gradschool.oregonstate.edu/postdocs/"
+        >
           the grad school page for postdocs
         </a>
         . After that{" "}

@@ -52,6 +52,20 @@ module.exports = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  async rewrites() {
+    return [
+      // Proxying Plausible to avoid Adblockers
+      // https://plausible.io/docs/proxy/guides/nextjs
+      {
+        source: "/js/script.file-downloads.js",
+        destination: "https://plausible.io/js/script.file-downloads.js",
+      },
+      {
+        source: "/api/event",
+        destination: "https://plausible.io/api/event",
+      },
+    ];
+  },
   async headers() {
     return [
       {

@@ -1,9 +1,6 @@
 import Tooltip from "@reach/tooltip";
 import "@reach/tooltip/styles.css";
 
-// TODO: tooltip mobile not supported, to be removed
-// e.g. add hidden lg:inline to button? or tooltip?
-
 export default function ExperienceCard({
   experience,
   altExpertience,

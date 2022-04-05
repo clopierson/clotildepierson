@@ -10,6 +10,8 @@ import TeamCard from "../components/teamCard";
 // "/undraw_handcrafts_man.svg"
 // "/undraw_handcrafts_woman.svg"
 
+// TODO: make placeholder="blur" work in TeamCard (problem is that image is not considered static import)
+
 export const principalInvestigator = [
   {
     name: "Clotilde Pierson",

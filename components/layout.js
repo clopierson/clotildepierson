@@ -42,15 +42,11 @@ export default function Layout({
           content="@PiersonClotilde"
           key="twhandle"
         />
-        {/* <style>
-          @import
-          url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
-        </style> */}
       </Head>
       <Script
         defer
         data-domain="clotildepierson.com"
-        src="https://plausible.io/js/plausible.js"
+        src="/js/script.file-downloads.js"
         strategy="afterInteractive"
       />
       <div className="grid grid-cols-12 grid-rows-[auto_1fr_auto] h-screen">
