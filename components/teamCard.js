@@ -5,25 +5,26 @@ export default function TeamCard({ name, description, email, picture }) {
   var href = "mailto:" + email;
   var alt = "Picture of " + name;
   return (
-    <div className="grid grid-cols-2 my-2 items-center text-sm">
-      <div>
-        <h3 className="text-base m-0">{name}</h3>
-        {description === "/about" ? (
-          <Link href="/about">Learn more about Clotilde</Link>
-        ) : (
-          <span>{description}</span>
-        )}
-        <br></br>
-        <a href={href}>{email}</a>
-      </div>
-      <div>
+    <div className="text-sm my-2 grid auto-rows-min sm:grid-cols-3 items-center">
+      <div className="my-2 row-span-1 justify-self-center sm:col-span-1 sm:justify-self-start">
         <Image
           className="rounded-full"
           src={picture}
           alt={alt}
-          width={100}
-          height={100}
+          width={150}
+          height={150}
         />{" "}
+      </div>
+      <div className="row-span-1 sm:col-span-2">
+        <h3 className="text-base m-0">{name}</h3>
+        {description === "/about" ? (
+          <Link href="/about">Learn more about Clotilde</Link>
+        ) : (
+          <p className="my-1 text-justify">{description}</p>
+        )}
+        <p className="my-1">
+          <a href={href}>{email}</a>
+        </p>
       </div>
     </div>
   );

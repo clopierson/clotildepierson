@@ -11,6 +11,7 @@ export default function Footer() {
         <div className="text-xs mt-6">
           Copyright © {date} <IrradiantLab />. All rights reserved.
         </div>
+        <div></div>
         <div className="text-xs mt-6">
           <div>
             Developed by <a href="https://alexulbrich.com">Alex Ulbrich</a>{" "}

@@ -14,23 +14,24 @@ export const principalInvestigator = [
   {
     name: "Clotilde Pierson",
     description: "/about",
-    picture: "/profile-picture-pierson.jpg",
+    picture: "/team/pierson.jpg",
   },
 ];
 export const postdocs = [];
 export const phdStudents = [];
 export const masterStudents = [];
 export const undergradStudents = [
+  {
+    name: "Paul Peter Matipwiri",
+    email: "matipwpa@oregonstate.edu",
+    description:
+      "Paul is completing his Architectural Engineering degree with subspecialty in lighting and HVAC design. His interest in lighting lies in leveraging architectural spaces/buildings to determine suitable lighting systems that will enhance the user-experience of those spaces. His project involves working on window-view quality analysis by studying datasets of office worker's field of view.",
+    picture: "/team/matipwiri.jpg",
+  },
   // {
   //   name: "Spencer Kime",
   //   description: "Coming soon!",
   //   email: "",
-  //   picture: "/undraw_handcrafts_man.svg",
-  // },
-  // {
-  //   name: "Paul Matipwiri",
-  //   email: "",
-  //   description: "Coming soon!",
   //   picture: "/undraw_handcrafts_man.svg",
   // },
 ];

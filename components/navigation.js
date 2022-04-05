@@ -5,6 +5,7 @@ import "@reach/dialog/styles.css";
 import { ChevronUp, X, Menu } from "react-feather";
 import VisuallyHidden from "@reach/visually-hidden";
 import IrradiantLab from "./irradiantLab.js";
+import InstitutionLogo from "./InstitutionLogo";
 
 export const MenuItems = [
   {
@@ -36,10 +37,10 @@ export default function Navigation() {
   return (
     <nav>
       {/* Non-Mobile Memu */}
-      <div className="hidden sm:flex sm:justify-end sm:gap-4">
+      <div className="hidden md:flex md:justify-end md:gap-4">
         {MenuItems.map((link) => (
           <div
-            className="capitalize text-sm no-underline sm:text-base inline hover:text-blue-300"
+            className="capitalize text-sm no-underline md:text-base inline hover:text-blue-300"
             key={link.name}
           >
             <Link href={link.link}>{link.name}</Link>
@@ -50,7 +51,7 @@ export default function Navigation() {
       <a
         href="#top"
         aria-label="back to the top of the page"
-        className="hidden sm:block fixed px-3 py-3 text-sm bottom-6 right-6 text-center rounded shadow-md text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300  dark:shadow-black/50"
+        className="hidden md:block fixed px-3 py-3 text-sm bottom-6 right-6 text-center rounded shadow-md text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300  dark:shadow-black/50"
       >
         Back to Top
       </a>
@@ -58,14 +59,14 @@ export default function Navigation() {
       <a
         href="#top"
         aria-label="back to the top of the page"
-        className="px-3 py-3 text-sm fixed bottom-6 right-20 block text-center rounded text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300 sm:hidden shadow-md dark:shadow-black/50"
+        className="px-3 py-3 text-sm fixed bottom-6 right-20 block text-center rounded text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300 md:hidden shadow-md dark:shadow-black/50"
       >
         <VisuallyHidden>Back to Top</VisuallyHidden>
         <ChevronUp />
       </a>
       {/* Open menu on Mobile */}
       <button
-        className="px-3 py-3 text-sm fixed bottom-6 right-6 block text-center rounded text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300 sm:hidden shadow-md dark:shadow-black/50"
+        className="px-3 py-3 text-sm fixed bottom-6 right-6 block text-center rounded text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300 md:hidden shadow-md dark:shadow-black/50"
         onClick={open}
       >
         <VisuallyHidden>Open Navigation Menu</VisuallyHidden>
@@ -82,12 +83,15 @@ export default function Navigation() {
           className="fixed top-0 right-0 !m-0 h-full !w-[75%] dark:!bg-slate-800 motion-safe:animate-slide-in"
         >
           <div className="grid gap-4 h-full content-end motion-safe:animate-fade-in-slow">
-            <div className="no-underline sm:text-base sm:hidden hover:text-blue-300">
+            <div className="w-24">
+              <InstitutionLogo orientation="vertical" />
+            </div>
+            <div className="no-underline md:text-base md:hidden hover:text-blue-300">
               <IrradiantLab link="/" />
             </div>
             {MenuItems.map((link) => (
               <div
-                className="capitalize no-underline sm:text-base inline hover:text-blue-300"
+                className="capitalize no-underline md:text-base inline hover:text-blue-300"
                 key={link.name}
               >
                 <Link href={link.link}>{link.name}</Link>
@@ -95,7 +99,7 @@ export default function Navigation() {
             ))}
           </div>
           <button
-            className="px-3 py-3 text-sm fixed bottom-6 right-6 block text-center rounded text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300 sm:hidden shadow-md dark:shadow-black/50"
+            className="px-3 py-3 text-sm fixed bottom-6 right-6 block text-center rounded text-gray-800 bg-gray-300 hover:text-gray-50 hover:bg-blue-300 md:hidden shadow-md dark:shadow-black/50"
             onClick={close}
           >
             <VisuallyHidden>Close Navigation Menu</VisuallyHidden>

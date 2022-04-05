@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import profilePic from "../public/profile-picture-pierson.jpg";
+import profilePic from "../public/team/pierson.jpg";
 import Teaching from "../components/teaching";
 import Experience from "../components/experience";
 import Services from "../components/service";
