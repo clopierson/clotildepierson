@@ -6,8 +6,8 @@ import PictureCopyright from "../components/pictureCopyright";
 export default function Research() {
   return (
     <Layout
-      pageTitle="Research | Integrated Research on Daylighting Lab"
-      pageDescription="Research focus and topics of the Integrated Research on Daylighting Lab (irradiant lab)."
+      pageTitle="Research | IrradiantLab"
+      pageDescription="Research focus and topics of the Integrated Research on Daylighting Lab (irradiant lab) and Dr. Clotilde Pierson."
       pageUrl="https://clotildepierson.com/research"
     >
       <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">

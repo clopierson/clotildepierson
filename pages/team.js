@@ -41,8 +41,8 @@ export const undergradStudents = [
 export default function ReseTeamarch() {
   return (
     <Layout
-      pageTitle="Team | Integrated Research on Daylighting Lab"
-      pageDescription="Open positions (jobs), and current and former staff of the Integrated Research on Daylighting Lab (irradiant lab)."
+      pageTitle="Team | IrradiantLab"
+      pageDescription="Open positions (jobs), and current and former staff of the Integrated Research on Daylighting Lab (irradiant lab) under the supervision of Dr. Clotilde Pierson."
       pageUrl="https://clotildepierson.com/team"
     >
       <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">

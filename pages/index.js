@@ -10,7 +10,7 @@ import PictureCopyright from "../components/pictureCopyright";
 export default function Home() {
   return (
     <Layout
-      pageTitle="Integrated Research on Daylighting Lab"
+      pageTitle="Home | IrradiantLab"
       pageDescription="The Integrated Research on Daylighting Laboratory (irradiant lab) is a cutting-edge lighting research center currently based in Oregon State University and headed by Dr. Clotilde Pierson."
       pageUrl="https://clotildepierson.com"
     >
@@ -24,7 +24,7 @@ export default function Home() {
           objectFit="cover"
         ></Image>
       </picture>
-      <div className="absolute left-0 right-0 w-fit mx-auto text-center top-[36%] py-2 px-4 sm:py-3 sm:px-7 lg:py-5 lg:px-12 bg-gray-200/80 dark:bg-gray-700/80">
+      <div className="absolute left-0 right-0 w-fit mx-auto text-center top-[36%] py-2 px-4 sm:py-3 sm:px-7 lg:py-5 lg:px-12 backdrop-blur-sm bg-gray-200/70 dark:bg-gray-700/70">
         <p className="font-bold text-xl sm:text-3xl lg:text-5xl">
           <IrradiantLab />
         </p>

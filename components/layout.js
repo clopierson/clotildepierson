@@ -16,12 +16,22 @@ export default function Layout({
         <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
         <meta name="robots" content="follow, index" />
         <meta name="description" content={pageDescription} key="desc" />
-        {/* <meta property="og:image" content={previewImage} key="ogimage" /> */}
+        <meta
+          name="keywords"
+          content="Daylight, Daylighting, Research, Urban, Light, Environment, Laboratory, Oregon"
+          key="keywords"
+        />
+        <meta name="author" content="Clotilde Pierson" key="author" />
+        <meta
+          property="og:image"
+          content="https://clotildepierson.com/preview.png"
+          key="ogimage"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={pageUrl} key="ogurl" />
         <meta
           property="og:site_name"
-          content="IRRADIANT LAB"
+          content="Integrated Research on Daylighting Laboratory (Irradiant Lab)"
           key="ogsitename"
         />
         <meta property="og:title" content={pageTitle} key="ogtitle" />

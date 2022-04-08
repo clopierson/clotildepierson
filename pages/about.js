@@ -10,8 +10,8 @@ import IrradiantLab from "../components/irradiantLab";
 export default function About() {
   return (
     <Layout
-      pageTitle="Clotilde Pierson | Integrated Research on Daylighting Lab"
-      pageDescription="Summary of Dr. Clotilde Pierson: education, work history, teaching, and services."
+      pageTitle="Clotilde Pierson | IrradiantLab"
+      pageDescription="Summary of Dr. Clotilde Pierson: education, work history, teaching, and services. Clotilde is the head of the Integrated Research on Daylighting Laboratory (irradiant lab)."
       pageUrl="https://clotildepierson.com/about"
     >
       <div className="grid auto-rows-min grid-flow-row sm:grid-cols-10 sm:grid-rows-1 items-center mt-6">
