@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /files/
-
-User-agent: *
 Sitemap: https://clotildepierson.com/sitemap.xml
