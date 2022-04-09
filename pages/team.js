@@ -27,22 +27,23 @@ export const undergradStudents = [
     name: "Paul Peter Matipwiri",
     email: "matipwpa@oregonstate.edu",
     description:
-      "Paul is completing his Architectural Engineering degree with subspecialty in lighting and HVAC design. His interest in lighting lies in leveraging architectural spaces/buildings to determine suitable lighting systems that will enhance the user-experience of those spaces. His project involves working on window-view quality analysis by studying datasets of office worker's field of view.",
+      "Paul is completing his Architectural Engineering degree with subspecialty in lighting and HVAC design, in the College of Engineering at Oregon State University. His interest in lighting lies in leveraging architectural spaces/buildings to determine suitable lighting systems that will enhance the user-experience of those spaces. His project involves working on window-view quality analysis by studying datasets of office worker's field of view.",
     picture: "/team/matipwiri.jpg",
   },
-  // {
-  //   name: "Spencer Kime",
-  //   description: "Coming soon!",
-  //   email: "",
-  //   picture: "/undraw_handcrafts_man.svg",
-  // },
+  {
+    name: "Spencer Kime",
+    email: "kimesp@oregonstate.edu",
+    description:
+      "Spencer is completing his Architectural Engineering degree with a focus on lighting design, in the College of Engineering at Oregon State University. He has a broad field of study with occupant comfort in terms of lighting, HVAC, and envelope design, and is assisting research focused on lighting design and user experience. He uses field of view data sets to determine window view quality and its effects on building occupants.",
+    picture: "/undraw_handcrafts_man.svg",
+  },
 ];
 
 export default function ReseTeamarch() {
   return (
     <Layout
       pageTitle="Team | IrradiantLab"
-      pageDescription="Open positions (jobs), and current and former staff of the Integrated Research on Daylighting Lab (irradiant lab) under the supervision of Dr. Clotilde Pierson."
+      pageDescription="Open positions (jobs), and current and former staff of the Laboratory of Integrated Research on Daylighting (irradiant lab) under the supervision of Dr. Clotilde Pierson."
       pageUrl="https://clotildepierson.com/team"
     >
       <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">

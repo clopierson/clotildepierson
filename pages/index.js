@@ -10,8 +10,8 @@ import PictureCopyright from "../components/pictureCopyright";
 export default function Home() {
   return (
     <Layout
-      pageTitle="Home | IrradiantLab"
-      pageDescription="The Integrated Research on Daylighting Laboratory (irradiant lab) is a cutting-edge lighting research center currently based in Oregon State University and headed by Dr. Clotilde Pierson."
+      pageTitle="Laboratory of Integrated Research on Daylighting | IrradiantLab"
+      pageDescription="The Laboratory of Integrated Research on Daylighting is a cutting-edge lighting research center currently based in Oregon State University and headed by Dr. Clotilde Pierson."
       pageUrl="https://clotildepierson.com"
     >
       <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">

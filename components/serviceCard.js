@@ -6,7 +6,7 @@ export default function ServiceCard({
   journals,
 }) {
   return (
-    <div className="not-prose my-4">
+    <article className="not-prose my-4">
       {typeof experience === "string" && (
         <p className="font-bold">{experience}</p>
       )}
@@ -35,6 +35,6 @@ export default function ServiceCard({
           ))}
         </ul>
       )}
-    </div>
+    </article>
   );
 }

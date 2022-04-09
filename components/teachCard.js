@@ -8,7 +8,7 @@ export default function TeachCard({
   nStudents,
 }) {
   return (
-    <div className="not-prose my-4">
+    <article className="not-prose my-4">
       <p className="font-bold">{position}</p>
       <p className="text-sm">
         {institution}
@@ -23,6 +23,6 @@ export default function TeachCard({
       <p className="text-sm">
         {degree} (±{nStudents} students)
       </p>
-    </div>
+    </article>
   );
 }

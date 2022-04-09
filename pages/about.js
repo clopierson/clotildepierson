@@ -11,7 +11,7 @@ export default function About() {
   return (
     <Layout
       pageTitle="Clotilde Pierson | IrradiantLab"
-      pageDescription="Summary of Dr. Clotilde Pierson: education, work history, teaching, and services. Clotilde is the head of the Integrated Research on Daylighting Laboratory (irradiant lab)."
+      pageDescription="Summary of Dr. Clotilde Pierson: education, work history, teaching, and services. Clotilde is the head of the Laboratory of Integrated Research on Daylighting (irradiant lab)."
       pageUrl="https://clotildepierson.com/about"
     >
       <div className="grid auto-rows-min grid-flow-row sm:grid-cols-10 sm:grid-rows-1 items-center mt-6">

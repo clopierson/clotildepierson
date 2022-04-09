@@ -5,16 +5,25 @@ export default function TeamCard({ name, description, email, picture }) {
   var href = "mailto:" + email;
   var alt = "Picture of " + name;
   return (
-    <div className="text-sm my-2 grid auto-rows-min sm:grid-cols-3 items-center">
+    <article className="text-sm my-5 grid auto-rows-min sm:grid-cols-3 items-center">
       <div className="my-2 row-span-1 justify-self-center sm:col-span-1 sm:justify-self-start">
-        <Image
-          className="rounded-full"
-          src={picture}
-          alt={alt}
-          // placeholder="blur"
-          width={150}
-          height={150}
-        />{" "}
+        {picture.includes("svg") ? (
+          <Image
+            className="rounded-full invert-0 dark:invert dark:grayscale dark:brightness-50"
+            src={picture}
+            alt={alt}
+            width={150}
+            height={150}
+          />
+        ) : (
+          <Image
+            className="rounded-full"
+            src={picture}
+            alt={alt}
+            width={150}
+            height={150}
+          />
+        )}{" "}
       </div>
       <div className="row-span-1 sm:col-span-2">
         <h3 className="text-base m-0">{name}</h3>
@@ -27,6 +36,6 @@ export default function TeamCard({ name, description, email, picture }) {
           <a href={href}>{email}</a>
         </p>
       </div>
-    </div>
+    </article>
   );
 }

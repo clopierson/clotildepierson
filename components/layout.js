@@ -14,7 +14,6 @@ export default function Layout({
       <Head>
         <title>{pageTitle}</title>
         <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
-        <meta name="robots" content="follow, index" />
         <meta name="description" content={pageDescription} key="desc" />
         <meta
           name="keywords"
@@ -31,7 +30,7 @@ export default function Layout({
         <meta property="og:url" content={pageUrl} key="ogurl" />
         <meta
           property="og:site_name"
-          content="Integrated Research on Daylighting Laboratory (Irradiant Lab)"
+          content="Laboratory of Integrated Research on Daylighting (Irradiant Lab)"
           key="ogsitename"
         />
         <meta property="og:title" content={pageTitle} key="ogtitle" />

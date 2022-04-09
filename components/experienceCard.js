@@ -13,7 +13,7 @@ export default function ExperienceCard({
   mobility,
 }) {
   return (
-    <div className="not-prose my-4">
+    <article className="not-prose my-4">
       <p className="font-bold">
         {experience}
         {typeof altExpertience === "string" && (
@@ -61,6 +61,6 @@ export default function ExperienceCard({
           </ul>
         </div>
       )}
-    </div>
+    </article>
   );
 }

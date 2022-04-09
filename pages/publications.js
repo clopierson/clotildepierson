@@ -21,7 +21,7 @@ export default function Publications() {
   return (
     <Layout
       pageTitle="Publications | IrradiantLab"
-      pageDescription="All peer-reviewed publications by the Integrated Research on Daylighting Lab (irradiant lab) and Dr. Clotilde Pierson. Includes journal ans conference papers, contributions to conferences and workshops, and datasets."
+      pageDescription="All peer-reviewed publications by the Laboratory of Integrated Research on Daylighting (irradiant lab) and Dr. Clotilde Pierson. Includes journal ans conference papers, contributions to conferences and workshops, and datasets."
       pageUrl="https://clotildepierson.com/publications"
     >
       <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">

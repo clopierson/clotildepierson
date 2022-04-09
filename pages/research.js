@@ -7,7 +7,7 @@ export default function Research() {
   return (
     <Layout
       pageTitle="Research | IrradiantLab"
-      pageDescription="Research focus and topics of the Integrated Research on Daylighting Lab (irradiant lab) and Dr. Clotilde Pierson."
+      pageDescription="Research focus and topics of the Laboratory of Integrated Research on Daylighting (irradiant lab) and Dr. Clotilde Pierson."
       pageUrl="https://clotildepierson.com/research"
     >
       <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
