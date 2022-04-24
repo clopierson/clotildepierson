@@ -98,7 +98,7 @@ export default function Research() {
         />
         <h2>
           {/* Logical OR &#8744; */}
-          Building Occupants &#124; Natural and Built Environment &#8596; Energy
+          Building Occupants &#124; Natural and Built Environment &#8594; Energy
           Consumption
         </h2>
         <ResearchDiagram diagram="rel3" />
