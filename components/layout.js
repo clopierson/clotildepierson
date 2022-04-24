@@ -7,6 +7,9 @@ export default function Layout({
   pageTitle,
   pageDescription,
   pageUrl,
+  heroImageAuthorUrl,
+  heroImageUrl,
+  heroImageAuthor,
   children,
 }) {
   return (
@@ -63,7 +66,11 @@ export default function Layout({
         <main className="-z-10 row-start-2 row-span-1 col-start-2 col-span-10">
           {children}
         </main>
-        <Footer />
+        <Footer
+          heroImageAuthorUrl={heroImageAuthorUrl}
+          heroImageUrl={heroImageUrl}
+          heroImageAuthor={heroImageAuthor}
+        />
       </div>
     </div>
   );

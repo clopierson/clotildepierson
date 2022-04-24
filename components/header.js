@@ -1,5 +1,5 @@
 import Navigation from "./navigation";
-import IrradiantLab from "./irradiantLab";
+import RadiantLab from "./radiantLab";
 import { SkipNavLink, SkipNavContent } from "@reach/skip-nav";
 import "@reach/skip-nav/styles.css";
 import InstitutionLogo from "./InstitutionLogo";
@@ -14,7 +14,7 @@ export default function Header() {
             <div className="w-32 mx-auto mt-2">
               <InstitutionLogo />
             </div>
-            <IrradiantLab link="/" />
+            <RadiantLab link="/" />
           </div>
         </div>
         <div className="col-span-full md:col-start-3 md:col-span-2">

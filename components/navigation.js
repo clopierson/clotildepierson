@@ -4,7 +4,7 @@ import { DialogOverlay, DialogContent } from "@reach/dialog";
 import "@reach/dialog/styles.css";
 import { ChevronUp, X, Menu } from "react-feather";
 import VisuallyHidden from "@reach/visually-hidden";
-import IrradiantLab from "./irradiantLab.js";
+import RadiantLab from "./radiantLab.js";
 import InstitutionLogo from "./InstitutionLogo";
 
 export const MenuItems = [
@@ -88,7 +88,7 @@ export default function Navigation() {
               <InstitutionLogo orientation="vertical" />
             </div>
             <div className="no-underline md:text-base md:hidden hover:text-blue-300">
-              <IrradiantLab link="/" />
+              <RadiantLab link="/" />
             </div>
             {MenuItems.map((link) => (
               <div

@@ -5,22 +5,22 @@ import Teaching from "../components/teaching";
 import Experience from "../components/experience";
 import Services from "../components/service";
 import Socials from "../components/socials";
-import IrradiantLab from "../components/irradiantLab";
+import RadiantLab from "../components/radiantLab";
 
 export default function About() {
   return (
     <Layout
-      pageTitle="Clotilde Pierson | IrradiantLab"
+      pageTitle="Clotilde Pierson | RadiantLab"
       pageDescription="Summary of Dr. Clotilde Pierson: education, work history, teaching, and services. Clotilde is the head of the Laboratory of Integrated Research on Daylighting (irradiant lab)."
       pageUrl="https://clotildepierson.com/about"
     >
       <div className="grid auto-rows-min grid-flow-row sm:grid-cols-10 sm:grid-rows-1 items-center mt-6">
         <div className="row-start-1 sm:col-start-1 sm:col-span-5 md:col-start-2 md:col-span-4">
-          <div className="prose dark:prose-invert">
+          <div className="prose prose-slate dark:prose-invert">
             <h1>Clotilde Pierson</h1>
             <p>
               Dr. Pierson is the Principal Investigator of the&nbsp;
-              <IrradiantLab /> and an Assistant Professor of Architectural
+              <RadiantLab /> and an Assistant Professor of Architectural
               Engineering in the School of Civil and Construction Engineering at{" "}
               <a
                 target="_blank"
@@ -47,7 +47,7 @@ export default function About() {
           />
         </div>
         <div className="row-start-3 sm:row-start-2 sm:col-start-1 sm:col-span-10 md:col-start-2 md:col-span-8mt-2 self-start mt-6">
-          <div className="prose dark:prose-invert">
+          <div className="prose prose-slate dark:prose-invert">
             <h2>In a Nutshell</h2>
             <ul>
               <li>
