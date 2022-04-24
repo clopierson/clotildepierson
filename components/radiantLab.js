@@ -1,7 +1,7 @@
 import Link from "next/link";
 
-export default function IrradiantLab({ link }) {
-  const irradiant = "irradiant";
+export default function RadiantLab({ link }) {
+  const irradiant = "radiant";
   const lab = "lab";
   return (
     <span className="font-[Spartan] font-bold inline">

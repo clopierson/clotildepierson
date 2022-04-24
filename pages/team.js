@@ -1,7 +1,6 @@
 import Layout from "../components/layout";
 import Image from "next/image";
 import backgroundImage from "../public/background-image-team.jpg";
-import PictureCopyright from "../components/pictureCopyright";
 import Recruiting from "../components/phdPositions2022";
 import SpontaneousApplication from "../components/spontaneousApplication";
 import TeamCard from "../components/teamCard";
@@ -27,7 +26,7 @@ export const undergradStudents = [
     name: "Paul Peter Matipwiri",
     email: "matipwpa@oregonstate.edu",
     description:
-      "Paul is completing his Architectural Engineering degree with subspecialty in lighting and HVAC design, in the College of Engineering at Oregon State University. His interest in lighting lies in leveraging architectural spaces/buildings to determine suitable lighting systems that will enhance the user-experience of those spaces. His project involves working on window-view quality analysis by studying datasets of office worker's field of view.",
+      "Paul is completing his Architectural Engineering degree with subspecialty in lighting and HVAC design, in the College of Engineering at Oregon State University. His interest in lighting lies in leveraging architectural spaces/buildings to determine suitable lighting systems that will enhance the user-experience of those spaces. His project involves working on window-view quality analysis by studying datasets of office worker&#39;s field of view.",
     picture: "/team/matipwiri.jpg",
   },
   {
@@ -42,9 +41,12 @@ export const undergradStudents = [
 export default function ReseTeamarch() {
   return (
     <Layout
-      pageTitle="Team | IrradiantLab"
+      pageTitle="Team | RadiantLab"
       pageDescription="Open positions (jobs), and current and former staff of the Laboratory of Integrated Research on Daylighting (irradiant lab) under the supervision of Dr. Clotilde Pierson."
       pageUrl="https://clotildepierson.com/team"
+      heroImageAuthorUrl="https://unsplash.com/@iamchang"
+      heroImageUrl="https://unsplash.com/photos/Sj0iMtq_Z4w"
+      heroImageAuthor="Chang Duong"
     >
       <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
         <Image
@@ -57,7 +59,7 @@ export default function ReseTeamarch() {
         ></Image>
       </div>
       <div className="h-[70vh]"></div>
-      <div className="my-8 prose dark:prose-invert mx-auto">
+      <div className="my-8 prose prose-slate dark:prose-invert mx-auto">
         <h1>Team</h1>
         <Recruiting />
         {principalInvestigator.length !== 0 && (
@@ -132,13 +134,6 @@ export default function ReseTeamarch() {
         )}
         <div className="my-12"></div>
         <SpontaneousApplication />
-        <p className="-mb-14">
-          <PictureCopyright
-            authorName="Chang Duong"
-            authorUrl="https://unsplash.com/@iamchang"
-            pictureUrl="https://unsplash.com/photos/Sj0iMtq_Z4w"
-          />
-        </p>
       </div>
     </Layout>
   );

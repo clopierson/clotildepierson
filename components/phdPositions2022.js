@@ -33,7 +33,7 @@ export default function Recruiting() {
         Please submit your application by{" "}
         <a
           href="https://airtable.com/shrnQFJihLL8YU878"
-          alt="2022 irradiantlab PhD application form"
+          alt="2022 RadiantLab PhD application form"
           target="_blank"
           rel="noopener noreferrer"
         >

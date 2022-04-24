@@ -1,4 +1,10 @@
+# *
 User-agent: *
 Allow: /
 Disallow: /files/
+
+# Host
+Host: https://clotildepierson.com
+
+# Sitemaps
 Sitemap: https://clotildepierson.com/sitemap.xml

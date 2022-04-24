@@ -1,7 +1,6 @@
 import Layout from "../components/layout";
 import Image from "next/image";
 import backgroundImage from "../public/background-image-publications.jpg";
-import PictureCopyright from "../components/pictureCopyright";
 
 // export const articles = [
 //   {
@@ -20,9 +19,12 @@ import PictureCopyright from "../components/pictureCopyright";
 export default function Publications() {
   return (
     <Layout
-      pageTitle="Publications | IrradiantLab"
+      pageTitle="Publications | RadiantLab"
       pageDescription="All peer-reviewed publications by the Laboratory of Integrated Research on Daylighting (irradiant lab) and Dr. Clotilde Pierson. Includes journal ans conference papers, contributions to conferences and workshops, and datasets."
       pageUrl="https://clotildepierson.com/publications"
+      heroImageAuthorUrl="https://unsplash.com/@sylviasyang"
+      heroImageUrl="https://unsplash.com/photos/_ar2ENzmqb0"
+      heroImageAuthor="Sylvia Yang"
     >
       <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
         <Image
@@ -35,7 +37,7 @@ export default function Publications() {
         ></Image>
       </div>
       <div className="h-[70vh]"></div>
-      <div className="my-8 prose dark:prose-invert mx-auto">
+      <div className="my-8 prose prose-slate dark:prose-invert mx-auto">
         <h1>Publications</h1>
         <h2>2022</h2>
         {/* <p>
@@ -363,13 +365,6 @@ export default function Publications() {
           >
             Paper available on DIAL
           </a>
-        </p>
-        <p className=" -mb-14">
-          <PictureCopyright
-            authorName="Sylvia Yang"
-            authorUrl="https://unsplash.com/@sylviasyang"
-            pictureUrl="https://unsplash.com/photos/_ar2ENzmqb0"
-          />
         </p>
       </div>
     </Layout>
