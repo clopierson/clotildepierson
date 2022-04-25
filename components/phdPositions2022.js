@@ -3,9 +3,9 @@ export default function Recruiting() {
     <article className="rounded bg-slate-100 dark:bg-slate-700 p-3 sm:p-6 shadow-inner dark:shadow-black/50">
       <h1 className="mt-0 text-lg">Open Ph.D. Positions</h1>
       <p>
-        We have two (2) open Ph.D. positions for Fall 2022. The research
-        projects are (click the link to open the corrresponding position
-        description):
+        We have one (1) open Ph.D. position for Fall 2022. The Ph.D. student
+        will be working on one of the following projects (click the link to open
+        the corrresponding position description):
       </p>
       <ol>
         <li>

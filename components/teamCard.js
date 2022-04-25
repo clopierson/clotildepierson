@@ -9,7 +9,7 @@ export default function TeamCard({ name, description, email, picture }) {
       <div className="my-2 row-span-1 justify-self-center sm:col-span-1 sm:justify-self-start">
         {picture.includes("svg") ? (
           <Image
-            className="rounded-full invert-0 dark:invert dark:grayscale dark:brightness-50"
+            className="rounded-full"
             src={picture}
             alt={alt}
             width={150}

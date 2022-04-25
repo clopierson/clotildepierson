@@ -6,8 +6,8 @@ import SpontaneousApplication from "../components/spontaneousApplication";
 import TeamCard from "../components/teamCard";
 
 // default pictures if none:
-// "/undraw_handcrafts_man.svg"
-// "/undraw_handcrafts_woman.svg"
+// "/team-male.svg"
+// "/team-female.svg"
 
 // TODO: make placeholder="blur" work in TeamCard (problem is that image is not considered static import)
 
@@ -34,7 +34,7 @@ export const undergradStudents = [
     email: "kimesp@oregonstate.edu",
     description:
       "Spencer is completing his Architectural Engineering degree with a focus on lighting design, in the College of Engineering at Oregon State University. He has a broad field of study with occupant comfort in terms of lighting, HVAC, and envelope design, and is assisting research focused on lighting design and user experience. He uses field of view data sets to determine window view quality and its effects on building occupants.",
-    picture: "/undraw_handcrafts_man.svg",
+    picture: "/team-male.svg",
   },
 ];
 

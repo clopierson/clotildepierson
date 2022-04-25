@@ -121,7 +121,7 @@ export default function Research() {
           science but has a large interdisciplinary component to it. To study
           those relations, we rely on and interact with the fields of
           engineering, architecture, chronobiology, computer science, urban
-          planning, neuroscience, psychophysics, public health, etc.
+          planning, neuroscience, psychophysics, and public health.
         </p>
       </div>
     </Layout>
