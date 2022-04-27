@@ -4,7 +4,7 @@ Allow: /
 Disallow: /files/
 
 # Host
-Host: https://clotildepierson.com
+Host: https://www.clotildepierson.com
 
 # Sitemaps
-Sitemap: https://clotildepierson.com/sitemap.xml
+Sitemap: https://www.clotildepierson.com/sitemap.xml

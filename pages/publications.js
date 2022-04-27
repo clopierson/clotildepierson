@@ -20,7 +20,7 @@ export default function Publications() {
   return (
     <Layout
       pageTitle="Publications | RadiantLab"
-      pageDescription="All peer-reviewed journal/conference papers, conferences/workshops contributions, and datasets by the Daylighting Research Laboratory (RadiantLab) at Oregon State University."
+      pageDescription="Peer-reviewed journal/conference papers, conferences/workshops contributions, and datasets by the Daylighting Research Laboratory (RadiantLab) at Oregon State University."
       pageUrl="https://www.clotildepierson.com/publications"
       heroImageAuthorUrl="https://unsplash.com/@sylviasyang"
       heroImageUrl="https://unsplash.com/photos/_ar2ENzmqb0"
