@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: "https://clotildepierson.com",
+  siteUrl: "https://www.clotildepierson.com",
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [
