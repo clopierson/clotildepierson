@@ -1,7 +1,7 @@
 export default function SpontaneousApplication() {
   return (
     <article className="rounded bg-slate-100 dark:bg-slate-700 p-3 sm:p-6 shadow-inner dark:shadow-black/50">
-      <h1 className="mt-0 text-lg">Spontaneous Applications</h1>
+      <h2 className="mt-0 text-lg">Spontaneous Applications</h2>
       <p className="mb-0">
         If you are interested in doing research with me at Oregon State
         University, please visit{" "}

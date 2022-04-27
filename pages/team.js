@@ -42,8 +42,8 @@ export default function ReseTeamarch() {
   return (
     <Layout
       pageTitle="Team | RadiantLab"
-      pageDescription="Open positions (jobs), and current and former staff of the Laboratory of Integrated Research on Daylighting (irradiant lab) under the supervision of Dr. Clotilde Pierson."
-      pageUrl="https://clotildepierson.com/team"
+      pageDescription="Current openings (jobs), and current and former staff of the Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson."
+      pageUrl="https://www.clotildepierson.com/team"
       heroImageAuthorUrl="https://unsplash.com/@iamchang"
       heroImageUrl="https://unsplash.com/photos/Sj0iMtq_Z4w"
       heroImageAuthor="Chang Duong"
@@ -51,7 +51,7 @@ export default function ReseTeamarch() {
       <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
-          alt="Urban Daylight"
+          alt="teammates on a hill, celebrating success"
           placeholder="blur"
           priority="true"
           layout="fill"

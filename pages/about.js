@@ -11,8 +11,8 @@ export default function About() {
   return (
     <Layout
       pageTitle="Clotilde Pierson | RadiantLab"
-      pageDescription="Summary of Dr. Clotilde Pierson: education, work history, teaching, and services. Clotilde is the head of the Laboratory of Integrated Research on Daylighting (irradiant lab)."
-      pageUrl="https://clotildepierson.com/about"
+      pageDescription="Summary of Dr. Clotilde Pierson: education, work history, teaching, and services. Clotilde is the head of the Daylighting Research Laboratory (RadiantLab)."
+      pageUrl="https://www.clotildepierson.com/about"
     >
       <div className="grid auto-rows-min grid-flow-row sm:grid-cols-10 sm:grid-rows-1 items-center mt-6">
         <div className="row-start-1 sm:col-start-1 sm:col-span-5 md:col-start-2 md:col-span-4">
@@ -40,7 +40,7 @@ export default function About() {
           <Image
             className="rounded-full"
             src={profilePic}
-            alt="Picture of Clotilde Pierson"
+            alt="picture of Dr. Clotilde Pierson"
             placeholder="blur"
             width={200}
             height={200}

@@ -9,7 +9,7 @@ export default function ResearchDiagram({ diagram }) {
           <div className="hidden my-5 justify-center dark:flex">
             <Image
               src="/rel_diag_sm_dark.svg"
-              alt=""
+              alt="relationships between natural and built environment, indoor light and visual conditions, building occupants, and energy consumption"
               layout="intrinsic"
               width={645}
               height={344}
@@ -18,7 +18,7 @@ export default function ResearchDiagram({ diagram }) {
           <div className="flex my-5 justify-center dark:hidden">
             <Image
               src="/rel_diag_sm_light.svg"
-              alt=""
+              alt="relationships between natural and built environment, indoor light and visual conditions, building occupants, and energy consumption"
               layout="intrinsic"
               width={645}
               height={344}
@@ -31,7 +31,7 @@ export default function ResearchDiagram({ diagram }) {
           <div className="hidden my-5 justify-center dark:flex">
             <Image
               src="/rel_env_cond_diag_sm_dark.svg"
-              alt=""
+              alt="relationship between natural and built environment, and indoor light and visual conditions"
               layout="intrinsic"
               width={447}
               height={147}
@@ -40,7 +40,7 @@ export default function ResearchDiagram({ diagram }) {
           <div className="flex my-5 justify-center dark:hidden">
             <Image
               src="/rel_env_cond_diag_sm_light.svg"
-              alt=""
+              alt="relationship between natural and built environment, and indoor light and visual conditions"
               layout="intrinsic"
               width={447}
               height={147}
@@ -53,7 +53,7 @@ export default function ResearchDiagram({ diagram }) {
           <div className="hidden my-5 justify-center dark:flex">
             <Image
               src="/rel_occ_cond_diag_sm_dark.svg"
-              alt=""
+              alt="relationship between indoor light and visual conditions, and building occupants"
               layout="intrinsic"
               width={447}
               height={142}
@@ -62,7 +62,7 @@ export default function ResearchDiagram({ diagram }) {
           <div className="flex my-5 justify-center dark:hidden">
             <Image
               src="/rel_occ_cond_diag_sm_light.svg"
-              alt=""
+              alt="relationship between indoor light and visual conditions, and building occupants"
               layout="intrinsic"
               width={447}
               height={142}
@@ -75,7 +75,7 @@ export default function ResearchDiagram({ diagram }) {
           <div className="hidden my-5 justify-center dark:flex">
             <Image
               src="/rel_ener_diag_sm_dark.svg"
-              alt=""
+              alt="relationships between natural and built environment, building occupants, and energy consumption"
               layout="intrinsic"
               width={423}
               height={318}
@@ -84,7 +84,7 @@ export default function ResearchDiagram({ diagram }) {
           <div className="flex my-5 justify-center dark:hidden">
             <Image
               src="/rel_ener_diag_sm_light.svg"
-              alt=""
+              alt="relationships between natural and built environment, building occupants, and energy consumption"
               layout="intrinsic"
               width={423}
               height={318}

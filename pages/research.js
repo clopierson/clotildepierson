@@ -8,8 +8,8 @@ export default function Research() {
   return (
     <Layout
       pageTitle="Research | RadiantLab"
-      pageDescription="Research focus and topics of the Laboratory of Integrated Research on Daylighting (irradiant lab) and Dr. Clotilde Pierson."
-      pageUrl="https://clotildepierson.com/research"
+      pageDescription="The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson focuses on advancing knowledge of daylighting in buildings."
+      pageUrl="https://www.clotildepierson.com/research"
       heroImageAuthorUrl="https://unsplash.com/@alexblock"
       heroImageUrl="https://unsplash.com/photos/hp74PknYyXE"
       heroImageAuthor="Alex Block"
@@ -17,7 +17,7 @@ export default function Research() {
       <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
-          alt="Urban Daylight"
+          alt="round window with a view of the city"
           placeholder="blur"
           layout="fill"
           priority="true"

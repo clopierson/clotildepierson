@@ -20,8 +20,8 @@ export default function Publications() {
   return (
     <Layout
       pageTitle="Publications | RadiantLab"
-      pageDescription="All peer-reviewed publications by the Laboratory of Integrated Research on Daylighting (irradiant lab) and Dr. Clotilde Pierson. Includes journal ans conference papers, contributions to conferences and workshops, and datasets."
-      pageUrl="https://clotildepierson.com/publications"
+      pageDescription="All peer-reviewed journal/conference papers, conferences/workshops contributions, and datasets by the Daylighting Research Laboratory (RadiantLab) at Oregon State University."
+      pageUrl="https://www.clotildepierson.com/publications"
       heroImageAuthorUrl="https://unsplash.com/@sylviasyang"
       heroImageUrl="https://unsplash.com/photos/_ar2ENzmqb0"
       heroImageAuthor="Sylvia Yang"
@@ -29,7 +29,7 @@ export default function Publications() {
       <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
-          alt="Urban Daylight"
+          alt="daylight in a bright library"
           placeholder="blur"
           priority="true"
           layout="fill"

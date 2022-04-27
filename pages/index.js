@@ -10,9 +10,9 @@ import ResearchDiagram from "../components/researchDiagram";
 export default function Home() {
   return (
     <Layout
-      pageTitle="Laboratory of Integrated Research on Daylighting | RadiantLab"
-      pageDescription="The Laboratory of Integrated Research on Daylighting is a cutting-edge lighting research center currently based in Oregon State University and headed by Dr. Clotilde Pierson."
-      pageUrl="https://clotildepierson.com"
+      pageTitle="Daylighting Research Laboratory | RadiantLab"
+      pageDescription="The Daylighting Research Laboratory is a cutting-edge lighting research center currently based in Oregon State University and led by Dr. Clotilde Pierson."
+      pageUrl="https://www.clotildepierson.com"
       heroImageAuthorUrl="https://unsplash.com/@issrur"
       heroImageUrl="https://unsplash.com/photos/b3TVjgXWSkI"
       heroImageAuthor="rur"
@@ -61,6 +61,7 @@ export default function Home() {
               illustration="/card_indoor_light.svg"
               fact="90%"
               description="time spent indoors"
+              alt="two people sitting at their desk and facing their computer screens"
             />
           </div>
           <div>
@@ -68,6 +69,7 @@ export default function Home() {
               illustration="/card_city_light.svg"
               fact="68%"
               description="living in cities by 2050"
+              alt="cityscape with high buildings and trees"
             />
           </div>
         </div>

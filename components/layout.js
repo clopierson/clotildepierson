@@ -26,14 +26,14 @@ export default function Layout({
         <meta name="author" content="Clotilde Pierson" key="author" />
         <meta
           property="og:image"
-          content="https://clotildepierson.com/preview.png"
+          content="https://www.clotildepierson.com/preview.png"
           key="ogimage"
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={pageUrl} key="ogurl" />
         <meta
           property="og:site_name"
-          content="Laboratory of Integrated Research on Daylighting (Irradiant Lab)"
+          content="Daylighting Research Laboratory (RadiantLab)"
           key="ogsitename"
         />
         <meta property="og:title" content={pageTitle} key="ogtitle" />
@@ -61,7 +61,7 @@ export default function Layout({
         src="/js/script.file-downloads.js"
         strategy="afterInteractive"
       />
-      <div className="grid grid-cols-12 grid-rows-[auto_1fr_auto] h-screen">
+      <div className="grid grid-cols-12">
         <Header />
         <main className="-z-10 row-start-2 row-span-1 col-start-2 col-span-10">
           {children}
