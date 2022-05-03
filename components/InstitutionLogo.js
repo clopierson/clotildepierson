@@ -8,14 +8,14 @@ export default function InstitutionLogo({ orientation = "horizontal" }) {
   return (
     <div>
       {orientation === "horizontal" ? (
-        <div className="w-[125px] h-[40px] sm:w-[190px] sm:h-[60px]">
+        <div className="w-[125px] h-[40px] sm:w-[200px] sm:h-[64px]">
           <div className="inline-block dark:hidden">
             <Image
               src={horizontalLight}
               alt="Oregon State University Logo"
               placeholder="blur"
-              width={250}
-              height={80}
+              width={200}
+              height={64}
               layout="intrinsic"
             />
           </div>
@@ -24,8 +24,8 @@ export default function InstitutionLogo({ orientation = "horizontal" }) {
               src={horizontalDark}
               alt="Oregon State University Logo"
               placeholder="blur"
-              width={250}
-              height={80}
+              width={200}
+              height={64}
               layout="intrinsic"
             />
           </div>
