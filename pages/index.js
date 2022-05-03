@@ -1,5 +1,6 @@
 import Layout from "../components/layout";
 import Image from "next/image";
+import Link from "next/link";
 import backgroundImage from "../public/background-image.jpg";
 import FactCard from "../components/factCard";
 import RadiantLab from "../components/radiantLab";
@@ -13,9 +14,9 @@ export default function Home() {
       pageTitle="Daylighting Research Laboratory | RadiantLab"
       pageDescription="The Daylighting Research Laboratory is a cutting-edge lighting research center currently based in Oregon State University and led by Dr. Clotilde Pierson."
       pageUrl="https://www.clotildepierson.com"
-      heroImageAuthorUrl="https://unsplash.com/@issrur"
-      heroImageUrl="https://unsplash.com/photos/b3TVjgXWSkI"
-      heroImageAuthor="rur"
+      heroImageAuthorUrl="http://www.karlmaasdam.com/"
+      heroImageUrl="https://oregonstate.edu/"
+      heroImageAuthor="Karl Maasdam"
     >
       <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
         <Image
@@ -34,8 +35,15 @@ export default function Home() {
         <p>Daylighting&nbsp;Research</p>
       </div>
       <div className="h-[70vh]"></div>
-      <div className="my-8 prose prose-slate dark:prose-invert mx-auto">
+      <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
         <h1 className="sr-only">Daylighting Research Laboratory</h1>
+        <p className="font-bold">
+          The <RadiantLab /> is a Daylighting Research Laboratory led by{" "}
+          <Link href="/about">
+            <a className="font-bold hover:font-bold">Dr. Clotilde Pierson</a>
+          </Link>{" "}
+          in the College at Engineering of Oregon State University.
+        </p>
         <p>
           Our mission is to advance knowledge related to daylight in buildings
           and the practice of daylighting to enhance people&#39;s health,

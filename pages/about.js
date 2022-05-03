@@ -16,7 +16,7 @@ export default function About() {
     >
       <div className="grid auto-rows-min grid-flow-row sm:grid-cols-10 sm:grid-rows-1 items-center mt-6">
         <div className="row-start-1 sm:col-start-1 sm:col-span-5 md:col-start-2 md:col-span-4">
-          <div className="prose prose-slate dark:prose-invert">
+          <div className="prose prose-neutral dark:prose-invert">
             <h1>Clotilde Pierson</h1>
             <p>
               Dr. Pierson is the Principal Investigator of the&nbsp;
@@ -47,7 +47,7 @@ export default function About() {
           />
         </div>
         <div className="row-start-3 sm:row-start-2 sm:col-start-1 sm:col-span-10 md:col-start-2 md:col-span-8mt-2 self-start mt-6">
-          <div className="prose prose-slate dark:prose-invert">
+          <div className="prose prose-neutral dark:prose-invert">
             <h2>In a Nutshell</h2>
             <ul>
               <li>

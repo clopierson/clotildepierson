@@ -44,14 +44,14 @@ export default function ReseTeamarch() {
       pageTitle="Team | RadiantLab"
       pageDescription="Current openings (jobs), and current and former staff of the Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson."
       pageUrl="https://www.clotildepierson.com/team"
-      heroImageAuthorUrl="https://unsplash.com/@iamchang"
-      heroImageUrl="https://unsplash.com/photos/Sj0iMtq_Z4w"
-      heroImageAuthor="Chang Duong"
+      heroImageAuthorUrl="http://www.karlmaasdam.com/"
+      heroImageUrl="https://oregonstate.edu/"
+      heroImageAuthor="Karl Maasdam"
     >
       <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
-          alt="teammates on a hill, celebrating success"
+          alt="teammates walking on campus, talking"
           placeholder="blur"
           priority="true"
           layout="fill"
@@ -59,7 +59,7 @@ export default function ReseTeamarch() {
         ></Image>
       </div>
       <div className="h-[70vh]"></div>
-      <div className="my-8 prose prose-slate dark:prose-invert mx-auto">
+      <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
         <h1>Team</h1>
         <Recruiting />
         {principalInvestigator.length !== 0 && (

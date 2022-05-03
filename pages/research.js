@@ -10,14 +10,14 @@ export default function Research() {
       pageTitle="Research | RadiantLab"
       pageDescription="The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson focuses on advancing knowledge of daylighting in buildings."
       pageUrl="https://www.clotildepierson.com/research"
-      heroImageAuthorUrl="https://unsplash.com/@alexblock"
-      heroImageUrl="https://unsplash.com/photos/hp74PknYyXE"
-      heroImageAuthor="Alex Block"
+      heroImageAuthorUrl="https://www.linkedin.com/in/photosbyjade/"
+      heroImageUrl="https://oregonstate.edu"
+      heroImageAuthor="Jade Webster"
     >
       <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
-          alt="round window with a view of the city"
+          alt="inside kelley engineering building with large windows and daylight"
           placeholder="blur"
           layout="fill"
           priority="true"
@@ -25,7 +25,7 @@ export default function Research() {
         ></Image>
       </div>
       <div className="h-[70vh]"></div>
-      <div className="my-8 prose prose-slate dark:prose-invert mx-auto">
+      <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
         <h1>Research Focus</h1>
         <p>
           We aim to advance knowledge related to daylight in buildings and the

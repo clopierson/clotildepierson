@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head />
-        <body className="h-screen dark:bg-slate-800 dark:text-slate-100 hover:a:text-sky-300">
+        <body className="h-screen dark:bg-neutral-900 dark:text-gray-100 hover:a:text-sky-300">
           <Main />
           <NextScript />
         </body>
