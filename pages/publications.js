@@ -34,6 +34,7 @@ export default function Publications() {
           priority="true"
           layout="fill"
           objectFit="cover"
+          objectPosition="20% 50%"
         ></Image>
       </div>
       <div className="h-[70vh]"></div>

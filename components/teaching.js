@@ -9,8 +9,8 @@ export default function Teaching() {
         position="Co-Instructor"
         institution="Oregon State University"
         institutionShort="OSU"
-        courseId="CE419"
-        courseName="Civil Engineering Professional Practice"
+        courseId="CE/ARE419"
+        courseName="Civil Infrastructure/Architectural Engineering Design"
         degree="Undergraduate"
         nStudents="125"
       />

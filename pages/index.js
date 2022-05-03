@@ -26,6 +26,7 @@ export default function Home() {
           layout="fill"
           priority="true"
           objectFit="cover"
+          objectPosition="30% 30%"
         ></Image>
       </picture>
       <div className="absolute left-0 right-0 w-fit mx-auto text-center top-[36%] py-2 px-4 sm:py-3 sm:px-7 lg:py-5 lg:px-12 backdrop-blur-sm bg-gray-200/70 dark:bg-gray-700/70">
@@ -38,11 +39,13 @@ export default function Home() {
       <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
         <h1 className="sr-only">Daylighting Research Laboratory</h1>
         <p className="font-bold">
-          The <RadiantLab /> is a Daylighting Research Laboratory led by{" "}
+          The <RadiantLab /> is led by{" "}
           <Link href="/about">
             <a className="font-bold hover:font-bold">Dr. Clotilde Pierson</a>
-          </Link>{" "}
-          in the College at Engineering of Oregon State University.
+          </Link>
+          {", "}
+          an Assistant Professor in the College of Engineering at Oregon State
+          University.
         </p>
         <p>
           Our mission is to advance knowledge related to daylight in buildings

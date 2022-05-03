@@ -56,6 +56,7 @@ export default function ReseTeamarch() {
           priority="true"
           layout="fill"
           objectFit="cover"
+          objectPosition="40% 90%"
         ></Image>
       </div>
       <div className="h-[70vh]"></div>
