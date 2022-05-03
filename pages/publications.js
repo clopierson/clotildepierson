@@ -22,9 +22,9 @@ export default function Publications() {
       pageTitle="Publications | RadiantLab"
       pageDescription="Peer-reviewed journal/conference papers, conferences/workshops contributions, and datasets by the Daylighting Research Laboratory (RadiantLab) at Oregon State University."
       pageUrl="https://www.clotildepierson.com/publications"
-      heroImageAuthorUrl="https://unsplash.com/@sylviasyang"
-      heroImageUrl="https://unsplash.com/photos/_ar2ENzmqb0"
-      heroImageAuthor="Sylvia Yang"
+      heroImageAuthorUrl="https://www.linkedin.com/in/erick-durano-21657b124/"
+      heroImageUrl="https://oregonstate.edu"
+      heroImageAuthor="Erick Durano"
     >
       <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
         <Image
@@ -37,7 +37,7 @@ export default function Publications() {
         ></Image>
       </div>
       <div className="h-[70vh]"></div>
-      <div className="my-8 prose prose-slate dark:prose-invert mx-auto">
+      <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
         <h1>Publications</h1>
         <h2>2022</h2>
         {/* <p>

@@ -50,6 +50,26 @@ npm run build
 npm run start
 ```
 
+## Style Guide
+
+- Dark Background: #171717
+
+### Oregon State University
+
+[Color Palette](https://communications.oregonstate.edu/brand-guide/visual-identity/colors)
+
+Never use Pine Stand and Luminance together in large fields or in close proximity in any instance.
+
+- Beaver Orange: #D73F09
+- Paddletail Black: #000
+- Bucktooth White: #FFF
+- Luminance: #FFB500
+- Candela: #FDD26E
+- Pine Stand: #4A773C
+- Crater: #8E9089
+- Moondust: #B8DDE1
+- Coastline: #A7ACA2
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

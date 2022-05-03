@@ -17,7 +17,7 @@ export default function ServiceCard({
         )}
       </p>
       {typeof committee === "object" && (
-        <ul className="text-sm mt-1 marker:text-neutral-300 dark:marker:text-slate-600">
+        <ul className="text-sm mt-1 marker:text-neutral-300 dark:marker:text-neutral-600">
           {committee.map((item) => (
             <li className="list-disc list-inside" key={item.id}>
               {item.id} · {item.name}
@@ -26,7 +26,7 @@ export default function ServiceCard({
         </ul>
       )}
       {typeof journals === "object" && (
-        <ul className="text-sm mt-1 marker:text-neutral-300 dark:marker:text-slate-600">
+        <ul className="text-sm mt-1 marker:text-neutral-300 dark:marker:text-neutral-600">
           {journals.map((journal) => (
             <li className="list-disc list-inside" key={journal.name}>
               {/* <a href={journal.url}>{journal.name}</a> */}

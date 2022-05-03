@@ -5,14 +5,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        "osu-beaver-orange": "#D73F09",
+        "osu-luminance": "#FFB500",
+        "osu-candela": "#FDD26E",
+        "osu-pine-stand": "#4A773C",
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
             a: {
-              color: theme("colors.blue.400"),
+              color: theme("colors.osu-beaver-orange"),
               fontWeight: "400",
               "&:hover": {
-                color: theme("colors.blue.300"),
+                color: theme("colors.osu-luminance"),
                 fontWeight: "400",
                 textDecoration: "none",
               },

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function FactCard({ illustration, fact, description, alt }) {
   return (
-    <article className="text-center p-4 max-w-xs h-full dark:text-white text-slate-900">
+    <article className="text-center p-4 max-w-xs h-full dark:text-white text-neutral-900">
       <Image
         src={illustration}
         alt={alt}

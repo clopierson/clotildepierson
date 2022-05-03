@@ -18,7 +18,7 @@ export default function ExperienceCard({
         {experience}
         {typeof altExpertience === "string" && (
           <Tooltip label={altExpertience}>
-            <button className="hidden lg:inline font-bold text-blue-400 hover:text-blue-300">
+            <button className="hidden lg:inline font-bold text-osu-beaver-orange hover:text-osu-luminance">
               *
             </button>
           </Tooltip>
@@ -35,11 +35,11 @@ export default function ExperienceCard({
         )}
       </p>
       {typeof location === "string" && (
-        <p className="text-sm text-neutral-400 dark:text-slate-500">
+        <p className="text-sm text-neutral-400 dark:text-neutral-500">
           {location}
         </p>
       )}
-      <p className="text-sm text-neutral-400 dark:text-slate-500">
+      <p className="text-sm text-neutral-400 dark:text-neutral-500">
         {startDate} &mdash; {endDate}
       </p>
       {typeof mobility === "string" && (
@@ -51,7 +51,7 @@ export default function ExperienceCard({
       {typeof mobility === "object" && (
         <div>
           <p className="text-sm mt-1 font-bold">Mobility</p>
-          <ul className="text-sm marker:text-neutral-300 dark:marker:text-slate-600">
+          <ul className="text-sm marker:text-neutral-300 dark:marker:text-neutral-600">
             {mobility.map((item) => (
               <li className="list-disc list-inside" key={item.name}>
                 {item.name}

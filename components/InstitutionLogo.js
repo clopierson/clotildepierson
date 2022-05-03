@@ -8,12 +8,14 @@ export default function InstitutionLogo({ orientation = "horizontal" }) {
   return (
     <div>
       {orientation === "horizontal" ? (
-        <div>
+        <div className="w-[125px] h-[40px] sm:w-[200px] sm:h-[64px]">
           <div className="inline-block dark:hidden">
             <Image
               src={horizontalLight}
               alt="Oregon State University Logo"
               placeholder="blur"
+              width={200}
+              height={64}
               layout="intrinsic"
             />
           </div>
@@ -22,6 +24,8 @@ export default function InstitutionLogo({ orientation = "horizontal" }) {
               src={horizontalDark}
               alt="Oregon State University Logo"
               placeholder="blur"
+              width={200}
+              height={64}
               layout="intrinsic"
             />
           </div>
@@ -33,6 +37,8 @@ export default function InstitutionLogo({ orientation = "horizontal" }) {
               src={verticalLight}
               alt="Oregon State University Logo"
               placeholder="blur"
+              width={95}
+              height={100}
               layout="intrinsic"
             />
           </div>
@@ -41,6 +47,8 @@ export default function InstitutionLogo({ orientation = "horizontal" }) {
               src={verticalDark}
               alt="Oregon State University Logo"
               placeholder="blur"
+              width={95}
+              height={100}
               layout="intrinsic"
             />
           </div>

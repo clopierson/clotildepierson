@@ -10,8 +10,8 @@ export default function Footer({
   let date = new Date().getFullYear();
   return (
     <div className="row-start-3 row-span-1 col-start-2 col-span-10 my-4">
-      <hr className="border-1 border-solid border-slate-300 my-4" />
-      <div className="text-center prose prose-slate dark:prose-invert mx-auto mb-6 text-sm">
+      <hr className="border-1 border-solid border-neutral-300 my-4" />
+      <div className="text-center  prose prose-neutral dark:prose-invert mx-auto mb-6 text-sm">
         <Socials />
         <div className="text-xs mt-6">
           Copyright © {date} <RadiantLab />. All rights reserved.
@@ -67,6 +67,7 @@ export default function Footer({
               authorName={heroImageAuthor}
               authorUrl={heroImageAuthorUrl}
               pictureUrl={heroImageUrl}
+              websiteName="OSU"
             />
           </div>
           <div>Please consider dark-mode to save energy.</div>

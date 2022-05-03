@@ -12,7 +12,7 @@ export default function PictureCopyright({
           <a target="_blank" rel="noopener noreferrer" href={authorUrl}>
             {authorName}
           </a>{" "}
-          on{" "}
+          at{" "}
           <a target="_blank" rel="noopener noreferrer" href={pictureUrl}>
             {websiteName}
           </a>
