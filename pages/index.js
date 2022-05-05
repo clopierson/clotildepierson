@@ -5,6 +5,7 @@ import backgroundImage from "../public/background-image.jpg";
 import FactCard from "../components/factCard";
 import RadiantLab from "../components/radiantLab";
 import ResearchDiagram from "../components/researchDiagram";
+import Recruiting from "../components/phdPositions2022";
 
 // TODO: fix overflow on really narrow screen (e.g. galaxy fold), e.g. publications
 
@@ -47,6 +48,7 @@ export default function Home() {
           an Assistant Professor in the College of Engineering at Oregon State
           University.
         </p>
+        <Recruiting />
         <p>
           Our mission is to advance knowledge related to daylight in buildings
           and the practice of daylighting to enhance people&#39;s health,
