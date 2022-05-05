@@ -26,8 +26,13 @@ export default function Layout({
         <meta name="author" content="Clotilde Pierson" key="author" />
         <meta
           property="og:image"
-          content="https://www.clotildepierson.com/preview.png"
+          content="https://www.clotildepierson.com/preview.jpg"
           key="ogimage"
+        />
+        <meta
+          property="twitter:image"
+          content="https://www.clotildepierson.com/preview.jpg"
+          key="twimage"
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={pageUrl} key="ogurl" />
