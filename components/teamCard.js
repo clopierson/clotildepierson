@@ -28,7 +28,7 @@ export default function TeamCard({ name, description, email, picture }) {
       <div className="row-span-1 sm:col-span-2">
         <h3 className="text-base m-0">{name}</h3>
         {description === "/about" ? (
-          <Link href="/about">Learn more about Clotilde</Link>
+          <Link href="/about">Learn more</Link>
         ) : (
           <p className="my-1 text-justify">{description}</p>
         )}
