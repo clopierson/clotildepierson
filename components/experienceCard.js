@@ -1,6 +1,3 @@
-import Tooltip from "@reach/tooltip";
-import "@reach/tooltip/styles.css";
-
 export default function ExperienceCard({
   experience,
   altExpertience,
@@ -14,17 +11,10 @@ export default function ExperienceCard({
 }) {
   return (
     <article className="not-prose my-4">
-      <p className="font-bold">
-        {experience}
-        {typeof altExpertience === "string" && (
-          <Tooltip label={altExpertience}>
-            <button className="hidden lg:inline font-bold text-osu-beaver-orange hover:text-osu-luminance">
-              *
-            </button>
-          </Tooltip>
-        )}
-      </p>
-
+      <p className="font-bold mb-0">{experience}</p>
+      {typeof altExpertience === "string" && (
+        <p className="font-bold -mt-1">{altExpertience}</p>
+      )}
       {typeof department === "string" && (
         <p className="text-sm">{department}</p>
       )}
