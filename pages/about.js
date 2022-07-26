@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import profilePic from "../public/team/pierson.jpg";
+import profilePic from "../public/team/pierson_alt.jpg";
 import Teaching from "../components/teaching";
 import Experience from "../components/experience";
 import Services from "../components/service";
@@ -21,7 +21,8 @@ export default function About() {
             <p>
               Dr. Pierson is the Principal Investigator of the&nbsp;
               <RadiantLab /> and an Assistant Professor of Architectural
-              Engineering in the School of Civil and Construction Engineering at{" "}
+              Engineering (Culbertson Faculty Scholar) in the School of Civil
+              and Construction Engineering at{" "}
               <a
                 target="_blank"
                 rel="noreferrer noopener"
