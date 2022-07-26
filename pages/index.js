@@ -45,7 +45,8 @@ export default function Home() {
             <a className="font-bold hover:font-bold">Dr. Clotilde Pierson</a>
           </Link>
           {", "}
-          an assistant professor in the College of Engineering at Oregon State
+          an Assistant Professor of Architectural Engineering (Culbertson
+          Faculty Scholar) in the College of Engineering at Oregon State
           University.
         </p>
         <Recruiting />

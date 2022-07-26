@@ -15,7 +15,7 @@ export const principalInvestigator = [
   {
     name: "Clotilde Pierson",
     description: "/about",
-    picture: "/team/pierson.jpg",
+    picture: "/team/pierson_alt.jpg",
   },
 ];
 export const postdocs = [];
@@ -34,7 +34,7 @@ export const undergradStudents = [
     email: "kimesp@oregonstate.edu",
     description:
       "Spencer is completing his Architectural Engineering degree with a focus on lighting design, in the College of Engineering at Oregon State University. He has a broad field of study with occupant comfort in terms of lighting, HVAC, and envelope design, and is assisting research focused on lighting design and user experience. He uses field of view data sets to determine window view quality and its effects on building occupants.",
-    picture: "/team-male.svg",
+    picture: "/team/kime.jpg",
   },
 ];
 

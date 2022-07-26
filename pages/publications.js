@@ -62,6 +62,17 @@ export default function Publications() {
           2022, Copenhagen, Denmark.
         </p> */}
         <p>
+          Ko W. H., Schiavon S., et al. (2022) Window View Quality: Why It
+          Matters and What We Should Do, LEUKOS, 18:3, 259-267.{" "}
+          <a
+            href="https://doi.org/10.1080/15502724.2022.2055428"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            DOI:10.1080/15502724.2022.2055428
+          </a>
+        </p>
+        <p>
           <span className="font-bold">Pierson, Clotilde.</span> (2022).
           Validation of Spectral Light Simulation Tools: Dataset of Simulated
           and Measured Indoor Light Exposure [Data set]. Zenodo.{" "}
