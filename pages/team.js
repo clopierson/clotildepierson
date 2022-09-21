@@ -1,7 +1,6 @@
 import Layout from "../components/layout";
 import Image from "next/image";
 import backgroundImage from "../public/background-image-team.jpg";
-import Recruiting from "../components/phdPositions2022";
 import SpontaneousApplication from "../components/spontaneousApplication";
 import TeamCard from "../components/teamCard";
 
@@ -26,7 +25,7 @@ export const undergradStudents = [
     name: "Paul Peter Matipwiri",
     email: "matipwpa@oregonstate.edu",
     description:
-      "Paul is completing his Architectural Engineering degree with subspecialty in lighting and HVAC design, in the College of Engineering at Oregon State University. His interest in lighting lies in leveraging architectural spaces/buildings to determine suitable lighting systems that will enhance the user-experience of those spaces. His project involves working on window-view quality analysis by studying datasets of office worker&#39;s field of view.",
+      "Paul is completing his Architectural Engineering degree with subspecialty in lighting and HVAC design, in the College of Engineering at Oregon State University. His interest in lighting lies in leveraging architectural spaces/buildings to determine suitable lighting systems that will enhance the user-experience of those spaces. His project involves working on window-view quality analysis by studying datasets of office worker's field of view.",
     picture: "/team/matipwiri.jpg",
   },
   {
@@ -62,7 +61,6 @@ export default function ReseTeamarch() {
       <div className="h-[70vh]"></div>
       <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
         <h1>Team</h1>
-        <Recruiting />
         {principalInvestigator.length !== 0 && (
           <div>
             <h2>Principal Investigator</h2>

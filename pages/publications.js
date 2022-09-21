@@ -73,9 +73,9 @@ export default function Publications() {
           </a>
         </p>
         <p>
-          <span className="font-bold">Pierson, Clotilde.</span> (2022).
-          Validation of Spectral Light Simulation Tools: Dataset of Simulated
-          and Measured Indoor Light Exposure [Data set]. Zenodo.{" "}
+          <span className="font-bold">Pierson, C.</span> (2022). Validation of
+          Spectral Light Simulation Tools: Dataset of Simulated and Measured
+          Indoor Light Exposure [Data set]. Zenodo.{" "}
           <a
             href="https://doi.org/10.5281/zenodo.5919054"
             target="_blank"
