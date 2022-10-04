@@ -19,20 +19,25 @@ export const principalInvestigator = [
 ];
 export const postdocs = [];
 export const phdStudents = [];
-export const masterStudents = [];
-export const undergradStudents = [
+export const masterStudents = [
+  {
+    name: "Alfiya Orman",
+    email: "ormanova@oregonstate.edu",
+    description:
+      "Alfiya is working on her master's degree in Civil Engineering with focus on lighting in built spaces. She researches the validation of spectral simulation tools and integration of daylighting and electric lighting systems in living spaces. They are interested in the effects of lighting on human health and energy consumption.",
+    picture: "/team/orman.jpg",
+  },
+];
+export const undergradStudents = [];
+export const alumni = [
   {
     name: "Paul Peter Matipwiri",
-    email: "matipwpa@oregonstate.edu",
-    description:
-      "Paul is completing his Architectural Engineering degree with subspecialty in lighting and HVAC design, in the College of Engineering at Oregon State University. His interest in lighting lies in leveraging architectural spaces/buildings to determine suitable lighting systems that will enhance the user-experience of those spaces. His project involves working on window-view quality analysis by studying datasets of office worker's field of view.",
+    description: "Undergraduate Research Assistant",
     picture: "/team/matipwiri.jpg",
   },
   {
     name: "Spencer Kime",
-    email: "kimesp@oregonstate.edu",
-    description:
-      "Spencer is completing his Architectural Engineering degree with a focus on lighting design, in the College of Engineering at Oregon State University. He has a broad field of study with occupant comfort in terms of lighting, HVAC, and envelope design, and is assisting research focused on lighting design and user experience. He uses field of view data sets to determine window view quality and its effects on building occupants.",
+    description: "Undergraduate Research Assistant",
     picture: "/team/kime.jpg",
   },
 ];
@@ -133,6 +138,19 @@ export default function ReseTeamarch() {
         )}
         <div className="my-12"></div>
         <SpontaneousApplication />
+        {alumni.length !== 0 && (
+          <div>
+            <h2>Alumni</h2>
+            {alumni.map((alumni) => (
+              <TeamCard
+                key={alumni.name}
+                name={alumni.name}
+                description={alumni.description}
+                picture={alumni.picture}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </Layout>
   );

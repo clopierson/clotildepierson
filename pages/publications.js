@@ -2,18 +2,7 @@ import Layout from "../components/layout";
 import Image from "next/image";
 import backgroundImage from "../public/background-image-publications.jpg";
 
-// export const articles = [
-//   {
-//     title:
-//       "Validation of spectral simulation tools in the context of ipRGC-influenced light responses of building occupants",
-//     authors: "<span className="font-bold">Pierson C.</span>, Aarts M., Andersen M.",
-//     year: "2022",
-//     journal:
-//       "Manuscript submitted for publication in Building and Environment.",
-//     doi: "",
-//   },
-// ];
-
+// We use APA citations.
 // https://stackoverflow.com/questions/29896907/bold-part-of-string
 
 export default function Publications() {
@@ -41,12 +30,7 @@ export default function Publications() {
       <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
         <h1>Publications</h1>
         <h2>2022</h2>
-        {/* <p>
-          <span className="font-bold">Pierson C.</span>, Aarts M., Andersen M.
-          (2022). Validation of spectral simulation tools in the context of
-          ipRGC-influenced light responses of building occupants. Manuscript
-          submitted for publication in Building and Environment.
-        </p>
+        {/*
         <p>
           Quek G., Jain S., Karmann C.,{" "}
           <span className="font-bold">Pierson C.</span>, Wienold J., Andersen M.
@@ -54,13 +38,20 @@ export default function Publications() {
           glare studies in daylit spaces. Manuscript submitted for publication
           in Lighting Research & Technology.
         </p>
+         */}
         <p>
-          Gkaintatzi-Masouti M., <span className="font-bold">Pierson C.</span>,
-          Van Duijnhoven J., Andersen M., Aarts M. (2022). A simulation tool for
-          indoor lighting design considering ipRGC-induced responses. Abstract
-          accepted; manuscript submitted for publication at BuildSim Nordic
-          2022, Copenhagen, Denmark.
-        </p> */}
+          <span className="font-bold">Pierson C.</span>, Aarts M., Andersen M.
+          (2022). Validation of spectral simulation tools in the context of
+          ipRGC-influenced light responses of building occupants. Journal of
+          Building Performance Simulation, 1-19.{" "}
+          <a
+            href="https://doi.org/10.1080/19401493.2022.2125582"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            DOI:10.1080/19401493.2022.2125582
+          </a>
+        </p>
         <p>
           Ko W. H., Schiavon S., et al. (2022) Window View Quality: Why It
           Matters and What We Should Do, LEUKOS, 18:3, 259-267.{" "}
@@ -71,6 +62,12 @@ export default function Publications() {
           >
             DOI:10.1080/15502724.2022.2055428
           </a>
+        </p>
+        <p>
+          Gkaintatzi-Masouti M., <span className="font-bold">Pierson C.</span>,
+          Van Duijnhoven J., Andersen M., Aarts M. (2022). A simulation tool for
+          building and lighting design considering ipRGC-influenced light
+          responses. BuildSim Nordic, Copenhagen, Denmark, Aug. 22-23, 2022.
         </p>
         <p>
           <span className="font-bold">Pierson, C.</span> (2022). Validation of
