@@ -14,6 +14,7 @@ export const principalInvestigator = [
   {
     name: "Clotilde Pierson",
     description: "/about",
+    pronouns: "She/Her",
     picture: "/team/pierson_alt.jpg",
   },
 ];
@@ -23,6 +24,7 @@ export const masterStudents = [
   {
     name: "Alfiya Orman",
     email: "ormanova@oregonstate.edu",
+    pronouns: "She/They",
     description:
       "Alfiya is working on her master's degree in Civil Engineering with focus on lighting in built spaces. She researches the validation of spectral simulation tools and integration of daylighting and electric lighting systems in living spaces. They are interested in the effects of lighting on human health and energy consumption.",
     picture: "/team/orman.jpg",
@@ -32,11 +34,13 @@ export const undergradStudents = [];
 export const alumni = [
   {
     name: "Paul Peter Matipwiri",
+    pronouns: "He/Him",
     description: "Undergraduate Research Assistant",
     picture: "/team/matipwiri.jpg",
   },
   {
     name: "Spencer Kime",
+    pronouns: "He/Him",
     description: "Undergraduate Research Assistant",
     picture: "/team/kime.jpg",
   },
@@ -73,6 +77,7 @@ export default function ReseTeamarch() {
               <TeamCard
                 key={pi.name}
                 name={pi.name}
+                pronouns={pi.pronouns}
                 description={pi.description}
                 email={pi.email}
                 picture={pi.picture}
@@ -87,6 +92,7 @@ export default function ReseTeamarch() {
               <TeamCard
                 key={postdoc.name}
                 name={postdoc.name}
+                pronouns={postdoc.pronouns}
                 description={postdoc.description}
                 email={postdoc.email}
                 picture={postdoc.picture}
@@ -101,6 +107,7 @@ export default function ReseTeamarch() {
               <TeamCard
                 key={phd.name}
                 name={phd.name}
+                pronouns={phd.pronouns}
                 description={phd.description}
                 email={phd.email}
                 picture={phd.picture}
@@ -115,6 +122,7 @@ export default function ReseTeamarch() {
               <TeamCard
                 key={master.name}
                 name={master.name}
+                pronouns={master.pronouns}
                 description={master.description}
                 email={master.email}
                 picture={master.picture}
@@ -129,6 +137,7 @@ export default function ReseTeamarch() {
               <TeamCard
                 key={undergrad.name}
                 name={undergrad.name}
+                pronouns={undergrad.pronouns}
                 description={undergrad.description}
                 email={undergrad.email}
                 picture={undergrad.picture}
@@ -145,6 +154,7 @@ export default function ReseTeamarch() {
               <TeamCard
                 key={alumni.name}
                 name={alumni.name}
+                pronouns={alumni.pronouns}
                 description={alumni.description}
                 picture={alumni.picture}
               />

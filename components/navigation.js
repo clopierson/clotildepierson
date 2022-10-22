@@ -17,6 +17,10 @@ export const MenuItems = [
     name: "research",
   },
   {
+    link: "/software",
+    name: "software",
+  },
+  {
     link: "/publications",
     name: "publications",
   },

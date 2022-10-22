@@ -1,7 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function TeamCard({ name, description, email, picture }) {
+export default function TeamCard({
+  name,
+  description,
+  pronouns,
+  email,
+  picture,
+}) {
   var href = "mailto:" + email;
   var alt = "Picture of " + name;
   return (
@@ -25,12 +31,14 @@ export default function TeamCard({ name, description, email, picture }) {
           />
         )}{" "}
       </div>
-      <div className="row-span-1 sm:col-span-2">
-        <h3 className="text-base m-0">{name}</h3>
+      <div className="row-span-1 sm:col-span-2 text-center sm:text-left">
+        <h3 className="text-base m-0">
+          {name} <span className="text-sm font-light">({pronouns})</span>
+        </h3>
         {description === "/about" ? (
           <Link href="/about">Learn more</Link>
         ) : (
-          <p className="my-1 text-justify">{description}</p>
+          <p className="my-1 text-center sm:text-justify">{description}</p>
         )}
         <p className="my-1">
           <a href={href}>{email}</a>
