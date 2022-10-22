@@ -38,6 +38,7 @@ export default function Research() {
           <div className="sm:basis-72 my-2 sm:mt-8">
             <Image
               src={larkImage}
+              alt=""
               placeholder="blur"
               width={150}
               height={150}
