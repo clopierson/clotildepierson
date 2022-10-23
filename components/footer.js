@@ -23,7 +23,7 @@ export default function Footer({
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://alexulbrich.com"
+              href="https://www.alexulbrich.com"
             >
               Alex Ulbrich
             </a>{" "}

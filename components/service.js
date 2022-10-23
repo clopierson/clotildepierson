@@ -1,63 +1,88 @@
-import ServiceCard from "../components/serviceCard";
+import ServiceCard from "./serviceCard";
 
-export const CIECommittees = [
+export const InternationalCommittees = [
   {
-    id: "Technical Committee 2-86",
-    name: "Glare Measurement by Imaging Luminance Measurement Device",
-    role: "Member",
+    institution: "International Commission on Illumination (CIE)",
+    url: "https://cie.co.at/",
+    committees: [
+      {
+        name: "Technical Committee 2-86 · Glare Measurement by Imaging Luminance Measurement Device",
+      },
+      {
+        name: "Technical Committee 3-56 · Assessment of Discomfort Glare from Daylight in Buildings",
+      },
+      {
+        name: "Technical Committee 3-60 · Spectral Daylight Characteristics",
+      },
+    ],
   },
   {
-    id: "Technical Committee 3-56",
-    name: "Assessment of Discomfort Glare from Daylight in Buildings",
-    role: "Member",
-  },
-  {
-    id: "Technical Committee 3-60",
-    name: "Spectral Daylight Characteristics",
-    role: "Member",
+    institution: "Illumination Engineering Society (IES)",
+    url: "https://www.ies.org/",
+    committees: [
+      {
+        name: "Daylight Metrics",
+        role: "Member",
+      },
+    ],
   },
 ];
 
-export const IBECommittees = [
+export const NationalCommittees = [
   {
-    id: "Work Group B",
-    name: "Light Applications",
-    role: "Member",
+    institution: "Belgian Institute on Illumination (IBE-BIV)",
+    url: "https://ibe-biv.be/",
+    committees: [
+      {
+        name: "Work Group B Light Applications",
+      },
+    ],
+  },
+];
+
+export const ECBEItems = [
+  {
+    name: "Building and Environment",
+    url: "https://www.sciencedirect.com/journal/building-and-environment/about/editorial-board",
   },
 ];
 
 export const JournalItems = [
   {
     name: "Architectural Science Review",
-    url: "",
+    // url: "",
   },
   {
     name: "Building and Environment",
-    url: "",
+    // url: "",
   },
   {
     name: "Building Simulation",
-    url: "",
+    // url: "",
   },
   {
     name: "Indoor and Built Environment",
-    url: "",
+    // url: "",
   },
   {
     name: "Journal of Building Performance Simulation",
-    url: "",
+    // url: "",
   },
   {
     name: "Journal of Environmental Psychology",
-    url: "",
+    // url: "",
   },
   {
     name: "LEUKOS",
-    url: "",
+    // url: "",
   },
   {
     name: "Lighting Research & Technology",
-    url: "",
+    // url: "",
+  },
+  {
+    name: "Solar Energy",
+    // url: "",
   },
 ];
 
@@ -67,15 +92,17 @@ export default function Services() {
       <h2>Services</h2>
       <ServiceCard
         experience="International Committee Member"
-        institutionShort="CIE"
-        institution="International Commission on Illumination"
-        committee={CIECommittees}
+        committees={InternationalCommittees}
       />
       <ServiceCard
         experience="National Committee Member"
-        institutionShort="IBE-BIV"
-        institution="Belgian Institute on Illumination"
-        committee={IBECommittees}
+        committees={NationalCommittees}
+      />
+      <ServiceCard
+        experience="Early Career Board Member (ECBE)"
+        startDate="Oct 2022"
+        endDate="Today"
+        journals={ECBEItems}
       />
       <ServiceCard
         experience="Reviewer for Scientific Journals"

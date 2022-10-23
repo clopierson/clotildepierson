@@ -10,9 +10,9 @@ export default function Research() {
       pageTitle="Software | RadiantLab"
       pageDescription="The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson works and provides open-source software to advance research."
       pageUrl="https://www.clotildepierson.com/software"
-      heroImageAuthorUrl="https://unsplash.com/@ffstop"
-      heroImageUrl="https://unsplash.com/photos/DuHKoV44prg"
-      heroImageAuthor="Fotis Fotopoulos"
+      heroImageAuthorUrl="http://www.karlmaasdam.com/"
+      heroImageUrl="https://oregonstate.edu"
+      heroImageAuthor="Karl Maasdam"
     >
       <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
         <Image
@@ -56,9 +56,17 @@ export default function Research() {
               The objective of Lark Spectral Lighting is to make circadian
               lighting analysis more accessible to architects, lighting
               designers, researchers, and other interested parties. The
-              simulation engine is Radiance. Lark allows for simulations in 9
-              channels and computes photopic (luminance and illuminance values)
-              and circadian/non-visual metrics (e.g, alpha-opic values).
+              simulation engine is{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/LBNL-ETA/Radiance"
+              >
+                Radiance
+              </a>
+              . Lark allows for simulations in 9 channels and computes photopic
+              (luminance and illuminance values) and circadian/non-visual
+              metrics (e.g, alpha-opic values).
             </p>
             <ul>
               <li>
