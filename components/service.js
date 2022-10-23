@@ -21,7 +21,7 @@ export const InternationalCommittees = [
     url: "https://www.ies.org/",
     committees: [
       {
-        name: "Daylight Metrics",
+        name: "Daylight Metrics Committee",
         role: "Member",
       },
     ],
@@ -34,7 +34,7 @@ export const NationalCommittees = [
     url: "https://ibe-biv.be/",
     committees: [
       {
-        name: "Work Group B Light Applications",
+        name: "Work Group B Light Applications · Daylight Task Force",
       },
     ],
   },
@@ -99,7 +99,7 @@ export default function Services() {
         committees={NationalCommittees}
       />
       <ServiceCard
-        experience="Early Career Board Member (ECBE)"
+        experience="Early Career Board Member"
         startDate="Oct 2022"
         endDate="Today"
         journals={ECBEItems}

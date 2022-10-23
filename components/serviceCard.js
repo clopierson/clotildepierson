@@ -7,7 +7,7 @@ export default function ServiceCard({ experience, committees, journals }) {
       {typeof committees === "object" && (
         <div>
           {committees.map((item) => (
-            <div>
+            <div key={item.institution}>
               <h4>
                 <a
                   target="_blank"
