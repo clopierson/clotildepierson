@@ -30,7 +30,16 @@ export const masterStudents = [
     picture: "/team/orman.jpg",
   },
 ];
-export const undergradStudents = [];
+export const undergradStudents = [
+  {
+    name: "Logan Verplancke",
+    email: "verplanl@oregonstate.edu",
+    pronouns: "He/Him",
+    description:
+      "Undergraduate student in Architectural Engineering at Oregon State University. Growing up in the Pacific Northwest has led to me frequently experiencing dreary overcast skies. Now, I am interested in researching and improving lighting systems to promote a healthier and happier environment for people inside the buildings that they occupy.",
+    picture: "/team/verplancke.jpg",
+  },
+];
 export const alumni = [
   {
     name: "Paul Peter Matipwiri",
