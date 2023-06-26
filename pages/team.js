@@ -25,7 +25,7 @@ export const phdStudents = [
     email: "valik@oregonstate.edu",
     pronouns: "He/Him",
     description:
-      "Kianoush has a background in building engineering (B.Sc. in Architectural Engineering). He is now working on his Ph.D. degree in Civil Engineering (Architectural Engineering Concentration) focusing on lighting in buildings. His research in the radiantlab aims to determine the impact of architectural lighting design, and especially daylighting design, on the sleep and health of building occupants.",
+      "Kianoush has a background in building engineering (B.Sc. in Architectural Engineering). He is now working on his Ph.D. degree in Civil Engineering (Architectural Engineering concentration) focusing on lighting in buildings. His research aims to determine the impact of architectural lighting design, and especially daylighting design, on the sleep and health of building occupants.",
     picture: "/team/vali.jpg",
   },
 ];
@@ -41,36 +41,36 @@ export const masterStudents = [
 ];
 export const undergradStudents = [
   {
-    name: "Lia Larson",
-    email: "larsolia@oregonstate.edu",
-    pronouns: "She/Her",
-    description:
-      "Lia is an undergraduate student pursuing a major in Architectural Engineering with a specialized focus in lighting design. With a strong dedication to her field, she works towards enhancing architectural designs by maximizing natural lighting solutions that are both sustainable and visually appealing. As a research assistant in the radiantlab, Lia is working on developing new learning materials to study daylighting design as part of a Nuckolls Fund Grant.",
-    picture: "/team/larson.jpg",
-  },
-  {
     name: "Hunter Elliott",
     email: "elliothu@oregonstate.edu",
     pronouns: "He/Him",
     description:
-      "Hunter is studying toward a BSc in Architectural Engineering with a specialty in lighting design at Oregon State University. His interests are in creating lighting solutions for buildings that properly balance aesthetic lighting design with human-centric lighting design. As a research assistant in the radiantlab, Hunter is working on developing new learning materials to study daylighting design as part of a Nuckolls Fund Grant.",
+      "Hunter is studying toward a B.Sc. in Architectural Engineering with a specialty in lighting design at Oregon State University. His interests are in creating lighting solutions for buildings that properly balance aesthetic lighting design with human-centric lighting design. As a research assistant, Hunter is working on developing new learning materials to study daylighting design as part of a Nuckolls Fund Grant.",
     picture: "/team/elliott.jpg",
+  },
+  {
+    name: "Lia Larson",
+    email: "larsolia@oregonstate.edu",
+    pronouns: "She/Her",
+    description:
+      "Lia is an undergraduate student pursuing a major in Architectural Engineering with a specialized focus in lighting design. With a strong dedication to her field, she works towards enhancing architectural designs by maximizing natural lighting solutions that are both sustainable and visually appealing. As a research assistant, Lia is working on developing new learning materials to study daylighting design as part of a Nuckolls Fund Grant.",
+    picture: "/team/larson.jpg",
   },
   {
     name: "Colin Peterson",
     email: "petecoli@oregonstate.edu",
     pronouns: "He/Him",
     description:
-      "As an undergraduate student at Oregon State University, Colin is currently pursuing a degree in Architectural Engineering. Having a natural inclination towards being a night owl, he has had the opportunity to witness firsthand how light has the ability to completely transform a dark and seemingly lifeless space. This phenomenon has sparked his curiosity and fueled his passion for delving deeper into the intricate relationship between light and shade, and exploring how it can be harnessed to create dynamic and captivating environments. As a research assistant in the radiantlab, Colin is developing new learning materials to study daylighting design as part of a Nuckolls Fund Grant.",
+      "As an undergraduate student at Oregon State University, Colin is currently pursuing a degree in Architectural Engineering. Having a natural inclination towards being a night owl, he has had the opportunity to witness firsthand how light has the ability to completely transform a dark and seemingly lifeless space. This phenomenon has sparked his curiosity and fueled his passion for delving deeper into the intricate relationship between light and shade, and exploring how it can be harnessed to create dynamic and captivating environments. As a research assistant, Colin is developing new learning materials to study daylighting design as part of a Nuckolls Fund Grant.",
     picture: "/team/peterson.jpg",
   },
 ];
 export const alumni = [
   {
-    name: "Logan Verplancke",
+    name: "Spencer Kime",
     pronouns: "He/Him",
     description: "Undergraduate Research Assistant",
-    picture: "/team/verplancke.jpg",
+    picture: "/team/kime.jpg",
   },
   {
     name: "Paul Peter Matipwiri",
@@ -79,10 +79,10 @@ export const alumni = [
     picture: "/team/matipwiri.jpg",
   },
   {
-    name: "Spencer Kime",
+    name: "Logan Verplancke",
     pronouns: "He/Him",
     description: "Undergraduate Research Assistant",
-    picture: "/team/kime.jpg",
+    picture: "/team/verplancke.jpg",
   },
 ];
 
@@ -142,7 +142,7 @@ export default function ReseTeamarch() {
         )}
         {phdStudents.length !== 0 && (
           <div>
-            <h2>PhD Candidates</h2>
+            <h2>PhD Students</h2>
             {phdStudents.map((phd) => (
               <TeamCard
                 key={phd.name}
