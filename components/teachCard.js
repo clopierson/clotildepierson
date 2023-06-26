@@ -21,7 +21,7 @@ export default function TeachCard({
         {courseName}
       </p>
       <p className="text-sm">
-        {degree} (±{nStudents} students)
+        {degree} ({nStudents} students)
       </p>
     </article>
   );
