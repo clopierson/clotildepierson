@@ -2,6 +2,8 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+Note: This website is running Next 12.1.0 and no migration is planned at the moment.
+
 ## Getting Started
 
 ### Very First Time
