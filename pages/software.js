@@ -2,6 +2,7 @@ import Layout from "../components/layout";
 import Image from "next/image";
 import backgroundImage from "../public/background-image-software.jpg";
 import larkImage from "../public/software/lark.png";
+import hdriImage from "../public/software/hdri.png";
 import RadiantLab from "../components/radiantLab";
 
 export default function Research() {
@@ -103,7 +104,7 @@ export default function Research() {
         </article>
         {/* HDRI Calibation Tool */}
         <article className="flex flex-col sm:flex-row gap-0 sm:gap-8 border-t-[1px] border-t-neutral-300 pt-4 sm:pt-0">
-          {/* <div className="sm:basis-72 my-2 sm:mt-8">
+          <div className="sm:basis-72 my-2 sm:mt-8">
             <Image
               src={hdriImage}
               alt=""
@@ -111,7 +112,7 @@ export default function Research() {
               width={150}
               height={150}
             />
-          </div> */}
+          </div>
           <div>
             <h2 className="mt-2 sm:mt-8">HDRI Calibration Tool v0.1</h2>
             <span className="border-[1px] rounded-full py-1 px-2 text-xs">
