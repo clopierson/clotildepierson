@@ -15,7 +15,7 @@ export const principalInvestigator = [
     name: "Clotilde Pierson",
     description: "/about",
     pronouns: "She/Her",
-    picture: "/team/pierson_alt.jpg",
+    picture: "/team/pierson.jpg",
   },
 ];
 export const postdocs = [];

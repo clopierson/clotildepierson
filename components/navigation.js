@@ -20,6 +20,10 @@ export const MenuItems = [
     link: "/software",
     name: "software",
   },
+  // {
+  //   link: "/facilities",
+  //   name: "facilities",
+  // },
   {
     link: "/publications",
     name: "publications",

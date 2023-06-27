@@ -2,6 +2,7 @@ import Layout from "../components/layout";
 import Image from "next/image";
 import backgroundImage from "../public/background-image-software.jpg";
 import larkImage from "../public/software/lark.png";
+import hdriImage from "../public/software/hdri.png";
 import RadiantLab from "../components/radiantLab";
 
 export default function Research() {
@@ -98,6 +99,78 @@ export default function Research() {
               LLP for the electric lighting simulation workflow and
               contributions from Priji Balakrishnan, Ph.D. and Alstan J.
               Jakubiec, Ph.D. for the implementation of the Perez sky model.
+            </p>
+          </div>
+        </article>
+        {/* HDRI Calibation Tool */}
+        <article className="flex flex-col sm:flex-row gap-0 sm:gap-8 border-t-[1px] border-t-neutral-300 pt-4 sm:pt-0">
+          <div className="sm:basis-72 my-2 sm:mt-8">
+            <Image
+              src={hdriImage}
+              alt=""
+              placeholder="blur"
+              width={150}
+              height={150}
+            />
+          </div>
+          <div>
+            <h2 className="mt-2 sm:mt-8">HDRI Calibration Tool v0.1</h2>
+            <span className="border-[1px] rounded-full py-1 px-2 text-xs">
+              Qt
+            </span>{" "}
+            <span className="border-[1px] rounded-full py-1 px-2 text-xs">
+              Python
+            </span>
+            <p>
+              The HDRI Calibration Tool was designed to automate and facilitate
+              the process of merging multiple Low Dynamic Range (LDR) images
+              together and generating a calibrated High Dynamic Range (HDR)
+              image. The tool serves as a user-friendly GUI that runs a pipeline
+              of{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/LBNL-ETA/Radiance"
+              >
+                Radiance
+              </a>{" "}
+              commands so that people of varying technological experiences can
+              generate their own calibrated HDR images or luminance maps.
+            </p>
+            <ul>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/clopierson/HDRICalibrationTool"
+                >
+                  Frontend source code and executables on GitHub
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/clopierson/radiance_pipeline"
+                >
+                  HDR pipeline source code on GitHub
+                </a>
+              </li>
+            </ul>
+            <p className="italic text-sm">
+              The HDRI Calibration Tool is an entirely free, open-sourced
+              application developed by a small group of undergraduate Computer
+              Science students under the supervision of Dr. Clotilde Pierson at
+              Oregon State University. To read more about the process of
+              generating an HDR image from LDR image input,{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.tandfonline.com/doi/full/10.1080/15502724.2019.1684319"
+              >
+                check the publication
+              </a>
+              .
             </p>
           </div>
         </article>
