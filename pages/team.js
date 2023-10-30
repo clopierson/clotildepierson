@@ -39,32 +39,7 @@ export const masterStudents = [
     picture: "/team/orman.jpg",
   },
 ];
-export const undergradStudents = [
-  {
-    name: "Hunter Elliott",
-    email: "elliothu@oregonstate.edu",
-    pronouns: "He/Him",
-    description:
-      "Hunter is studying toward a B.Sc. in Architectural Engineering with a specialty in lighting design at Oregon State University. His interests are in creating lighting solutions for buildings that properly balance aesthetic lighting design with human-centric lighting design. As a research assistant, Hunter is working on developing new learning materials to study daylighting design as part of a Nuckolls Fund Grant.",
-    picture: "/team/elliott.jpg",
-  },
-  {
-    name: "Lia Larson",
-    email: "larsolia@oregonstate.edu",
-    pronouns: "She/Her",
-    description:
-      "Lia is an undergraduate student pursuing a major in Architectural Engineering with a specialized focus in lighting design. With a strong dedication to her field, she works towards enhancing architectural designs by maximizing natural lighting solutions that are both sustainable and visually appealing. As a research assistant, Lia is working on developing new learning materials to study daylighting design as part of a Nuckolls Fund Grant.",
-    picture: "/team/larson.jpg",
-  },
-  {
-    name: "Colin Peterson",
-    email: "petecoli@oregonstate.edu",
-    pronouns: "He/Him",
-    description:
-      "As an undergraduate student at Oregon State University, Colin is currently pursuing a degree in Architectural Engineering. Having a natural inclination towards being a night owl, he has had the opportunity to witness firsthand how light has the ability to completely transform a dark and seemingly lifeless space. This phenomenon has sparked his curiosity and fueled his passion for delving deeper into the intricate relationship between light and shade, and exploring how it can be harnessed to create dynamic and captivating environments. As a research assistant, Colin is developing new learning materials to study daylighting design as part of a Nuckolls Fund Grant.",
-    picture: "/team/peterson.jpg",
-  },
-];
+export const undergradStudents = [];
 export const alumni = [
   {
     name: "Spencer Kime",
@@ -83,6 +58,24 @@ export const alumni = [
     pronouns: "He/Him",
     description: "Undergraduate Research Assistant",
     picture: "/team/verplancke.jpg",
+  },
+  {
+    name: "Hunter Elliott",
+    pronouns: "He/Him",
+    description: "Undergraduate Research Assistant",
+    picture: "/team/elliott.jpg",
+  },
+  {
+    name: "Lia Larson",
+    pronouns: "She/Her",
+    description: "Undergraduate Research Assistant",
+    picture: "/team/larson.jpg",
+  },
+  {
+    name: "Colin Peterson",
+    pronouns: "He/Him",
+    description: "Undergraduate Research Assistant",
+    picture: "/team/peterson.jpg",
   },
 ];
 

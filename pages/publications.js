@@ -29,21 +29,57 @@ export default function Publications() {
       <div className="h-[70vh]"></div>
       <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
         <h1>Publications</h1>
-        <h2>2022</h2>
-        {/*
+        <h2>2023</h2>
         <p>
           Quek G., Jain S., Karmann C.,{" "}
           <span className="font-bold">Pierson C.</span>, Wienold J., Andersen M.
-          (2022). A critical analysis of questionnaire items for discomfort
-          glare studies in daylit spaces. Manuscript submitted for publication
-          in Lighting Research & Technology.
+          (2023). Comparison of questionnaire items for discomfort glare studies
+          in daylit spaces. Lighting Research & Technology, 1-29.{" "}
+          <a
+            href="https://doi.org/10.1177/14771535231203564"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            DOI:10.1177/14771535231203564
+          </a>
+          <br></br>
+          <a
+            href="https://infoscience.epfl.ch/record/306185"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Paper available on Infoscience
+          </a>
         </p>
-         */}
+
+        <p>
+          Orman A., Safranek S., <span className="font-bold">Pierson C.</span>{" "}
+          (2023). Implementation of a reconstructed spectral sky definition in a
+          light simulation tool and comparison to measurements. CIE Quadrennial
+          Session, Ljubljana, Slovenia, Sep. 18-20, 2023.
+        </p>
+
+        <p>
+          Karmann C., <span className="font-bold">Pierson C.</span>, Danell M.,
+          Wienold J., Barthelemes V., Khovaly D., Andersen M. (2023). Variation
+          in photopic and melanopic lighting in Swiss offices: a field study.
+          CIE Quadrennial Session, Ljubljana, Slovenia, Sep. 18-20, 2023.
+        </p>
+
+        <p>
+          Balakrishnan P., Diakite-Kortlever A., Dumortier D., Hernández-Andrés
+          J., Kenny P., Maskarenj M.,{" "}
+          <span className="font-bold">Pierson C.</span>, Thorseth A., Xue P.,
+          Knoop M. (2023). SkySpectra: an opensource data package of worldwide
+          spectral daylight. CIE Quadrennial Session, Ljubljana, Slovenia, Sep.
+          18-20, 2023.
+        </p>
+        <h2>2022</h2>
         <p>
           <span className="font-bold">Pierson C.</span>, Aarts M., Andersen M.
           (2022). Validation of spectral simulation tools in the context of
           ipRGC-influenced light responses of building occupants. Journal of
-          Building Performance Simulation, 1-19.{" "}
+          Building Performance Simulation, 16(2), 179-197.{" "}
           <a
             href="https://doi.org/10.1080/19401493.2022.2125582"
             target="_blank"
