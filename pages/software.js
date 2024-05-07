@@ -114,12 +114,15 @@ export default function Research() {
             />
           </div>
           <div>
-            <h2 className="mt-2 sm:mt-8">HDRI Calibration Tool v0.1</h2>
+            <h2 className="mt-2 sm:mt-8">HDRI Calibration Interface v2.0</h2>
             <span className="border-[1px] rounded-full py-1 px-2 text-xs">
-              Qt
+              Tauri
             </span>{" "}
             <span className="border-[1px] rounded-full py-1 px-2 text-xs">
-              Python
+              Next.js
+            </span>{" "}
+            <span className="border-[1px] rounded-full py-1 px-2 text-xs">
+              Rust
             </span>
             <p>
               The HDRI Calibration Tool was designed to automate and facilitate
@@ -127,6 +130,14 @@ export default function Research() {
               together and generating a calibrated High Dynamic Range (HDR)
               image. The tool serves as a user-friendly GUI that runs a pipeline
               of{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="http://www.anyhere.com/"
+              >
+                hdrgen
+              </a>
+              {" and "}
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -145,15 +156,6 @@ export default function Research() {
                   href="https://github.com/clopierson/HDRICalibrationTool"
                 >
                   Frontend source code and executables on GitHub
-                </a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/clopierson/radiance_pipeline"
-                >
-                  HDR pipeline source code on GitHub
                 </a>
               </li>
             </ul>
