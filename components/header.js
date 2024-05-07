@@ -12,7 +12,9 @@ export default function Header() {
         <div className="col-span-4 justify-self-center md:justify-self-start md:col-span-1">
           <div className="flex place-content-center items-center gap-6">
             <InstitutionLogo />
-            <RadiantLab link="/" />
+            <span className="md:hidden">
+              <RadiantLab link="/" />
+            </span>
           </div>
         </div>
         <div className="col-start-3 col-span-2 justify-self-center md:justify-self-end">
