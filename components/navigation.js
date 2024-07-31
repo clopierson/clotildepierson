@@ -8,10 +8,10 @@ import RadiantLab from "./radiantLab.js";
 import InstitutionLogo from "./InstitutionLogo";
 
 export const MenuItems = [
-  {
-    link: "/",
-    name: "home",
-  },
+  // {
+  //   link: "/",
+  //   name: "home",
+  // },
   {
     link: "/research",
     name: "research",
@@ -50,6 +50,9 @@ export default function Navigation() {
     <nav>
       {/* Non-Mobile Menu */}
       <div className="hidden md:flex md:justify-end md:gap-4">
+        <div className="text-sm no-underline md:text-base inline" key="home">
+          <RadiantLab link="/" />
+        </div>
         {MenuItems.map((link) => (
           <div
             className="capitalize text-sm no-underline md:text-base inline hover:text-osu-luminance"
@@ -99,6 +102,7 @@ export default function Navigation() {
             <div className="w-24">
               <InstitutionLogo orientation="vertical" />
             </div>
+            <RadiantLab link="/" />
             {MenuItems.map((link) => (
               <div
                 className="capitalize no-underline md:text-base inline hover:text-osu-luminance"
