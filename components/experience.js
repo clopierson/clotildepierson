@@ -32,7 +32,6 @@ export default function Experience() {
       <h2>Education and Work History</h2>
       <ExperienceCard
         experience="Assistant Professor of Architectural Engineering"
-        altExpertience="Culbertson Faculty Scholar"
         department="School of Civil and Construction Engineering (CCE)"
         institution="Oregon State University"
         institutionShort="OSU"

@@ -4,7 +4,7 @@ export default function Teaching() {
   return (
     <section>
       <h2>Teaching</h2>
-      <h3>2023</h3>
+      <h3>2024</h3>
       <TeachCard
         position="Instructor"
         institution="Oregon State University"
@@ -12,7 +12,7 @@ export default function Teaching() {
         courseId="ARE499/599"
         courseName="Daylighting Design"
         degree="Undergraduate/Graduate"
-        nStudents="6"
+        nStudents="17"
       />
       <TeachCard
         position="Instructor"
@@ -21,10 +21,30 @@ export default function Teaching() {
         courseId="ARE499/599"
         courseName="Parametric Design in Arch. Eng."
         degree="Undergraduate/Graduate"
-        nStudents="5"
+        nStudents="14"
       />
       <details>
         <summary>Show More</summary>
+
+        <h3>2023</h3>
+        <TeachCard
+          position="Instructor"
+          institution="Oregon State University"
+          institutionShort="OSU"
+          courseId="ARE499/599"
+          courseName="Daylighting Design"
+          degree="Undergraduate/Graduate"
+          nStudents="6"
+        />
+        <TeachCard
+          position="Instructor"
+          institution="Oregon State University"
+          institutionShort="OSU"
+          courseId="ARE499/599"
+          courseName="Parametric Design in Arch. Eng."
+          degree="Undergraduate/Graduate"
+          nStudents="5"
+        />
 
         <h3>2022</h3>
         <TeachCard
