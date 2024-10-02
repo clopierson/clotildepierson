@@ -21,8 +21,7 @@ export default function About() {
             <p>
               Dr. Pierson is the Principal Investigator of the&nbsp;
               <RadiantLab /> and an Assistant Professor of Architectural
-              Engineering (Culbertson Faculty Scholar) in the School of Civil
-              and Construction Engineering at{" "}
+              Engineering in the School of Civil and Construction Engineering at{" "}
               <a
                 target="_blank"
                 rel="noreferrer noopener"

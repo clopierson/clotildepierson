@@ -44,9 +44,8 @@ export default function Home() {
             <a className="font-bold hover:font-bold">Dr. Clotilde Pierson</a>
           </Link>
           {", "}
-          an Assistant Professor of Architectural Engineering (Culbertson
-          Faculty Scholar) in the College of Engineering at Oregon State
-          University.
+          an Assistant Professor of Architectural Engineering in the College of
+          Engineering at Oregon State University.
         </p>
         <p>
           Our mission is to advance knowledge related to daylight in buildings
