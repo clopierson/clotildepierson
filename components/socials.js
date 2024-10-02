@@ -34,12 +34,11 @@ export default function Socials() {
       </a>{" "}
       /{" "}
       <a
-        href="https://twitter.com/PiersonClotilde"
+        href="https://x.com/PiersonClotilde"
         target="_blank"
         rel="noreferrer noopener"
       >
-        Twitter
-        {/* <Twitter className="inline" /> */}
+        X{/* <Twitter className="inline" /> */}
       </a>
     </div>
   );

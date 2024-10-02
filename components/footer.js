@@ -16,7 +16,39 @@ export default function Footer({
         <div className="text-xs mt-6">
           Copyright © {date} <RadiantLab />. All rights reserved.
         </div>
-        <div></div>
+        <div>
+          <p class="text-xs">
+            This work is licensed under{" "}
+            <a
+              href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1"
+              target="_blank"
+              rel="license noopener noreferrer"
+              class="inline-block"
+            >
+              CC BY-NC-ND 4.0
+              <img
+                class="h-4 ml-1 align-bottom inline my-0"
+                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+                alt=""
+              />
+              <img
+                class="h-4 ml-1 align-bottom inline my-0"
+                src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+                alt=""
+              />
+              <img
+                class="h-4 ml-1 align-bottom inline my-0"
+                src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
+                alt=""
+              />
+              <img
+                class="h-4 ml-1 align-bottom inline my-0"
+                src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"
+                alt=""
+              />
+            </a>
+          </p>
+        </div>
         <div className="text-xs mt-6">
           <div>
             Developed by{" "}
