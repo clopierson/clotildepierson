@@ -59,6 +59,13 @@ export const undergradStudents = [
 ];
 export const alumni = [
   {
+    name: "Alfiya Orman",
+    pronouns: "She/They",
+    description:
+      "Graduated with a MS in Civil Engineering. Started working for the Pacific Northwest National Laboratory (PNNL).",
+    picture: "/team/orman.jpg",
+  },
+  {
     name: "Spencer Kime",
     pronouns: "He/Him",
     description: "Undergraduate Research Assistant",
@@ -94,13 +101,6 @@ export const alumni = [
     description: "Undergraduate Research Assistant",
     picture: "/team/peterson.jpg",
   },
-  {
-    name: "Alfiya Orman",
-    pronouns: "She/They",
-    description:
-      "Graduated with a MS in Civil Engineering. Started working for the Pacific Northwest National Laboratory (PNNL).",
-    picture: "/team/orman.jpg",
-  },
 ];
 
 export default function ReseTeamarch() {
@@ -116,7 +116,7 @@ export default function ReseTeamarch() {
       <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
-          alt="teammates walking on campus, talking"
+          alt="teammates smiling, talking about project"
           placeholder="blur"
           priority="true"
           layout="fill"
