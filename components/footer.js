@@ -17,33 +17,33 @@ export default function Footer({
           Copyright © {date} <RadiantLab />. All rights reserved.
         </div>
         <div>
-          <p class="text-xs">
+          <p className="text-xs">
             This work is licensed under{" "}
             <a
               href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1"
               target="_blank"
               rel="license noopener noreferrer"
-              class="inline-block"
+              className="inline-block"
             >
               CC BY-NC-ND 4.0
               <img
-                class="h-4 ml-1 align-bottom inline my-0"
-                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+                className="h-4 ml-1 align-bottom inline my-0"
+                src="/license/cc.png"
                 alt=""
               />
               <img
-                class="h-4 ml-1 align-bottom inline my-0"
-                src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+                className="h-4 ml-1 align-bottom inline my-0"
+                src="/license/by.png"
                 alt=""
               />
               <img
-                class="h-4 ml-1 align-bottom inline my-0"
-                src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
+                className="h-4 ml-1 align-bottom inline my-0"
+                src="/license/nc.png"
                 alt=""
               />
               <img
-                class="h-4 ml-1 align-bottom inline my-0"
-                src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"
+                className="h-4 ml-1 align-bottom inline my-0"
+                src="/license/nd.png"
                 alt=""
               />
             </a>
