@@ -56,6 +56,14 @@ export const undergradStudents = [
       "Isaiah is working on his bachelor's degree in Civil Engineering. He is interested in examining the relationships between humans and the built environment, specifically the human experience within built structures. In his research project, Isaiah focuses on how the lighting conditions and viewing experience affect the building occupants.",
     picture: "/team/pileggi-epps.jpg",
   },
+  {
+    name: "Keean Balsiger",
+    email: "balsigke@oregonstate.edu",
+    pronouns: "He/Him",
+    description:
+      "Keean is a bachelors student studying architectural engineering with a focus in lighting design. He is interested in the interface between the built environment and human health. He looks forward to researching the non-visual effects of light and peoples well-being.",
+    picture: "/team/balsiger.jpg",
+  },
 ];
 export const alumni = [
   {
