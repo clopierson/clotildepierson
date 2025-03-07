@@ -28,8 +28,6 @@ export const phdStudents = [
       "Yahya holds an MS degree in Electrical Engineering and is currently pursuing his PhD in the field of Civil Engineering, with a concentration in Architectural Engineering. His research is focused on studying the non-visual responses to light of building occupants under daylight conditions, with an overarching goal to enhance the health and well-being of individuals who reside or work in buildings.",
     picture: "/team/sogodok.jpg",
   },
-];
-export const masterStudents = [
   {
     name: "Kianoush Vali",
     email: "valik@oregonstate.edu",
@@ -38,6 +36,8 @@ export const masterStudents = [
       "Kianoush has a background in building engineering (B.Sc. in Architectural Engineering). He is now working on his Ph.D. degree in Civil Engineering (Architectural Engineering concentration) focusing on lighting in buildings. His research aims to determine the impact of architectural lighting design, and especially daylighting design, on the sleep and health of building occupants.",
     picture: "/team/vali.jpg",
   },
+];
+export const masterStudents = [
   {
     name: "Nima Ghorbanian Matloob",
     email: "ghorbann@oregonstate.edu",
