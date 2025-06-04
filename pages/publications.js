@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import backgroundImage from "../public/background-image-publications.jpg";
 
 // We use APA citations.
@@ -15,7 +15,7 @@ export default function Publications() {
       heroImageUrl="https://oregonstate.edu"
       heroImageAuthor="Erick Durano"
     >
-      <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
+      <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
           alt="daylight in a bright library"
@@ -25,7 +25,7 @@ export default function Publications() {
           objectFit="cover"
           objectPosition="20% 50%"
         ></Image>
-      </div>
+      </picture>
       <div className="h-[70vh]"></div>
       <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
         <h1>Publications</h1>

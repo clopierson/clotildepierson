@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import backgroundImage from "../public/background-image-research.jpg";
 import ResearchDiagram from "../components/researchDiagram";
 import ProjectCard from "../components/projectCard";
@@ -14,7 +14,7 @@ export default function Research() {
       heroImageUrl="https://oregonstate.edu"
       heroImageAuthor="Jade Webster"
     >
-      <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
+      <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
           alt="inside kelley engineering building with large windows and daylight"
@@ -24,7 +24,7 @@ export default function Research() {
           objectFit="cover"
           objectPosition="50% 30%"
         ></Image>
-      </div>
+      </picture>
       <div className="h-[70vh]"></div>
       <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
         <h1>Research</h1>

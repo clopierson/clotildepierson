@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import backgroundImage from "../public/backgroung-image-team.jpg";
 import SpontaneousApplication from "../components/spontaneousApplication";
 import TeamCard from "../components/teamCard";
@@ -121,7 +121,7 @@ export default function ReseTeamarch() {
       heroImageUrl="https://oregonstate.edu/"
       heroImageAuthor="Karl Maasdam"
     >
-      <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
+      <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
           alt="teammates smiling, talking about project"
@@ -131,7 +131,7 @@ export default function ReseTeamarch() {
           objectFit="cover"
           objectPosition="50% 20%"
         ></Image>
-      </div>
+      </picture>
       <div className="h-[70vh]"></div>
       <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
         <h1>Team</h1>

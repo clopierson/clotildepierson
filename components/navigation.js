@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import { DialogOverlay, DialogContent } from "@reach/dialog";
-import "@reach/dialog/styles.css";
 import { ChevronUp, X, Menu } from "react-feather";
-import VisuallyHidden from "@reach/visually-hidden";
 import RadiantLab from "./radiantLab.js";
 import InstitutionLogo from "./InstitutionLogo";
+
+import { VisuallyHidden } from "radix-ui";
+import { Dialog } from "radix-ui";
 
 export const MenuItems = [
   // {
@@ -76,51 +76,49 @@ export default function Navigation() {
         aria-label="back to the top of the page"
         className="select-none px-3 py-3 text-sm fixed bottom-6 right-20 block text-center rounded text-gray-800 bg-gray-300 hover:bg-osu-luminance md:hidden shadow-md dark:shadow-black/50"
       >
-        <VisuallyHidden>Back to Top</VisuallyHidden>
+        <VisuallyHidden.Root>Back to Top</VisuallyHidden.Root>
         <ChevronUp />
       </a>
-      {/* Open menu on Mobile */}
-      <button
-        className="select-none px-3 py-3 text-sm fixed bottom-6 right-6 block text-center rounded text-gray-800 bg-gray-300 hover:bg-osu-luminance md:hidden shadow-md dark:shadow-black/50"
-        onClick={open}
-      >
-        {/* tailwindcss offer sr-only utility class instead */}
-        <VisuallyHidden>Open Navigation Menu</VisuallyHidden>
-        <Menu />
-      </button>
-      {/* Mobile menu overlay */}
-      <DialogOverlay
-        isOpen={showDialog}
-        onDismiss={close}
-        className="animate-fade-in z-20"
-      >
-        <DialogContent
-          aria-label="mobile navigation menu"
-          className="fixed top-0 right-0 !m-0 h-full !w-[75%] dark:!bg-neutral-800 motion-safe:animate-slide-in"
-        >
-          <div className="grid gap-4 h-full content-end motion-safe:animate-fade-in-slow">
-            <div className="w-24">
-              <InstitutionLogo orientation="vertical" />
-            </div>
-            <RadiantLab link="/" />
-            {MenuItems.map((link) => (
-              <div
-                className="capitalize no-underline md:text-base inline hover:text-osu-luminance"
-                key={link.name}
-              >
-                <Link href={link.link}>{link.name}</Link>
-              </div>
-            ))}
-          </div>
-          <button
-            className="select-none px-3 py-3 text-sm fixed bottom-6 right-6 block text-center rounded text-gray-800 bg-gray-300 hover:bg-osu-luminance md:hidden shadow-md dark:shadow-black/50"
-            onClick={close}
+      {/* Open menu on Mobile + Overlay*/}
+      <Dialog.Root>
+        <Dialog.Trigger asChild>
+          <button className="select-none px-3 py-3 text-sm fixed bottom-6 right-6 block text-center rounded text-gray-800 bg-gray-300 hover:bg-osu-luminance md:hidden shadow-md dark:shadow-black/50">
+            <VisuallyHidden.Root>Open Navigation Menu</VisuallyHidden.Root>
+            <Menu />
+          </button>
+        </Dialog.Trigger>
+        <Dialog.Portal>
+          <Dialog.Overlay className="animate-fade-in z-20 data-[state=open]:animate-overlayShow" />
+          <Dialog.Content
+            aria-label="mobile navigation menu"
+            className="z-50 fixed top-0 right-0 p-10 !m-0 h-full !w-[75%] bg-white  dark:!bg-neutral-800 motion-safe:animate-slide-in"
           >
-            <VisuallyHidden>Close Navigation Menu</VisuallyHidden>
-            <X />
-          </button>{" "}
-        </DialogContent>
-      </DialogOverlay>
+            <div className="grid gap-4 h-full content-end motion-safe:animate-fade-in-slow">
+              <Dialog.Title className="w-24">
+                <InstitutionLogo orientation="vertical" />
+              </Dialog.Title>
+              <Dialog.Description className=""></Dialog.Description>
+              <RadiantLab link="/" />
+              {MenuItems.map((link) => (
+                <div
+                  className="capitalize no-underline md:text-base inline hover:text-osu-luminance"
+                  key={link.name}
+                >
+                  <Link href={link.link}>{link.name}</Link>
+                </div>
+              ))}
+              <Dialog.Close asChild>
+                <button className="select-none px-3 py-3 text-sm fixed bottom-6 right-6 block text-center rounded text-gray-800 bg-gray-300 hover:bg-osu-luminance md:hidden shadow-md dark:shadow-black/50">
+                  <VisuallyHidden.Root>
+                    Close Navigation Menu
+                  </VisuallyHidden.Root>
+                  <X />
+                </button>
+              </Dialog.Close>
+            </div>
+          </Dialog.Content>
+        </Dialog.Portal>
+      </Dialog.Root>
     </nav>
   );
 }

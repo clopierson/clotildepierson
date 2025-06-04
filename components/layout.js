@@ -68,7 +68,10 @@ export default function Layout({
       />
       <div className="grid grid-cols-12">
         <Header />
-        <main className="row-start-2 row-span-1 col-start-2 col-span-10">
+        <main
+          id="main-content"
+          className="row-start-2 row-span-1 col-start-2 col-span-10"
+        >
           {children}
         </main>
         <Footer

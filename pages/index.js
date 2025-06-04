@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import backgroundImage from "../public/background-image.jpg";
 import FactCard from "../components/factCard";
@@ -40,8 +40,8 @@ export default function Home() {
         <h1 className="sr-only">Daylighting Research Laboratory</h1>
         <p className="font-bold">
           The <RadiantLab /> is led by{" "}
-          <Link href="/about">
-            <a className="font-bold hover:font-bold">Dr. Clotilde Pierson</a>
+          <Link href="/about" className="font-bold hover:font-bold">
+            Dr. Clotilde Pierson
           </Link>
           {", "}
           an Assistant Professor of Architectural Engineering in the College of
