@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import verticalDark from "../public/institution/OSU_vertical_2C_O_over_W.png";
 import verticalLight from "../public/institution/OSU_vertical_2C_O_over_B.png";
 import horizontalDark from "../public/institution/OSU_horizontal_2C_O_over_W.png";
@@ -16,7 +16,6 @@ export default function InstitutionLogo({ orientation = "horizontal" }) {
               placeholder="blur"
               width={200}
               height={64}
-              layout="intrinsic"
             />
           </div>
           <div className="hidden dark:inline-block">
@@ -26,7 +25,6 @@ export default function InstitutionLogo({ orientation = "horizontal" }) {
               placeholder="blur"
               width={200}
               height={64}
-              layout="intrinsic"
             />
           </div>
         </div>
@@ -39,7 +37,6 @@ export default function InstitutionLogo({ orientation = "horizontal" }) {
               placeholder="blur"
               width={95}
               height={100}
-              layout="intrinsic"
             />
           </div>
           <div className="hidden dark:inline-block">
@@ -49,7 +46,6 @@ export default function InstitutionLogo({ orientation = "horizontal" }) {
               placeholder="blur"
               width={95}
               height={100}
-              layout="intrinsic"
             />
           </div>
         </div>

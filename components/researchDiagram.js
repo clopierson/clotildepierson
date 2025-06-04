@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export default function ResearchDiagram({ diagram }) {
   return (
@@ -10,7 +10,6 @@ export default function ResearchDiagram({ diagram }) {
             <Image
               src="/rel_diag_sm_dark.svg"
               alt="relationships between natural and built environment, indoor light and visual conditions, building occupants, and energy consumption"
-              layout="intrinsic"
               width={645}
               height={344}
             />
@@ -19,7 +18,6 @@ export default function ResearchDiagram({ diagram }) {
             <Image
               src="/rel_diag_sm_light.svg"
               alt="relationships between natural and built environment, indoor light and visual conditions, building occupants, and energy consumption"
-              layout="intrinsic"
               width={645}
               height={344}
             />
@@ -32,7 +30,6 @@ export default function ResearchDiagram({ diagram }) {
             <Image
               src="/rel_env_cond_diag_sm_dark.svg"
               alt="relationship between natural and built environment, and indoor light and visual conditions"
-              layout="intrinsic"
               width={447}
               height={147}
             />
@@ -41,7 +38,6 @@ export default function ResearchDiagram({ diagram }) {
             <Image
               src="/rel_env_cond_diag_sm_light.svg"
               alt="relationship between natural and built environment, and indoor light and visual conditions"
-              layout="intrinsic"
               width={447}
               height={147}
             />
@@ -54,7 +50,6 @@ export default function ResearchDiagram({ diagram }) {
             <Image
               src="/rel_occ_cond_diag_sm_dark.svg"
               alt="relationship between indoor light and visual conditions, and building occupants"
-              layout="intrinsic"
               width={447}
               height={142}
             />
@@ -63,7 +58,6 @@ export default function ResearchDiagram({ diagram }) {
             <Image
               src="/rel_occ_cond_diag_sm_light.svg"
               alt="relationship between indoor light and visual conditions, and building occupants"
-              layout="intrinsic"
               width={447}
               height={142}
             />
@@ -76,7 +70,6 @@ export default function ResearchDiagram({ diagram }) {
             <Image
               src="/rel_ener_diag_sm_dark.svg"
               alt="relationships between natural and built environment, building occupants, and energy consumption"
-              layout="intrinsic"
               width={423}
               height={318}
             />
@@ -85,7 +78,6 @@ export default function ResearchDiagram({ diagram }) {
             <Image
               src="/rel_ener_diag_sm_light.svg"
               alt="relationships between natural and built environment, building occupants, and energy consumption"
-              layout="intrinsic"
               width={423}
               height={318}
             />

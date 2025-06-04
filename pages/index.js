@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import backgroundImage from "../public/background-image.jpg";
 import FactCard from "../components/factCard";
@@ -22,11 +22,9 @@ export default function Home() {
         <Image
           src={backgroundImage}
           alt="Urban Daylight"
-          placeholder="blur"
-          layout="fill"
-          priority="true"
-          objectFit="cover"
-          objectPosition="30% 30%"
+          fill={true}
+          priority={true}
+          className="object-cover object-[30%_30%]"
         ></Image>
       </picture>
       <div className="absolute left-0 right-0 w-fit mx-auto text-center top-[36%] py-2 px-4 sm:py-3 sm:px-7 lg:py-5 lg:px-12 backdrop-blur-sm bg-gray-200/70 dark:bg-gray-700/70">

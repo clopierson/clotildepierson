@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import backgroundImage from "../public/background-image-publications.jpg";
 
 // We use APA citations.
@@ -19,11 +19,9 @@ export default function Publications() {
         <Image
           src={backgroundImage}
           alt="daylight in a bright library"
-          placeholder="blur"
-          priority="true"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="20% 50%"
+          fill={true}
+          priority={true}
+          className="object-cover object-[20%_50%]"
         ></Image>
       </picture>
       <div className="h-[70vh]"></div>

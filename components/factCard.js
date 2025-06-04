@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export default function FactCard({ illustration, fact, description, alt }) {
   return (
@@ -6,9 +6,9 @@ export default function FactCard({ illustration, fact, description, alt }) {
       <Image
         src={illustration}
         alt={alt}
-        layout="intrinsic"
         width={150}
         height={150}
+        className="mt-0"
       />
       <div className="mt-2 text-xl font-[Spartan] font-bold">{fact}</div>
       <div className="font-[Spartan] text-sm font-bold">{description}</div>

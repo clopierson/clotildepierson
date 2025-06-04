@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import backgroundImage from "../public/backgroung-image-team.jpg";
 import SpontaneousApplication from "../components/spontaneousApplication";
 import TeamCard from "../components/teamCard";
@@ -125,11 +125,9 @@ export default function ReseTeamarch() {
         <Image
           src={backgroundImage}
           alt="teammates smiling, talking about project"
-          placeholder="blur"
-          priority="true"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="50% 20%"
+          fill={true}
+          priority={true}
+          className="object-cover object-[50%_20%]"
         ></Image>
       </picture>
       <div className="h-[70vh]"></div>

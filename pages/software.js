@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import backgroundImage from "../public/background-image-software.jpg";
 import larkImage from "../public/software/lark.png";
 import hdriImage from "../public/software/hdri.png";
@@ -19,11 +19,9 @@ export default function Research() {
         <Image
           src={backgroundImage}
           alt="computer screens with code, keyboard"
-          placeholder="blur"
-          layout="fill"
-          priority="true"
-          objectFit="cover"
-          objectPosition="50% 30%"
+          fill={true}
+          priority={true}
+          className="object-cover object-[50%_30%]"
         ></Image>
       </picture>
       <div className="h-[70vh]"></div>

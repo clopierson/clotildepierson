@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import backgroundImage from "../public/background-image-research.jpg";
 import ResearchDiagram from "../components/researchDiagram";
 import ProjectCard from "../components/projectCard";
@@ -18,11 +18,9 @@ export default function Research() {
         <Image
           src={backgroundImage}
           alt="inside kelley engineering building with large windows and daylight"
-          placeholder="blur"
-          layout="fill"
-          priority="true"
-          objectFit="cover"
-          objectPosition="50% 30%"
+          fill={true}
+          priority={true}
+          className="object-cover object-[50%_30%]"
         ></Image>
       </picture>
       <div className="h-[70vh]"></div>
