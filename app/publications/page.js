@@ -1,20 +1,26 @@
-import Layout from "../components/layout";
 import Image from "next/image";
-import backgroundImage from "../public/background-image-publications.jpg";
+import backgroundImage from "../../public/background-image-publications.jpg";
 
-// We use APA citations.
-// https://stackoverflow.com/questions/29896907/bold-part-of-string
+export const metadata = {
+  title: "Publications | RadiantLab",
+  description:
+    "Peer-reviewed journal/conference papers, conferences/workshops contributions, and datasets by the Daylighting Research Laboratory (RadiantLab) at Oregon State University.",
+  openGraph: {
+    url: "https://www.clotildepierson.com/publications",
+    title: "Publications | RadiantLab",
+    description:
+      "Peer-reviewed journal/conference papers, conferences/workshops contributions, and datasets by the Daylighting Research Laboratory (RadiantLab) at Oregon State University.",
+  },
+  twitter: {
+    title: "Publications | RadiantLab",
+    description:
+      "Peer-reviewed journal/conference papers, conferences/workshops contributions, and datasets by the Daylighting Research Laboratory (RadiantLab) at Oregon State University.",
+  },
+};
 
 export default function Publications() {
   return (
-    <Layout
-      pageTitle="Publications | RadiantLab"
-      pageDescription="Peer-reviewed journal/conference papers, conferences/workshops contributions, and datasets by the Daylighting Research Laboratory (RadiantLab) at Oregon State University."
-      pageUrl="https://www.clotildepierson.com/publications"
-      heroImageAuthorUrl="https://www.linkedin.com/in/erick-durano-21657b124/"
-      heroImageUrl="https://oregonstate.edu"
-      heroImageAuthor="Erick Durano"
-    >
+    <>
       <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
@@ -410,6 +416,6 @@ export default function Publications() {
           </a>
         </p>
       </div>
-    </Layout>
+    </>
   );
 }

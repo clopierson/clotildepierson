@@ -1,12 +1,28 @@
-import Layout from "../components/layout";
 import Image from "next/image";
-import backgroundImage from "../public/backgroung-image-team.jpg";
-import SpontaneousApplication from "../components/spontaneousApplication";
-import TeamCard from "../components/teamCard";
+import backgroundImage from "../../public/backgroung-image-team.jpg";
+import SpontaneousApplication from "../../components/spontaneousApplication";
+import TeamCard from "../../components/teamCard";
 
 // default pictures if none:
 // "/team-male.svg"
 // "/team-female.svg"
+
+export const metadata = {
+  title: "Team | RadiantLab",
+  description:
+    "Current openings (jobs), and current and former staff of the Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson.",
+  openGraph: {
+    url: "https://www.clotildepierson.com/team",
+    title: "Team | RadiantLab",
+    description:
+      "Current openings (jobs), and current and former staff of the Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson.",
+  },
+  twitter: {
+    title: "Team | RadiantLab",
+    description:
+      "Current openings (jobs), and current and former staff of the Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson.",
+  },
+};
 
 export const principalInvestigator = [
   {
@@ -109,16 +125,9 @@ export const alumni = [
   },
 ];
 
-export default function ReseTeamarch() {
+export default function Team() {
   return (
-    <Layout
-      pageTitle="Team | RadiantLab"
-      pageDescription="Current openings (jobs), and current and former staff of the Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson."
-      pageUrl="https://www.clotildepierson.com/team"
-      heroImageAuthorUrl="http://www.karlmaasdam.com/"
-      heroImageUrl="https://oregonstate.edu/"
-      heroImageAuthor="Karl Maasdam"
-    >
+    <>
       <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
@@ -223,6 +232,6 @@ export default function ReseTeamarch() {
           </div>
         )}
       </div>
-    </Layout>
+    </>
   );
 }

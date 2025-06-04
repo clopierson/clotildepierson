@@ -1,20 +1,28 @@
-import Layout from "../components/layout";
 import Image from "next/image";
-import backgroundImage from "../public/background-image-software.jpg";
-import larkImage from "../public/software/lark.png";
-import hdriImage from "../public/software/hdri.png";
-import RadiantLab from "../components/radiantLab";
+import backgroundImage from "../../public/background-image-software.jpg";
+import larkImage from "../../public/software/lark.png";
+import hdriImage from "../../public/software/hdri.png";
+import RadiantLab from "../../components/radiantLab";
 
-export default function Research() {
+export const metadata = {
+  title: "Software | RadiantLab",
+  description:
+    "The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson works and provides open-source software to advance research.",
+  openGraph: {
+    url: "https://www.clotildepierson.com/software",
+    title: "Software | RadiantLab",
+    description:
+      "The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson works and provides open-source software to advance research.",
+  },
+  twitter: {
+    title: "Software | RadiantLab",
+    description:
+      "The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson works and provides open-source software to advance research.",
+  },
+};
+export default function Software() {
   return (
-    <Layout
-      pageTitle="Software | RadiantLab"
-      pageDescription="The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson works and provides open-source software to advance research."
-      pageUrl="https://www.clotildepierson.com/software"
-      heroImageAuthorUrl="http://www.karlmaasdam.com/"
-      heroImageUrl="https://oregonstate.edu"
-      heroImageAuthor="Karl Maasdam"
-    >
+    <>
       <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
@@ -173,6 +181,6 @@ export default function Research() {
           </div>
         </article>
       </div>
-    </Layout>
+    </>
   );
 }

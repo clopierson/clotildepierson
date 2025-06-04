@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import { ChevronUp, X, Menu } from "react-feather";
@@ -41,9 +42,12 @@ export const MenuItems = [
 ];
 
 export default function Navigation() {
-  const [showDialog, setShowDialog] = React.useState(false);
-  const open = () => setShowDialog(true);
-  const close = () => setShowDialog(false);
+  const [open, setOpen] = React.useState(false);
+
+  const handleLinkClick = () => {
+    setOpen(false);
+  };
+
   return (
     <nav>
       {/* Non-Mobile Menu */}
@@ -78,7 +82,7 @@ export default function Navigation() {
         <ChevronUp />
       </a>
       {/* Open menu on Mobile + Overlay*/}
-      <Dialog.Root>
+      <Dialog.Root open={open} onOpenChange={setOpen}>
         <Dialog.Trigger asChild>
           <button className="select-none px-3 py-3 text-sm fixed bottom-6 right-6 block text-center rounded text-gray-800 bg-gray-300 hover:bg-osu-luminance md:hidden shadow-md dark:shadow-black/50">
             <span className="sr-only">Open Navigation Menu</span>
@@ -96,11 +100,14 @@ export default function Navigation() {
                 <InstitutionLogo orientation="vertical" />
               </Dialog.Title>
               <Dialog.Description className=""></Dialog.Description>
-              <RadiantLab link="/" />
+              <div onClick={handleLinkClick}>
+                <RadiantLab link="/" />
+              </div>
               {MenuItems.map((link) => (
                 <div
                   className="capitalize no-underline md:text-base inline hover:text-osu-luminance"
                   key={link.name}
+                  onClick={handleLinkClick}
                 >
                   <Link href={link.link}>{link.name}</Link>
                 </div>

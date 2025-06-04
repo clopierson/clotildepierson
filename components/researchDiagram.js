@@ -31,7 +31,7 @@ export default function ResearchDiagram({ diagram }) {
               src="/rel_env_cond_diag_sm_dark.svg"
               alt="relationship between natural and built environment, and indoor light and visual conditions"
               width={447}
-              height={147}
+              height={157}
             />
           </div>
           <div className="flex my-5 justify-center dark:hidden">
@@ -39,7 +39,7 @@ export default function ResearchDiagram({ diagram }) {
               src="/rel_env_cond_diag_sm_light.svg"
               alt="relationship between natural and built environment, and indoor light and visual conditions"
               width={447}
-              height={147}
+              height={157}
             />
           </div>
         </div>

@@ -1,19 +1,31 @@
-import Layout from "../components/layout";
 import Image from "next/image";
-import profilePic from "../public/team/pierson.jpg";
-import Teaching from "../components/teaching";
-import Experience from "../components/experience";
-import Services from "../components/service";
-import Socials from "../components/socials";
-import RadiantLab from "../components/radiantLab";
+import profilePic from "../../public/team/pierson.jpg";
+import Teaching from "../../components/teaching";
+import Experience from "../../components/experience";
+import Services from "../../components/service";
+import Socials from "../../components/socials";
+import RadiantLab from "../../components/radiantLab";
+
+export const metadata = {
+  title: "Clotilde Pierson | RadiantLab",
+  description:
+    "Summary of Dr. Clotilde Pierson: education, work history, teaching, and services. Clotilde is the head of the Daylighting Research Laboratory (RadiantLab).",
+  openGraph: {
+    url: "https://www.clotildepierson.com/about",
+    title: "Clotilde Pierson | RadiantLab",
+    description:
+      "Summary of Dr. Clotilde Pierson: education, work history, teaching, and services. Clotilde is the head of the Daylighting Research Laboratory (RadiantLab).",
+  },
+  twitter: {
+    title: "Clotilde Pierson | RadiantLab",
+    description:
+      "Summary of Dr. Clotilde Pierson: education, work history, teaching, and services. Clotilde is the head of the Daylighting Research Laboratory (RadiantLab).",
+  },
+};
 
 export default function About() {
   return (
-    <Layout
-      pageTitle="Clotilde Pierson | RadiantLab"
-      pageDescription="Summary of Dr. Clotilde Pierson: education, work history, teaching, and services. Clotilde is the head of the Daylighting Research Laboratory (RadiantLab)."
-      pageUrl="https://www.clotildepierson.com/about"
-    >
+    <>
       <div className="grid auto-rows-min grid-flow-row sm:grid-cols-10 sm:grid-rows-1 items-center mt-6">
         <div className="row-start-1 sm:col-start-1 sm:col-span-5 md:col-start-2 md:col-span-4">
           <div className="prose prose-neutral dark:prose-invert">
@@ -100,6 +112,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }
