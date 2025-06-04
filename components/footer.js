@@ -27,22 +27,22 @@ export default function Footer({
             >
               CC BY-NC-ND 4.0
               <img
-                className="h-4 ml-1 align-bottom inline my-0"
+                className="h-4 ml-1 inline mt-0 mb-0"
                 src="/license/cc.png"
                 alt=""
               />
               <img
-                className="h-4 ml-1 align-bottom inline my-0"
+                className="h-4 ml-1 inline mt-0 mb-0"
                 src="/license/by.png"
                 alt=""
               />
               <img
-                className="h-4 ml-1 align-bottom inline my-0"
+                className="h-4 ml-1 inline mt-0 mb-0"
                 src="/license/nc.png"
                 alt=""
               />
               <img
-                className="h-4 ml-1 align-bottom inline my-0"
+                className="h-4 ml-1 inline mt-0 mb-0"
                 src="/license/nd.png"
                 alt=""
               />
