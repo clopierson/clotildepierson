@@ -33,7 +33,8 @@ export default function Research() {
           or contributed by team members.
         </p>
         {/* LARK */}
-        <article className="flex flex-col sm:flex-row gap-0 sm:gap-8 border-t-[1px] border-t-neutral-300 pt-4 sm:pt-0">
+        <article className="flex flex-col sm:flex-row gap-0 sm:gap-8 border-t border-t-neutral-300 pt-4 sm:pt-0">
+          {/* TODO: fix border thickness */}
           <div className="sm:basis-72 my-2 sm:mt-8">
             <Image
               src={larkImage}
@@ -45,10 +46,10 @@ export default function Research() {
           </div>
           <div>
             <h2 className="mt-2 sm:mt-8">Lark v2.0</h2>
-            <span className="border-[1px] rounded-full py-1 px-2 text-xs">
+            <span className="border rounded-full py-1 px-2 text-xs">
               Rhino/Grasshopper
             </span>{" "}
-            <span className="border-[1px] rounded-full py-1 px-2 text-xs">
+            <span className="border rounded-full py-1 px-2 text-xs">
               Python
             </span>
             <p>
@@ -101,7 +102,8 @@ export default function Research() {
           </div>
         </article>
         {/* HDRI Calibation Tool */}
-        <article className="flex flex-col sm:flex-row gap-0 sm:gap-8 border-t-[1px] border-t-neutral-300 pt-4 sm:pt-0">
+        <article className="flex flex-col sm:flex-row gap-0 sm:gap-8 border-t border-t-neutral-300 pt-4 sm:pt-0">
+          {/* TODO: fix border thickness */}
           <div className="sm:basis-72 my-2 sm:mt-8">
             <Image
               src={hdriImage}
@@ -113,15 +115,13 @@ export default function Research() {
           </div>
           <div>
             <h2 className="mt-2 sm:mt-8">HDRI Calibration Interface v2.0</h2>
-            <span className="border-[1px] rounded-full py-1 px-2 text-xs">
+            <span className="border rounded-full py-1 px-2 text-xs">
               Tauri
             </span>{" "}
-            <span className="border-[1px] rounded-full py-1 px-2 text-xs">
+            <span className="border rounded-full py-1 px-2 text-xs">
               Next.js
             </span>{" "}
-            <span className="border-[1px] rounded-full py-1 px-2 text-xs">
-              Rust
-            </span>
+            <span className="border rounded-full py-1 px-2 text-xs">Rust</span>
             <p>
               The HDRI Calibration Tool was designed to automate and facilitate
               the process of merging multiple Low Dynamic Range (LDR) images

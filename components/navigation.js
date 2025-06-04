@@ -91,7 +91,7 @@ export default function Navigation() {
           <Dialog.Overlay className="animate-fade-in z-20 data-[state=open]:animate-overlayShow" />
           <Dialog.Content
             aria-label="mobile navigation menu"
-            className="z-50 fixed top-0 right-0 p-10 !m-0 h-full !w-[75%] bg-white  dark:!bg-neutral-800 motion-safe:animate-slide-in"
+            className="z-50 fixed top-0 right-0 p-10 m-0! h-full w-[75%]! bg-white  dark:bg-neutral-800! motion-safe:animate-slide-in"
           >
             <div className="grid gap-4 h-full content-end motion-safe:animate-fade-in-slow">
               <Dialog.Title className="w-24">
