@@ -33,8 +33,7 @@ export default function Research() {
           or contributed by team members.
         </p>
         {/* LARK */}
-        <article className="flex flex-col sm:flex-row gap-0 sm:gap-8 border-t border-t-neutral-300 pt-4 sm:pt-0">
-          {/* TODO: fix border thickness */}
+        <article className="flex flex-col sm:flex-row gap-0 sm:gap-8 border-t border-t-neutral-300 pt-4 sm:pt-0 my-6">
           <div className="sm:basis-72 my-2 sm:mt-8">
             <Image
               src={larkImage}
@@ -102,8 +101,7 @@ export default function Research() {
           </div>
         </article>
         {/* HDRI Calibation Tool */}
-        <article className="flex flex-col sm:flex-row gap-0 sm:gap-8 border-t border-t-neutral-300 pt-4 sm:pt-0">
-          {/* TODO: fix border thickness */}
+        <article className="flex flex-col sm:flex-row gap-0 sm:gap-8 border-t border-t-neutral-300 pt-4 sm:pt-0 my-6">
           <div className="sm:basis-72 my-2 sm:mt-8">
             <Image
               src={hdriImage}

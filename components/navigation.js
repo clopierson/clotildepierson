@@ -3,8 +3,6 @@ import Link from "next/link";
 import { ChevronUp, X, Menu } from "react-feather";
 import RadiantLab from "./radiantLab.js";
 import InstitutionLogo from "./InstitutionLogo";
-
-import { VisuallyHidden } from "radix-ui";
 import { Dialog } from "radix-ui";
 
 export const MenuItems = [
@@ -76,19 +74,19 @@ export default function Navigation() {
         aria-label="back to the top of the page"
         className="select-none px-3 py-3 text-sm fixed bottom-6 right-20 block text-center rounded text-gray-800 bg-gray-300 hover:bg-osu-luminance md:hidden shadow-md dark:shadow-black/50"
       >
-        <VisuallyHidden.Root>Back to Top</VisuallyHidden.Root>
+        <span className="sr-only">Back to Top</span>
         <ChevronUp />
       </a>
       {/* Open menu on Mobile + Overlay*/}
       <Dialog.Root>
         <Dialog.Trigger asChild>
           <button className="select-none px-3 py-3 text-sm fixed bottom-6 right-6 block text-center rounded text-gray-800 bg-gray-300 hover:bg-osu-luminance md:hidden shadow-md dark:shadow-black/50">
-            <VisuallyHidden.Root>Open Navigation Menu</VisuallyHidden.Root>
+            <span className="sr-only">Open Navigation Menu</span>
             <Menu />
           </button>
         </Dialog.Trigger>
         <Dialog.Portal>
-          <Dialog.Overlay className="animate-fade-in z-20 data-[state=open]:animate-overlayShow" />
+          <Dialog.Overlay className="animate-fade-in z-20 fixed inset-0 bg-black/50 dark:bg-black/70" />
           <Dialog.Content
             aria-label="mobile navigation menu"
             className="z-50 fixed top-0 right-0 p-10 m-0! h-full w-[75%]! bg-white  dark:bg-neutral-800! motion-safe:animate-slide-in"
@@ -109,9 +107,7 @@ export default function Navigation() {
               ))}
               <Dialog.Close asChild>
                 <button className="select-none px-3 py-3 text-sm fixed bottom-6 right-6 block text-center rounded text-gray-800 bg-gray-300 hover:bg-osu-luminance md:hidden shadow-md dark:shadow-black/50">
-                  <VisuallyHidden.Root>
-                    Close Navigation Menu
-                  </VisuallyHidden.Root>
+                  <span className="sr-only">Close Navigation Menu</span>
                   <X />
                 </button>
               </Dialog.Close>

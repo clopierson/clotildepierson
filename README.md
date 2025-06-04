@@ -91,3 +91,7 @@ To learn more about Next.js, take a look at the following resources:
 - [Unsplash](https://unsplash.com)
 - [React Feather](https://github.com/feathericons/react-feather)
 - [Emojipedia](https://emojipedia.org/)
+
+## To Do
+
+- [ ] Add placeholder blur for images
