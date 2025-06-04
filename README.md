@@ -1,8 +1,9 @@
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
 # Clotilde Pierson's Professional Website
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-Note: This website is running Next 12.1.0 and no migration is planned at the moment.
 
 ## Getting Started
 
@@ -95,3 +96,5 @@ To learn more about Next.js, take a look at the following resources:
 ## To Do
 
 - [ ] Add placeholder blur for images
+- [ ] Mention `dcraw_emu` in Sofware section
+- [ ] Fix shadow in Research section for dark mode
