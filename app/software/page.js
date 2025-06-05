@@ -7,17 +7,17 @@ import RadiantLab from "../../components/radiantLab";
 export const metadata = {
   title: "Software | RadiantLab",
   description:
-    "The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson works and provides open-source software to advance research.",
+    "The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson provides open-source software to advance research.",
   openGraph: {
     url: "https://www.clotildepierson.com/software",
     title: "Software | RadiantLab",
     description:
-      "The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson works and provides open-source software to advance research.",
+      "The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson provides open-source software to advance research.",
   },
   twitter: {
     title: "Software | RadiantLab",
     description:
-      "The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson works and provides open-source software to advance research.",
+      "The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson provides open-source software to advance research.",
   },
 };
 export default function Software() {
