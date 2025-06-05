@@ -1,6 +1,42 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-osu-beaver-orange: #D73F09;
+  --color-osu-luminance: #FFB500;
+  --color-osu-candela: #FDD26E;
+  --color-osu-pine-stand: #4A773C;
+
+  --animate-slide-in: slide-in 500ms ease 200ms both;
+  --animate-fade-in: fade-in 200ms;
+  --animate-fade-in-slow: fade-in 600ms ease 400ms both;
+
+  @keyframes slide-in {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+/* Typography overrides using @apply */
+.prose a {
+  @apply text-osu-beaver-orange no-underline;
+}
+
+.prose a:hover {
+  @apply text-osu-luminance no-underline;
+}
 
 @font-face {
   font-family: "Spartan";

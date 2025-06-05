@@ -1,31 +1,37 @@
-import Layout from "../components/layout";
 import Image from "next/image";
-import backgroundImage from "../public/background-image-software.jpg";
-import larkImage from "../public/software/lark.png";
-import hdriImage from "../public/software/hdri.png";
-import RadiantLab from "../components/radiantLab";
+import backgroundImage from "../../public/background-image-software.jpg";
+import larkImage from "../../public/software/lark.png";
+import hdriImage from "../../public/software/hdri.png";
+import RadiantLab from "../../components/radiantLab";
 
-export default function Research() {
+export const metadata = {
+  title: "Software | RadiantLab",
+  description:
+    "The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson provides open-source software to advance research.",
+  openGraph: {
+    url: "https://www.clotildepierson.com/software",
+    title: "Software | RadiantLab",
+    description:
+      "The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson provides open-source software to advance research.",
+  },
+  twitter: {
+    title: "Software | RadiantLab",
+    description:
+      "The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson provides open-source software to advance research.",
+  },
+};
+export default function Software() {
   return (
-    <Layout
-      pageTitle="Software | RadiantLab"
-      pageDescription="The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson works and provides open-source software to advance research."
-      pageUrl="https://www.clotildepierson.com/software"
-      heroImageAuthorUrl="http://www.karlmaasdam.com/"
-      heroImageUrl="https://oregonstate.edu"
-      heroImageAuthor="Karl Maasdam"
-    >
-      <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
+    <>
+      <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
           alt="computer screens with code, keyboard"
-          placeholder="blur"
-          layout="fill"
-          priority="true"
-          objectFit="cover"
-          objectPosition="50% 30%"
+          fill={true}
+          priority={true}
+          className="object-cover object-[50%_30%]"
         ></Image>
-      </div>
+      </picture>
       <div className="h-[70vh]"></div>
       <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
         <h1>Software</h1>
@@ -35,7 +41,7 @@ export default function Research() {
           or contributed by team members.
         </p>
         {/* LARK */}
-        <article className="flex flex-col sm:flex-row gap-0 sm:gap-8 border-t-[1px] border-t-neutral-300 pt-4 sm:pt-0">
+        <article className="flex flex-col sm:flex-row gap-0 sm:gap-8 border-t border-t-neutral-300 pt-4 sm:pt-0 my-6">
           <div className="sm:basis-72 my-2 sm:mt-8">
             <Image
               src={larkImage}
@@ -47,10 +53,10 @@ export default function Research() {
           </div>
           <div>
             <h2 className="mt-2 sm:mt-8">Lark v2.0</h2>
-            <span className="border-[1px] rounded-full py-1 px-2 text-xs">
+            <span className="border rounded-full py-1 px-2 text-xs">
               Rhino/Grasshopper
             </span>{" "}
-            <span className="border-[1px] rounded-full py-1 px-2 text-xs">
+            <span className="border rounded-full py-1 px-2 text-xs">
               Python
             </span>
             <p>
@@ -103,7 +109,7 @@ export default function Research() {
           </div>
         </article>
         {/* HDRI Calibation Tool */}
-        <article className="flex flex-col sm:flex-row gap-0 sm:gap-8 border-t-[1px] border-t-neutral-300 pt-4 sm:pt-0">
+        <article className="flex flex-col sm:flex-row gap-0 sm:gap-8 border-t border-t-neutral-300 pt-4 sm:pt-0 my-6">
           <div className="sm:basis-72 my-2 sm:mt-8">
             <Image
               src={hdriImage}
@@ -115,15 +121,13 @@ export default function Research() {
           </div>
           <div>
             <h2 className="mt-2 sm:mt-8">HDRI Calibration Interface v2.0</h2>
-            <span className="border-[1px] rounded-full py-1 px-2 text-xs">
+            <span className="border rounded-full py-1 px-2 text-xs">
               Tauri
             </span>{" "}
-            <span className="border-[1px] rounded-full py-1 px-2 text-xs">
+            <span className="border rounded-full py-1 px-2 text-xs">
               Next.js
             </span>{" "}
-            <span className="border-[1px] rounded-full py-1 px-2 text-xs">
-              Rust
-            </span>
+            <span className="border rounded-full py-1 px-2 text-xs">Rust</span>
             <p>
               The HDRI Calibration Tool was designed to automate and facilitate
               the process of merging multiple Low Dynamic Range (LDR) images
@@ -177,6 +181,6 @@ export default function Research() {
           </div>
         </article>
       </div>
-    </Layout>
+    </>
   );
 }

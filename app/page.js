@@ -1,4 +1,3 @@
-import Layout from "../components/layout";
 import Image from "next/image";
 import Link from "next/link";
 import backgroundImage from "../public/background-image.jpg";
@@ -6,28 +5,34 @@ import FactCard from "../components/factCard";
 import RadiantLab from "../components/radiantLab";
 import ResearchDiagram from "../components/researchDiagram";
 
-// TODO: fix overflow on really narrow screen (e.g. galaxy fold), e.g. publications
+export const metadata = {
+  title: "Daylighting Research Laboratory | RadiantLab",
+  description:
+    "The Daylighting Research Laboratory is a cutting-edge lighting research center currently based in Oregon State University and led by Dr. Clotilde Pierson.",
+  openGraph: {
+    url: "https://www.clotildepierson.com",
+    title: "Daylighting Research Laboratory | RadiantLab",
+    description:
+      "The Daylighting Research Laboratory is a cutting-edge lighting research center currently based in Oregon State University and led by Dr. Clotilde Pierson.",
+  },
+  twitter: {
+    title: "Daylighting Research Laboratory | RadiantLab",
+    description:
+      "The Daylighting Research Laboratory is a cutting-edge lighting research center currently based in Oregon State University and led by Dr. Clotilde Pierson.",
+  },
+};
 
 export default function Home() {
   return (
-    <Layout
-      pageTitle="Daylighting Research Laboratory | RadiantLab"
-      pageDescription="The Daylighting Research Laboratory is a cutting-edge lighting research center currently based in Oregon State University and led by Dr. Clotilde Pierson."
-      pageUrl="https://www.clotildepierson.com"
-      heroImageAuthorUrl="http://www.karlmaasdam.com/"
-      heroImageUrl="https://oregonstate.edu/"
-      heroImageAuthor="Karl Maasdam"
-    >
+    <>
       <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
           alt="Urban Daylight"
-          placeholder="blur"
-          layout="fill"
-          priority="true"
-          objectFit="cover"
-          objectPosition="30% 30%"
-        ></Image>
+          fill={true}
+          priority={true}
+          className="object-cover object-[30%_30%]"
+        />
       </picture>
       <div className="absolute left-0 right-0 w-fit mx-auto text-center top-[36%] py-2 px-4 sm:py-3 sm:px-7 lg:py-5 lg:px-12 backdrop-blur-sm bg-gray-200/70 dark:bg-gray-700/70">
         <p className="text-2xl sm:text-3xl lg:text-5xl">
@@ -40,8 +45,8 @@ export default function Home() {
         <h1 className="sr-only">Daylighting Research Laboratory</h1>
         <p className="font-bold">
           The <RadiantLab /> is led by{" "}
-          <Link href="/about">
-            <a className="font-bold hover:font-bold">Dr. Clotilde Pierson</a>
+          <Link href="/about" className="font-bold hover:font-bold">
+            Dr. Clotilde Pierson
           </Link>
           {", "}
           an Assistant Professor of Architectural Engineering in the College of
@@ -125,6 +130,6 @@ export default function Home() {
           built environment and innovative daylighting solutions.
         </p>
       </div>
-    </Layout>
+    </>
   );
 }

@@ -1,14 +1,28 @@
-import Layout from "../components/layout";
 import Image from "next/image";
-import backgroundImage from "../public/backgroung-image-team.jpg";
-import SpontaneousApplication from "../components/spontaneousApplication";
-import TeamCard from "../components/teamCard";
+import backgroundImage from "../../public/backgroung-image-team.jpg";
+import SpontaneousApplication from "../../components/spontaneousApplication";
+import TeamCard from "../../components/teamCard";
 
 // default pictures if none:
 // "/team-male.svg"
 // "/team-female.svg"
 
-// TODO: make placeholder="blur" work in TeamCard (problem is that image is not considered static import)
+export const metadata = {
+  title: "Team | RadiantLab",
+  description:
+    "Current openings (jobs), and current and former staff of the Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson.",
+  openGraph: {
+    url: "https://www.clotildepierson.com/team",
+    title: "Team | RadiantLab",
+    description:
+      "Current openings (jobs), and current and former staff of the Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson.",
+  },
+  twitter: {
+    title: "Team | RadiantLab",
+    description:
+      "Current openings (jobs), and current and former staff of the Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson.",
+  },
+};
 
 export const principalInvestigator = [
   {
@@ -111,27 +125,18 @@ export const alumni = [
   },
 ];
 
-export default function ReseTeamarch() {
+export default function Team() {
   return (
-    <Layout
-      pageTitle="Team | RadiantLab"
-      pageDescription="Current openings (jobs), and current and former staff of the Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson."
-      pageUrl="https://www.clotildepierson.com/team"
-      heroImageAuthorUrl="http://www.karlmaasdam.com/"
-      heroImageUrl="https://oregonstate.edu/"
-      heroImageAuthor="Karl Maasdam"
-    >
-      <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
+    <>
+      <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
           alt="teammates smiling, talking about project"
-          placeholder="blur"
-          priority="true"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="50% 20%"
+          fill={true}
+          priority={true}
+          className="object-cover object-[50%_20%]"
         ></Image>
-      </div>
+      </picture>
       <div className="h-[70vh]"></div>
       <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
         <h1>Team</h1>
@@ -227,6 +232,6 @@ export default function ReseTeamarch() {
           </div>
         )}
       </div>
-    </Layout>
+    </>
   );
 }

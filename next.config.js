@@ -4,7 +4,18 @@
 const ContentSecurityPolicy =
   process.env.NODE_ENV === "development"
     ? ``
-    : `default-src 'self' ; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src 'self' plausible.io; connect-src 'self' plausible.io vitals.vercel-insights.com;`;
+    : `
+    default-src 'self' *.plausible.io;
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' plausible.io vercel.live;
+    style-src 'self' 'unsafe-inline';
+    img-src 'self' blob: data:;
+    font-src 'self';
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+    frame-ancestors 'none';
+    upgrade-insecure-requests;
+`;
 
 const securityHeaders = [
   {

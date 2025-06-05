@@ -1,31 +1,35 @@
-import Layout from "../components/layout";
 import Image from "next/image";
-import backgroundImage from "../public/background-image-publications.jpg";
+import backgroundImage from "../../public/background-image-publications.jpg";
 
-// We use APA citations.
-// https://stackoverflow.com/questions/29896907/bold-part-of-string
+export const metadata = {
+  title: "Publications | RadiantLab",
+  description:
+    "Peer-reviewed journal/conference papers, conferences/workshops contributions, and datasets by the Daylighting Research Laboratory (RadiantLab) at Oregon State University.",
+  openGraph: {
+    url: "https://www.clotildepierson.com/publications",
+    title: "Publications | RadiantLab",
+    description:
+      "Peer-reviewed journal/conference papers, conferences/workshops contributions, and datasets by the Daylighting Research Laboratory (RadiantLab) at Oregon State University.",
+  },
+  twitter: {
+    title: "Publications | RadiantLab",
+    description:
+      "Peer-reviewed journal/conference papers, conferences/workshops contributions, and datasets by the Daylighting Research Laboratory (RadiantLab) at Oregon State University.",
+  },
+};
 
 export default function Publications() {
   return (
-    <Layout
-      pageTitle="Publications | RadiantLab"
-      pageDescription="Peer-reviewed journal/conference papers, conferences/workshops contributions, and datasets by the Daylighting Research Laboratory (RadiantLab) at Oregon State University."
-      pageUrl="https://www.clotildepierson.com/publications"
-      heroImageAuthorUrl="https://www.linkedin.com/in/erick-durano-21657b124/"
-      heroImageUrl="https://oregonstate.edu"
-      heroImageAuthor="Erick Durano"
-    >
-      <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
+    <>
+      <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
           alt="daylight in a bright library"
-          placeholder="blur"
-          priority="true"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="20% 50%"
+          fill={true}
+          priority={true}
+          className="object-cover object-[20%_50%]"
         ></Image>
-      </div>
+      </picture>
       <div className="h-[70vh]"></div>
       <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
         <h1>Publications</h1>
@@ -412,6 +416,6 @@ export default function Publications() {
           </a>
         </p>
       </div>
-    </Layout>
+    </>
   );
 }

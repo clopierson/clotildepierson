@@ -1,30 +1,37 @@
-import Layout from "../components/layout";
 import Image from "next/image";
-import backgroundImage from "../public/background-image-research.jpg";
-import ResearchDiagram from "../components/researchDiagram";
-import ProjectCard from "../components/projectCard";
+import backgroundImage from "../../public/background-image-research.jpg";
+import ResearchDiagram from "../../components/researchDiagram";
+import ProjectCard from "../../components/projectCard";
+
+export const metadata = {
+  title: "Research | RadiantLab",
+  description:
+    "The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson focuses on advancing knowledge of daylighting in buildings.",
+  openGraph: {
+    url: "https://www.clotildepierson.com/research",
+    title: "Research | RadiantLab",
+    description:
+      "The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson focuses on advancing knowledge of daylighting in buildings.",
+  },
+  twitter: {
+    title: "Research | RadiantLab",
+    description:
+      "The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson focuses on advancing knowledge of daylighting in buildings.",
+  },
+};
 
 export default function Research() {
   return (
-    <Layout
-      pageTitle="Research | RadiantLab"
-      pageDescription="The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson focuses on advancing knowledge of daylighting in buildings."
-      pageUrl="https://www.clotildepierson.com/research"
-      heroImageAuthorUrl="https://www.linkedin.com/in/photosbyjade/"
-      heroImageUrl="https://oregonstate.edu"
-      heroImageAuthor="Jade Webster"
-    >
-      <div className="overflow-hidden absolute top-18 left-0 w-screen h-[70vh]">
+    <>
+      <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
           alt="inside kelley engineering building with large windows and daylight"
-          placeholder="blur"
-          layout="fill"
-          priority="true"
-          objectFit="cover"
-          objectPosition="50% 30%"
+          fill={true}
+          priority={true}
+          className="object-cover object-[50%_30%]"
         ></Image>
-      </div>
+      </picture>
       <div className="h-[70vh]"></div>
       <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
         <h1>Research</h1>
@@ -55,20 +62,20 @@ export default function Research() {
           </p>
           <ProjectCard
             projectName="Validation of
-          spectral simulation tools in the context of ipRGC-influenced light
-          responses of building occupants."
+              spectral simulation tools in the context of ipRGC-influenced light
+              responses of building occupants."
             projectDescription="Spectral simulation workflows offer a high potential in evaluating
-          building occupants&#39; ipRGC-influenced light (IIL) responses in a
-          prospective way (e.g., in predicting what may be the most impactful
-          design decisions when it comes to affecting such responses). In view
-          of the relative novelty of research in this area, only a few
-          simulation tools are available but have not been validated yet. This
-          study compared laboratory measurements to simulation outputs to
-          determine whether we can rely on spectral simulation tools (i.e., ALFA
-          and Lark) to evaluate building occupants&#39; IIL responses and guide
-          the design process. The results indicate that Lark outperforms ALFA in
-          most cases and shows a simulation error in the &#177;20% range for
-          point-in-time indicators."
+              building occupants&#39; ipRGC-influenced light (IIL) responses in a
+              prospective way (e.g., in predicting what may be the most impactful
+              design decisions when it comes to affecting such responses). In view
+              of the relative novelty of research in this area, only a few
+              simulation tools are available but have not been validated yet. This
+              study compared laboratory measurements to simulation outputs to
+              determine whether we can rely on spectral simulation tools (i.e., ALFA
+              and Lark) to evaluate building occupants&#39; IIL responses and guide
+              the design process. The results indicate that Lark outperforms ALFA in
+              most cases and shows a simulation error in the &#177;20% range for
+              point-in-time indicators."
           />
         </details>
 
@@ -95,15 +102,15 @@ export default function Research() {
           <ProjectCard
             projectName="Influence of the socio-environmental context on discomfort due to glare from daylight"
             projectDescription="To harvest the benefits of daylight indoors, there is a need to
-          predict discomfort from daylight glare. While more than 20 models for
-          predicting discomfort from daylight glare have been developed, none
-          accurately do it. The inclusion of additional factors in the models
-          may improve the predictions. One such factor is the
-          socio-environmental context of the observer. This study compared the
-          evaluation of discomfort from daylight glare of building occupants in
-          four socio-environmental contexts: Chile, Belgium, Japan, and
-          Switzerland. The results do not show evidence of an influence of
-          socio-environmental context on discomfort from daylight glare."
+              predict discomfort from daylight glare. While more than 20 models for
+              predicting discomfort from daylight glare have been developed, none
+              accurately do it. The inclusion of additional factors in the models
+              may improve the predictions. One such factor is the
+              socio-environmental context of the observer. This study compared the
+              evaluation of discomfort from daylight glare of building occupants in
+              four socio-environmental contexts: Chile, Belgium, Japan, and
+              Switzerland. The results do not show evidence of an influence of
+              socio-environmental context on discomfort from daylight glare."
           />
         </details>
 
@@ -136,6 +143,6 @@ export default function Research() {
           </p>
         </details>
       </div>
-    </Layout>
+    </>
   );
 }
