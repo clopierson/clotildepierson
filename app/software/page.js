@@ -29,6 +29,7 @@ export default function Software() {
           alt="computer screens with code, keyboard"
           fill={true}
           priority={true}
+          placeholder="blur"
           className="object-cover object-[50%_30%]"
         ></Image>
       </picture>

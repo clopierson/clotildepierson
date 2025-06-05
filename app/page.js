@@ -31,6 +31,7 @@ export default function Home() {
           alt="Urban Daylight"
           fill={true}
           priority={true}
+          placeholder="blur"
           className="object-cover object-[30%_30%]"
         />
       </picture>

@@ -134,6 +134,7 @@ export default function Team() {
           alt="teammates smiling, talking about project"
           fill={true}
           priority={true}
+          placeholder="blur"
           className="object-cover object-[50%_20%]"
         ></Image>
       </picture>
