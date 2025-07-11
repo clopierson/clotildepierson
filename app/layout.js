@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Header from "../components/header";
 import FooterWrapper from "../components/footerWrapper";
 import Script from "next/script";
@@ -47,6 +48,7 @@ export default function RootLayout({
             className="row-start-2 row-span-1 col-start-2 col-span-10"
           >
             {children}
+            <SpeedInsights />
           </main>
           <FooterWrapper />
         </div>
