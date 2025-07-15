@@ -121,7 +121,7 @@ export default function Software() {
             />
           </div>
           <div>
-            <h2 className="mt-2 sm:mt-8">HDRI Calibration Interface v2.0</h2>
+            <h2 className="mt-2 sm:mt-8">HDRI Calibration Interface v3.0.0</h2>
             <span className="border rounded-full py-1 px-2 text-xs">
               Tauri
             </span>{" "}
@@ -138,7 +138,15 @@ export default function Software() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="http://www.anyhere.com/"
+                href="https://www.libraw.org/"
+              >
+                LibRaw
+              </a>
+              {", "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/radiance-org/hdrgen"
               >
                 hdrgen
               </a>
@@ -160,7 +168,7 @@ export default function Software() {
                   rel="noopener noreferrer"
                   href="https://github.com/clopierson/HDRICalibrationTool"
                 >
-                  Frontend source code and executables on GitHub
+                  Source code and executables on GitHub
                 </a>
               </li>
             </ul>
