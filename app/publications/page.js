@@ -65,8 +65,8 @@ export default function Publications() {
         <p>
           Knoop M., Balakrishnan P., Błaszczak U., Diakite-Kortlever A.,
           Dumortier D., Hernandez-Andres J., Inanici M., Kenny P., Maskarenj M.,
-          O'Mahoney P., <span className="font-bold">Pierson C.</span>, Rudawski
-          F., Thorseth A. (2025). Methodology to modify and adapt the
+          O&#39;Mahoney P., <span className="font-bold">Pierson C.</span>,
+          Rudawski F., Thorseth A. (2025). Methodology to modify and adapt the
           standardised spectral power distributions for daylight to account for
           geographical, seasonal and diurnal variations for practical
           applications, Lighting Research & Technology, OnlineFirst.{" "}
@@ -88,7 +88,7 @@ export default function Publications() {
         <p>
           Knoop M., Balakrishnan P., Bellia L., Błaszczak U., Diakite-Kortlever
           A., Dumortier D., Hernandez-Andres J., Inanici M., Kenny P., Kobav M.
-          B., Liang S., Luo T., Maskarenj M., O'Mahoney P.,{" "}
+          B., Liang S., Luo T., Maskarenj M., O&#39;Mahoney P.,{" "}
           <span className="font-bold">Pierson C.</span>, Thorseth A., Xue P.
           (2025). Our skies are too grey: Where is the colour?, Lighting
           Research & Technology, OnlineFirst.{" "}
