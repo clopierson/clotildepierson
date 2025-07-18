@@ -34,12 +34,94 @@ export default function Publications() {
       <div className="h-[70vh]"></div>
       <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
         <h1>Publications</h1>
+        <h2>2025</h2>
+        <p>
+          Sogodok Y., <span className="font-bold">Pierson C.</span> (2025). A
+          review of current recommendations for lighting in buildings for
+          optimal non-visual responses of occupants. IES Annual Conference,
+          Anaheim (CA), USA, Aug. 21-23, 2025.
+        </p>
+        <p>
+          Vali K., Au-Yeung W.-T., Kaye J.,{" "}
+          <span className="font-bold">Pierson C.</span> (2025). Light exposure
+          of older adults living alone: a pilot study. CIE Midterm Meeting,
+          Vienna, Austria, July 4 - 11, 2025.
+        </p>
+        <p>
+          Orman, A., Safranek, S., <span className="font-bold">Pierson C.</span>{" "}
+          (2025). Evaluation of spectral light simulation tools for prediction
+          of ipRGC-influenced light responses in real-world offices with
+          electrochromic glazing. Journal of Building Performance Simulation,
+          1-20.{" "}
+          <a
+            href="https://doi.org/10.1080/19401493.2025.2515123"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            DOI: 10.1080/19401493.2025.2515123
+          </a>
+          {/* Received 28 Jan 2025, Accepted 29 May 2025, Published online: 01 Jul 2025 */}
+        </p>
+        <p>
+          Knoop M., Balakrishnan P., Błaszczak U., Diakite-Kortlever A.,
+          Dumortier D., Hernandez-Andres J., Inanici M., Kenny P., Maskarenj M.,
+          O'Mahoney P., <span className="font-bold">Pierson C.</span>, Rudawski
+          F., Thorseth A. (2025). Methodology to modify and adapt the
+          standardised spectral power distributions for daylight to account for
+          geographical, seasonal and diurnal variations for practical
+          applications, Lighting Research & Technology, OnlineFirst.{" "}
+          <a
+            href="https://doi.org/10.1177/14771535251322386"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            DOI: 10.1177/14771535251322386
+          </a>
+          {/* First published online April 15, 2025 */}
+        </p>
+        <p>
+          Ko W. H., Suk J. Y., <span className="font-bold">Pierson C.</span>,
+          Pokhrel B. (2025). Estimating the visual and non- visual effects of
+          window views through field data collection. ARCC 2025 International
+          Conference, College Park (MD), USA, April 2-5, 2025.
+        </p>
+        <p>
+          Knoop M., Balakrishnan P., Bellia L., Błaszczak U., Diakite-Kortlever
+          A., Dumortier D., Hernandez-Andres J., Inanici M., Kenny P., Kobav M.
+          B., Liang S., Luo T., Maskarenj M., O'Mahoney P.,{" "}
+          <span className="font-bold">Pierson C.</span>, Thorseth A., Xue P.
+          (2025). Our skies are too grey: Where is the colour?, Lighting
+          Research & Technology, OnlineFirst.{" "}
+          <a
+            href="https://doi.org/10.1177/14771535251322618"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            DOI: 10.1177/14771535251322618
+          </a>
+          {/* First published online March 13, 2025 */}
+        </p>
+        <h2>2024</h2>
+        <p>
+          Orman A., <span className="font-bold">Pierson C.</span> (2024).
+          Accuracy of spectral simulation tools in field conditions. IES Annual
+          Conference, New York City (NY), USA, Aug. 15-17, 2024.
+        </p>
+        <p>
+          <span className="font-bold">Pierson C.</span> (2024). Teaching
+          daylighting design through experiential learning. IES Annual
+          Conference, New York City (NY), USA, Aug. 15-17, 2024.
+        </p>
+        <p>
+          <span className="font-bold">Pierson C.</span> (2024). Experiencing
+          Window Views. 2024 SBSE Retreat, Oracle (AZ), USA, July 9-12, 2024.
+        </p>
         <h2>2023</h2>
         <p>
           Quek G., Jain S., Karmann C.,{" "}
           <span className="font-bold">Pierson C.</span>, Wienold J., Andersen M.
           (2023). Comparison of questionnaire items for discomfort glare studies
-          in daylit spaces. Lighting Research & Technology, 1-29.{" "}
+          in daylit spaces, Lighting Research & Technology, 55(7-8), 730-758.{" "}
           <a
             href="https://doi.org/10.1177/14771535231203564"
             target="_blank"
@@ -109,6 +191,12 @@ export default function Publications() {
           Van Duijnhoven J., Andersen M., Aarts M. (2022). A simulation tool for
           building and lighting design considering ipRGC-influenced light
           responses. BuildSim Nordic, Copenhagen, Denmark, Aug. 22-23, 2022.
+        </p>
+        <p>
+          <span className="font-bold">Pierson C.</span>, Gkaintatzi-Masouti M.
+          (2022). Lark 2.0 – a simulation tool to support the design of healthy
+          indoor environments. IES Annual Conference, New Orleans, US, Aug.
+          18-20, 2022.
         </p>
         <p>
           <span className="font-bold">Pierson, C.</span> (2022). Validation of
@@ -200,6 +288,12 @@ export default function Publications() {
           </a>
         </p>
         <p>
+          <span className="font-bold">Pierson C.</span>, Aarts M., Andersen M.
+          (2020). Applicability of Spectral Simulation to Predict Non-Visual
+          Response to Daylight. EuroTech Postdoc Workshop, Copenhagen, Denmark,
+          March 9-11, 2020.
+        </p>
+        <p>
           <span className="font-bold">Pierson C.</span>, Cauwerts C., Bodart M.,
           Wienold J. (2020). Tutorial: Luminance Maps for Daylighting Studies
           from High Dynamic Range Photography. LEUKOS, 14(3), 111-148.{" "}
@@ -273,6 +367,13 @@ export default function Publications() {
           <span className="font-bold">Pierson C.</span>, Wienold J., Bodart M.
           (2018). Daylight Discomfort Glare Evaluation with Evalglare: Influence
           of Parameters and Methods on the Accuracy of Discomfort Glare
+          Prediction. International Radiance Workshop, Loughborough, UK, Sept.
+          03-04, 2018.
+        </p>
+        <p>
+          <span className="font-bold">Pierson C.</span>, Wienold J., Bodart M.
+          (2018). Daylight Discomfort Glare Evaluation with Evalglare: Influence
+          of Parameters and Methods on the Accuracy of Discomfort Glare
           Prediction. Buildings, 8(8), 94.{" "}
           <a
             href="https://doi.org/10.3390/buildings8080094"
@@ -331,6 +432,12 @@ export default function Publications() {
           >
             Accepted manuscript available on DIAL
           </a>
+        </p>
+        <p>
+          <span className="font-bold">Pierson C.</span> (2018). Discomfort Glare
+          from Daylighting: Study of Factors Influencing Discomfort Glare
+          Perception and Validation of a Universal Discomfort Glare Index.
+          LumeNet, Copenhagen, Denmark, Aug. 16-17, 2018.
         </p>
         <p>
           <span className="font-bold">Pierson C.</span>, Wienold J. (2018). High
@@ -400,6 +507,12 @@ export default function Publications() {
           >
             Poster available on DIAL
           </a>
+        </p>
+        <h2>2016</h2>
+        <p>
+          <span className="font-bold">Pierson C.</span>, Bodart M. (2016).
+          Validation and Universalization of Daylight Glare Probability Index.
+          LumeNet, Ghent, Belgium, Apr. 07-08, 2016.
         </p>
 
         <h2>2015</h2>
