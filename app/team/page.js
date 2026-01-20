@@ -35,14 +35,6 @@ export const principalInvestigator = [
 export const postdocs = [];
 export const phdStudents = [
   {
-    name: "Yahya Sogodok",
-    email: "sogodoky@oregonstate.edu",
-    pronouns: "He/Him",
-    description:
-      "Yahya holds an MS degree in Electrical Engineering and is currently pursuing his PhD in the field of Civil Engineering, with a concentration in Architectural Engineering. His research is focused on studying the non-visual responses to light of building occupants under daylight conditions, with an overarching goal to enhance the health and well-being of individuals who reside or work in buildings.",
-    picture: "/team/sogodok.jpg",
-  },
-  {
     name: "Kianoush Vali",
     email: "valik@oregonstate.edu",
     pronouns: "He/Him",
@@ -52,6 +44,14 @@ export const phdStudents = [
   },
 ];
 export const masterStudents = [
+  {
+    name: "Yahya Sogodok",
+    email: "sogodoky@oregonstate.edu",
+    pronouns: "He/Him",
+    description:
+      "Yahya holds an MS degree in Electrical Engineering and is currently pursuing another MS in the field of Civil Engineering, with a concentration in Architectural Engineering. His research is focused on studying the non-visual responses to light of building occupants under daylight conditions, with an overarching goal to enhance the health and well-being of individuals who reside or work in buildings.",
+    picture: "/team/sogodok.jpg",
+  },
   {
     name: "Nima Ghorbanian Matloob",
     email: "ghorbann@oregonstate.edu",

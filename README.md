@@ -6,6 +6,18 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## To Do
+
+- Use shadcn/ui for components
+- Investigate David Hurwitz website to figure out how he gets money: https://www.davidhurwitz.org/ 
+- Add link to https://give.fororegonstate.org/PL1Uv3Fkug (OSU Foundation) + pre-fill form
+- Add link to https://experiment.com/ 
+- Add current projects for marketing purposes
+- Write some blog posts
+- Update teaching and other sections
+- Improve page metadata to be a summary of the page content for SEO (e.g., About should be improved)
+- Marketing strategies: https://grok.com/share/bGVnYWN5LWNvcHk_d5770326-d9ca-4222-af38-ed6e683671aa 
+
 ## Getting Started
 
 ### Very First Time
