@@ -19,10 +19,11 @@ export const MenuItems = [
     link: "/software",
     name: "software",
   },
-  // {
-  //   link: "/facilities",
-  //   name: "facilities",
-  // },
+  {
+    link: "/facilities/dial",
+    name: "facilities",
+  },
+  // TODO: for future facilities, have a dropdown menu for different facilities, not a facilities page
   {
     link: "/publications",
     name: "publications",
