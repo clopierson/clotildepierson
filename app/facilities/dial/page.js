@@ -5,6 +5,7 @@ import dialFacadeLegendImage from "../../../public/dial/dial-facade-legend.png";
 import dialFloorPlanImage from "../../../public/dial/dial-floor-plan.jpg";
 import dialRooftopSensors from "../../../public/dial/dial-rooftop-sensors.jpg";
 
+// TODO: add description in metadata
 export const metadata = {
   title: "Daylighting Innovation and Analysis Lab (DIAL) | RadiantLab",
   description:
@@ -37,6 +38,7 @@ export default function DIAL() {
       </picture>
       <div className="h-[70vh]"></div>
       <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
+        {/* TODO: add interior pictures */}
         <h1>Daylighting Innovation and Analysis Lab (DIAL)</h1>
         <p>
           The Daylighting Innovation and Analysis Lab (DIAL) is the first-of-its-kind research facility dedicated to advancing the science and application of daylighting in the built environment. Currently located at Oregon State University, DIAL provides a unique platform for interdisciplinary research, education, and collaboration in the field of daylighting.
@@ -46,9 +48,8 @@ export default function DIAL() {
             DIAL is a <strong>state-of-the-art mobile laboratory platform</strong> that enables researchers to conduct experiments and gather data on daylighting strategies in real-world settings.
         </p>
         <p>
-            DIAL contains two symmetrical temparture-regulated office rooms each equipped with nine electrochromic windows and one electrochromic skylight, dimmable LED lighting, and a suite of sensors to monitor environmental conditions and occupant responses.
+            DIAL contains two symmetrical office rooms each equipped with nine electrochromic windows and one electrochromic skylight, dimmable LED lighting, and a suite of sensors to monitor environmental conditions and occupant responses.
         </p>
-        <p>Each office room supports up to </p>
         <figure className="my-4">
           <Image
             src={dialFacadeLegendImage}
@@ -86,8 +87,12 @@ export default function DIAL() {
           </figcaption>
         </figure>
         <p>
-            The facility will be able to operate fully off-grid using solar panels and battery storage, allowing for deployment in diverse locations and climates. Networking is provided either through cellular or satellite internet connections, allowing experimenters and participants to work remotely.
+          The facility will be able to operate fully off-grid using solar panels and battery storage, allowing for <strong>deployment in diverse locations and climates</strong>. The trailer can be moved and rotated to optimize daylighting conditions and access different populations, including non-college students and remote communities, for research studies.
         </p>
+        <p>
+          Networking is provided either through cellular or satellite internet connections, allowing experimenters and participants to work remotely.
+        </p>
+        <p>The trailer is fully <strong>ADA-compliant</strong>.</p>
         <h2>Research Opportunities</h2>
         <p>
             DIAL offers a wide range of research opportunities for exploring the impact of daylighting on human health, productivity, and well-being. Researchers can investigate various daylighting strategies, including window design, shading systems, and lighting controls, to optimize indoor environmental quality.
@@ -103,6 +108,103 @@ export default function DIAL() {
             Technical Specifications
         </h2>
         <h3>Dimensions</h3>
+        DIAL is a trailer-based, ADA-compliant facility, allowing for easy transportation and deployment. The dimensions of the trailer are as follows:
+        <ul>
+            <li><strong>Length:</strong> 31' - 9 1/2" (~ 10 m)</li>
+            <li><strong>Width:</strong> 10' - 0" (~3 m)</li>
+        </ul>
+        <h3>Glazing</h3>
+        <p>DIAL is equipped with Halio electrochromic smart-glazing.</p>
+        <table
+          border="1"
+          cellPadding="8"
+          cellSpacing="0"
+          className="text-center"
+        >
+          <thead>
+            <tr>
+              <th></th>
+              <th className="text-center">Clear</th>
+              <th className="text-center">Tinted</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Visible Light Transmission (VLT)</strong>
+              </td>
+              <td className="text-center">68%</td>
+              <td className="text-center">3%</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Solar Heat Gain Coefficient (SHGC)</strong>
+              </td>
+              <td className="text-center">0.46</td>
+              <td className="text-center">0.08</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Thermal Transmittance (Ug-value)</strong>
+              </td>
+              <td className="text-center" colSpan="2">
+                0.24
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>UV Transmission</strong>
+              </td>
+              <td className="text-center" colSpan="2">
+                less than 1%
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Exterior Reflectance</strong>
+              </td>
+              <td className="text-center">15%</td>
+              <td className="text-center">4%</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Interior Reflectance</strong>
+              </td>
+              <td className="text-center">14%</td>
+              <td className="text-center">13%</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Sound Reduction (Rw) (C; Ctr)</strong>
+              </td>
+              <td className="text-center" colSpan="2">
+                36 dB (-1; -3)
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Response Time</strong>
+              </td>
+              <td className="text-center" colSpan="2">
+                ≤ 20 seconds
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Switching Time</strong>
+              </td>
+              <td className="text-center" colSpan="2">
+                ≤ 3 minutes
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>The data based on:</p>
+        <ul>
+          <li>12.7 mm gap with 90% Argon / 10% Air fill</li>
+          <li>iPlus 1.0T Low-E coating on surface 3</li>
+          <li>Energy select 28 Low-E coating on surface 2 for standard double glazing</li>
+        </ul>
         <h3>Climate Controls</h3>
         <ul>
           <li><strong>Two independent mini splits:</strong> separately condition each office room</li>
@@ -132,9 +234,10 @@ export default function DIAL() {
         </ul>
         <h3>Power</h3>
         <ul>
-          <li>Wired/corded power (grid/shore power connection)</li>
-          <li>Solar Panels (coming soon)</li>
-          <li>Battery Storage (coming soon)</li>
+          <li>Wired/Corded Power (grid/shore power connection)</li>
+          <li>Solar Panels (4.4 kW)</li>
+          <li>Battery Banks (43.2 kWh)</li>
+          <li>Backup Generator (Predator 9500)</li>
         </ul>
       </div>
     </>
