@@ -5,21 +5,20 @@ import dialFacadeLegendImage from "../../../public/dial/dial-facade-legend.png";
 import dialFloorPlanImage from "../../../public/dial/dial-floor-plan.jpg";
 import dialRooftopSensors from "../../../public/dial/dial-rooftop-sensors.jpg";
 
-// TODO: add description in metadata
 export const metadata = {
   title: "Daylighting Innovation and Analysis Lab (DIAL) | RadiantLab",
   description:
-    "",
+    "Explore the Daylighting Innovation and Analysis Lab (DIAL), a mobile daylighting research facility at Oregon State University with electrochromic glazing, advanced sensors, and off-grid capabilities.",
   openGraph: {
     url: "https://www.clotildepierson.com/research",
     title: "Daylighting Innovation and Analysis Lab (DIAL) | RadiantLab",
     description:
-      "",
+      "Explore the Daylighting Innovation and Analysis Lab (DIAL), a mobile daylighting research facility at Oregon State University with electrochromic glazing, advanced sensors, and off-grid capabilities.",
   },
   twitter: {
     title: "Daylighting Innovation and Analysis Lab (DIAL) | RadiantLab",
     description:
-      "",
+      "Explore the Daylighting Innovation and Analysis Lab (DIAL), a mobile daylighting research facility at Oregon State University with electrochromic glazing, advanced sensors, and off-grid capabilities.",
   },
 };
 
