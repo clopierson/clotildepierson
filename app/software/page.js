@@ -29,6 +29,7 @@ export default function Software() {
           alt="computer screens with code, keyboard"
           fill={true}
           priority={true}
+          sizes="100vw"
           placeholder="blur"
           className="object-cover object-[50%_30%]"
         ></Image>
@@ -50,6 +51,7 @@ export default function Software() {
               placeholder="blur"
               width={150}
               height={150}
+              sizes="150px"
             />
           </div>
           <div>
@@ -118,6 +120,7 @@ export default function Software() {
               placeholder="blur"
               width={150}
               height={150}
+              sizes="150px"
             />
           </div>
           <div>

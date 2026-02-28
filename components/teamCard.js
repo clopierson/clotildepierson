@@ -20,6 +20,7 @@ export default function TeamCard({
             alt={alt}
             width={150}
             height={150}
+            sizes="150px"
           />
         ) : (
           <Image
@@ -28,6 +29,7 @@ export default function TeamCard({
             alt={alt}
             width={150}
             height={150}
+            sizes="150px"
           />
         )}{" "}
       </div>

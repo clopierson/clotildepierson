@@ -12,6 +12,7 @@ export default function ResearchDiagram({ diagram }) {
               alt="relationships between natural and built environment, indoor light and visual conditions, building occupants, and energy consumption"
               width={645}
               height={344}
+              sizes="(max-width: 768px) 92vw, 645px"
             />
           </div>
           <div className="flex my-5 justify-center dark:hidden">
@@ -20,6 +21,7 @@ export default function ResearchDiagram({ diagram }) {
               alt="relationships between natural and built environment, indoor light and visual conditions, building occupants, and energy consumption"
               width={645}
               height={344}
+              sizes="(max-width: 768px) 92vw, 645px"
             />
           </div>
         </div>
@@ -32,6 +34,7 @@ export default function ResearchDiagram({ diagram }) {
               alt="relationship between natural and built environment, and indoor light and visual conditions"
               width={447}
               height={157}
+              sizes="(max-width: 768px) 92vw, 447px"
             />
           </div>
           <div className="flex my-5 justify-center dark:hidden">
@@ -40,6 +43,7 @@ export default function ResearchDiagram({ diagram }) {
               alt="relationship between natural and built environment, and indoor light and visual conditions"
               width={447}
               height={157}
+              sizes="(max-width: 768px) 92vw, 447px"
             />
           </div>
         </div>
@@ -52,6 +56,7 @@ export default function ResearchDiagram({ diagram }) {
               alt="relationship between indoor light and visual conditions, and building occupants"
               width={447}
               height={142}
+              sizes="(max-width: 768px) 92vw, 447px"
             />
           </div>
           <div className="flex my-5 justify-center dark:hidden">
@@ -60,6 +65,7 @@ export default function ResearchDiagram({ diagram }) {
               alt="relationship between indoor light and visual conditions, and building occupants"
               width={447}
               height={142}
+              sizes="(max-width: 768px) 92vw, 447px"
             />
           </div>
         </div>
@@ -72,6 +78,7 @@ export default function ResearchDiagram({ diagram }) {
               alt="relationships between natural and built environment, building occupants, and energy consumption"
               width={423}
               height={318}
+              sizes="(max-width: 768px) 92vw, 423px"
             />
           </div>
           <div className="flex my-5 justify-center dark:hidden">
@@ -80,6 +87,7 @@ export default function ResearchDiagram({ diagram }) {
               alt="relationships between natural and built environment, building occupants, and energy consumption"
               width={423}
               height={318}
+              sizes="(max-width: 768px) 92vw, 423px"
             />
           </div>
         </div>

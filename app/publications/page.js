@@ -27,6 +27,7 @@ export default function Publications() {
           alt="daylight in a bright library"
           fill={true}
           priority={true}
+          sizes="100vw"
           placeholder="blur"
           className="object-cover object-[20%_50%]"
         ></Image>

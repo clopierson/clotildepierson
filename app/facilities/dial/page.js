@@ -1,6 +1,5 @@
 import Image from "next/image";
 import backgroundImage from "../../../public/background-image-dial.jpg";
-import dialFacadeImage from "../../../public/dial/dial-facade.jpg";
 import dialFacadeLegendImage from "../../../public/dial/dial-facade-legend.png";
 import dialFloorPlanImage from "../../../public/dial/dial-floor-plan.jpg";
 import dialRooftopSensors from "../../../public/dial/dial-rooftop-sensors.jpg";
@@ -10,7 +9,7 @@ export const metadata = {
   description:
     "Explore the Daylighting Innovation and Analysis Lab (DIAL), a mobile daylighting research facility at Oregon State University with electrochromic glazing, advanced sensors, and off-grid capabilities.",
   openGraph: {
-    url: "https://www.clotildepierson.com/research",
+    url: "https://www.clotildepierson.com/facilities/dial",
     title: "Daylighting Innovation and Analysis Lab (DIAL) | RadiantLab",
     description:
       "Explore the Daylighting Innovation and Analysis Lab (DIAL), a mobile daylighting research facility at Oregon State University with electrochromic glazing, advanced sensors, and off-grid capabilities.",
@@ -28,9 +27,10 @@ export default function DIAL() {
       <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
-          alt="inside kelley engineering building with large windows and daylight"
+          alt="exterior view of DIAL facility showing electrochromic windows"
           fill={true}
           priority={true}
+          sizes="100vw"
           placeholder="blur"
           className="object-cover object-[50%_50%]"
         ></Image>
@@ -54,6 +54,7 @@ export default function DIAL() {
             src={dialFacadeLegendImage}
             alt="exterior view of DIAL facility showing electrochromic windows"
             placeholder="blur"
+            sizes="(max-width: 768px) 92vw, 768px"
             className="rounded-md shadow-md dark:shadow-neutral-700"
           ></Image>
           <figcaption className="mt-2 text-sm text-center text-neutral-600 dark:text-neutral-300">
@@ -79,6 +80,7 @@ export default function DIAL() {
             src={dialFloorPlanImage}
             alt="floor plan of DIAL facility showing layout of test rooms and observation room"
             placeholder="blur"
+            sizes="(max-width: 768px) 92vw, 768px"
             className="rounded-md shadow-md dark:shadow-neutral-700"
           ></Image>
           <figcaption className="mt-2 text-sm text-center text-neutral-600 dark:text-neutral-300">
@@ -107,7 +109,9 @@ export default function DIAL() {
             Technical Specifications
         </h2>
         <h3>Dimensions</h3>
-        DIAL is a trailer-based, ADA-compliant facility, allowing for easy transportation and deployment. The dimensions of the trailer are as follows:
+        <p>
+          DIAL is a trailer-based, ADA-compliant facility, allowing for easy transportation and deployment. The dimensions of the trailer are as follows:
+        </p>
         <ul>
             <li><strong>Length:</strong> 31' - 9 1/2" (~ 10 m)</li>
             <li><strong>Width:</strong> 10' - 0" (~3 m)</li>
@@ -198,20 +202,20 @@ export default function DIAL() {
             </tr>
           </tbody>
         </table>
-        <p>The data based on:</p>
+        <p>The data are based on:</p>
         <ul>
           <li>12.7 mm gap with 90% Argon / 10% Air fill</li>
           <li>iPlus 1.0T Low-E coating on surface 3</li>
-          <li>Energy select 28 Low-E coating on surface 2 for standard double glazing</li>
+          <li>Energy Select 28 Low-E coating on surface 2 for standard double glazing</li>
         </ul>
         <h3>Climate Controls</h3>
         <ul>
-          <li><strong>Two independent mini splits:</strong> separately condition each office room</li>
+          <li><strong>Two independent mini-splits:</strong> separately condition each office room</li>
           <li><strong>Heat recovery ventilation (HRV):</strong> Lunos e2 ductless unit for fresh air with efficient heat recovery</li>
         </ul>
         <h3>Rooftop Sensors</h3>
         <ul>
-          <li><strong>Solar Monitoring Station (EKO's MS-90 Sensor and MS-80SH Pyranometer):</strong> collects high-quality solar irradiance data such a Direct Normal Irradiance (DNI) and Global Horizontal Irradiance (GHI)</li>
+          <li><strong>Solar Monitoring Station (EKO's MS-90 Sensor and MS-80SH Pyranometer):</strong> collects high-quality solar irradiance data such as Direct Normal Irradiance (DNI) and Global Horizontal Irradiance (GHI)</li>
           <li><strong>Spectroradiometer (JETI's Specbos 1211-2):</strong> collects spectral irradiance data in the 300-1100 nm range, allowing accurate daylight spectral measurements</li>
         </ul>
         <figure className="my-4">
@@ -219,6 +223,7 @@ export default function DIAL() {
             src={dialRooftopSensors}
             alt="rooftop sensors on DIAL facility including solar monitoring station and spectroradiometer"
             placeholder="blur"
+            sizes="(max-width: 768px) 92vw, 768px"
             className="rounded-md shadow-md dark:shadow-neutral-700"
           ></Image>
           <figcaption className="mt-2 text-sm text-center text-neutral-600 dark:text-neutral-300">

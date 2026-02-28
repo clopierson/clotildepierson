@@ -16,6 +16,7 @@ export default function InstitutionLogo({ orientation = "horizontal" }) {
               placeholder="blur"
               width={200}
               height={64}
+              sizes="(max-width: 640px) 125px, 200px"
             />
           </div>
           <div className="hidden dark:inline-block">
@@ -25,6 +26,7 @@ export default function InstitutionLogo({ orientation = "horizontal" }) {
               placeholder="blur"
               width={200}
               height={64}
+              sizes="(max-width: 640px) 125px, 200px"
             />
           </div>
         </div>
@@ -37,6 +39,7 @@ export default function InstitutionLogo({ orientation = "horizontal" }) {
               placeholder="blur"
               width={95}
               height={100}
+              sizes="95px"
             />
           </div>
           <div className="hidden dark:inline-block">
@@ -46,6 +49,7 @@ export default function InstitutionLogo({ orientation = "horizontal" }) {
               placeholder="blur"
               width={95}
               height={100}
+              sizes="95px"
             />
           </div>
         </div>

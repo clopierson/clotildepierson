@@ -29,6 +29,7 @@ export default function Research() {
           alt="inside kelley engineering building with large windows and daylight"
           fill={true}
           priority={true}
+          sizes="100vw"
           placeholder="blur"
           className="object-cover object-[50%_30%]"
         ></Image>

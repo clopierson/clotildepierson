@@ -8,6 +8,7 @@ export default function FactCard({ illustration, fact, description, alt }) {
         alt={alt}
         width={150}
         height={150}
+        sizes="150px"
         className="mt-0"
       />
       <div className="mt-2 text-xl font-[Spartan] font-bold">{fact}</div>

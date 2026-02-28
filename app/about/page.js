@@ -56,6 +56,7 @@ export default function About() {
             placeholder="blur"
             width={200}
             height={200}
+            sizes="200px"
           />
         </div>
         <div className="row-start-3 sm:row-start-2 sm:col-start-1 sm:col-span-10 md:col-start-2 md:col-span-8mt-2 self-start mt-6">
