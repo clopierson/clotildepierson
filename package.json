@@ -6,7 +6,8 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:a11y": "playwright test tests/accessibility/"
   },
   "dependencies": {
     "@radix-ui/react-navigation-menu": "^1.2.14",
@@ -22,7 +23,9 @@
     "sharp": "^0.34.5"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.11.3",
     "@next/bundle-analyzer": "^16.1.6",
+    "@playwright/test": "^1.60.0",
     "@tailwindcss/typography": "^0.5.19",
     "autoprefixer": "^10.4.27",
     "eslint": "10.0.2",
