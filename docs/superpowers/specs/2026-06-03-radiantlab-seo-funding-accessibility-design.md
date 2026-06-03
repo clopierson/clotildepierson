@@ -63,13 +63,13 @@ Add via `<Script id="..." type="application/ld+json">` co-located with each page
 | Page | Schema type | Key fields |
 |------|-------------|------------|
 | Homepage (`/`) | `Organization` | name, url, description, logo, founder (Clotilde), parentOrganization (OSU), sameAs (OSU faculty page) |
-| About (`/about`) | `Person` | name, jobTitle, affiliation (OSU + RadiantLab), email, sameAs array: ORCID (if available), Google Scholar, ResearchGate, LinkedIn, X/Twitter |
+| About (`/about`) | `Person` | name, jobTitle, affiliation (OSU + RadiantLab), email, sameAs array: `https://orcid.org/0000-0001-7847-6568`, Google Scholar, ResearchGate, LinkedIn, X/Twitter |
 | Research (`/research`) | `Project` (x3) | name, description, funder (Nuckolls Fund, Oregon Partnership for Alzheimer's Research), one per research theme |
 | Software (`/software`) | `SoftwareApplication` (x2) | name, description, url, codeRepository, applicationCategory, license -- one for Lark, one for HDRI Calibration Tool |
 | Publications (`/publications`) | `ItemList` + `ScholarlyArticle` (xN) | identifier (DOI), headline, author, datePublished, isPartOf (venue) -- one per paper |
 | DIAL (`/facilities/dial`) | `FAQPage` | wraps the existing `<details>/<summary>` elements |
 
-The `Person` schema on the About page is the highest-priority entry: it is the primary signal AI agents use to identify Clotilde as a researcher and link her to her work. Confirm whether Clotilde has an ORCID before implementation; add it to the `sameAs` array if she does.
+The `Person` schema on the About page is the highest-priority entry: it is the primary signal AI agents use to identify Clotilde as a researcher and link her to her work.
 
 ### Publications Page Restructure
 
