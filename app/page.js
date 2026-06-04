@@ -4,6 +4,7 @@ import backgroundImage from "../public/background-image.jpg";
 import FactCard from "../components/factCard";
 import RadiantLab from "../components/radiantLab";
 import ResearchDiagram from "../components/researchDiagram";
+import { Button } from "@/components/ui/button";
 
 export const metadata = {
   title: "Daylighting Research Laboratory | RadiantLab",
@@ -148,13 +149,18 @@ export default function Home() {
           consumption into strategies for the development of a more sustainable
           built environment and innovative daylighting solutions.
         </p>
-        <p className="text-sm border-t border-neutral-200 dark:border-neutral-700 pt-4 mt-8">
-          The RadiantLab relies on private support to advance this work.{" "}
-          <a href="/give">
-            Support daylighting research
-          </a>{" "}
-          through the OSU Foundation.
-        </p>
+        <div className="not-prose border-t border-neutral-200 dark:border-neutral-700 pt-4 mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+          <p className="text-sm text-neutral-600 dark:text-neutral-400">
+            The RadiantLab relies on private support to advance this work.
+          </p>
+          <Button
+            asChild
+            size="sm"
+            className="bg-osu-beaver-orange text-white hover:bg-osu-luminance hover:text-gray-900 flex-shrink-0"
+          >
+            <a href="/give">Support this research</a>
+          </Button>
+        </div>
       </div>
     </>
   );
