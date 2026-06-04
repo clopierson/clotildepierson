@@ -78,7 +78,7 @@ export default function Research() {
           The main topics that our research focuses on include:
         </p>
 
-        <details className="rounded-md p-4 my-4 -mx-4 shadow-md dark:shadow-neutral-700">
+        <details className="rounded-md p-4 my-4 -mx-4 shadow-md dark:shadow-[0_1px_3px_0_rgb(0,0,0,0.6),0_4px_6px_-2px_rgb(0,0,0,0.5)]">
           <summary>
             the relation between the natural and built environment and indoor
             light and visual conditions
@@ -115,7 +115,7 @@ export default function Research() {
           />
         </details>
 
-        <details className="rounded-md p-4 my-4 -mx-4 shadow-md dark:shadow-neutral-700">
+        <details className="rounded-md p-4 my-4 -mx-4 shadow-md dark:shadow-[0_1px_3px_0_rgb(0,0,0,0.6),0_4px_6px_-2px_rgb(0,0,0,0.5)]">
           <summary>
             the relation between indoor light and visual conditions and building
             occupants
@@ -150,7 +150,7 @@ export default function Research() {
           />
         </details>
 
-        <details className="rounded-md p-4 my-4 -mx-4 shadow-md dark:shadow-neutral-700">
+        <details className="rounded-md p-4 my-4 -mx-4 shadow-md dark:shadow-[0_1px_3px_0_rgb(0,0,0,0.6),0_4px_6px_-2px_rgb(0,0,0,0.5)]">
           <summary>
             the relation between energy consumption and the building occupants
             or the natural and built environment
