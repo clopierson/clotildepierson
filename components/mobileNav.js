@@ -26,7 +26,7 @@ export default function MobileNav() {
             <Menu size={24} />
           </button>
         </SheetTrigger>
-        <SheetContent side="right" className="flex flex-col justify-end gap-4 p-10">
+        <SheetContent side="right" className="flex flex-col justify-end gap-4 p-10 dark:bg-neutral-900 dark:text-gray-100 dark:border-neutral-700">
           <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
           <SheetDescription className="sr-only">Site navigation links</SheetDescription>
           <div className="w-24">

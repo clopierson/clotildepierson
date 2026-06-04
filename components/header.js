@@ -12,16 +12,18 @@ export default function Header() {
       >
         Skip to main content
       </a>
-      <div className="grid grid-cols-4 grid-rows-1 items-center">
-        <div className="col-span-4 justify-self-center md:justify-self-start md:col-span-1">
-          <div className="flex place-content-center items-center gap-6">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-4">
+          {/* OSU logo: hidden on sm, visible md+ */}
+          <span className="hidden md:block">
             <InstitutionLogo />
-            <span className="md:hidden">
-              <RadiantLab link="/" />
-            </span>
-          </div>
+          </span>
+          {/* RadiantLab: hidden on lg (Navigation renders it there) */}
+          <span className="lg:hidden">
+            <RadiantLab link="/" />
+          </span>
         </div>
-        <div className="col-start-3 col-span-2 justify-self-end flex items-center gap-2">
+        <div className="flex items-center gap-2">
           <Navigation />
           <MobileNav />
         </div>

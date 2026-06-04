@@ -77,16 +77,6 @@ export default function Research() {
           for Alzheimer&apos;s Research. The main topics that our research
           focuses on include:
         </p>
-        <div className="not-prose mb-4">
-          <Button
-            asChild
-            size="sm"
-            className="bg-osu-beaver-orange text-white dark:!text-white hover:bg-osu-luminance hover:text-gray-900"
-          >
-            <a href="/give">Support this research</a>
-          </Button>
-        </div>
-
         {/* Table of Contents */}
         <nav className="not-prose flex flex-wrap gap-2 my-6" aria-label="Research topics">
           <a
@@ -129,6 +119,15 @@ export default function Research() {
           projectName="Validation of spectral simulation tools in the context of ipRGC-influenced light responses of building occupants."
           projectDescription="Spectral simulation workflows offer a high potential in evaluating building occupants&#39; ipRGC-influenced light (IIL) responses in a prospective way (e.g., in predicting what may be the most impactful design decisions when it comes to affecting such responses). In view of the relative novelty of research in this area, only a few simulation tools are available but have not been validated yet. This study compared laboratory measurements to simulation outputs to determine whether we can rely on spectral simulation tools (i.e., ALFA and Lark) to evaluate building occupants&#39; IIL responses and guide the design process. The results indicate that Lark outperforms ALFA in most cases and shows a simulation error in the &#177;20% range for point-in-time indicators."
         />
+        <div className="not-prose flex justify-center my-6">
+          <Button
+            asChild
+            size="lg"
+            className="bg-osu-beaver-orange text-white hover:bg-osu-luminance hover:text-gray-900"
+          >
+            <a href="/give">Support this research</a>
+          </Button>
+        </div>
 
         <h2 id="light-and-occupants">
           Light, Views, and Occupant Health
@@ -152,6 +151,15 @@ export default function Research() {
           projectName="Influence of the socio-environmental context on discomfort due to glare from daylight"
           projectDescription="To harvest the benefits of daylight indoors, there is a need to predict discomfort from daylight glare. While more than 20 models for predicting discomfort from daylight glare have been developed, none accurately do it. The inclusion of additional factors in the models may improve the predictions. One such factor is the socio-environmental context of the observer. This study compared the evaluation of discomfort from daylight glare of building occupants in four socio-environmental contexts: Chile, Belgium, Japan, and Switzerland. The results do not show evidence of an influence of socio-environmental context on discomfort from daylight glare."
         />
+        <div className="not-prose flex justify-center my-6">
+          <Button
+            asChild
+            size="lg"
+            className="bg-osu-beaver-orange text-white hover:bg-osu-luminance hover:text-gray-900"
+          >
+            <a href="/give">Support this research</a>
+          </Button>
+        </div>
 
         <h2 id="energy-and-environment">
           Energy Consumption and Daylighting
@@ -178,6 +186,15 @@ export default function Research() {
           engineering, architecture, chronobiology, computer science, urban
           planning, neuroscience, psychophysics, and public health.
         </p>
+        <div className="not-prose flex justify-center my-6">
+          <Button
+            asChild
+            size="lg"
+            className="bg-osu-beaver-orange text-white hover:bg-osu-luminance hover:text-gray-900"
+          >
+            <a href="/give">Support this research</a>
+          </Button>
+        </div>
       </div>
     </>
   );

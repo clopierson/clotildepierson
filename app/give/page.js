@@ -37,15 +37,6 @@ export default function Give() {
           educate the next generation of scientists, and accelerate discoveries
           that improve lives.
         </p>
-        <div className="not-prose flex justify-center mt-6">
-          <Button
-            asChild
-            size="lg"
-            className="bg-osu-beaver-orange text-white dark:!text-white hover:bg-osu-luminance hover:text-gray-900"
-          >
-            <a href="#how-to-give">Give Now</a>
-          </Button>
-        </div>
       </div>
 
       {/* How to Give */}

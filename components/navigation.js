@@ -24,8 +24,7 @@ export default function Navigation() {
           <Button
             key={link.name}
             asChild
-            size="sm"
-            className="bg-osu-beaver-orange text-white hover:bg-osu-luminance hover:text-gray-900 capitalize"
+            className="bg-osu-beaver-orange text-white hover:bg-osu-luminance hover:text-gray-900 capitalize text-sm md:text-base h-auto px-3 py-1"
           >
             <Link href={link.link}>{link.name}</Link>
           </Button>

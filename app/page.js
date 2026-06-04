@@ -151,7 +151,7 @@ export default function Home() {
         </p>
         <div className="not-prose border-t border-neutral-200 dark:border-neutral-700 pt-4 mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-3">
           <p className="text-sm text-neutral-600 dark:text-neutral-400">
-            The RadiantLab relies on private support to advance this work.
+            The <RadiantLab /> relies on private support to advance this work.
           </p>
           <Button
             asChild
