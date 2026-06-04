@@ -27,6 +27,38 @@ const faqJsonLd = {
   mainEntity: [
     {
       "@type": "Question",
+      name: "What is DIAL?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "DIAL (Daylighting Innovation and Analysis Lab) is a state-of-the-art mobile laboratory platform at Oregon State University dedicated to advancing the science and application of daylighting in the built environment. It contains two symmetrical office rooms equipped with electrochromic windows and skylight, dimmable LED lighting, and a suite of environmental sensors, plus an observation room for experimenters.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where is DIAL located?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "DIAL is currently located at Oregon State University in Corvallis, Oregon. As a trailer-based facility housed within a standard shipping container, it can be transported and deployed to diverse locations and climates.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What research can be done in DIAL?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "DIAL supports interdisciplinary research on the impact of daylighting on human health, productivity, and well-being, including circadian rhythm and sleep health, cognitive function, aging, and indoor environmental quality. Researchers can also test new technologies and materials such as electrochromic glazing and advanced lighting systems.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is DIAL ADA-compliant?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. The DIAL facility is fully ADA-compliant.",
+      },
+    },
+    {
+      "@type": "Question",
       name: "What is electrochromic glazing?",
       acceptedAnswer: {
         "@type": "Answer",
