@@ -20,9 +20,36 @@ export const metadata = {
       "The Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson provides open-source software to advance research.",
   },
 };
+const softwareJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      name: "Lark Spectral Lighting v2.0",
+      description: "Open-source spectral lighting simulation tool for circadian lighting analysis. Computes photopic and non-visual metrics including alpha-opic values across 9 spectral channels. Runs on Rhino/Grasshopper.",
+      url: "https://www.food4rhino.com/en/app/lark-spectral-lighting",
+      codeRepository: "https://github.com/larkspectral/Lark_Spectral_Lighting",
+      applicationCategory: "ScientificApplication",
+      operatingSystem: "Windows, macOS",
+      author: { "@type": "Person", name: "Clotilde Pierson", url: "https://www.clotildepierson.com/about" },
+    },
+    {
+      "@type": "SoftwareApplication",
+      name: "HDRI Calibration Interface v3.0.0",
+      description: "Free, open-source desktop application for merging Low Dynamic Range images and generating calibrated High Dynamic Range (HDR) luminance maps for daylighting research.",
+      url: "https://github.com/clopierson/HDRICalibrationTool",
+      codeRepository: "https://github.com/clopierson/HDRICalibrationTool",
+      applicationCategory: "ScientificApplication",
+      operatingSystem: "Windows, macOS, Linux",
+      author: { "@type": "Person", name: "Clotilde Pierson", url: "https://www.clotildepierson.com/about" },
+    },
+  ],
+};
+
 export default function Software() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareJsonLd) }} />
       <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
@@ -47,7 +74,7 @@ export default function Software() {
           <div className="sm:basis-72 my-2 sm:mt-8">
             <Image
               src={larkImage}
-              alt=""
+              alt="Lark Spectral Lighting logo"
               placeholder="blur"
               width={150}
               height={150}
@@ -116,7 +143,7 @@ export default function Software() {
           <div className="sm:basis-72 my-2 sm:mt-8">
             <Image
               src={hdriImage}
-              alt=""
+              alt="HDRI Calibration Interface logo"
               placeholder="blur"
               width={150}
               height={150}
