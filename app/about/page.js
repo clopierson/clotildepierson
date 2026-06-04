@@ -23,9 +23,34 @@ export const metadata = {
   },
 };
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Clotilde Pierson",
+  givenName: "Clotilde",
+  familyName: "Pierson",
+  jobTitle: "Assistant Professor of Architectural Engineering",
+  email: "clotilde.pierson@oregonstate.edu",
+  url: "https://www.clotildepierson.com/about",
+  affiliation: [
+    { "@type": "EducationalOrganization", name: "Oregon State University", department: "School of Civil and Construction Engineering", url: "https://oregonstate.edu" },
+    { "@type": "ResearchOrganization", name: "Daylighting Research Laboratory (RadiantLab)", url: "https://www.clotildepierson.com" },
+  ],
+  sameAs: [
+    "https://orcid.org/0000-0001-7847-6568",
+    "https://scholar.google.com/citations?user=X8aroEgAAAAJ&hl=fr&oi=ao",
+    "https://www.researchgate.net/profile/Clotilde-Pierson",
+    "https://www.linkedin.com/in/clotilde-pierson/",
+    "https://x.com/PiersonClotilde",
+    "https://cce.oregonstate.edu/people/clotilde-pierson",
+  ],
+  knowsAbout: ["Daylighting", "Architectural Engineering", "Circadian Lighting", "Building Performance Simulation", "Visual Comfort", "Glare Research", "Non-visual Effects of Light"],
+};
+
 export default function About() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }} />
       <div className="grid auto-rows-min grid-flow-row sm:grid-cols-10 sm:grid-rows-1 items-center mt-6">
         <div className="row-start-1 sm:col-start-1 sm:col-span-5 md:col-start-2 md:col-span-4">
           <div className="prose prose-neutral dark:prose-invert">
