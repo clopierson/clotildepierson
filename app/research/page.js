@@ -20,9 +20,42 @@ export const metadata = {
   },
 };
 
+const researchJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ResearchProject",
+      name: "Built Environment to Indoor Light and Visual Conditions",
+      description: "Investigating how glazing technologies, facade layouts, building geometries, urbanization, and climate change affect indoor light and visual conditions. Develops and validates tools for predicting and optimizing these relationships.",
+      funder: [
+        { "@type": "Organization", name: "Nuckolls Fund for Lighting Education" },
+        { "@type": "Organization", name: "Oregon Partnership for Alzheimer's Research" },
+      ],
+      member: { "@type": "Person", name: "Clotilde Pierson", url: "https://www.clotildepierson.com/about" },
+    },
+    {
+      "@type": "ResearchProject",
+      name: "Indoor Light and Visual Conditions to Building Occupant Health",
+      description: "Studying how light exposure affects physical and mental health, circadian rhythms, comfort, cognitive performance, and dementia risk. Develops models and metrics for optimal daylighting strategies.",
+      funder: [
+        { "@type": "Organization", name: "Nuckolls Fund for Lighting Education" },
+        { "@type": "Organization", name: "Oregon Partnership for Alzheimer's Research" },
+      ],
+      member: { "@type": "Person", name: "Clotilde Pierson", url: "https://www.clotildepierson.com/about" },
+    },
+    {
+      "@type": "ResearchProject",
+      name: "Energy Consumption and Daylighting Strategies",
+      description: "Examining how urbanization and climate change affect lighting energy consumption, the energy efficiency of daylighting technologies, and strategies to reduce energy use while maintaining visual comfort.",
+      member: { "@type": "Person", name: "Clotilde Pierson", url: "https://www.clotildepierson.com/about" },
+    },
+  ],
+};
+
 export default function Research() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(researchJsonLd) }} />
       <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
