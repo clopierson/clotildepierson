@@ -25,11 +25,11 @@ export default function ExperienceCard({
         )}
       </p>
       {typeof location === "string" && (
-        <p className="text-sm text-neutral-400 dark:text-neutral-500">
+        <p className="text-sm text-neutral-500 dark:text-neutral-400">
           {location}
         </p>
       )}
-      <p className="text-sm text-neutral-400 dark:text-neutral-500">
+      <p className="text-sm text-neutral-500 dark:text-neutral-400">
         {startDate} &mdash; {endDate}
       </p>
       {typeof mobility === "string" && (

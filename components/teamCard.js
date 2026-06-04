@@ -42,9 +42,11 @@ export default function TeamCard({
         ) : (
           <p className="my-1 text-center sm:text-justify">{description}</p>
         )}
-        <p className="my-1">
-          <a href={href}>{email}</a>
-        </p>
+        {email && (
+          <p className="my-1">
+            <a href={href}>{email}</a>
+          </p>
+        )}
       </div>
     </article>
   );

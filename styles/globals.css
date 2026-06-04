@@ -45,3 +45,7 @@
   font-weight: 700;
   font-display: swap;
 }
+
+html {
+  scroll-padding-bottom: 80px;
+}

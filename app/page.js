@@ -64,7 +64,7 @@ export default function Home() {
         <h1 className="sr-only">Daylighting Research Laboratory</h1>
         <p className="font-bold">
           The <RadiantLab /> is led by{" "}
-          <Link href="/about" className="font-bold hover:font-bold">
+          <Link href="/about" className="font-bold hover:font-bold !underline">
             Dr. Clotilde Pierson
           </Link>
           {", "}
