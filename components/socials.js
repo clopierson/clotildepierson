@@ -3,7 +3,10 @@
 export default function Socials() {
   return (
     <div>
-      <a href="mailto:clotilde.pierson@oregonstate.edu">
+      <a
+        href="mailto:clotilde.pierson@oregonstate.edu"
+        className="inline-block min-h-6 py-0.5"
+      >
         clotilde.pierson@oregonstate.edu
       </a>
       <br></br>
