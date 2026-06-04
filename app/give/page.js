@@ -1,3 +1,5 @@
+import RadiantLab from "../../components/radiantLab";
+
 export const metadata = {
   title: "Support Daylighting Research | RadiantLab",
   description:
@@ -24,7 +26,7 @@ export default function Give() {
         <p className="font-semibold">
           Light shapes how we sleep, think, learn, work, and age. Yet most
           buildings are designed with limited understanding of how their lighting
-          environments affect human health. The RadiantLab at Oregon State
+          environments affect human health. The <RadiantLab /> at Oregon State
           University studies how daylight and electric lighting influence human
           biology, behavior, and well-being.
         </p>
@@ -120,8 +122,7 @@ export default function Give() {
 
         <p>
           Donations are processed through the Oregon State University Foundation,
-          ensuring your gift is tax-deductible and directed to support RadiantLab
-          research.
+          ensuring your gift is tax-deductible and directed to support <RadiantLab /> research.
         </p>
 
         <ol>
@@ -142,8 +143,7 @@ export default function Give() {
           </li>
           <li>
             In the <strong>Comments or special instructions</strong> field, enter{" "}
-            <strong>Clotilde Pierson</strong> to direct your gift to the
-            RadiantLab.
+            <strong>Clotilde Pierson</strong> to direct your gift to the <RadiantLab />.
           </li>
           <li>Complete your gift amount and payment information.</li>
         </ol>
