@@ -26,7 +26,7 @@ export default function Navigation() {
   return (
     <nav>
       {/* Non-Mobile Menu */}
-      <div className="hidden md:flex md:justify-end md:gap-4">
+      <div className="hidden lg:flex lg:justify-end lg:gap-4">
         <div className="text-sm no-underline md:text-base inline" key="home">
           <RadiantLab link="/" />
         </div>
@@ -47,7 +47,7 @@ export default function Navigation() {
       <a
         href="#top"
         aria-label="back to the top of the page"
-        className="select-none hidden md:block fixed px-3 py-3 text-sm bottom-6 right-6 text-center rounded shadow-md text-gray-800 bg-gray-300 hover:bg-osu-luminance  dark:shadow-black/50"
+        className="select-none hidden lg:block fixed px-3 py-3 text-sm bottom-6 right-6 text-center rounded shadow-md text-gray-800 bg-gray-300 hover:bg-osu-luminance dark:shadow-black/50"
       >
         Back to Top
       </a>
@@ -55,7 +55,7 @@ export default function Navigation() {
       <a
         href="#top"
         aria-label="back to the top of the page"
-        className="select-none px-3 py-3 text-sm fixed bottom-6 right-20 block text-center rounded text-gray-800 bg-gray-300 hover:bg-osu-luminance md:hidden shadow-md dark:shadow-black/50"
+        className="select-none px-3 py-3 text-sm fixed bottom-6 right-20 block text-center rounded text-gray-800 bg-gray-300 hover:bg-osu-luminance lg:hidden shadow-md dark:shadow-black/50"
       >
         <span className="sr-only">Back to Top</span>
         <ChevronUp />
@@ -63,7 +63,7 @@ export default function Navigation() {
       {/* Open menu on Mobile + Overlay*/}
       <Dialog.Root open={open} onOpenChange={setOpen}>
         <Dialog.Trigger asChild>
-          <button className="select-none px-3 py-3 text-sm fixed bottom-6 right-6 block text-center rounded text-gray-800 bg-gray-300 hover:bg-osu-luminance md:hidden shadow-md dark:shadow-black/50">
+          <button className="select-none px-3 py-3 text-sm fixed bottom-6 right-6 block text-center rounded text-gray-800 bg-gray-300 hover:bg-osu-luminance lg:hidden shadow-md dark:shadow-black/50">
             <span className="sr-only">Open Navigation Menu</span>
             <Menu />
           </button>
