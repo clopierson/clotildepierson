@@ -41,7 +41,7 @@ export default function Give() {
           <Button
             asChild
             size="lg"
-            className="bg-osu-beaver-orange text-white hover:bg-osu-luminance hover:text-gray-900"
+            className="bg-osu-beaver-orange text-white dark:!text-white hover:bg-osu-luminance hover:text-gray-900"
           >
             <a href="#how-to-give">Give Now</a>
           </Button>
@@ -51,7 +51,7 @@ export default function Give() {
       {/* How to Give */}
       <section
         id="how-to-give"
-        className="bg-orange-50 dark:bg-neutral-800 rounded-lg py-10 px-6 my-8"
+        className="bg-white dark:bg-neutral-800 rounded-lg py-10 px-6 my-8"
       >
         <div className="max-w-prose mx-auto">
           <h2 className="text-2xl font-bold mb-2 text-neutral-900 dark:text-neutral-100">
@@ -92,7 +92,7 @@ export default function Give() {
           <Button
             asChild
             size="lg"
-            className="bg-osu-beaver-orange text-white hover:bg-osu-luminance hover:text-gray-900"
+            className="bg-osu-beaver-orange text-white dark:!text-white hover:bg-osu-luminance hover:text-gray-900"
           >
             <a
               href="https://give.fororegonstate.org/PL1Uv3Fkug"

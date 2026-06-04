@@ -81,7 +81,7 @@ export default function Research() {
           <Button
             asChild
             size="sm"
-            className="bg-osu-beaver-orange text-white hover:bg-osu-luminance hover:text-gray-900"
+            className="bg-osu-beaver-orange text-white dark:!text-white hover:bg-osu-luminance hover:text-gray-900"
           >
             <a href="/give">Support this research</a>
           </Button>
