@@ -131,6 +131,13 @@ export default function Home() {
           consumption into strategies for the development of a more sustainable
           built environment and innovative daylighting solutions.
         </p>
+        <p className="text-sm border-t border-neutral-200 dark:border-neutral-700 pt-4 mt-8">
+          The RadiantLab relies on private support to advance this work.{" "}
+          <a href="/give" className="font-medium">
+            Support daylighting research
+          </a>{" "}
+          through the OSU Foundation.
+        </p>
       </div>
     </>
   );

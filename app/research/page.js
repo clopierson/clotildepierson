@@ -40,8 +40,9 @@ export default function Research() {
         <p>
           Our research is generously supported by a number of sources, such as
           the Nuckolls Fund for Lighting Education and the Oregon Partnership
-          for Alzheimer&#39;s Research. The main topics that our research
-          focuses on include:
+          for Alzheimer&apos;s Research.{" "}
+          <a href="/give">Support this research</a> through the OSU Foundation.
+          The main topics that our research focuses on include:
         </p>
 
         <details className="rounded-md p-4 my-4 -mx-4 shadow-md dark:shadow-neutral-700">
