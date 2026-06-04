@@ -22,9 +22,26 @@ export const metadata = {
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ResearchOrganization",
+  name: "Daylighting Research Laboratory (RadiantLab)",
+  alternateName: "RadiantLab",
+  url: "https://www.clotildepierson.com",
+  description: "The RadiantLab advances knowledge of daylight in buildings to enhance human health, well-being, and performance while minimizing energy consumption. Based at Oregon State University.",
+  logo: "https://www.clotildepierson.com/institution/OSU_horizontal_2C_O_over_W.png",
+  founder: { "@type": "Person", name: "Clotilde Pierson", url: "https://www.clotildepierson.com/about" },
+  parentOrganization: { "@type": "EducationalOrganization", name: "Oregon State University", url: "https://oregonstate.edu" },
+  sameAs: ["https://cce.oregonstate.edu/people/clotilde-pierson"],
+};
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
       <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
