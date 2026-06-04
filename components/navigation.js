@@ -15,7 +15,7 @@ export const MenuItems = [
 
 export default function Navigation() {
   return (
-    <nav className="hidden lg:flex lg:items-center lg:gap-4">
+    <nav aria-label="Main navigation" className="hidden lg:flex lg:items-center lg:gap-4">
       <div className="text-sm md:text-base">
         <RadiantLab link="/" />
       </div>

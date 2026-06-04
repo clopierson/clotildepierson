@@ -17,7 +17,7 @@ export default function SupportersMarquee() {
       <div className="flex gap-12 w-max animate-marquee hover:[animation-play-state:paused]">
         {items.map((supporter, i) => (
           <span
-            key={i}
+            key={`${supporter.name}-${i}`}
             className="whitespace-nowrap text-sm text-neutral-600 dark:text-neutral-300"
           >
             {supporter.name}

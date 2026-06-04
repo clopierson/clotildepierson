@@ -37,6 +37,12 @@
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
+
 /* Typography overrides using @apply */
 .prose a {
   @apply text-osu-beaver-orange no-underline font-bold dark:text-osu-luminance;
