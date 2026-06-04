@@ -7,39 +7,13 @@ import InstitutionLogo from "./InstitutionLogo";
 import { Dialog } from "radix-ui";
 
 export const MenuItems = [
-  // {
-  //   link: "/",
-  //   name: "home",
-  // },
-  {
-    link: "/research",
-    name: "research",
-  },
-  {
-    link: "/software",
-    name: "software",
-  },
-  {
-    link: "/facilities/dial",
-    name: "facilities",
-  },
-  // TODO: for future facilities, have a dropdown menu for different facilities, not a facilities page
-  {
-    link: "/publications",
-    name: "publications",
-  },
-  {
-    link: "/team",
-    name: "team",
-  },
-  {
-    link: "/about",
-    name: "about",
-  },
-  // {
-  //   link: "/contact",
-  //   name: "contact",
-  // },
+  { link: "/research", name: "research" },
+  { link: "/software", name: "software" },
+  { link: "/facilities/dial", name: "facilities" },
+  { link: "/publications", name: "publications" },
+  { link: "/team", name: "team" },
+  { link: "/about", name: "about" },
+  { link: "/give", name: "give", highlight: true },
 ];
 
 export default function Navigation() {
@@ -58,7 +32,11 @@ export default function Navigation() {
         </div>
         {MenuItems.map((link) => (
           <div
-            className="capitalize text-sm no-underline md:text-base inline hover:text-osu-luminance"
+            className={`capitalize text-sm no-underline md:text-base inline ${
+              link.highlight
+                ? "text-osu-beaver-orange hover:text-osu-luminance"
+                : "hover:text-osu-luminance"
+            }`}
             key={link.name}
           >
             <Link href={link.link}>{link.name}</Link>
@@ -106,7 +84,11 @@ export default function Navigation() {
               </div>
               {MenuItems.map((link) => (
                 <div
-                  className="capitalize no-underline md:text-base inline hover:text-osu-luminance"
+                  className={`capitalize no-underline md:text-base inline ${
+                    link.highlight
+                      ? "text-osu-beaver-orange hover:text-osu-luminance"
+                      : "hover:text-osu-luminance"
+                  }`}
                   key={link.name}
                   onClick={handleLinkClick}
                 >
