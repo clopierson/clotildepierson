@@ -21,13 +21,8 @@ export default function Give() {
       <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
         <h1>Support Daylighting Research</h1>
 
-        {/* TODO: replace [STAT] with a sourced figure from the Alzheimer's Association or WHO before going live */}
         <p className="font-semibold">
-          [STAT] people worldwide live with Alzheimer&apos;s disease or related
-          dementias. Emerging evidence links disrupted light exposure (the kind
-          caused by modern buildings and urban life) to accelerated cognitive
-          decline. The RadiantLab is working to understand this relationship and
-          find design solutions that protect brain health.
+          55 million people worldwide live with Alzheimer&apos;s disease or related dementias. Emerging evidence links disrupted light exposure (the kind caused by modern buildings and urban life) to accelerated cognitive decline. The RadiantLab is working to understand this relationship and find design solutions that protect brain health.
         </p>
 
         <p>
@@ -86,7 +81,7 @@ export default function Give() {
           </li>
           <li>
             In the <strong>Designation</strong> field, search for and select{" "}
-            <strong>Civil &amp; Construction Engineering research Fund</strong>.
+            <strong>Civil &amp; Construction Engineering Research Fund</strong>.
           </li>
           <li>
             In the <strong>Comments or special instructions</strong> field,
@@ -102,8 +97,6 @@ export default function Give() {
           to discuss research collaboration, naming opportunities, or multi-year
           commitments.
         </p>
-      </div>
-      <div className="my-8 mx-auto max-w-2xl px-4 text-base leading-relaxed">
         <p>
           Contact Dr. Pierson at{" "}
           <a href="mailto:clotilde.pierson@oregonstate.edu">

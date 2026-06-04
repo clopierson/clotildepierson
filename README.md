@@ -8,13 +8,18 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## To Do
 
+- The Give page should look more impactful
+- Links to "Give" should be more impactful and more visible (in the header it should be a button, same on the Give page, and home page)
+- We should advertise how much money we already got overall and from whom
+  - Create a component for "Supporters" that we can use on different page, I'm thinking a moving banner or a card with the total $ we have raised + detailed about supporters?
+- For DIAL, the FAQPage JSON-LD can answer other questions, such as "What is DIAL?", etc.
+- Update teaching, publications
+- Find a better alternative to these summary/detaile elements in various places. They don't look great and don't make the pages exciting.
 - Use shadcn/ui for components
 - Investigate David Hurwitz website to figure out how he gets money: https://www.davidhurwitz.org/ 
-- Add link to https://give.fororegonstate.org/PL1Uv3Fkug (OSU Foundation) + pre-fill form
 - Add link to https://experiment.com/ 
 - Add current projects for marketing purposes
 - Write some blog posts
-- Update teaching and other sections
 - Improve page metadata to be a summary of the page content for SEO (e.g., About should be improved)
 - Marketing strategies: https://grok.com/share/bGVnYWN5LWNvcHk_d5770326-d9ca-4222-af38-ed6e683671aa 
 

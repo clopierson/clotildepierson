@@ -27,7 +27,7 @@ The Daylighting Innovation and Analysis Lab (DIAL) is a first-of-its-kind mobile
 ## Software
 
 - Lark Spectral Lighting v2.0: https://github.com/larkspectral/Lark_Spectral_Lighting
-- HDRI Calibration Interface v3.0.0: https://github.com/clopierson/HDRICalibrationTool
+- HDRI Calibration Interface v3.1.0: https://github.com/clopierson/HDRICalibrationTool
 
 ## Key Journal Publications
 

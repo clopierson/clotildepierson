@@ -35,7 +35,7 @@ const softwareJsonLd = {
     },
     {
       "@type": "SoftwareApplication",
-      name: "HDRI Calibration Interface v3.0.0",
+      name: "HDRI Calibration Interface v3.1.0",
       description: "Free, open-source desktop application for merging Low Dynamic Range images and generating calibrated High Dynamic Range (HDR) luminance maps for daylighting research.",
       url: "https://github.com/clopierson/HDRICalibrationTool",
       codeRepository: "https://github.com/clopierson/HDRICalibrationTool",
@@ -151,7 +151,7 @@ export default function Software() {
             />
           </div>
           <div>
-            <h2 className="mt-2 sm:mt-8">HDRI Calibration Interface v3.0.0</h2>
+            <h2 className="mt-2 sm:mt-8">HDRI Calibration Interface v3.1.0</h2>
             <span className="border rounded-full py-1 px-2 text-xs">
               Tauri
             </span>{" "}

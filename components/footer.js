@@ -73,7 +73,7 @@ export default function Footer({
               rel="noopener noreferrer"
               href="https://tailwindcss.com"
             >
-              tailwindcss
+              Tailwind CSS
             </a>
             . Deployed on{" "}
             <a
@@ -102,7 +102,6 @@ export default function Footer({
               websiteName="OSU"
             />
           </div>
-          <div>Please consider dark-mode to save energy.</div>
         </div>
       </div>
     </div>

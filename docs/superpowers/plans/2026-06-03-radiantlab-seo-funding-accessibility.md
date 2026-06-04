@@ -1849,7 +1849,7 @@ Open-source spectral lighting simulation tool for circadian lighting analysis. R
 - Source: https://github.com/larkspectral/Lark_Spectral_Lighting
 - Download: https://www.food4rhino.com/en/app/lark-spectral-lighting
 
-### HDRI Calibration Interface v3.0.0
+### HDRI Calibration Interface v3.1.0
 
 Free, open-source application for merging Low Dynamic Range images into calibrated High Dynamic Range (HDR) luminance maps. Built with Tauri, Next.js, and Rust.
 
