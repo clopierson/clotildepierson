@@ -1,4 +1,6 @@
 import RadiantLab from "../../components/radiantLab";
+import SupportersMarquee from "../../components/SupportersMarquee";
+import { Button } from "@/components/ui/button";
 
 export const metadata = {
   title: "Support Daylighting Research | RadiantLab",
@@ -20,148 +22,153 @@ export const metadata = {
 export default function Give() {
   return (
     <>
+      {/* Impact hero */}
       <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
         <h1>Support Daylighting Research</h1>
-
         <p className="font-semibold">
-          Light shapes how we sleep, think, learn, work, and age. Yet most
-          buildings are designed with limited understanding of how their lighting
-          environments affect human health. The <RadiantLab /> at Oregon State
-          University studies how daylight and electric lighting influence human
-          biology, behavior, and well-being.
+          Light shapes how we sleep, think, learn, work, and age — yet most
+          buildings are designed with little understanding of how their lighting
+          environments affect human health.
         </p>
-
         <p>
-          Our research explores questions related to circadian health, cognitive
-          performance, sleep quality, aging, workplace productivity, student
-          success, and long-term health outcomes. By combining building science,
-          engineering, physiology, and data science, we aim to create healthier
-          buildings that better support the people who use them.
+          The <RadiantLab /> at Oregon State University studies how daylight
+          and electric lighting influence human biology, behavior, and
+          well-being. Private support helps us pursue innovative research,
+          educate the next generation of scientists, and accelerate discoveries
+          that improve lives.
         </p>
+        <div className="not-prose flex justify-center mt-6">
+          <Button
+            asChild
+            size="lg"
+            className="bg-osu-beaver-orange text-white hover:bg-osu-luminance hover:text-gray-900"
+          >
+            <a href="#how-to-give">Give Now</a>
+          </Button>
+        </div>
+      </div>
 
-        <p>
-          Private support helps us pursue innovative research, educate and train the
-          next generation of scientists, policy leaders, and industry professionals,
-          and accelerate discoveries that improve lives.
-        </p>
-
-        <h2>What Your Gift Funds</h2>
-
-        <h3>Student Researchers</h3>
-        <p>
-          Graduate students are at the heart of the lab&apos;s work. Gifts
-          supporting students help fund research assistantships, field studies,
-          data analysis, and scientific training opportunities.
-        </p>
-
-        <p>
-          Investing in students not only advances current projects but also helps
-          develop the future leaders of building science and health research.
-        </p>
-
-        <h3>Research Equipment and Measurement Technologies</h3>
-        <p>
-          Understanding how light affects people requires sophisticated measurement
-          tools. Donations help us acquire and deploy new technologies that expand
-          the scope and quality of our research.
-        </p>
-
-        <ul>
-          <li>
-            Wearable devices that track sleep, activity, physiology, and light
-            exposure
-          </li>
-          <li>Advanced light and spectral measurement instruments</li>
-          <li>Environmental sensing and monitoring equipment</li>
-          <li>Biological sampling and laboratory analysis</li>
-          <li>New technologies that enable larger and more diverse studies</li>
-        </ul>
-
-        <p>
-          These tools allow us to collect higher-quality data and better understand
-          how building environments influence human health.
-        </p>
-
-        <h3>Daylighting and Human Health Research</h3>
-        <p>
-          The lab investigates how lighting and building environments influence
-          human outcomes across the lifespan. Current and emerging research areas
-          include:
-        </p>
-
-        <ul>
-          <li>Circadian rhythm and sleep health</li>
-          <li>Cognitive function and mental performance</li>
-          <li>Aging and healthy longevity</li>
-          <li>Dementia and neurodegenerative disease risk</li>
-          <li>Workplace and educational environments</li>
-          <li>Health equity and access to healthy buildings</li>
-        </ul>
-
-        <p>
-          Unrestricted research gifts provide the flexibility to pursue new ideas,
-          launch pilot studies, support participant recruitment, and respond
-          quickly to emerging scientific opportunities.
-        </p>
-
-        <h2>Why Private Support Matters</h2>
-
-        <p>
-          Many of the most innovative research ideas begin before traditional
-          funding sources are available. Private gifts help bridge that gap by
-          supporting early-stage studies, new technologies, and exploratory
-          projects that can lead to larger research programs and external funding.
-        </p>
-
-        <p>
-          Your support enables us to ask ambitious questions and generate the
-          evidence needed to design healthier buildings for future generations.
-        </p>
-
-        <h2>How to Give</h2>
-
-        <p>
-          Donations are processed through the Oregon State University Foundation,
-          ensuring your gift is tax-deductible and directed to support <RadiantLab /> research.
-        </p>
-
-        <ol>
-          <li>
-            Visit the{" "}
+      {/* How to Give */}
+      <section
+        id="how-to-give"
+        className="bg-orange-50 dark:bg-neutral-800 rounded-lg py-10 px-6 my-8"
+      >
+        <div className="max-w-prose mx-auto">
+          <h2 className="text-2xl font-bold mb-2 text-neutral-900 dark:text-neutral-100">
+            How to Give
+          </h2>
+          <p className="mb-6 text-neutral-700 dark:text-neutral-300">
+            Donations are processed through the Oregon State University
+            Foundation, ensuring your gift is tax-deductible and directed to
+            support <RadiantLab /> research.
+          </p>
+          <ol className="space-y-4 mb-8 list-none p-0" role="list">
+            {[
+              <>
+                Visit the OSU Foundation giving page.
+              </>,
+              <>
+                In the <strong>Designation</strong> field, search for and
+                select{" "}
+                <strong>Civil &amp; Construction Engineering Research Fund</strong>.
+              </>,
+              <>
+                In the <strong>Comments or special instructions</strong> field,
+                enter <strong>Clotilde Pierson</strong> to direct your gift to
+                the <RadiantLab />.
+              </>,
+              <>Complete your gift amount and payment information.</>,
+            ].map((step, i) => (
+              <li key={i} className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-osu-beaver-orange text-white flex items-center justify-center font-bold text-sm">
+                  {i + 1}
+                </span>
+                <span className="text-neutral-800 dark:text-neutral-200 pt-1">
+                  {step}
+                </span>
+              </li>
+            ))}
+          </ol>
+          <Button
+            asChild
+            size="lg"
+            className="bg-osu-beaver-orange text-white hover:bg-osu-luminance hover:text-gray-900"
+          >
             <a
               href="https://give.fororegonstate.org/PL1Uv3Fkug"
               target="_blank"
               rel="noreferrer noopener"
             >
-              OSU Foundation giving page
+              Give on OSU Foundation ↗
             </a>
-            .
-          </li>
-          <li>
-            In the <strong>Designation</strong> field, search for and select{" "}
-            <strong>Civil &amp; Construction Engineering Research Fund</strong>.
-          </li>
-          <li>
-            In the <strong>Comments or special instructions</strong> field, enter{" "}
-            <strong>Clotilde Pierson</strong> to direct your gift to the <RadiantLab />.
-          </li>
-          <li>Complete your gift amount and payment information.</li>
-        </ol>
+          </Button>
+        </div>
+      </section>
+
+      {/* Supporters */}
+      <SupportersMarquee />
+
+      {/* What Your Gift Funds */}
+      <div className="my-8 max-w-prose mx-auto">
+        <h2 className="text-2xl font-bold mb-6 text-neutral-900 dark:text-neutral-100">
+          What Your Gift Funds
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+            <h3 className="font-bold text-lg mb-3 text-neutral-900 dark:text-neutral-100">
+              Student Researchers
+            </h3>
+            <p className="text-neutral-700 dark:text-neutral-300 text-sm">
+              Graduate students are at the heart of the lab&apos;s work. Gifts
+              support research assistantships, field studies, data analysis, and
+              scientific training that develops future leaders in building
+              science.
+            </p>
+          </div>
+          <div className="border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+            <h3 className="font-bold text-lg mb-3 text-neutral-900 dark:text-neutral-100">
+              Research Equipment
+            </h3>
+            <p className="text-neutral-700 dark:text-neutral-300 text-sm">
+              Sophisticated tools expand the scope and quality of our research:
+              wearable sensors, advanced spectroradiometers, environmental
+              monitoring equipment, and new technologies that enable larger,
+              more diverse studies.
+            </p>
+          </div>
+          <div className="border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
+            <h3 className="font-bold text-lg mb-3 text-neutral-900 dark:text-neutral-100">
+              Daylighting Research
+            </h3>
+            <p className="text-neutral-700 dark:text-neutral-300 text-sm">
+              Unrestricted gifts fund pilot studies, participant recruitment,
+              and exploratory research on circadian health, cognitive
+              performance, aging, dementia risk, and health equity in the built
+              environment.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Why It Matters + Partnerships */}
+      <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
+        <h2>Why Private Support Matters</h2>
+        <p>
+          Many of the most innovative research ideas begin before traditional
+          funding is available. Private gifts bridge that gap — supporting
+          early-stage studies, new technologies, and exploratory projects that
+          lead to larger research programs and real improvements in how
+          buildings are designed for human health.
+        </p>
 
         <h2>Partnerships and Major Gifts</h2>
-
         <p>
           We welcome conversations with industry partners, foundations, and
-          individual donors interested in advancing research on healthy buildings
-          and human health.
+          individual donors interested in advancing research on healthy
+          buildings and human health. Support may include sponsored research,
+          equipment donations, student fellowships, collaborative projects, or
+          multi-year philanthropic commitments.
         </p>
-
-        <p>
-          Support may include sponsored research, equipment donations, student
-          fellowships, collaborative projects, or multi-year philanthropic
-          commitments.
-        </p>
-
         <p>
           Contact Dr. Pierson at{" "}
           <a href="mailto:clotilde.pierson@oregonstate.edu">
