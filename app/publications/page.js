@@ -54,7 +54,7 @@ function PublicationEntry({ pub }) {
 
   return (
     <article className="mb-6">
-      <p>
+      <p className="mb-1">
         <Authors authors={pub.authors} /> ({pub.year}). {pub.title}.{" "}
         <em>{pub.venue}</em>
         {pub.volume ? `, ${pub.volume}` : ""}
@@ -69,7 +69,7 @@ function PublicationEntry({ pub }) {
         )}
       </p>
       {pub.links.map((link) => (
-        <p key={link.url} className="text-sm">
+        <p key={link.url} className="text-sm mb-1 mt-1">
           <a href={link.url} target="_blank" rel="noreferrer noopener">
             {link.label}
           </a>
