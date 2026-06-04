@@ -19,7 +19,7 @@ There are no tests in this project except for accessibility tests.
 
 This is a **Next.js 16 App Router** website for Dr. Clotilde Pierson's Daylighting Research Laboratory (RadiantLab) at Oregon State University, deployed on Vercel.
 
-**Routing:** All pages live in `app/` as `page.js` files. The root layout (`app/layout.js`) wraps every page with `<Header>` + `<FooterWrapper>` in a 12-column grid. Each page exports a `metadata` object for SEO/OG tags -- this is the App Router pattern, not the legacy `<Head>` approach. The legacy `components/layout.js` is a holdover from the Pages Router era and is no longer used.
+**Routing:** All pages live in `app/` as `page.js` files. The root layout (`app/layout.js`) wraps every page with `<Header>` + `<FooterWrapper>` in a 12-column grid. Each page exports a `metadata` object for SEO/OG tags -- this is the App Router pattern, not the legacy `<Head>` approach. The legacy Pages Router `components/layout.js` has been removed.
 
 **Navigation:** Menu items are defined in `components/navigation.js` as the `MenuItems` array. The `/facilities` route currently points directly to `/facilities/dial` (the DIAL lab page). The nav comment notes that a dropdown should eventually replace this when more facilities are added.
 
