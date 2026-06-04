@@ -1,4 +1,5 @@
 import Navigation from "./navigation";
+import MobileNav from "./mobileNav";
 import InstitutionLogo from "./InstitutionLogo";
 import RadiantLab from "./radiantLab";
 
@@ -20,8 +21,9 @@ export default function Header() {
             </span>
           </div>
         </div>
-        <div className="col-start-3 col-span-2 justify-self-center md:justify-self-end">
+        <div className="col-start-3 col-span-2 justify-self-end flex items-center gap-2">
           <Navigation />
+          <MobileNav />
         </div>
       </div>
     </div>
