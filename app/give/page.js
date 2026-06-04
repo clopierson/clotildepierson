@@ -22,51 +22,108 @@ export default function Give() {
         <h1>Support Daylighting Research</h1>
 
         <p className="font-semibold">
-          55 million people worldwide live with Alzheimer&apos;s disease or related dementias. Emerging evidence links disrupted light exposure (the kind caused by modern buildings and urban life) to accelerated cognitive decline. The RadiantLab is working to understand this relationship and find design solutions that protect brain health.
+          Light shapes how we sleep, think, learn, work, and age. Yet most
+          buildings are designed with limited understanding of how their lighting
+          environments affect human health. The RadiantLab at Oregon State
+          University studies how daylight and electric lighting influence human
+          biology, behavior, and well-being.
         </p>
 
         <p>
-          Private support is critical as federal research funding faces mounting
-          uncertainty. Your gift directly enables the researchers, the research,
-          and the facilities that can make a difference.
+          Our research explores questions related to circadian health, cognitive
+          performance, sleep quality, aging, workplace productivity, student
+          success, and long-term health outcomes. By combining building science,
+          engineering, physiology, and data science, we aim to create healthier
+          buildings that better support the people who use them.
+        </p>
+
+        <p>
+          Private support helps us pursue innovative research, educate and train the
+          next generation of scientists, policy leaders, and industry professionals,
+          and accelerate discoveries that improve lives.
         </p>
 
         <h2>What Your Gift Funds</h2>
 
         <h3>Student Researchers</h3>
         <p>
-          Graduate students are the engine of the lab. A gift to student support
-          helps fund a PhD or MS researcher&apos;s stipend, freeing them to
-          focus on advancing knowledge of how buildings affect human health.
+          Graduate students are at the heart of the lab&apos;s work. Gifts
+          supporting students help fund research assistantships, field studies,
+          data analysis, and scientific training opportunities.
         </p>
 
-        <h3>DIAL Operations</h3>
         <p>
-          The{" "}
-          <a href="/facilities/dial">
-            Daylighting Innovation and Analysis Lab (DIAL)
-          </a>{" "}
-          is a first-of-its-kind mobile research facility equipped with
-          electrochromic windows, spectral sensors, and off-grid power. Gifts to
-          DIAL fund equipment maintenance, sensor upgrades, and deployments to
-          reach diverse populations including older adults and remote
-          communities.
+          Investing in students not only advances current projects but also helps
+          develop the future leaders of building science and health research.
         </p>
 
-        <h3>Daylighting and Health Research</h3>
+        <h3>Research Equipment and Measurement Technologies</h3>
         <p>
-          The lab&apos;s current focus is the relationship between light,
-          circadian rhythm, and cognitive health. This work requires
-          experimental studies, data analysis, and collaboration with clinicians
-          and neuroscientists. Unrestricted research gifts support this work
-          directly.
+          Understanding how light affects people requires sophisticated measurement
+          tools. Donations help us acquire and deploy new technologies that expand
+          the scope and quality of our research.
+        </p>
+
+        <ul>
+          <li>
+            Wearable devices that track sleep, activity, physiology, and light
+            exposure
+          </li>
+          <li>Advanced light and spectral measurement instruments</li>
+          <li>Environmental sensing and monitoring equipment</li>
+          <li>Biological sampling and laboratory analysis</li>
+          <li>New technologies that enable larger and more diverse studies</li>
+        </ul>
+
+        <p>
+          These tools allow us to collect higher-quality data and better understand
+          how building environments influence human health.
+        </p>
+
+        <h3>Daylighting and Human Health Research</h3>
+        <p>
+          The lab investigates how lighting and building environments influence
+          human outcomes across the lifespan. Current and emerging research areas
+          include:
+        </p>
+
+        <ul>
+          <li>Circadian rhythm and sleep health</li>
+          <li>Cognitive function and mental performance</li>
+          <li>Aging and healthy longevity</li>
+          <li>Dementia and neurodegenerative disease risk</li>
+          <li>Workplace and educational environments</li>
+          <li>Health equity and access to healthy buildings</li>
+        </ul>
+
+        <p>
+          Unrestricted research gifts provide the flexibility to pursue new ideas,
+          launch pilot studies, support participant recruitment, and respond
+          quickly to emerging scientific opportunities.
+        </p>
+
+        <h2>Why Private Support Matters</h2>
+
+        <p>
+          Many of the most innovative research ideas begin before traditional
+          funding sources are available. Private gifts help bridge that gap by
+          supporting early-stage studies, new technologies, and exploratory
+          projects that can lead to larger research programs and external funding.
+        </p>
+
+        <p>
+          Your support enables us to ask ambitious questions and generate the
+          evidence needed to design healthier buildings for future generations.
         </p>
 
         <h2>How to Give</h2>
+
         <p>
           Donations are processed through the Oregon State University Foundation,
-          ensuring your gift is tax-deductible and directed to the RadiantLab.
+          ensuring your gift is tax-deductible and directed to support RadiantLab
+          research.
         </p>
+
         <ol>
           <li>
             Visit the{" "}
@@ -84,19 +141,27 @@ export default function Give() {
             <strong>Civil &amp; Construction Engineering Research Fund</strong>.
           </li>
           <li>
-            In the <strong>Comments or special instructions</strong> field,
-            enter <strong>Clotilde Pierson</strong> to direct your gift to the
+            In the <strong>Comments or special instructions</strong> field, enter{" "}
+            <strong>Clotilde Pierson</strong> to direct your gift to the
             RadiantLab.
           </li>
           <li>Complete your gift amount and payment information.</li>
         </ol>
 
         <h2>Partnerships and Major Gifts</h2>
+
         <p>
-          Industry partners and major donors are welcome to reach out directly
-          to discuss research collaboration, naming opportunities, or multi-year
+          We welcome conversations with industry partners, foundations, and
+          individual donors interested in advancing research on healthy buildings
+          and human health.
+        </p>
+
+        <p>
+          Support may include sponsored research, equipment donations, student
+          fellowships, collaborative projects, or multi-year philanthropic
           commitments.
         </p>
+
         <p>
           Contact Dr. Pierson at{" "}
           <a href="mailto:clotilde.pierson@oregonstate.edu">
