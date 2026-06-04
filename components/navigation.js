@@ -34,7 +34,7 @@ export default function Navigation() {
           <div
             className={`capitalize text-sm no-underline md:text-base inline ${
               link.highlight
-                ? "text-osu-beaver-orange hover:text-osu-luminance"
+                ? "text-osu-beaver-orange dark:text-osu-luminance hover:text-osu-luminance"
                 : "hover:text-osu-luminance"
             }`}
             key={link.name}
@@ -86,7 +86,7 @@ export default function Navigation() {
                 <div
                   className={`capitalize no-underline md:text-base inline ${
                     link.highlight
-                      ? "text-osu-beaver-orange hover:text-osu-luminance"
+                      ? "text-osu-beaver-orange dark:text-osu-luminance hover:text-osu-luminance"
                       : "hover:text-osu-luminance"
                   }`}
                   key={link.name}

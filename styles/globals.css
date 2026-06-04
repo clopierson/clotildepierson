@@ -31,11 +31,11 @@
 
 /* Typography overrides using @apply */
 .prose a {
-  @apply text-osu-beaver-orange no-underline;
+  @apply text-osu-beaver-orange no-underline font-bold dark:text-osu-luminance;
 }
 
 .prose a:hover {
-  @apply text-osu-luminance no-underline;
+  @apply text-osu-luminance no-underline dark:text-osu-candela;
 }
 
 @font-face {

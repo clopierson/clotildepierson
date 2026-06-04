@@ -8,13 +8,13 @@ export default function RadiantLab({ link }) {
       {typeof link === "string" && (
         <Link href={link}>
           <span className="text-inherit">{irradiant}</span>
-          <span className="text-osu-beaver-orange">{lab}</span>{" "}
+          <span className="text-osu-beaver-orange dark:text-osu-luminance">{lab}</span>{" "}
         </Link>
       )}
       {typeof link === "undefined" && (
         <span>
           <span className="text-inherit">{irradiant}</span>
-          <span className="text-osu-beaver-orange">{lab}</span>
+          <span className="text-osu-beaver-orange dark:text-osu-luminance">{lab}</span>
         </span>
       )}
     </span>

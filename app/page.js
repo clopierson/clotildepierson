@@ -62,9 +62,9 @@ export default function Home() {
       <div className="h-[70vh]"></div>
       <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
         <h1 className="sr-only">Daylighting Research Laboratory</h1>
-        <p className="font-bold">
+        <p>
           The <RadiantLab /> is led by{" "}
-          <Link href="/about" className="font-bold hover:font-bold !underline">
+          <Link href="/about">
             Dr. Clotilde Pierson
           </Link>
           {", "}
@@ -150,7 +150,7 @@ export default function Home() {
         </p>
         <p className="text-sm border-t border-neutral-200 dark:border-neutral-700 pt-4 mt-8">
           The RadiantLab relies on private support to advance this work.{" "}
-          <a href="/give" className="font-medium">
+          <a href="/give">
             Support daylighting research
           </a>{" "}
           through the OSU Foundation.

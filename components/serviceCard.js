@@ -13,7 +13,7 @@ export default function ServiceCard({ experience, committees, journals }) {
                   target="_blank"
                   rel="noopener noreferrer"
                   href={item.url}
-                  className="text-sm text-osu-beaver-orange hover:text-osu-luminance"
+                  className="text-sm text-osu-beaver-orange dark:text-osu-luminance hover:text-osu-luminance"
                 >
                   {item.institution}
                 </a>
@@ -35,7 +35,7 @@ export default function ServiceCard({ experience, committees, journals }) {
             <li className="list-disc list-inside" key={journal.name}>
               {typeof journal.url === "string" ? (
                 <a
-                  className="text-osu-beaver-orange hover:text-osu-luminance"
+                  className="text-osu-beaver-orange dark:text-osu-luminance hover:text-osu-luminance"
                   target="_blank"
                   rel="noopener noreferrer"
                   href={journal.url}
