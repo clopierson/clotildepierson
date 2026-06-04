@@ -21,9 +21,25 @@ export const metadata = {
   },
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is electrochromic glazing?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Electrochromic glazing is a type of smart glass that can change its tint or opacity in response to an applied voltage. This technology allows for dynamic control of solar heat gain and daylight transmission, enhancing occupant comfort and reducing energy consumption in buildings. In DIAL, the electrochromic windows and skylight can be adjusted from clear to fully tinted, allowing researchers to study the effects of different daylighting conditions on indoor environments and occupant well-being.",
+      },
+    },
+  ],
+};
+
 export default function DIAL() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
