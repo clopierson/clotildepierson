@@ -19,6 +19,27 @@ export const metadata = {
   },
 };
 
+const publicationsJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: publications.map((pub, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    item: {
+      "@type": "ScholarlyArticle",
+      name: pub.title,
+      author: pub.authors.map((a) => ({ "@type": "Person", name: a })),
+      datePublished: String(pub.year),
+      ...(pub.doi && { identifier: `https://doi.org/${pub.doi}`, url: `https://doi.org/${pub.doi}` }),
+      ...(pub.url && !pub.doi && { url: pub.url }),
+      isPartOf: {
+        "@type": pub.type === "journal" ? "Periodical" : "Event",
+        name: pub.venue,
+      },
+    },
+  })),
+};
+
 function Authors({ authors }) {
   return authors.map((author, i) => (
     <span key={`${author}-${i}`}>
@@ -61,6 +82,7 @@ function PublicationEntry({ pub }) {
 export default function Publications() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(publicationsJsonLd) }} />
       <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
         <Image
           src={backgroundImage}
