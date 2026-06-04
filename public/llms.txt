@@ -1,0 +1,52 @@
+# Daylighting Research Laboratory (RadiantLab)
+
+> The RadiantLab is a daylighting and architectural lighting research laboratory at Oregon State University, led by Dr. Clotilde Pierson, advancing knowledge on how light in buildings affects human health, well-being, and energy use.
+
+## Principal Investigator
+
+Dr. Clotilde Pierson is an Assistant Professor of Architectural Engineering in the School of Civil and Construction Engineering at Oregon State University.
+
+- ORCID: https://orcid.org/0000-0001-7847-6568
+- Google Scholar: https://scholar.google.com/citations?user=X8aroEgAAAAJ
+- ResearchGate: https://www.researchgate.net/profile/Clotilde-Pierson
+- LinkedIn: https://www.linkedin.com/in/clotilde-pierson/
+- Email: clotilde.pierson@oregonstate.edu
+
+## Research Themes
+
+1. Built environment to indoor light: How do building design, glazing technologies, urbanization, and climate change affect indoor light and visual conditions?
+2. Indoor light to occupant health: How does light exposure affect circadian rhythms, sleep, cognitive health (including dementia), comfort, and well-being?
+3. Energy and daylighting: How can daylighting strategies reduce energy consumption while maintaining occupant comfort?
+
+Current priority: the relationship between light exposure, circadian disruption, and dementia/cognitive decline.
+
+## Facility
+
+The Daylighting Innovation and Analysis Lab (DIAL) is a first-of-its-kind mobile daylighting research facility at Oregon State University. It is a trailer-based, ADA-compliant laboratory with electrochromic windows, spectral sensors, and off-grid solar/battery power.
+
+## Software
+
+- Lark Spectral Lighting v2.0: https://github.com/larkspectral/Lark_Spectral_Lighting
+- HDRI Calibration Interface v3.0.0: https://github.com/clopierson/HDRICalibrationTool
+
+## Key Journal Publications
+
+- Orman A., Safranek S., Pierson C. (2025). Evaluation of spectral light simulation tools for prediction of ipRGC-influenced light responses. Journal of Building Performance Simulation. DOI: 10.1080/19401493.2025.2515123
+- Quek G. et al., Pierson C. (2023). Comparison of questionnaire items for discomfort glare studies. Lighting Research & Technology, 55(7-8). DOI: 10.1177/14771535231203564
+- Pierson C., Aarts M., Andersen M. (2022). Validation of spectral simulation tools for ipRGC-influenced light responses. Journal of Building Performance Simulation, 16(2). DOI: 10.1080/19401493.2022.2125582
+- Wienold J. et al., Pierson C. (2019). Cross-Validation and Robustness of Daylight Glare Metrics. Lighting Research & Technology, 51(7). DOI: 10.1177/1477153519826003
+- Pierson C., Cauwerts C., Bodart M., Wienold J. (2020). Tutorial: Luminance Maps for Daylighting Studies from HDR Photography. LEUKOS, 14(3). DOI: 10.1080/15502724.2019.1684319
+
+## Team
+
+Current members: Kianoush Vali (PhD, light and sleep/health), Yahya Sogodok (MS, non-visual responses), Nima Ghorbanian Matloob (MS, non-visual effects), Isaiah Pileggi-Epps (undergrad), Keean Balsiger (undergrad)
+
+## Support
+
+Private donations support student research, DIAL operations, and daylighting/health research.
+Donate: https://www.clotildepierson.com/give
+OSU Foundation designation: Civil & Construction Engineering research Fund, attention: Clotilde Pierson.
+
+## Website
+
+https://www.clotildepierson.com

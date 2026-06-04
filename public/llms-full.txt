@@ -1,0 +1,197 @@
+# Daylighting Research Laboratory (RadiantLab) -- Full Reference
+
+> The RadiantLab is a daylighting and architectural lighting research laboratory at Oregon State University, led by Dr. Clotilde Pierson, advancing knowledge on how light in buildings affects human health, well-being, and energy use.
+
+## Principal Investigator
+
+Dr. Clotilde Pierson is an Assistant Professor of Architectural Engineering in the School of Civil and Construction Engineering at Oregon State University (OSU). She is the founder and principal investigator of the RadiantLab.
+
+- ORCID: https://orcid.org/0000-0001-7847-6568
+- Google Scholar: https://scholar.google.com/citations?user=X8aroEgAAAAJ
+- ResearchGate: https://www.researchgate.net/profile/Clotilde-Pierson
+- LinkedIn: https://www.linkedin.com/in/clotilde-pierson/
+- X/Twitter: https://x.com/PiersonClotilde
+- OSU Faculty Profile: https://cce.oregonstate.edu/people/clotilde-pierson
+- Email: clotilde.pierson@oregonstate.edu
+
+## Mission
+
+Advance knowledge related to daylight in buildings and the practice of daylighting to enhance people's health, well-being, and performance, while minimizing energy consumption. The lab bridges engineering, architecture, chronobiology, computer science, urban planning, neuroscience, psychophysics, and public health.
+
+## Research Themes
+
+### 1. Built Environment to Indoor Light and Visual Conditions
+
+How do glazing technologies, facade layouts, building geometries, urbanization, and climate change affect indoor light and visual conditions? The lab uses numerical modeling and physical measurements to understand these relationships, developing and validating simulation tools.
+
+### 2. Indoor Light and Visual Conditions to Building Occupant Health
+
+How does light exposure affect physical and mental health, circadian rhythms, alertness, comfort, and cognitive performance? How do window views affect well-being? Current focus: the link between light exposure, circadian disruption, and dementia/cognitive decline. Methods include field studies, laboratory experiments, and observational studies.
+
+### 3. Energy Consumption and Daylighting
+
+How will lighting energy consumption evolve with urbanization and climate change? What is the energy efficiency of alternative daylighting technologies? The lab develops and validates models for estimating energy impacts of daylighting strategies.
+
+## Facility: DIAL (Daylighting Innovation and Analysis Lab)
+
+DIAL is a first-of-its-kind mobile daylighting research facility at Oregon State University. It is housed in a standard shipping container/trailer and can be transported to diverse locations.
+
+### Key Specifications
+
+- Dimensions: 31'-9.5" long x 10'-0" wide (~10 m x 3 m)
+- Two symmetrical office test rooms + one observation room
+- ADA-compliant
+- Off-grid capable: 4.4 kW solar panels, 43.2 kWh battery bank, backup generator
+
+### Glazing
+
+- 9 electrochromic windows + 1 electrochromic skylight per test room (Halio smart-glazing)
+- VLT: 68% (clear) to 3% (tinted)
+- SHGC: 0.46 (clear) to 0.08 (tinted)
+
+### Sensors
+
+- Rooftop: EKO MS-90 solar monitoring station, JETI Specbos 1211-2 spectroradiometer
+- Indoor: JETI Spectraval 15x1 spectroradiometers, Konica Minolta T-10A illuminance meters, Kodak PixPro 360 cameras
+
+More: https://www.clotildepierson.com/facilities/dial
+
+## Software
+
+### Lark Spectral Lighting v2.0
+
+Open-source spectral lighting simulation tool for circadian lighting analysis. Runs on Rhino/Grasshopper. Allows 9-channel spectral simulations computing photopic and non-visual metrics.
+
+- Source: https://github.com/larkspectral/Lark_Spectral_Lighting
+- Download: https://www.food4rhino.com/en/app/lark-spectral-lighting
+
+### HDRI Calibration Interface v3.0.0
+
+Free, open-source application for merging Low Dynamic Range images into calibrated High Dynamic Range (HDR) luminance maps. Built with Tauri, Next.js, and Rust.
+
+- Source and executables: https://github.com/clopierson/HDRICalibrationTool
+
+## Full Publication List
+
+### 2025
+
+Sogodok Y., Pierson C. (2025). A review of current recommendations for lighting in buildings for optimal non-visual responses of occupants. IES Annual Conference, Anaheim (CA), USA.
+
+Vali K., Au-Yeung W.-T., Kaye J., Pierson C. (2025). Light exposure of older adults living alone: a pilot study. CIE Midterm Meeting, Vienna, Austria.
+
+Orman A., Safranek S., Pierson C. (2025). Evaluation of spectral light simulation tools for prediction of ipRGC-influenced light responses in real-world offices with electrochromic glazing. Journal of Building Performance Simulation. DOI: 10.1080/19401493.2025.2515123
+
+Knoop M. et al., Pierson C. (2025). Methodology to modify and adapt the standardised spectral power distributions for daylight. Lighting Research & Technology. DOI: 10.1177/14771535251322386
+
+Ko W. H., Suk J. Y., Pierson C., Pokhrel B. (2025). Estimating the visual and non-visual effects of window views. ARCC 2025 Conference.
+
+Knoop M. et al., Pierson C. (2025). Our skies are too grey: Where is the colour? Lighting Research & Technology. DOI: 10.1177/14771535251322618
+
+### 2024
+
+Orman A., Pierson C. (2024). Accuracy of spectral simulation tools in field conditions. IES Annual Conference, New York.
+
+Pierson C. (2024). Teaching daylighting design through experiential learning. IES Annual Conference, New York.
+
+Pierson C. (2024). Experiencing Window Views. 2024 SBSE Retreat, Oracle (AZ).
+
+### 2023
+
+Quek G., Jain S., Karmann C., Pierson C., Wienold J., Andersen M. (2023). Comparison of questionnaire items for discomfort glare studies in daylit spaces. Lighting Research & Technology, 55(7-8), 730-758. DOI: 10.1177/14771535231203564
+
+Orman A., Safranek S., Pierson C. (2023). Implementation of a reconstructed spectral sky definition in a light simulation tool. CIE Quadrennial Session, Ljubljana.
+
+Karmann C., Pierson C. et al. (2023). Variation in photopic and melanopic lighting in Swiss offices. CIE Quadrennial Session, Ljubljana.
+
+Balakrishnan P. et al., Pierson C. (2023). SkySpectra: an opensource data package of worldwide spectral daylight. CIE Quadrennial Session, Ljubljana.
+
+### 2022
+
+Pierson C., Aarts M., Andersen M. (2022). Validation of spectral simulation tools in the context of ipRGC-influenced light responses. Journal of Building Performance Simulation, 16(2), 179-197. DOI: 10.1080/19401493.2022.2125582
+
+Ko W. H., Schiavon S. et al. (2022). Window View Quality: Why It Matters and What We Should Do. LEUKOS, 18:3, 259-267. DOI: 10.1080/15502724.2022.2055428
+
+Gkaintatzi-Masouti M., Pierson C. et al. (2022). A simulation tool for building and lighting design considering ipRGC-influenced light responses. BuildSim Nordic.
+
+Pierson C., Gkaintatzi-Masouti M. (2022). Lark 2.0. IES Annual Conference, New Orleans.
+
+Pierson C. (2022). Validation of Spectral Light Simulation Tools: Dataset. Zenodo. DOI: 10.5281/zenodo.5919054
+
+### 2021
+
+Pierson C. et al. (2021). Validation of Spectral Simulation Tools for Indoor Electric Light Exposure. CIE Midterm Session. DOI: 10.25039/x48.2021.OP05
+
+Pierson C., Soto Magan V., Aarts M., Andersen M. (2021). A Conceptual Simulation Workflow for Daylight Effects on Alertness. Journal of Physics: Conference Series 2042. DOI: 10.1088/1742-6596/2042/1/012116
+
+Pierson C., Aarts M., Andersen M. (2021). Validation of Spectral Simulation Tools for Indoor Daylight Exposure. Building Simulation 2021, Bruges.
+
+### 2020
+
+Andersen M., Soto Magan V., Webler F., Pierson C. (2020). Light Hygiene in the Built Environment. ANFA Conference.
+
+Pierson C., Aarts M., Andersen M. (2020). Applicability of Spectral Simulation to Predict Non-Visual Response to Daylight. EuroTech Postdoc Workshop.
+
+Pierson C., Cauwerts C., Bodart M., Wienold J. (2020). Tutorial: Luminance Maps for Daylighting Studies from HDR Photography. LEUKOS, 14(3), 111-148. DOI: 10.1080/15502724.2019.1684319
+
+### 2019
+
+Pierson C. (2019). Discomfort glare perception from daylight: influence of the socio-environmental context. [Doctoral dissertation, UCLouvain]. http://hdl.handle.net/2078.1/222924
+
+Pierson C., Wienold J., Bodart M. (2019). Is Daylight Glare Perceived Differently by People from Different Cultures? VELUX Daylight Symposium, Paris.
+
+Wienold J. et al., Pierson C. (2019). Cross-Validation and Robustness of Daylight Glare Metrics. Lighting Research & Technology, 51(7), 983-1013. DOI: 10.1177/1477153519826003
+
+Pierson C., Sarey Khanie M., Bodart M., Wienold J. (2019). Discomfort Glare Cut-Off Values from Field and Laboratory Studies. CIE Quadrennial Session, Washington D.C.
+
+### 2018
+
+Pierson C., Wienold J., Bodart M. (2018). Daylight Discomfort Glare Evaluation with Evalglare. International Radiance Workshop, Loughborough.
+
+Pierson C., Wienold J., Bodart M. (2018). Daylight Discomfort Glare Evaluation with Evalglare. Buildings, 8(8), 94. DOI: 10.3390/buildings8080094
+
+Pierson C., Wienold J., Bodart M. (2018). Review of Factors Influencing Discomfort Glare Perception from Daylight. LEUKOS, 14(3), 111-148. DOI: 10.1080/15502724.2018.1428617
+
+Pierson C. (2018). Discomfort Glare from Daylighting. LumeNet, Copenhagen.
+
+Pierson C., Wienold J. (2018). HDR Images Calibration for Luminance Maps Creation. CIE Expert Workshop, Copenhagen.
+
+Pierson C., Wienold J., Altomonte S., Bodart M. (2018). Evaluation of Discomfort Glare through Glare Scales. CIE Expert Workshop, Copenhagen.
+
+### 2017
+
+Pierson C., Piderit M.B., Wienold J., Bodart M. (2017). Discomfort Glare from Daylighting: Influence of Culture. CIE Midterm Session, Jeju.
+
+Pierson C., Wienold J., Bodart M. (2017). Discomfort Glare Perception in Daylighting: Influencing Factors. Energy Procedia, 122, 331-336. DOI: 10.1016/j.egypro.2017.07.332
+
+Pierson C., Wienold J., Jacobs A., Bodart M. (2017). Luminance Maps from HDR Imaging. LuxEuropa, Ljubljana.
+
+Pierson C., Cauwerts C., Wienold J., Bodart M. (2017). Discomfort Glare Study and Universal Glare Index. VELUX Daylight Symposium, Berlin.
+
+### 2016
+
+Pierson C., Bodart M. (2016). Validation and Universalization of Daylight Glare Probability Index. LumeNet, Ghent.
+
+### 2015
+
+Pierson C., Evrard A. (2015). Optimization of Facade Wall Building Systems in Walloon Region. PLEA Conference, Bologna.
+
+## Team
+
+### Current
+
+- Kianoush Vali (PhD, Civil Engineering): lighting effects on sleep and health of building occupants
+- Yahya Sogodok (MS, Civil Engineering): non-visual responses to light under daylight conditions
+- Nima Ghorbanian Matloob (MS, Civil Engineering): non-visual effects of daylight and energy
+- Isaiah Pileggi-Epps (BS, Civil Engineering): lighting conditions and viewing experience
+- Keean Balsiger (BS, Architectural Engineering): non-visual effects of light and well-being
+
+### Alumni
+
+Alfiya Orman (MS) -- now at Pacific Northwest National Laboratory (PNNL)
+
+## Support
+
+Private donations support student research stipends, DIAL operations, and daylighting/health research.
+Donate: https://www.clotildepierson.com/give
+OSU Foundation designation: Civil & Construction Engineering research Fund, attention: Clotilde Pierson.
+For partnerships or major gifts: clotilde.pierson@oregonstate.edu
