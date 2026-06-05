@@ -1,9 +1,11 @@
 "use client";
 
+// TODO: add a supporter title above the marquee but it should stay fixed while the marquee scrolls.
+
 const supporters = [
-  { name: "Culbertson Faculty Scholar", amount: 250000 },
-  { name: "Medical Research Foundation New Investigator Grant", amount: 50000 },
-  { name: "Oregon Partnership for Alzheimer's Research Grant", amount: 35000 },
+  { name: "Culbertson Faculty Scholar" },
+  { name: "Medical Research Foundation New Investigator Grant" }, // 50,000
+  { name: "Oregon Partnership for Alzheimer's Research Grant"  }, // 35,000
 ];
 
 function formatAmount(amount) {
