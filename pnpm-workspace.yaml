@@ -1,0 +1,11 @@
+packages:
+  - .
+
+ignoredBuiltDependencies:
+  - msw
+
+onlyBuiltDependencies:
+  - sharp
+
+overrides:
+  postcss: ^8.5.15

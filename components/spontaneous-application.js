@@ -1,22 +1,22 @@
 export default function SpontaneousApplication() {
   return (
-    <article className="rounded bg-white dark:bg-neutral-800 p-3 sm:p-6 shadow-inner dark:shadow-black/50">
+    <article className="rounded bg-white p-3 shadow-inner sm:p-6 dark:bg-neutral-800 dark:shadow-black/50">
       <h2 className="mt-0 text-lg">Spontaneous Applications</h2>
       <p className="mb-0">
         If you are interested in doing research with me at Oregon State
         University, please visit{" "}
         <a
-          target="_blank"
-          rel="noopener noreferrer"
           href="https://cce.oregonstate.edu/future-students"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           the future students page for URA, MS, and PhD
         </a>
         ,{" "}
         <a
-          target="_blank"
-          rel="noopener noreferrer"
           href="https://gradschool.oregonstate.edu/postdocs/"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           the grad school page for postdocs
         </a>

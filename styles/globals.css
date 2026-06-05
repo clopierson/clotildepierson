@@ -5,10 +5,10 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --color-osu-beaver-orange: #D73F09;
-  --color-osu-luminance: #FFB500;
-  --color-osu-candela: #FDD26E;
-  --color-osu-pine-stand: #4A773C;
+  --color-osu-beaver-orange: #d73f09;
+  --color-osu-luminance: #ffb500;
+  --color-osu-candela: #fdd26e;
+  --color-osu-pine-stand: #4a773c;
 
   --animate-slide-in: slide-in 500ms ease 200ms both;
   --animate-fade-in: fade-in 200ms;
@@ -32,8 +32,12 @@
     }
   }
   @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
   }
 }
 
@@ -108,7 +112,9 @@ html {
 }
 
 :root {
-  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);

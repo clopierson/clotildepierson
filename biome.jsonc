@@ -1,0 +1,18 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.4.16/schema.json",
+  "extends": [
+    "ultracite/biome/core",
+    "ultracite/biome/react",
+    "ultracite/biome/next"
+  ],
+  "files": {
+    "ignoreUnknown": true,
+    "includes": [
+      "!docs/superpowers",
+      "!public/**/*.svg",
+      "!public/**/*.xml",
+      "!public/llms*.txt",
+      "!public/files"
+    ]
+  }
+}

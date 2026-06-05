@@ -1,85 +1,83 @@
-import PictureCopyright from "./pictureCopyright";
-import RadiantLab from "./radiantLab";
+import Image from "next/image";
+import PictureCopyright from "./picture-copyright";
+import RadiantLab from "./radiant-lab";
 import Socials from "./socials";
+
+const licenseIcons = [
+  "/license/cc.png",
+  "/license/by.png",
+  "/license/nc.png",
+  "/license/nd.png",
+];
 
 export default function Footer({
   heroImageAuthorUrl,
   heroImageUrl,
   heroImageAuthor,
 }) {
-  let date = new Date().getFullYear();
+  const date = new Date().getFullYear();
   return (
-    <div className="row-start-3 row-span-1 col-start-2 col-span-10 my-4">
-      <hr className="border-0.5 border-solid border-neutral-300 my-4" />
-      <div className="text-center  prose prose-neutral dark:prose-invert mx-auto mb-6 text-sm">
+    <div className="col-span-10 col-start-2 row-span-1 row-start-3 my-4">
+      <hr className="my-4 border-0.5 border-neutral-300 border-solid" />
+      <div className="prose prose-neutral dark:prose-invert mx-auto mb-6 text-center text-sm">
         <Socials />
-        <div className="text-xs mt-6">
+        <div className="mt-6 text-xs">
           Copyright © {date} <RadiantLab />. All rights reserved.
         </div>
         <div>
           <p className="text-xs">
             This work is licensed under{" "}
             <a
-              href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1"
-              target="_blank"
-              rel="license noopener noreferrer"
               className="inline-block"
+              href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1"
+              rel="license noopener noreferrer"
+              target="_blank"
             >
               CC BY-NC-ND 4.0
-              <img
-                className="h-4 ml-1 inline mt-0 mb-0"
-                src="/license/cc.png"
-                alt=""
-              />
-              <img
-                className="h-4 ml-1 inline mt-0 mb-0"
-                src="/license/by.png"
-                alt=""
-              />
-              <img
-                className="h-4 ml-1 inline mt-0 mb-0"
-                src="/license/nc.png"
-                alt=""
-              />
-              <img
-                className="h-4 ml-1 inline mt-0 mb-0"
-                src="/license/nd.png"
-                alt=""
-              />
+              {licenseIcons.map((src) => (
+                <Image
+                  alt=""
+                  className="mt-0 mb-0 ml-1 inline h-4 w-auto"
+                  height={16}
+                  key={src}
+                  src={src}
+                  width={16}
+                />
+              ))}
             </a>
           </p>
         </div>
-        <div className="text-xs mt-6">
+        <div className="mt-6 text-xs">
           <div>
             Developed by{" "}
             <a
-              target="_blank"
-              rel="noopener noreferrer"
               href="https://www.alexulbrich.com"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               Alex Ulbrich
             </a>{" "}
             using{" "}
             <a
-              target="_blank"
-              rel="noopener noreferrer"
               href="https://nextjs.org"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               Next.js
             </a>{" "}
             and{" "}
             <a
-              target="_blank"
-              rel="noopener noreferrer"
               href="https://tailwindcss.com"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               Tailwind CSS
             </a>
             . Deployed on{" "}
             <a
-              target="_blank"
-              rel="noopener noreferrer"
               href="https://vercel.com/"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               Vercel
             </a>
@@ -88,9 +86,9 @@ export default function Footer({
           <div>
             Illustrations adapted from{" "}
             <a
-              target="_blank"
-              rel="noopener noreferrer"
               href="https://undraw.co"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               unDraw
             </a>

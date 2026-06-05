@@ -1,28 +1,24 @@
 import Image from "next/image";
+import SpontaneousApplication from "../../components/spontaneous-application";
+import TeamCard from "../../components/team-card";
+import { createPageMetadata } from "../../lib/metadata";
 import backgroundImage from "../../public/backgroung-image-team.jpg";
-import SpontaneousApplication from "../../components/spontaneousApplication";
-import TeamCard from "../../components/teamCard";
 
 // default pictures if none:
 // "/team-male.svg"
 // "/team-female.svg"
 
-export const metadata = {
-  title: "Team | RadiantLab",
-  description:
-    "Current openings (jobs), and current and former staff of the Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson.",
-  openGraph: {
-    url: "https://www.clotildepierson.com/team",
-    title: "Team | RadiantLab",
-    description:
-      "Current openings (jobs), and current and former staff of the Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson.",
-  },
-  twitter: {
-    title: "Team | RadiantLab",
-    description:
-      "Current openings (jobs), and current and former staff of the Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson.",
-  },
-};
+const title = "Team | RadiantLab";
+const description =
+  "Current openings (jobs), and current and former staff of the Daylighting Research Laboratory (RadiantLab) at Oregon State University led by Dr. Clotilde Pierson.";
+
+export const metadata = createPageMetadata({
+  title,
+  description,
+  path: "/team",
+  image: "/og/team.jpg",
+  imageAlt: "RadiantLab team at Oregon State University",
+});
 
 export const principalInvestigator = [
   {
@@ -128,31 +124,31 @@ export const alumni = [
 export default function Team() {
   return (
     <>
-      <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
+      <picture className="absolute right-0 left-0 h-[70vh] w-screen overflow-hidden">
         <Image
-          src={backgroundImage}
           alt="teammates smiling, talking about project"
+          className="object-cover object-[50%_20%]"
           fill={true}
+          placeholder="blur"
           priority={true}
           sizes="100vw"
-          placeholder="blur"
-          className="object-cover object-[50%_20%]"
-        ></Image>
+          src={backgroundImage}
+        />
       </picture>
-      <div className="h-[70vh]"></div>
-      <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
+      <div className="h-[70vh]" />
+      <div className="prose prose-neutral dark:prose-invert mx-auto my-8">
         <h1>Team</h1>
         {principalInvestigator.length !== 0 && (
           <div>
             <h2>Principal Investigator</h2>
             {principalInvestigator.map((pi) => (
               <TeamCard
-                key={pi.name}
-                name={pi.name}
-                pronouns={pi.pronouns}
                 description={pi.description}
                 email={pi.email}
+                key={pi.name}
+                name={pi.name}
                 picture={pi.picture}
+                pronouns={pi.pronouns}
               />
             ))}
           </div>
@@ -162,12 +158,12 @@ export default function Team() {
             <h2>Postdocs</h2>
             {postdocs.map((postdoc) => (
               <TeamCard
-                key={postdoc.name}
-                name={postdoc.name}
-                pronouns={postdoc.pronouns}
                 description={postdoc.description}
                 email={postdoc.email}
+                key={postdoc.name}
+                name={postdoc.name}
                 picture={postdoc.picture}
+                pronouns={postdoc.pronouns}
               />
             ))}
           </div>
@@ -177,12 +173,12 @@ export default function Team() {
             <h2>PhD Students</h2>
             {phdStudents.map((phd) => (
               <TeamCard
-                key={phd.name}
-                name={phd.name}
-                pronouns={phd.pronouns}
                 description={phd.description}
                 email={phd.email}
+                key={phd.name}
+                name={phd.name}
                 picture={phd.picture}
+                pronouns={phd.pronouns}
               />
             ))}
           </div>
@@ -192,12 +188,12 @@ export default function Team() {
             <h2>Master Students</h2>
             {masterStudents.map((master) => (
               <TeamCard
-                key={master.name}
-                name={master.name}
-                pronouns={master.pronouns}
                 description={master.description}
                 email={master.email}
+                key={master.name}
+                name={master.name}
                 picture={master.picture}
+                pronouns={master.pronouns}
               />
             ))}
           </div>
@@ -207,28 +203,28 @@ export default function Team() {
             <h2>Undergraduate Students</h2>
             {undergradStudents.map((undergrad) => (
               <TeamCard
-                key={undergrad.name}
-                name={undergrad.name}
-                pronouns={undergrad.pronouns}
                 description={undergrad.description}
                 email={undergrad.email}
+                key={undergrad.name}
+                name={undergrad.name}
                 picture={undergrad.picture}
+                pronouns={undergrad.pronouns}
               />
             ))}
           </div>
         )}
-        <div className="my-12"></div>
+        <div className="my-12" />
         <SpontaneousApplication />
         {alumni.length !== 0 && (
           <div>
             <h2>Alumni</h2>
             {alumni.map((alumni) => (
               <TeamCard
+                description={alumni.description}
                 key={alumni.name}
                 name={alumni.name}
-                pronouns={alumni.pronouns}
-                description={alumni.description}
                 picture={alumni.picture}
+                pronouns={alumni.pronouns}
               />
             ))}
           </div>

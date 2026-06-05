@@ -3,7 +3,7 @@
 // disables the security policy when running npm run dev
 const ContentSecurityPolicy =
   process.env.NODE_ENV === "development"
-    ? ``
+    ? ""
     : `
     default-src 'self' *.plausible.io;
     script-src 'self' 'unsafe-eval' 'unsafe-inline' plausible.io vercel.live;

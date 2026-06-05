@@ -10,17 +10,17 @@ export default function ServiceCard({ experience, committees, journals }) {
             <div key={item.institution}>
               <h4>
                 <a
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  className="text-osu-beaver-orange text-sm hover:text-osu-luminance dark:text-osu-luminance"
                   href={item.url}
-                  className="text-sm text-osu-beaver-orange dark:text-osu-luminance hover:text-osu-luminance"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   {item.institution}
                 </a>
               </h4>
-              <ul className="text-sm mt-1 marker:text-neutral-300 dark:marker:text-neutral-600">
+              <ul className="mt-1 text-sm marker:text-neutral-300 dark:marker:text-neutral-600">
                 {item.committees.map((jtem) => (
-                  <li className="list-disc list-inside" key={jtem.name}>
+                  <li className="list-inside list-disc" key={jtem.name}>
                     {jtem.name}
                   </li>
                 ))}
@@ -30,15 +30,15 @@ export default function ServiceCard({ experience, committees, journals }) {
         </div>
       )}
       {typeof journals === "object" && (
-        <ul className="text-sm mt-1 marker:text-neutral-300 dark:marker:text-neutral-600">
+        <ul className="mt-1 text-sm marker:text-neutral-300 dark:marker:text-neutral-600">
           {journals.map((journal) => (
-            <li className="list-disc list-inside" key={journal.name}>
+            <li className="list-inside list-disc" key={journal.name}>
               {typeof journal.url === "string" ? (
                 <a
-                  className="text-osu-beaver-orange dark:text-osu-luminance hover:text-osu-luminance"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  className="text-osu-beaver-orange hover:text-osu-luminance dark:text-osu-luminance"
                   href={journal.url}
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   {journal.name}
                 </a>

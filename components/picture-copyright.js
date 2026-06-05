@@ -9,11 +9,11 @@ export default function PictureCopyright({
       {authorName !== undefined && (
         <span className="text-gray-600 dark:text-gray-300">
           Banner photo by{" "}
-          <a target="_blank" rel="noopener noreferrer" href={authorUrl}>
+          <a href={authorUrl} rel="noopener noreferrer" target="_blank">
             {authorName}
           </a>{" "}
           at{" "}
-          <a target="_blank" rel="noopener noreferrer" href={pictureUrl}>
+          <a href={pictureUrl} rel="noopener noreferrer" target="_blank">
             {websiteName}
           </a>
           .

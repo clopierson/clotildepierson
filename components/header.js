@@ -1,14 +1,14 @@
+import InstitutionLogo from "./institution-logo";
+import MobileNav from "./mobile-nav";
 import Navigation from "./navigation";
-import MobileNav from "./mobileNav";
-import InstitutionLogo from "./InstitutionLogo";
-import RadiantLab from "./radiantLab";
+import RadiantLab from "./radiant-lab";
 
 export default function Header() {
   return (
-    <div className="row-start-1 row-span-1 col-start-2 col-span-10 my-4 z-10">
+    <div className="z-10 col-span-10 col-start-2 row-span-1 row-start-1 my-4">
       <a
+        className="sr-only top-4 left-4 z-50 rounded bg-blue-600 text-white focus:not-sr-only focus:absolute focus:p-2"
         href="#main-content"
-        className="sr-only z-50 focus:absolute bg-blue-600 text-white focus:p-2 rounded focus:not-sr-only top-4 left-4"
       >
         Skip to main content
       </a>

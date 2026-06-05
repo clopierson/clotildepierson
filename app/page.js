@@ -1,28 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
-import backgroundImage from "../public/background-image.jpg";
-import FactCard from "../components/factCard";
-import RadiantLab from "../components/radiantLab";
-import ResearchDiagram from "../components/researchDiagram";
 import { Button } from "@/components/ui/button";
-import SupportersMarquee from "../components/SupportersMarquee";
+import FactCard from "../components/fact-card";
+import RadiantLab from "../components/radiant-lab";
+import ResearchDiagram from "../components/research-diagram";
+import StructuredData from "../components/structured-data";
+import SupportersMarquee from "../components/supporters-marquee";
+import { createPageMetadata } from "../lib/metadata";
+import backgroundImage from "../public/background-image.jpg";
 
-export const metadata = {
-  title: "Daylighting Research Laboratory | RadiantLab",
-  description:
-    "The Daylighting Research Laboratory is a cutting-edge lighting research center currently based in Oregon State University and led by Dr. Clotilde Pierson.",
-  openGraph: {
-    url: "https://www.clotildepierson.com",
-    title: "Daylighting Research Laboratory | RadiantLab",
-    description:
-      "The Daylighting Research Laboratory is a cutting-edge lighting research center currently based in Oregon State University and led by Dr. Clotilde Pierson.",
-  },
-  twitter: {
-    title: "Daylighting Research Laboratory | RadiantLab",
-    description:
-      "The Daylighting Research Laboratory is a cutting-edge lighting research center currently based in Oregon State University and led by Dr. Clotilde Pierson.",
-  },
-};
+const title = "Daylighting Research Laboratory | RadiantLab";
+const description =
+  "The Daylighting Research Laboratory is a cutting-edge lighting research center currently based in Oregon State University and led by Dr. Clotilde Pierson.";
+
+export const metadata = createPageMetadata({
+  title,
+  description,
+  path: "/",
+  image: "/og/home.jpg",
+  imageAlt: "RadiantLab daylighting research at Oregon State University",
+});
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
@@ -30,45 +27,49 @@ const organizationJsonLd = {
   name: "Daylighting Research Laboratory (RadiantLab)",
   alternateName: "RadiantLab",
   url: "https://www.clotildepierson.com",
-  description: "The RadiantLab advances knowledge of daylight in buildings to enhance human health, well-being, and performance while minimizing energy consumption. Based at Oregon State University.",
+  description:
+    "The RadiantLab advances knowledge of daylight in buildings to enhance human health, well-being, and performance while minimizing energy consumption. Based at Oregon State University.",
   logo: "https://www.clotildepierson.com/institution/OSU_horizontal_2C_O_over_W.png",
-  founder: { "@type": "Person", name: "Clotilde Pierson", url: "https://www.clotildepierson.com/about" },
-  parentOrganization: { "@type": "EducationalOrganization", name: "Oregon State University", url: "https://oregonstate.edu" },
+  founder: {
+    "@type": "Person",
+    name: "Clotilde Pierson",
+    url: "https://www.clotildepierson.com/about",
+  },
+  parentOrganization: {
+    "@type": "EducationalOrganization",
+    name: "Oregon State University",
+    url: "https://oregonstate.edu",
+  },
   sameAs: ["https://cce.oregonstate.edu/people/clotilde-pierson"],
 };
 
 export default function Home() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
-      />
-      <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
+      <StructuredData data={organizationJsonLd} />
+      <picture className="absolute right-0 left-0 h-[70vh] w-screen overflow-hidden">
         <Image
-          src={backgroundImage}
           alt="Urban Daylight"
+          className="object-cover object-[30%_30%]"
           fill={true}
+          placeholder="blur"
           priority={true}
           sizes="100vw"
-          placeholder="blur"
-          className="object-cover object-[30%_30%]"
+          src={backgroundImage}
         />
       </picture>
-      <div className="absolute left-0 right-0 w-fit mx-auto text-center top-[36%] py-2 px-4 sm:py-3 sm:px-7 lg:py-5 lg:px-12 backdrop-blur-sm bg-gray-200/70 dark:bg-gray-700/70">
+      <div className="absolute top-[36%] right-0 left-0 mx-auto w-fit bg-gray-200/70 px-4 py-2 text-center backdrop-blur-sm sm:px-7 sm:py-3 lg:px-12 lg:py-5 dark:bg-gray-700/70">
         <p className="text-2xl sm:text-3xl lg:text-5xl">
           <RadiantLab />
         </p>
         <p>Daylighting&nbsp;Research</p>
       </div>
-      <div className="h-[70vh]"></div>
-      <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
+      <div className="h-[70vh]" />
+      <div className="prose prose-neutral dark:prose-invert mx-auto my-8">
         <h1 className="sr-only">Daylighting Research Laboratory</h1>
         <p>
           The <RadiantLab /> is led by{" "}
-          <Link href="/about">
-            Dr. Clotilde Pierson
-          </Link>
+          <Link href="/about">Dr. Clotilde Pierson</Link>
           {", "}
           an Assistant Professor of Architectural Engineering in the College of
           Engineering at Oregon State University.
@@ -94,21 +95,21 @@ export default function Home() {
           This densification is expected to reduce our access to daylight even
           further and impact our window views.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-items-center">
+        <div className="grid grid-cols-1 justify-items-center gap-4 sm:grid-cols-2">
           <div>
             <FactCard
-              illustration="/card_indoor_light.svg"
-              fact="90%"
-              description="time spent indoors"
               alt="two people sitting at their desk and facing their computer screens"
+              description="time spent indoors"
+              fact="90%"
+              illustration="/card_indoor_light.svg"
             />
           </div>
           <div>
             <FactCard
-              illustration="/card_city_light.svg"
-              fact="68%"
-              description="living in cities by 2050"
               alt="cityscape with high buildings and trees"
+              description="living in cities by 2050"
+              fact="68%"
+              illustration="/card_city_light.svg"
             />
           </div>
         </div>
@@ -152,14 +153,14 @@ export default function Home() {
           consumption into strategies for the development of a more sustainable
           built environment and innovative daylighting solutions.
         </p>
-        <div className="not-prose border-t border-neutral-200 dark:border-neutral-700 pt-4 mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-3">
-          <p className="text-sm text-neutral-600 dark:text-neutral-400">
+        <div className="not-prose mt-8 flex flex-col items-start gap-3 border-neutral-200 border-t pt-4 sm:flex-row sm:items-center dark:border-neutral-700">
+          <p className="text-neutral-600 text-sm dark:text-neutral-400">
             The <RadiantLab /> relies on private support to advance this work.
           </p>
           <Button
             asChild
+            className="shrink-0 bg-osu-beaver-orange text-white! hover:bg-osu-luminance hover:text-gray-900!"
             size="sm"
-            className="bg-osu-beaver-orange text-white! hover:bg-osu-luminance hover:text-gray-900! shrink-0"
           >
             <a href="/give">Help Fund Breakthroughs</a>
           </Button>

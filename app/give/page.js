@@ -1,29 +1,55 @@
-import RadiantLab from "../../components/radiantLab";
-import SupportersMarquee from "../../components/SupportersMarquee";
 import { Button } from "@/components/ui/button";
+import RadiantLab from "../../components/radiant-lab";
+import SupportersMarquee from "../../components/supporters-marquee";
+import { createPageMetadata } from "../../lib/metadata";
 
-export const metadata = {
-  title: "Support Daylighting Research | RadiantLab",
-  description:
-    "Support the RadiantLab's research on daylight, circadian health, and dementia at Oregon State University through the OSU Foundation.",
-  openGraph: {
-    url: "https://www.clotildepierson.com/give",
-    title: "Support Daylighting Research | RadiantLab",
-    description:
-      "Support the RadiantLab's research on daylight, circadian health, and dementia at Oregon State University through the OSU Foundation.",
+const title = "Support Daylighting Research | RadiantLab";
+const description =
+  "Support the RadiantLab's research on daylight, circadian health, and dementia at Oregon State University through the OSU Foundation.";
+
+const givingSteps = [
+  {
+    id: "visit-foundation",
+    content: <>Visit the OSU Foundation giving page.</>,
   },
-  twitter: {
-    title: "Support Daylighting Research | RadiantLab",
-    description:
-      "Support the RadiantLab's research on daylight, circadian health, and dementia at Oregon State University through the OSU Foundation.",
+  {
+    id: "select-designation",
+    content: (
+      <>
+        In the <strong>Designation</strong> field, search for and select{" "}
+        <strong>Civil &amp; Construction Engineering Research Fund</strong>.
+      </>
+    ),
   },
-};
+  {
+    id: "add-instructions",
+    content: (
+      <>
+        In the <strong>Comments or special instructions</strong> field, enter{" "}
+        <strong>Clotilde Pierson</strong> to direct your gift to the{" "}
+        <RadiantLab />.
+      </>
+    ),
+  },
+  {
+    id: "complete-gift",
+    content: <>Complete your gift amount and payment information.</>,
+  },
+];
+
+export const metadata = createPageMetadata({
+  title,
+  description,
+  path: "/give",
+  image: "/og/give.jpg",
+  imageAlt: "Support RadiantLab daylighting research",
+});
 
 export default function Give() {
   return (
     <>
       {/* Impact hero */}
-      <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
+      <div className="prose prose-neutral dark:prose-invert mx-auto my-8">
         <h1>Support Daylighting Research</h1>
         <p className="font-semibold">
           Light shapes how we sleep, think, learn, work, and age — yet most
@@ -31,21 +57,21 @@ export default function Give() {
           environments affect human health.
         </p>
         <p>
-          The <RadiantLab /> at Oregon State University studies how daylight
-          and electric lighting influence human biology, behavior, and
-          well-being. Private support helps us pursue innovative research,
-          educate the next generation of scientists, and accelerate discoveries
-          that improve lives.
+          The <RadiantLab /> at Oregon State University studies how daylight and
+          electric lighting influence human biology, behavior, and well-being.
+          Private support helps us pursue innovative research, educate the next
+          generation of scientists, and accelerate discoveries that improve
+          lives.
         </p>
       </div>
 
       {/* How to Give */}
       <section
+        className="my-8 rounded-lg bg-white px-6 py-10 dark:bg-neutral-800"
         id="how-to-give"
-        className="bg-white dark:bg-neutral-800 rounded-lg py-10 px-6 my-8"
       >
-        <div className="max-w-prose mx-auto">
-          <h2 className="text-2xl font-bold mb-2 text-neutral-900 dark:text-neutral-100">
+        <div className="mx-auto max-w-prose">
+          <h2 className="mb-2 font-bold text-2xl text-neutral-900 dark:text-neutral-100">
             How to Give
           </h2>
           <p className="mb-6 text-neutral-700 dark:text-neutral-300">
@@ -53,42 +79,27 @@ export default function Give() {
             Foundation, ensuring your gift is tax-deductible and directed to
             support <RadiantLab /> research.
           </p>
-          <ol className="space-y-4 mb-8 list-none p-0" role="list">
-            {[
-              <>
-                Visit the OSU Foundation giving page.
-              </>,
-              <>
-                In the <strong>Designation</strong> field, search for and
-                select{" "}
-                <strong>Civil &amp; Construction Engineering Research Fund</strong>.
-              </>,
-              <>
-                In the <strong>Comments or special instructions</strong> field,
-                enter <strong>Clotilde Pierson</strong> to direct your gift to
-                the <RadiantLab />.
-              </>,
-              <>Complete your gift amount and payment information.</>,
-            ].map((step, i) => (
-              <li key={i} className="flex items-center gap-3 my-4">
-                <span className="shrink-0 w-8 h-8 rounded-full bg-osu-beaver-orange text-white flex items-center justify-center font-bold text-sm">
+          <ol className="mb-8 list-none space-y-4 p-0">
+            {givingSteps.map((step, i) => (
+              <li className="my-4 flex items-center gap-3" key={step.id}>
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-osu-beaver-orange font-bold text-sm text-white">
                   {i + 1}
                 </span>
                 <span className="text-neutral-800 dark:text-neutral-200">
-                  {step}
+                  {step.content}
                 </span>
               </li>
             ))}
           </ol>
           <Button
             asChild
-            size="lg"
             className="bg-osu-beaver-orange text-white hover:bg-osu-luminance hover:text-gray-900"
+            size="lg"
           >
             <a
               href="https://give.fororegonstate.org/PL1Uv3Fkug"
-              target="_blank"
               rel="noreferrer noopener"
+              target="_blank"
             >
               Give on OSU Foundation ↗
             </a>
@@ -100,38 +111,38 @@ export default function Give() {
       <SupportersMarquee />
 
       {/* What Your Gift Funds */}
-      <div className="my-8 max-w-prose mx-auto">
-        <h2 className="text-2xl font-bold mb-6 text-neutral-900 dark:text-neutral-100">
+      <div className="mx-auto my-8 max-w-prose">
+        <h2 className="mb-6 font-bold text-2xl text-neutral-900 dark:text-neutral-100">
           What Your Gift Funds
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
-            <h3 className="font-bold text-lg mb-3 text-neutral-900 dark:text-neutral-100">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          <div className="rounded-lg border border-neutral-200 p-6 dark:border-neutral-700">
+            <h3 className="mb-3 font-bold text-lg text-neutral-900 dark:text-neutral-100">
               Student Researchers
             </h3>
-            <p className="text-neutral-700 dark:text-neutral-300 text-sm">
+            <p className="text-neutral-700 text-sm dark:text-neutral-300">
               Graduate students are at the heart of the lab&apos;s work. Gifts
               support research assistantships, field studies, data analysis, and
               scientific training that develops future leaders in building
               science.
             </p>
           </div>
-          <div className="border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
-            <h3 className="font-bold text-lg mb-3 text-neutral-900 dark:text-neutral-100">
+          <div className="rounded-lg border border-neutral-200 p-6 dark:border-neutral-700">
+            <h3 className="mb-3 font-bold text-lg text-neutral-900 dark:text-neutral-100">
               Research Equipment
             </h3>
-            <p className="text-neutral-700 dark:text-neutral-300 text-sm">
+            <p className="text-neutral-700 text-sm dark:text-neutral-300">
               Sophisticated tools expand the scope and quality of our research:
               wearable sensors, advanced spectroradiometers, environmental
               monitoring equipment, and new technologies that enable larger,
               more diverse studies.
             </p>
           </div>
-          <div className="border border-neutral-200 dark:border-neutral-700 rounded-lg p-6">
-            <h3 className="font-bold text-lg mb-3 text-neutral-900 dark:text-neutral-100">
+          <div className="rounded-lg border border-neutral-200 p-6 dark:border-neutral-700">
+            <h3 className="mb-3 font-bold text-lg text-neutral-900 dark:text-neutral-100">
               Daylighting Research
             </h3>
-            <p className="text-neutral-700 dark:text-neutral-300 text-sm">
+            <p className="text-neutral-700 text-sm dark:text-neutral-300">
               Unrestricted gifts fund pilot studies, participant recruitment,
               and exploratory research on circadian health, cognitive
               performance, aging, dementia risk, and health equity in the built
@@ -142,7 +153,7 @@ export default function Give() {
       </div>
 
       {/* Why It Matters + Partnerships */}
-      <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
+      <div className="prose prose-neutral dark:prose-invert mx-auto my-8">
         <h2>Why Private Support Matters</h2>
         <p>
           Many of the most innovative research ideas begin before traditional

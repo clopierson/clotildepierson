@@ -8,14 +8,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## To Do
 
-- !Have images for links/SEO/social media (e.g., for the DIAL page, we can have an image of the DIAL logo, for the about page we can have an image of me, etc.)
-- !use ultracite/biome for linting/formatting
 - Update teaching, publications
 - Investigate David Hurwitz website to figure out how he gets money: https://www.davidhurwitz.org/ 
 - Add link to https://experiment.com/ 
 - Add current projects for marketing purposes
 - Write some blog posts, maybe based on latest research (vulgarize it for a general audience)
-- Make updating the JSON-LD or page metadaa a requirement when updating any parts of the website, same fos llms.txt and llms-full.txt
+- Make updating the JSON-LD or page metadata a requirement when updating any parts of the website, same for llms.txt and llms-full.txt
 - Marketing strategies: https://grok.com/share/bGVnYWN5LWNvcHk_d5770326-d9ca-4222-af38-ed6e683671aa 
 
 ## Getting Started
@@ -35,7 +33,7 @@ If you are cloning this repository this should not be needed.
 You can install required packages (listed in `packages.json`) with:
 
 ```bash
-bun install
+pnpm install
 ```
 
 ### Running the Development Server
@@ -43,7 +41,7 @@ bun install
 First, run the development server:
 
 ```bash
-bun run dev
+pnpm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -51,11 +49,18 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### Build the Static Site
 
 ```bash
-bun run build
+pnpm run build
 ```
 
 ```bash
-bun run start
+pnpm run start
+```
+
+### Lint and Format
+
+```bash
+pnpm run check
+pnpm run format
 ```
 
 ## Style Guide

@@ -1,18 +1,18 @@
 "use client";
 import Link from "next/link";
 import { Menu } from "react-feather";
+import { Button } from "@/components/ui/button";
 import {
   Sheet,
-  SheetContent,
   SheetClose,
-  SheetTitle,
+  SheetContent,
   SheetDescription,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Button } from "@/components/ui/button";
+import InstitutionLogo from "./institution-logo";
 import { MenuItems } from "./navigation";
-import InstitutionLogo from "./InstitutionLogo";
-import RadiantLab from "./radiantLab";
+import RadiantLab from "./radiant-lab";
 
 export default function MobileNav() {
   return (
@@ -20,15 +20,21 @@ export default function MobileNav() {
       <Sheet>
         <SheetTrigger asChild>
           <button
-            className="p-2 rounded hover:bg-neutral-100 dark:hover:bg-neutral-700"
             aria-label="Open navigation menu"
+            className="rounded p-2 hover:bg-neutral-100 dark:hover:bg-neutral-700"
+            type="button"
           >
             <Menu size={24} />
           </button>
         </SheetTrigger>
-        <SheetContent side="right" className="flex flex-col justify-end gap-4 p-10 dark:bg-neutral-900 dark:text-gray-100 dark:border-neutral-700">
+        <SheetContent
+          className="flex flex-col justify-end gap-4 p-10 dark:border-neutral-700 dark:bg-neutral-900 dark:text-gray-100"
+          side="right"
+        >
           <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
-          <SheetDescription className="sr-only">Site navigation links</SheetDescription>
+          <SheetDescription className="sr-only">
+            Site navigation links
+          </SheetDescription>
           <div className="w-24">
             <InstitutionLogo orientation="vertical" />
           </div>
@@ -42,7 +48,7 @@ export default function MobileNav() {
               <SheetClose asChild key={link.name}>
                 <Button
                   asChild
-                  className="bg-osu-beaver-orange text-white hover:bg-osu-luminance hover:text-gray-900 w-full capitalize"
+                  className="w-full bg-osu-beaver-orange text-white capitalize hover:bg-osu-luminance hover:text-gray-900"
                 >
                   <Link href={link.link}>{link.name}</Link>
                 </Button>
@@ -50,8 +56,8 @@ export default function MobileNav() {
             ) : (
               <SheetClose asChild key={link.name}>
                 <Link
+                  className="text-base capitalize hover:text-osu-luminance"
                   href={link.link}
-                  className="capitalize hover:text-osu-luminance text-base"
                 >
                   {link.name}
                 </Link>

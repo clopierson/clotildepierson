@@ -1,4 +1,4 @@
-import ServiceCard from "./serviceCard";
+import ServiceCard from "./service-card";
 
 export const InternationalCommittees = [
   {
@@ -91,24 +91,24 @@ export default function Services() {
     <section>
       <h2>Services</h2>
       <ServiceCard
-        experience="International Committee Member"
         committees={InternationalCommittees}
+        experience="International Committee Member"
       />
       <ServiceCard
-        experience="National Committee Member"
         committees={NationalCommittees}
+        experience="National Committee Member"
       />
       <ServiceCard
+        endDate="Today"
         experience="Early Career Board Member"
-        startDate="Oct 2022"
-        endDate="Today"
         journals={ECBEItems}
+        startDate="Oct 2022"
       />
       <ServiceCard
-        experience="Reviewer for Scientific Journals"
-        startDate="Dec 2016"
         endDate="Today"
+        experience="Reviewer for Scientific Journals"
         journals={JournalItems}
+        startDate="Dec 2016"
       />
     </section>
   );

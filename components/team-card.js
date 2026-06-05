@@ -8,34 +8,34 @@ export default function TeamCard({
   email,
   picture,
 }) {
-  var href = "mailto:" + email;
-  var alt = "Picture of " + name;
+  const href = `mailto:${email}`;
+  const alt = `Picture of ${name}`;
   return (
-    <article className="text-sm my-5 grid auto-rows-min sm:grid-cols-3 items-center">
-      <div className="my-2 row-span-1 justify-self-center sm:col-span-1 sm:justify-self-start">
+    <article className="my-5 grid auto-rows-min items-center text-sm sm:grid-cols-3">
+      <div className="row-span-1 my-2 justify-self-center sm:col-span-1 sm:justify-self-start">
         {picture.includes("svg") ? (
           <Image
-            className="rounded-full"
-            src={picture}
             alt={alt}
-            width={150}
+            className="rounded-full"
             height={150}
             sizes="150px"
+            src={picture}
+            width={150}
           />
         ) : (
           <Image
-            className="rounded-full"
-            src={picture}
             alt={alt}
-            width={150}
+            className="rounded-full"
             height={150}
             sizes="150px"
+            src={picture}
+            width={150}
           />
         )}{" "}
       </div>
-      <div className="row-span-1 sm:col-span-2 text-center sm:text-left">
-        <h3 className="text-base m-0">
-          {name} <span className="text-sm font-light">({pronouns})</span>
+      <div className="row-span-1 text-center sm:col-span-2 sm:text-left">
+        <h3 className="m-0 text-base">
+          {name} <span className="font-light text-sm">({pronouns})</span>
         </h3>
         {description === "/about" ? (
           <Link href="/about">Learn more</Link>

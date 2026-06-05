@@ -1,23 +1,20 @@
 import Image from "next/image";
-import backgroundImage from "../../public/background-image-publications.jpg";
+import StructuredData from "../../components/structured-data";
+import { createPageMetadata } from "../../lib/metadata";
 import { publications, publicationYears } from "../../lib/publications";
+import backgroundImage from "../../public/background-image-publications.jpg";
 
-export const metadata = {
-  title: "Publications | RadiantLab",
-  description:
-    "Peer-reviewed journal/conference papers, conferences/workshops contributions, and datasets by the Daylighting Research Laboratory (RadiantLab) at Oregon State University.",
-  openGraph: {
-    url: "https://www.clotildepierson.com/publications",
-    title: "Publications | RadiantLab",
-    description:
-      "Peer-reviewed journal/conference papers, conferences/workshops contributions, and datasets by the Daylighting Research Laboratory (RadiantLab) at Oregon State University.",
-  },
-  twitter: {
-    title: "Publications | RadiantLab",
-    description:
-      "Peer-reviewed journal/conference papers, conferences/workshops contributions, and datasets by the Daylighting Research Laboratory (RadiantLab) at Oregon State University.",
-  },
-};
+const title = "Publications | RadiantLab";
+const description =
+  "Peer-reviewed journal/conference papers, conferences/workshops contributions, and datasets by the Daylighting Research Laboratory (RadiantLab) at Oregon State University.";
+
+export const metadata = createPageMetadata({
+  title,
+  description,
+  path: "/publications",
+  image: "/og/publications.jpg",
+  imageAlt: "RadiantLab daylighting research publications",
+});
 
 const publicationsJsonLd = {
   "@context": "https://schema.org",
@@ -30,7 +27,10 @@ const publicationsJsonLd = {
       name: pub.title,
       author: pub.authors.map((a) => ({ "@type": "Person", name: a })),
       datePublished: String(pub.year),
-      ...(pub.doi && { identifier: `https://doi.org/${pub.doi}`, url: `https://doi.org/${pub.doi}` }),
+      ...(pub.doi && {
+        identifier: `https://doi.org/${pub.doi}`,
+        url: `https://doi.org/${pub.doi}`,
+      }),
       ...(pub.url && !pub.doi && { url: pub.url }),
       isPartOf: {
         "@type": pub.type === "journal" ? "Periodical" : "Event",
@@ -42,7 +42,7 @@ const publicationsJsonLd = {
 
 function Authors({ authors }) {
   return authors.map((author, i) => (
-    <span key={`${author}-${i}`}>
+    <span key={author}>
       {i > 0 && ", "}
       {author === "Pierson C." ? <strong>{author}</strong> : author}
     </span>
@@ -62,15 +62,15 @@ function PublicationEntry({ pub }) {
         {primaryUrl && (
           <>
             {" "}
-            <a href={primaryUrl} target="_blank" rel="noreferrer noopener">
+            <a href={primaryUrl} rel="noreferrer noopener" target="_blank">
               {pub.doi ? `DOI: ${pub.doi}` : "View"}
             </a>
           </>
         )}
       </p>
       {pub.links.map((link) => (
-        <p key={link.url} className="text-sm mb-1 mt-1">
-          <a href={link.url} target="_blank" rel="noreferrer noopener">
+        <p className="mt-1 mb-1 text-sm" key={link.url}>
+          <a href={link.url} rel="noreferrer noopener" target="_blank">
             {link.label}
           </a>
         </p>
@@ -82,28 +82,31 @@ function PublicationEntry({ pub }) {
 export default function Publications() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(publicationsJsonLd) }} />
-      <picture className="overflow-hidden absolute left-0 right-0 w-screen h-[70vh]">
+      <StructuredData data={publicationsJsonLd} />
+      <picture className="absolute right-0 left-0 h-[70vh] w-screen overflow-hidden">
         <Image
-          src={backgroundImage}
           alt="daylight in a bright library"
+          className="object-cover object-[20%_50%]"
           fill={true}
+          placeholder="blur"
           priority={true}
           sizes="100vw"
-          placeholder="blur"
-          className="object-cover object-[20%_50%]"
+          src={backgroundImage}
         />
       </picture>
-      <div className="h-[70vh]"></div>
-      <div className="my-8 prose prose-neutral dark:prose-invert mx-auto">
+      <div className="h-[70vh]" />
+      <div className="prose prose-neutral dark:prose-invert mx-auto my-8">
         <h1>Publications</h1>
         {publicationYears.map((year) => (
           <section key={year}>
             <h2>{year}</h2>
             {publications
               .filter((p) => p.year === year)
-              .map((pub, i) => (
-                <PublicationEntry key={`${year}-${i}`} pub={pub} />
+              .map((pub) => (
+                <PublicationEntry
+                  key={pub.doi ?? pub.url ?? pub.title}
+                  pub={pub}
+                />
               ))}
           </section>
         ))}
