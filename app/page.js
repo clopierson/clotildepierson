@@ -5,6 +5,7 @@ import FactCard from "../components/factCard";
 import RadiantLab from "../components/radiantLab";
 import ResearchDiagram from "../components/researchDiagram";
 import { Button } from "@/components/ui/button";
+import SupportersMarquee from "../components/SupportersMarquee";
 
 export const metadata = {
   title: "Daylighting Research Laboratory | RadiantLab",
@@ -77,6 +78,8 @@ export default function Home() {
           and the practice of daylighting to enhance people&#39;s health,
           well-being, and performance, while minimizing energy consumption.
         </p>
+        {/* Supporters */}
+        <SupportersMarquee />
         <p>
           Today, we spend on average 90% of our time indoors. This completely
           flips our exposure to light, compared to our ancient outdoor
@@ -156,9 +159,9 @@ export default function Home() {
           <Button
             asChild
             size="sm"
-            className="bg-osu-beaver-orange text-white dark:!text-white hover:bg-osu-luminance hover:text-gray-900 flex-shrink-0"
+            className="bg-osu-beaver-orange text-white! hover:bg-osu-luminance hover:text-gray-900! shrink-0"
           >
-            <a href="/give">Support this research</a>
+            <a href="/give">Help Fund Breakthroughs</a>
           </Button>
         </div>
       </div>

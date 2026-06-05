@@ -70,11 +70,11 @@ export default function Give() {
               </>,
               <>Complete your gift amount and payment information.</>,
             ].map((step, i) => (
-              <li key={i} className="flex items-start gap-3">
-                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-osu-beaver-orange text-white flex items-center justify-center font-bold text-sm">
+              <li key={i} className="flex items-center gap-3 my-4">
+                <span className="shrink-0 w-8 h-8 rounded-full bg-osu-beaver-orange text-white flex items-center justify-center font-bold text-sm">
                   {i + 1}
                 </span>
-                <span className="text-neutral-800 dark:text-neutral-200 pt-1">
+                <span className="text-neutral-800 dark:text-neutral-200">
                   {step}
                 </span>
               </li>
@@ -83,7 +83,7 @@ export default function Give() {
           <Button
             asChild
             size="lg"
-            className="bg-osu-beaver-orange text-white dark:!text-white hover:bg-osu-luminance hover:text-gray-900"
+            className="bg-osu-beaver-orange text-white hover:bg-osu-luminance hover:text-gray-900"
           >
             <a
               href="https://give.fororegonstate.org/PL1Uv3Fkug"
