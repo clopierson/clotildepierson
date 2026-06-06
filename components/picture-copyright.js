@@ -7,7 +7,7 @@ export default function PictureCopyright({
   return (
     <span>
       {authorName !== undefined && (
-        <span className="text-gray-600 dark:text-gray-300">
+        <span className="text-neutral-600 dark:text-neutral-300">
           Banner photo by{" "}
           <a href={authorUrl} rel="noopener noreferrer" target="_blank">
             {authorName}

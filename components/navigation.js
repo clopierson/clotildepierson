@@ -26,7 +26,7 @@ export default function Navigation() {
         link.highlight ? (
           <Button
             asChild
-            className="h-auto bg-osu-beaver-orange px-3 py-1 text-sm text-white capitalize hover:bg-osu-luminance hover:text-gray-900 md:text-base"
+            className="h-auto bg-osu-beaver-orange px-3 py-1 text-sm text-white capitalize hover:bg-osu-luminance hover:text-neutral-900 md:text-base"
             key={link.name}
           >
             <Link href={link.link}>{link.name}</Link>

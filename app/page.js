@@ -58,7 +58,7 @@ export default function Home() {
           src={backgroundImage}
         />
       </picture>
-      <div className="absolute top-[36%] right-0 left-0 mx-auto w-fit bg-gray-200/70 px-4 py-2 text-center backdrop-blur-sm sm:px-7 sm:py-3 lg:px-12 lg:py-5 dark:bg-gray-700/70">
+      <div className="absolute top-[36%] right-0 left-0 mx-auto w-fit bg-neutral-200/70 px-4 py-2 text-center backdrop-blur-sm sm:px-7 sm:py-3 lg:px-12 lg:py-5 dark:bg-neutral-700/70">
         <p className="text-2xl sm:text-3xl lg:text-5xl">
           <RadiantLab />
         </p>
@@ -153,13 +153,14 @@ export default function Home() {
           consumption into strategies for the development of a more sustainable
           built environment and innovative daylighting solutions.
         </p>
-        <div className="not-prose mt-8 flex flex-col items-start gap-3 border-neutral-200 border-t pt-4 sm:flex-row sm:items-center dark:border-neutral-700">
+        <div className="not-prose mt-8 mb-0 flex flex-col items-center gap-3 border-neutral-200 border-t pt-16 dark:border-neutral-700">
           <p className="text-neutral-600 text-sm dark:text-neutral-400">
-            The <RadiantLab /> relies on private support to advance this work.
+            The <RadiantLab /> relies on public and private support to advance
+            this work.
           </p>
           <Button
             asChild
-            className="shrink-0 bg-osu-beaver-orange text-white! hover:bg-osu-luminance hover:text-gray-900!"
+            className="shrink-0 bg-osu-beaver-orange text-white! hover:bg-osu-luminance hover:text-neutral-900!"
             size="sm"
           >
             <a href="/give">Help Fund Breakthroughs</a>

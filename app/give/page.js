@@ -93,7 +93,7 @@ export default function Give() {
           </ol>
           <Button
             asChild
-            className="bg-osu-beaver-orange text-white hover:bg-osu-luminance hover:text-gray-900"
+            className="bg-osu-beaver-orange text-white hover:bg-osu-luminance hover:text-neutral-900"
             size="lg"
           >
             <a

@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="h-screen hover:a:text-sky-300 dark:bg-neutral-900 dark:text-gray-100">
+      <body className="h-screen hover:a:text-sky-300 dark:bg-neutral-900 dark:text-neutral-100">
         <Script
           data-domain="clotildepierson.com"
           defer

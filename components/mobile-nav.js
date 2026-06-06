@@ -28,7 +28,7 @@ export default function MobileNav() {
           </button>
         </SheetTrigger>
         <SheetContent
-          className="flex flex-col justify-end gap-4 p-10 dark:border-neutral-700 dark:bg-neutral-900 dark:text-gray-100"
+          className="flex flex-col justify-end gap-4 p-10 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
           side="right"
         >
           <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
@@ -48,7 +48,7 @@ export default function MobileNav() {
               <SheetClose asChild key={link.name}>
                 <Button
                   asChild
-                  className="w-full bg-osu-beaver-orange text-white capitalize hover:bg-osu-luminance hover:text-gray-900"
+                  className="w-full bg-osu-beaver-orange text-white capitalize hover:bg-osu-luminance hover:text-neutral-900"
                 >
                   <Link href={link.link}>{link.name}</Link>
                 </Button>

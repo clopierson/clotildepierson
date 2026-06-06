@@ -107,19 +107,19 @@ export default function Research() {
           className="not-prose my-6 flex flex-wrap gap-2"
         >
           <a
-            className="rounded-full border border-osu-beaver-orange px-3 py-1 text-osu-beaver-orange text-sm transition-colors hover:bg-osu-beaver-orange hover:text-white! dark:border-osu-luminance dark:text-osu-luminance dark:hover:bg-osu-luminance dark:hover:text-gray-900"
+            className="rounded-full border border-osu-beaver-orange px-3 py-1 text-osu-beaver-orange text-sm transition-colors hover:bg-osu-beaver-orange hover:text-white! dark:border-osu-luminance dark:text-osu-luminance dark:hover:bg-osu-luminance dark:hover:text-neutral-900"
             href="#natural-built-environment"
           >
             Natural &amp; Built Environment
           </a>
           <a
-            className="rounded-full border border-osu-beaver-orange px-3 py-1 text-osu-beaver-orange text-sm transition-colors hover:bg-osu-beaver-orange hover:text-white! dark:border-osu-luminance dark:text-osu-luminance dark:hover:bg-osu-luminance dark:hover:text-gray-900"
+            className="rounded-full border border-osu-beaver-orange px-3 py-1 text-osu-beaver-orange text-sm transition-colors hover:bg-osu-beaver-orange hover:text-white! dark:border-osu-luminance dark:text-osu-luminance dark:hover:bg-osu-luminance dark:hover:text-neutral-900"
             href="#light-and-occupants"
           >
             Light &amp; Occupant Health
           </a>
           <a
-            className="rounded-full border border-osu-beaver-orange px-3 py-1 text-osu-beaver-orange text-sm transition-colors hover:bg-osu-beaver-orange hover:text-white! dark:border-osu-luminance dark:text-osu-luminance dark:hover:bg-osu-luminance dark:hover:text-gray-900"
+            className="rounded-full border border-osu-beaver-orange px-3 py-1 text-osu-beaver-orange text-sm transition-colors hover:bg-osu-beaver-orange hover:text-white! dark:border-osu-luminance dark:text-osu-luminance dark:hover:bg-osu-luminance dark:hover:text-neutral-900"
             href="#energy-and-environment"
           >
             Energy &amp; Environment
@@ -149,7 +149,7 @@ export default function Research() {
         <div className="not-prose my-6 flex justify-center">
           <Button
             asChild
-            className="bg-osu-beaver-orange text-white! hover:bg-osu-luminance hover:text-gray-900!"
+            className="bg-osu-beaver-orange text-white! hover:bg-osu-luminance hover:text-neutral-900!"
             size="lg"
           >
             <a href="/give">Donate to Advance This Research</a>
@@ -179,7 +179,7 @@ export default function Research() {
         <div className="not-prose my-6 flex justify-center">
           <Button
             asChild
-            className="bg-osu-beaver-orange text-white! hover:bg-osu-luminance hover:text-gray-900!"
+            className="bg-osu-beaver-orange text-white! hover:bg-osu-luminance hover:text-neutral-900!"
             size="lg"
           >
             <a href="/give">Donate Now: Support Vital Research</a>
@@ -212,7 +212,7 @@ export default function Research() {
         <div className="not-prose my-6 flex justify-center">
           <Button
             asChild
-            className="bg-osu-beaver-orange text-white! hover:bg-osu-luminance hover:text-gray-900!"
+            className="bg-osu-beaver-orange text-white! hover:bg-osu-luminance hover:text-neutral-900!"
             size="lg"
           >
             <a href="/give">Join Us in Discovering Tomorrow</a>
