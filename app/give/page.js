@@ -67,7 +67,7 @@ export default function Give() {
 
       {/* How to Give */}
       <section
-        className="my-8 rounded-lg bg-white px-6 py-10 dark:bg-neutral-800"
+        className="my-8 rounded-lg bg-neutral-50 px-6 py-10 dark:bg-neutral-800"
         id="how-to-give"
       >
         <div className="mx-auto max-w-prose">

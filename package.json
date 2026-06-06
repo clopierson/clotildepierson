@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "ultracite check",
     "format": "ultracite fix",
-    "check": "ultracite check",
+    "check": "ultracite check && pnpm run check:ai-seo",
+    "check:ai-seo": "node scripts/check-ai-seo.mjs",
     "test:a11y": "playwright test"
   },
   "dependencies": {

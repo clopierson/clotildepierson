@@ -13,7 +13,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - Add link to https://experiment.com/ 
 - Add current projects for marketing purposes
 - Write some blog posts, maybe based on latest research (vulgarize it for a general audience)
-- Make updating the JSON-LD or page metadata a requirement when updating any parts of the website, same for llms.txt and llms-full.txt
+- Keep the AI/SEO maintenance gate current when adding routes or content; see `docs/ai-seo-maintenance.md`
 - Marketing strategies: https://grok.com/share/bGVnYWN5LWNvcHk_d5770326-d9ca-4222-af38-ed6e683671aa 
 
 ## Getting Started
@@ -62,6 +62,9 @@ pnpm run start
 pnpm run check
 pnpm run format
 ```
+
+`pnpm run check` runs Ultracite plus the AI/SEO maintenance gate documented in
+[`docs/ai-seo-maintenance.md`](docs/ai-seo-maintenance.md).
 
 ## Style Guide
 

@@ -98,7 +98,7 @@ export default function About() {
             width={200}
           />
         </div>
-        <div className="row-start-3 mt-6 self-start sm:col-span-10 sm:col-start-1 sm:row-start-2 md:col-span-8mt-2 md:col-start-2">
+        <div className="row-start-3 mt-6 self-start sm:col-span-10 sm:col-start-1 sm:row-start-2 md:col-span-8 md:col-start-2">
           <div className="prose prose-neutral dark:prose-invert">
             <h2>In a Nutshell</h2>
             <ul>
