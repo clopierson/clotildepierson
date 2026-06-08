@@ -1,9 +1,14 @@
 "use client";
 
 const supporters = [
+  { name: "National Institutes of Health (NIH) via Oregon Alzheimer’s Disease Research Center (OADRC)" },
   { name: "Culbertson Faculty Scholarship" },
   { name: "Medical Research Foundation (New Investigator Grant)" }, // 50,000
   { name: "Oregon Partnership for Alzheimer's Research" }, // 35,000
+  { name: "European Union (Horizon 2020)" },
+  { name: "Belgian American Educational Foundation (BAEF)" },
+  { name: "Nuckolls Fund for Lighting Education"},
+  { name: "Belgian Fund for Scientific Research (FRS-FNRS)" },
 ];
 
 function formatAmount(amount) {
@@ -28,7 +33,7 @@ export default function SupportersMarquee() {
       className="my-6 ml-[calc(50%-50vw)] flex w-screen flex-col gap-2 overflow-hidden bg-neutral-100 py-3 dark:bg-neutral-800"
     >
       <div className="text-center font-semibold text-neutral-900 text-sm uppercase tracking-[0.08em] dark:text-neutral-100">
-        Backed By
+        Funded By
       </div>
       <div className="mask-[linear-gradient(to_right,transparent_0%,black_8%,black_92%,transparent_100%)] overflow-hidden [-webkit-mask-image:linear-gradient(to_right,transparent_0%,black_8%,black_92%,transparent_100%)]">
         <div className="hover:paused flex w-max animate-marquee gap-12">
