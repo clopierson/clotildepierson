@@ -5,7 +5,7 @@ import FactCard from "../components/fact-card";
 import RadiantLab from "../components/radiant-lab";
 import ResearchDiagram from "../components/research-diagram";
 import StructuredData from "../components/structured-data";
-import SupportersMarquee from "../components/supporters-marquee";
+// import SupportersMarquee from "../components/supporters-marquee";
 import { createPageMetadata } from "../lib/metadata";
 import backgroundImage from "../public/background-image.jpg";
 
@@ -80,7 +80,7 @@ export default function Home() {
           well-being, and performance, while minimizing energy consumption.
         </p>
         {/* Supporters */}
-        <SupportersMarquee />
+        {/* <SupportersMarquee /> */}
         <p>
           Today, we spend on average 90% of our time indoors. This completely
           flips our exposure to light, compared to our ancient outdoor

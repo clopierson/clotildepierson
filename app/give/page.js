@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import RadiantLab from "../../components/radiant-lab";
-import SupportersMarquee from "../../components/supporters-marquee";
+// import SupportersMarquee from "../../components/supporters-marquee";
 import { createPageMetadata } from "../../lib/metadata";
 
 const title = "Support Daylighting Research | RadiantLab";
@@ -108,7 +108,7 @@ export default function Give() {
       </section>
 
       {/* Supporters */}
-      <SupportersMarquee />
+      {/* <SupportersMarquee /> */}
 
       {/* What Your Gift Funds */}
       <div className="mx-auto my-8 max-w-prose">
