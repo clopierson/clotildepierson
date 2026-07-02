@@ -33,7 +33,7 @@ const publicationsJsonLd = {
       }),
       ...(pub.url && !pub.doi && { url: pub.url }),
       isPartOf: {
-        "@type": pub.type === "journal" ? "Periodical" : "Event",
+        "@type": pub.type === "journal" ? "Periodical" : "CreativeWorkSeries",
         name: pub.venue,
       },
     },
