@@ -46,44 +46,7 @@ export default function Footer({
               ))}
             </a>
           </p>
-        </div>
-        <div className="mt-6 text-xs">
-          <div>
-            Developed by{" "}
-            <a
-              href="https://www.alexulbrich.com"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Alex Ulbrich
-            </a>{" "}
-            using{" "}
-            <a
-              href="https://nextjs.org"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Next.js
-            </a>{" "}
-            and{" "}
-            <a
-              href="https://tailwindcss.com"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Tailwind CSS
-            </a>
-            . Deployed on{" "}
-            <a
-              href="https://vercel.com/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Vercel
-            </a>
-            .
-          </div>
-          <div>
+          <p className="text-xs">
             Illustrations adapted from{" "}
             <a
               href="https://undraw.co"
@@ -99,7 +62,7 @@ export default function Footer({
               pictureUrl={heroImageUrl}
               websiteName="OSU"
             />
-          </div>
+          </p>
         </div>
       </div>
     </div>

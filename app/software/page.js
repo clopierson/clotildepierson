@@ -37,11 +37,11 @@ const softwareJsonLd = {
     },
     {
       "@type": "SoftwareApplication",
-      name: "HDRI Calibration Interface v3.1.0",
+      name: "LumiLab v5.0.0",
       description:
-        "Free, open-source desktop application for merging Low Dynamic Range images and generating calibrated High Dynamic Range (HDR) luminance maps for daylighting research.",
-      url: "https://github.com/clopierson/HDRICalibrationTool",
-      codeRepository: "https://github.com/clopierson/HDRICalibrationTool",
+        "Free, open-source web and desktop applications for merging Low Dynamic Range images and generating and viewing calibrated High Dynamic Range (HDR) luminance maps for daylighting research.",
+      url: "https://lumilab.clotildepierson.com/",
+      codeRepository: "https://github.com/radiantlab/LumiLab",
       applicationCategory: "ScientificApplication",
       operatingSystem: "Windows, macOS, Linux",
       author: {
@@ -78,7 +78,7 @@ export default function Software() {
         </p>
         {/* LARK */}
         <article className="my-6 flex flex-col gap-0 border-t border-t-neutral-300 pt-4 sm:flex-row sm:gap-8 sm:pt-0">
-          <div className="my-2 sm:mt-8 sm:basis-72">
+          <div className="my-2 sm:mt-8 sm:basis-72  *:my-0">
             <Image
               alt="Lark Spectral Lighting logo"
               height={150}
@@ -89,7 +89,7 @@ export default function Software() {
             />
           </div>
           <div>
-            <h2 className="mt-2 sm:mt-8">Lark v2.0</h2>
+            <h2 className="mb-2 mt-2 sm:mt-8">Lark v2.0</h2>
             <span className="rounded-full border px-2 py-1 text-xs">
               Rhino/Grasshopper
             </span>{" "}
@@ -145,11 +145,11 @@ export default function Software() {
             </p>
           </div>
         </article>
-        {/* HDRI Calibation Tool */}
+        {/* LumiLab */}
         <article className="my-6 flex flex-col gap-0 border-t border-t-neutral-300 pt-4 sm:flex-row sm:gap-8 sm:pt-0">
-          <div className="my-2 sm:mt-8 sm:basis-72">
+          <div className="sm:mt-8 sm:basis-72 *:my-0">
             <Image
-              alt="HDRI Calibration Interface logo"
+              alt="LumiLab logo"
               height={150}
               placeholder="blur"
               sizes="150px"
@@ -158,17 +158,16 @@ export default function Software() {
             />
           </div>
           <div>
-            <h2 className="mt-2 sm:mt-8">HDRI Calibration Interface v3.1.0</h2>
+            <h2 className="mb-2 mt-2 sm:mt-8">LumiLab v5.0.0</h2>
             <span className="rounded-full border px-2 py-1 text-xs">Tauri</span>{" "}
             <span className="rounded-full border px-2 py-1 text-xs">
               Next.js
-            </span>{" "}
-            <span className="rounded-full border px-2 py-1 text-xs">Rust</span>
+            </span>
             <p>
-              The HDRI Calibration Tool was designed to automate and facilitate
+              LumiLab (prev. HDRI Calibration Tool) was designed to automate and facilitate
               the process of merging multiple Low Dynamic Range (LDR) images
-              together and generating a calibrated High Dynamic Range (HDR)
-              image. The tool serves as a user-friendly GUI that runs a pipeline
+              together and generating and viewing a calibrated High Dynamic Range (HDR)
+              image. The application serves as a user-friendly GUI that runs a pipeline
               of{" "}
               <a
                 href="https://www.libraw.org/"
@@ -199,7 +198,16 @@ export default function Software() {
             <ul>
               <li>
                 <a
-                  href="https://github.com/clopierson/HDRICalibrationTool"
+                  href="https://lumilab.clotildepierson.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Web version (slower)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/radiantlab/LumiLab"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -208,8 +216,8 @@ export default function Software() {
               </li>
             </ul>
             <p className="text-sm italic">
-              The HDRI Calibration Tool is an entirely free, open-sourced
-              application developed by a small group of undergraduate Computer
+              LumiLab is an entirely free, open-sourced
+              application developed by undergraduate Computer
               Science students under the supervision of Dr. Clotilde Pierson at
               Oregon State University. To read more about the process of
               generating an HDR image from LDR image input,{" "}
