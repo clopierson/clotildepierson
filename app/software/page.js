@@ -202,7 +202,7 @@ export default function Software() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Web version (slower)
+                  Web version
                 </a>
               </li>
               <li>
