@@ -1,13 +1,15 @@
 "use client";
 
 const supporters = [
-  { name: "National Institutes of Health (NIH) via Oregon Alzheimer’s Disease Research Center (OADRC)" },
+  {
+    name: "National Institutes of Health (NIH) via Oregon Alzheimer’s Disease Research Center (OADRC)",
+  },
   { name: "Culbertson Faculty Scholarship" },
   { name: "Medical Research Foundation (New Investigator Grant)" }, // 50,000
   { name: "Oregon Partnership for Alzheimer's Research" }, // 35,000
   { name: "European Union (Horizon 2020)" },
   { name: "Belgian American Educational Foundation (BAEF)" },
-  { name: "Nuckolls Fund for Lighting Education"},
+  { name: "Nuckolls Fund for Lighting Education" },
   { name: "Belgian Fund for Scientific Research (FRS-FNRS)" },
 ];
 
