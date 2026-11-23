@@ -5,13 +5,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-pnpm install          # install dependencies
-pnpm run dev          # dev server at localhost:3000
-pnpm run build        # production build (also runs next-sitemap via postbuild)
-pnpm run start        # serve production build
-pnpm run check        # Ultracite/Biome lint and format check
-pnpm run format       # Ultracite/Biome auto-fix
-pnpm run test:a11y    # WCAG 2.2 AA accessibility tests (requires build first: pnpm run build)
+npm install           # install dependencies
+npm run dev           # dev server at localhost:3000
+npm run build         # production build (also runs next-sitemap via postbuild)
+npm run start         # serve production build
+npm run check         # Ultracite/Biome lint and format check
+npm run format        # Ultracite/Biome auto-fix
+npm run test:a11y     # WCAG 2.2 AA accessibility tests (requires build first: npm run build)
 ```
 
 There are no tests in this project except for accessibility tests.
@@ -34,4 +34,4 @@ This is a **Next.js 16 App Router** website for Dr. Clotilde Pierson's Daylighti
 
 **Sitemap:** `next-sitemap` runs automatically after `next build` via the `postbuild` script. Config is in `next-sitemap.config.js`; `public/files/` is disallowed in robots.txt and `autoLastmod` is disabled to avoid timestamp-only diffs.
 
-**Package manager and code quality:** pnpm is the project package manager and is pinned in `package.json`. Ultracite with Biome handles linting and formatting through `pnpm run check` and `pnpm run format`.
+**Package manager and code quality:** npm (latest) is the project package manager, and `package.json` sets Node 26 under `engines`. Ultracite with Biome handles linting and formatting through `npm run check` and `npm run format`.

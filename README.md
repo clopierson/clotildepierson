@@ -18,6 +18,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+This project uses Node 26 and the latest npm (`npm install -g npm@latest`).
+
 You can install required packages (listed in `packages.json`) with:
 
 ```bash
