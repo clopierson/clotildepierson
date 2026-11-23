@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import FactCard from "../components/fact-card";
+import PressQuote from "../components/press-quote";
 import RadiantLab from "../components/radiant-lab";
 import ResearchDiagram from "../components/research-diagram";
 import StructuredData from "../components/structured-data";
@@ -126,6 +127,7 @@ export default function Home() {
           relieve stress and prevent the onset of mental illnesses, for
           instance.
         </p>
+        <PressQuote />
         <p>
           Besides the human-related aspects, daylighting can greatly reduce
           buildings&#39; climate impact when correctly implemented. By avoiding
