@@ -78,7 +78,7 @@ export default function Software() {
         </p>
         {/* LARK */}
         <article className="my-6 flex flex-col gap-0 border-t border-t-neutral-300 pt-4 sm:flex-row sm:gap-8 sm:pt-0">
-          <div className="my-2 sm:mt-8 sm:basis-72  *:my-0">
+          <div className="my-2 *:my-0 sm:mt-8 sm:basis-72">
             <Image
               alt="Lark Spectral Lighting logo"
               height={150}
@@ -89,7 +89,7 @@ export default function Software() {
             />
           </div>
           <div>
-            <h2 className="mb-2 mt-2 sm:mt-8">Lark v2.0</h2>
+            <h2 className="mt-2 mb-2 sm:mt-8">Lark v2.0</h2>
             <span className="rounded-full border px-2 py-1 text-xs">
               Rhino/Grasshopper
             </span>{" "}
@@ -147,7 +147,7 @@ export default function Software() {
         </article>
         {/* LumiLab */}
         <article className="my-6 flex flex-col gap-0 border-t border-t-neutral-300 pt-4 sm:flex-row sm:gap-8 sm:pt-0">
-          <div className="sm:mt-8 sm:basis-72 *:my-0">
+          <div className="*:my-0 sm:mt-8 sm:basis-72">
             <Image
               alt="LumiLab logo"
               height={150}
@@ -158,17 +158,17 @@ export default function Software() {
             />
           </div>
           <div>
-            <h2 className="mb-2 mt-2 sm:mt-8">LumiLab v5.0.0</h2>
+            <h2 className="mt-2 mb-2 sm:mt-8">LumiLab v5.0.0</h2>
             <span className="rounded-full border px-2 py-1 text-xs">Tauri</span>{" "}
             <span className="rounded-full border px-2 py-1 text-xs">
               Next.js
             </span>
             <p>
-              LumiLab (prev. HDRI Calibration Tool) was designed to automate and facilitate
-              the process of merging multiple Low Dynamic Range (LDR) images
-              together and generating and viewing a calibrated High Dynamic Range (HDR)
-              image. The application serves as a user-friendly GUI that runs a pipeline
-              of{" "}
+              LumiLab (prev. HDRI Calibration Tool) was designed to automate and
+              facilitate the process of merging multiple Low Dynamic Range (LDR)
+              images together and generating and viewing a calibrated High
+              Dynamic Range (HDR) image. The application serves as a
+              user-friendly GUI that runs a pipeline of{" "}
               <a
                 href="https://www.libraw.org/"
                 rel="noopener noreferrer"
@@ -216,11 +216,10 @@ export default function Software() {
               </li>
             </ul>
             <p className="text-sm italic">
-              LumiLab is an entirely free, open-sourced
-              application developed by undergraduate Computer
-              Science students under the supervision of Dr. Clotilde Pierson at
-              Oregon State University. To read more about the process of
-              generating an HDR image from LDR image input,{" "}
+              LumiLab is an entirely free, open-sourced application developed by
+              undergraduate Computer Science students under the supervision of
+              Dr. Clotilde Pierson at Oregon State University. To read more
+              about the process of generating an HDR image from LDR image input,{" "}
               <a
                 href="https://www.tandfonline.com/doi/full/10.1080/15502724.2019.1684319"
                 rel="noopener noreferrer"
