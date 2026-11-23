@@ -37,6 +37,10 @@ The Daylighting Innovation and Analysis Lab (DIAL) is a first-of-its-kind mobile
 - Wienold J. et al., Pierson C. (2019). Cross-Validation and Robustness of Daylight Glare Metrics. Lighting Research & Technology, 51(7). DOI: 10.1177/1477153519826003
 - Pierson C., Cauwerts C., Bodart M., Wienold J. (2020). Tutorial: Luminance Maps for Daylighting Studies from HDR Photography. LEUKOS, 14(3). DOI: 10.1080/15502724.2019.1684319
 
+## Press
+
+- AARP (Nov 19, 2026). 6 Ways to Get Your Circadian Rhythm Back on Track, by Lynne Peeples. Quotes Dr. Pierson on light exposure and aging. https://www.aarp.org/health/healthy-living/reset-circadian-rhythm/
+
 ## Team
 
 Current members: Kianoush Vali (PhD, light and sleep/health), Yahya Sogodok (MS, non-visual responses), Nima Ghorbanian Matloob (MS, non-visual effects), Isaiah Pileggi-Epps (undergrad), Keean Balsiger (undergrad)
