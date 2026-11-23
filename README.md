@@ -21,13 +21,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 You can install required packages (listed in `packages.json`) with:
 
 ```bash
-pnpm install
+npm install
 ```
 
 Run the development server:
 
 ```bash
-pnpm run dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -35,21 +35,21 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ### Build the Static Site
 
 ```bash
-pnpm run build
+npm run build
 ```
 
 ```bash
-pnpm run start
+npm run start
 ```
 
 ### Lint and Format
 
 ```bash
-pnpm run check
-pnpm run format
+npm run check
+npm run format
 ```
 
-`pnpm run check` runs Ultracite plus the AI/SEO maintenance gate documented in
+`npm run check` runs Ultracite plus the AI/SEO maintenance gate documented in
 [`docs/ai-seo-maintenance.md`](docs/ai-seo-maintenance.md).
 
 ## Style Guide
@@ -98,7 +98,7 @@ Goal: improve visibility in search results and social media to attract funding f
 
 Constraints and decisions:
 
-- Every metadata or route change must update `scripts/ai-seo-routes.mjs` in the same commit; `pnpm run check` string-matches titles, descriptions, OG images, structured-data types, a11y test coverage, committed sitemaps, and `llms.txt` anchors (see `docs/ai-seo-maintenance.md`).
+- Every metadata or route change must update `scripts/ai-seo-routes.mjs` in the same commit; `npm run check` string-matches titles, descriptions, OG images, structured-data types, a11y test coverage, committed sitemaps, and `llms.txt` anchors (see `docs/ai-seo-maintenance.md`).
 - The PI does not want the supporters/"Funded By" banner. `components/supporters-marquee.js` stays unrendered; funders remain mentioned only in research-page prose and JSON-LD.
 - Google Search Console is already configured separately; no verification code is needed in the site.
 
@@ -121,6 +121,6 @@ Constraints and decisions:
 
 ### Verification
 
-- `pnpm run check` after every step (Biome plus the AI/SEO manifest gate).
-- `pnpm run build` then `pnpm run test:a11y` (must include `/news` once added; the checker enforces this).
+- `npm run check` after every step (Biome plus the AI/SEO manifest gate).
+- `npm run build` then `npm run test:a11y` (must include `/news` once added; the checker enforces this).
 - Manual: view-source `<title>` on home and two pages (no doubled "| RadiantLab"), Rich Results Test on the new JSON-LD, OG debuggers, feed content type, `/feed.xml` absent from the sitemap.
