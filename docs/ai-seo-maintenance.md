@@ -7,13 +7,13 @@ files aligned.
 Run the full gate with:
 
 ```bash
-pnpm run check
+npm run check
 ```
 
 Run only the AI/SEO gate with:
 
 ```bash
-pnpm run check:ai-seo
+npm run check:ai-seo
 ```
 
 ## Required Updates
@@ -23,7 +23,7 @@ When adding, removing, or renaming a public page:
 - Update `scripts/ai-seo-routes.mjs`.
 - Export page metadata with `createPageMetadata`.
 - Add the route to `tests/accessibility/axe.spec.js`.
-- Regenerate the sitemap with `pnpm run build`.
+- Regenerate the sitemap with `npm run build`.
 - Confirm `public/sitemap-0.xml` includes the route.
 
 When changing a page title, description, canonical path, Open Graph image, or
