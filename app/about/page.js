@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Experience from "../../components/experience";
+import PressList from "../../components/press-list";
 import RadiantLab from "../../components/radiant-lab";
 import Services from "../../components/service";
 import Socials from "../../components/socials";
@@ -146,6 +147,7 @@ export default function About() {
                 </span>
               </li>
             </ul>
+            <PressList />
             <Experience />
             <Teaching />
             <Services />
